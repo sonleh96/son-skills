@@ -1,0 +1,6 @@
+interface:
+  display_name: "Son prototype"
+  short_description: "Compare designs or test a behavior hypothesis"
+  default_prompt: "Use $son-prototype for the current task, within its requested scope."
+policy:
+  allow_implicit_invocation: false

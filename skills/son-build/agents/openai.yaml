@@ -1,0 +1,6 @@
+interface:
+  display_name: "Son build"
+  short_description: "Implement work in small verified slices"
+  default_prompt: "Use $son-build for the current task, within its requested scope."
+policy:
+  allow_implicit_invocation: false

@@ -1,0 +1,6 @@
+interface:
+  display_name: "Son verify"
+  short_description: "Exercise real behavior and preserve proof"
+  default_prompt: "Use $son-verify for the current task, within its requested scope."
+policy:
+  allow_implicit_invocation: false

@@ -1,0 +1,10 @@
+{
+  "id": "review-son-skills-upstream-changes",
+  "name": "Review Son skills upstream changes",
+  "kind": "heartbeat",
+  "status": "ACTIVE",
+  "created_on": "2026-10-05",
+  "cadence": "Every two weeks, Monday at 09:00 in the app local timezone",
+  "scope": "Read-only upstream review in the originating chat",
+  "verified": "Creation succeeded and persisted configuration was read back"
+}

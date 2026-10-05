@@ -1,0 +1,6 @@
+interface:
+  display_name: "Son ui stress"
+  short_description: "Expose UI failures with realistic extreme data"
+  default_prompt: "Use $son-ui-stress for the current task, within its requested scope."
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,97 @@
+{
+  "validator": "Codex skill-creator quick_validate.py",
+  "yaml_version": "6.0.3",
+  "results": [
+    {
+      "skill": "son-automate",
+      "exit_code": 0,
+      "output": "Skill is valid!"
+    },
+    {
+      "skill": "son-build",
+      "exit_code": 0,
+      "output": "Skill is valid!"
+    },
+    {
+      "skill": "son-clarify",
+      "exit_code": 0,
+      "output": "Skill is valid!"
+    },
+    {
+      "skill": "son-debug",
+      "exit_code": 0,
+      "output": "Skill is valid!"
+    },
+    {
+      "skill": "son-explain",
+      "exit_code": 0,
+      "output": "Skill is valid!"
+    },
+    {
+      "skill": "son-handoff",
+      "exit_code": 0,
+      "output": "Skill is valid!"
+    },
+    {
+      "skill": "son-motion",
+      "exit_code": 0,
+      "output": "Skill is valid!"
+    },
+    {
+      "skill": "son-plan",
+      "exit_code": 0,
+      "output": "Skill is valid!"
+    },
+    {
+      "skill": "son-pr",
+      "exit_code": 0,
+      "output": "Skill is valid!"
+    },
+    {
+      "skill": "son-prototype",
+      "exit_code": 0,
+      "output": "Skill is valid!"
+    },
+    {
+      "skill": "son-research",
+      "exit_code": 0,
+      "output": "Skill is valid!"
+    },
+    {
+      "skill": "son-retro",
+      "exit_code": 0,
+      "output": "Skill is valid!"
+    },
+    {
+      "skill": "son-review",
+      "exit_code": 0,
+      "output": "Skill is valid!"
+    },
+    {
+      "skill": "son-types",
+      "exit_code": 0,
+      "output": "Skill is valid!"
+    },
+    {
+      "skill": "son-ui",
+      "exit_code": 0,
+      "output": "Skill is valid!"
+    },
+    {
+      "skill": "son-ui-stress",
+      "exit_code": 0,
+      "output": "Skill is valid!"
+    },
+    {
+      "skill": "son-verify",
+      "exit_code": 0,
+      "output": "Skill is valid!"
+    },
+    {
+      "skill": "son-writing",
+      "exit_code": 0,
+      "output": "Skill is valid!"
+    }
+  ],
+  "claude_cursor_frontmatter": "Parsed successfully with preserved explicit-only flags"
+}

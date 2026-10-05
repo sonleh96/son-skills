@@ -1,0 +1,6 @@
+interface:
+  display_name: "Son ui"
+  short_description: "Build accessible and polished web interfaces"
+  default_prompt: "Use $son-ui for the current task, within its requested scope."
+policy:
+  allow_implicit_invocation: true

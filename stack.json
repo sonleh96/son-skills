@@ -1,0 +1,557 @@
+{
+  "schema_version": 1,
+  "skills": [
+    {
+      "name": "son-clarify",
+      "category": "decisions",
+      "description": "Stress-test a plan, resolve domain terminology, or prepare questions for a stakeholder. Use when Son asks to grill an idea, define terms, or create a questionnaire.",
+      "explicit_only": true,
+      "sources": [
+        {
+          "id": "matt:grilling",
+          "path": "skills/productivity/grilling/SKILL.md"
+        },
+        {
+          "id": "matt:grill-me",
+          "path": "skills/productivity/grill-me/SKILL.md"
+        },
+        {
+          "id": "matt:grill-with-docs",
+          "path": "skills/engineering/grill-with-docs/SKILL.md"
+        },
+        {
+          "id": "matt:domain-modeling",
+          "path": "skills/engineering/domain-modeling/SKILL.md"
+        },
+        {
+          "id": "matt:to-questionnaire",
+          "path": "skills/productivity/to-questionnaire/SKILL.md"
+        },
+        {
+          "id": "pstack:principle-model-the-domain",
+          "path": "pstack/skills/principle-model-the-domain/SKILL.md"
+        }
+      ],
+      "owner": "Son",
+      "validation": "structural and scenario review; real-task pilot pending"
+    },
+    {
+      "name": "son-plan",
+      "category": "planning",
+      "description": "Turn an understood problem into a concise spec, module sketch, and dependency-ordered tickets. Use when asked to plan substantial work or convert a discussion into implementation work.",
+      "explicit_only": true,
+      "sources": [
+        {
+          "id": "matt:to-spec",
+          "path": "skills/engineering/to-spec/SKILL.md"
+        },
+        {
+          "id": "matt:to-tickets",
+          "path": "skills/engineering/to-tickets/SKILL.md"
+        },
+        {
+          "id": "matt:wayfinder",
+          "path": "skills/engineering/wayfinder/SKILL.md"
+        },
+        {
+          "id": "matt:codebase-design",
+          "path": "skills/engineering/codebase-design/SKILL.md"
+        },
+        {
+          "id": "matt:improve-codebase-architecture",
+          "path": "skills/engineering/improve-codebase-architecture/SKILL.md"
+        },
+        {
+          "id": "pstack:architect",
+          "path": "pstack/skills/architect/SKILL.md"
+        },
+        {
+          "id": "pstack:principle-sequence-verifiable-units",
+          "path": "pstack/skills/principle-sequence-verifiable-units/SKILL.md"
+        }
+      ],
+      "owner": "Son",
+      "validation": "structural and scenario review; real-task pilot pending"
+    },
+    {
+      "name": "son-build",
+      "category": "delivery",
+      "description": "Implement an authorized feature or ticket graph in small verified slices. Use for implementation from a settled spec, including dependency ordering and evidence-based completion.",
+      "explicit_only": true,
+      "sources": [
+        {
+          "id": "matt:implement",
+          "path": "skills/engineering/implement/SKILL.md"
+        },
+        {
+          "id": "matt:implement-spec",
+          "path": "skills/engineering/implement-spec/SKILL.md"
+        },
+        {
+          "id": "matt:tdd",
+          "path": "skills/engineering/tdd/SKILL.md"
+        },
+        {
+          "id": "pstack:tdd",
+          "path": "pstack/skills/tdd/SKILL.md"
+        },
+        {
+          "id": "pstack:principle-test-behavior-not-implementation",
+          "path": "pstack/skills/principle-test-behavior-not-implementation/SKILL.md"
+        },
+        {
+          "id": "pstack:principle-make-operations-idempotent",
+          "path": "pstack/skills/principle-make-operations-idempotent/SKILL.md"
+        },
+        {
+          "id": "pstack:principle-separate-before-serializing-shared-state",
+          "path": "pstack/skills/principle-separate-before-serializing-shared-state/SKILL.md"
+        }
+      ],
+      "owner": "Son",
+      "validation": "structural and scenario review; real-task pilot pending"
+    },
+    {
+      "name": "son-debug",
+      "category": "diagnosis",
+      "description": "Reproduce and diagnose broken behavior or a performance regression before fixing it. Use for errors, flaky behavior, wrong results, and unexplained slowness.",
+      "explicit_only": false,
+      "sources": [
+        {
+          "id": "matt:diagnosing-bugs",
+          "path": "skills/engineering/diagnosing-bugs/SKILL.md"
+        },
+        {
+          "id": "pstack:tdd",
+          "path": "pstack/skills/tdd/SKILL.md"
+        },
+        {
+          "id": "pstack:principle-fix-root-causes",
+          "path": "pstack/skills/principle-fix-root-causes/SKILL.md"
+        },
+        {
+          "id": "pstack:principle-attack-the-premise",
+          "path": "pstack/skills/principle-attack-the-premise/SKILL.md"
+        },
+        {
+          "id": "pstack:benchmark-checklist",
+          "path": "pstack/skills/benchmark-checklist/SKILL.md"
+        }
+      ],
+      "owner": "Son",
+      "validation": "structural and scenario review; real-task pilot pending"
+    },
+    {
+      "name": "son-review",
+      "category": "verification",
+      "description": "Review a diff against the requested behavior and repository standards, then inspect downstream effects. Use for code review, PR review, or questions about what a change could break.",
+      "explicit_only": false,
+      "sources": [
+        {
+          "id": "matt:code-review",
+          "path": "skills/engineering/code-review/SKILL.md"
+        },
+        {
+          "id": "pstack:blast-radius",
+          "path": "pstack/skills/blast-radius/SKILL.md"
+        },
+        {
+          "id": "pstack:interrogate",
+          "path": "pstack/skills/interrogate/SKILL.md"
+        },
+        {
+          "id": "pstack:principle-boundary-discipline",
+          "path": "pstack/skills/principle-boundary-discipline/SKILL.md"
+        },
+        {
+          "id": "pstack:principle-type-system-discipline",
+          "path": "pstack/skills/principle-type-system-discipline/SKILL.md"
+        }
+      ],
+      "owner": "Son",
+      "validation": "structural and scenario review; real-task pilot pending"
+    },
+    {
+      "name": "son-verify",
+      "category": "verification",
+      "description": "Build or maintain a repeatable way to exercise an app and preserve evidence, or verify a performance claim. Use when asked to prove behavior or make project verification repeatable.",
+      "explicit_only": true,
+      "sources": [
+        {
+          "id": "pstack:create-verification-skill",
+          "path": "pstack/skills/create-verification-skill/SKILL.md"
+        },
+        {
+          "id": "pstack:maintain-verification-skill",
+          "path": "pstack/skills/maintain-verification-skill/SKILL.md"
+        },
+        {
+          "id": "pstack:benchmark-checklist",
+          "path": "pstack/skills/benchmark-checklist/SKILL.md"
+        },
+        {
+          "id": "pstack:principle-prove-it-works",
+          "path": "pstack/skills/principle-prove-it-works/SKILL.md"
+        },
+        {
+          "id": "pstack:principle-explain-the-number",
+          "path": "pstack/skills/principle-explain-the-number/SKILL.md"
+        },
+        {
+          "id": "pstack:show-me-your-work",
+          "path": "pstack/skills/show-me-your-work/SKILL.md"
+        }
+      ],
+      "owner": "Son",
+      "validation": "structural and scenario review; real-task pilot pending"
+    },
+    {
+      "name": "son-pr",
+      "category": "communication",
+      "description": "Write a concise PR description with the reason, change shape, proof, and rollout risk. Use when drafting or updating a PR body; publishing requires the task to authorize it.",
+      "explicit_only": false,
+      "sources": [
+        {
+          "id": "matt:pr",
+          "path": "skills/engineering/pr/SKILL.md"
+        },
+        {
+          "id": "humanlayer:visual-pr",
+          "path": "plugins/visual-pr/skills/visual-pr/SKILL.md"
+        },
+        {
+          "id": "humanlayer:show-me",
+          "path": "plugins/show-me/skills/show-me/SKILL.md"
+        },
+        {
+          "id": "pstack:blast-radius",
+          "path": "pstack/skills/blast-radius/SKILL.md"
+        },
+        {
+          "id": "pstack:technical-writing",
+          "path": "pstack/skills/technical-writing/SKILL.md"
+        }
+      ],
+      "owner": "Son",
+      "validation": "structural and scenario review; real-task pilot pending"
+    },
+    {
+      "name": "son-explain",
+      "category": "communication",
+      "description": "Explain how a subsystem works, why a decision was made, or teach a concept using source-backed examples and a small visual when useful.",
+      "explicit_only": true,
+      "sources": [
+        {
+          "id": "pstack:how",
+          "path": "pstack/skills/how/SKILL.md"
+        },
+        {
+          "id": "pstack:why",
+          "path": "pstack/skills/why/SKILL.md"
+        },
+        {
+          "id": "pstack:teach",
+          "path": "pstack/skills/teach/SKILL.md"
+        },
+        {
+          "id": "pstack:bro",
+          "path": "pstack/skills/bro/SKILL.md"
+        },
+        {
+          "id": "matt:teach",
+          "path": "skills/productivity/teach/SKILL.md"
+        },
+        {
+          "id": "matt:wait-what",
+          "path": "skills/productivity/wait-what/SKILL.md"
+        },
+        {
+          "id": "humanlayer:show-me",
+          "path": "plugins/show-me/skills/show-me/SKILL.md"
+        }
+      ],
+      "owner": "Son",
+      "validation": "structural and scenario review; real-task pilot pending"
+    },
+    {
+      "name": "son-retro",
+      "category": "improvement",
+      "description": "Review a session for recurring mistakes and propose small changes to tools, navigation, verification, or instructions. Use for retrospectives or improving agent guidance.",
+      "explicit_only": true,
+      "sources": [
+        {
+          "id": "matt:retro",
+          "path": "skills/engineering/retro/SKILL.md"
+        },
+        {
+          "id": "matt:writing-for-agents",
+          "path": "skills/productivity/writing-for-agents/SKILL.md"
+        },
+        {
+          "id": "pstack:reflect",
+          "path": "pstack/skills/reflect/SKILL.md"
+        },
+        {
+          "id": "pstack:correct",
+          "path": "pstack/skills/correct/SKILL.md"
+        },
+        {
+          "id": "pstack:principle-encode-lessons-in-structure",
+          "path": "pstack/skills/principle-encode-lessons-in-structure/SKILL.md"
+        },
+        {
+          "id": "humanlayer:improve-claude-md",
+          "path": "plugins/improve-claude-md/skills/improve-claude-md/SKILL.md"
+        }
+      ],
+      "owner": "Son",
+      "validation": "structural and scenario review; real-task pilot pending"
+    },
+    {
+      "name": "son-automate",
+      "category": "automation",
+      "description": "Design a bounded recurring agent workflow with measurable inputs, selection rules, validation, and review feedback. Use when asked to automate repeated work or monitor changes.",
+      "explicit_only": false,
+      "sources": [
+        {
+          "id": "humanlayer:design-control-loop",
+          "path": "plugins/design-control-loop/skills/design-control-loop/SKILL.md"
+        },
+        {
+          "id": "humanlayer:build-iterated-agentic-loop",
+          "path": "plugins/build-iterated-agentic-loop/skills/build-iterated-agentic-loop/SKILL.md"
+        },
+        {
+          "id": "pstack:automate-me",
+          "path": "pstack/skills/automate-me/SKILL.md"
+        },
+        {
+          "id": "pstack:figure-it-out",
+          "path": "pstack/skills/figure-it-out/SKILL.md"
+        },
+        {
+          "id": "pstack:show-me-your-work",
+          "path": "pstack/skills/show-me-your-work/SKILL.md"
+        },
+        {
+          "id": "pstack:principle-make-operations-idempotent",
+          "path": "pstack/skills/principle-make-operations-idempotent/SKILL.md"
+        }
+      ],
+      "owner": "Son",
+      "validation": "structural and scenario review; real-task pilot pending"
+    },
+    {
+      "name": "son-ui",
+      "category": "interface",
+      "description": "Build or polish a web interface using existing design tokens, accessible components, mobile behavior, and rendered verification. Use for layout, interaction details, touch behavior, or Sonner integration.",
+      "explicit_only": false,
+      "sources": [
+        {
+          "id": "emil:emil-design-eng",
+          "path": "skills/emil-design-eng/SKILL.md"
+        },
+        {
+          "id": "emil:mobile-native",
+          "path": "skills/mobile-native/SKILL.md"
+        },
+        {
+          "id": "emil:apple-design",
+          "path": "skills/apple-design/SKILL.md"
+        },
+        {
+          "id": "emil:ask-sonner",
+          "path": "skills/ask-sonner/SKILL.md"
+        },
+        {
+          "id": "pstack:principle-experience-first",
+          "path": "pstack/skills/principle-experience-first/SKILL.md"
+        }
+      ],
+      "owner": "Son",
+      "validation": "structural and scenario review; real-task pilot pending"
+    },
+    {
+      "name": "son-prototype",
+      "category": "interface",
+      "description": "Build a disposable experiment to resolve a behavior question or compare distinct UI directions in a live picker. Use when asked to prototype, explore variants, or test a design assumption.",
+      "explicit_only": true,
+      "sources": [
+        {
+          "id": "matt:prototype",
+          "path": "skills/engineering/prototype/SKILL.md"
+        },
+        {
+          "id": "emil:prototype",
+          "path": "skills/prototype/SKILL.md"
+        },
+        {
+          "id": "pstack:principle-exhaust-the-design-space",
+          "path": "pstack/skills/principle-exhaust-the-design-space/SKILL.md"
+        },
+        {
+          "id": "pstack:principle-foundational-thinking",
+          "path": "pstack/skills/principle-foundational-thinking/SKILL.md"
+        }
+      ],
+      "owner": "Son",
+      "validation": "structural and scenario review; real-task pilot pending"
+    },
+    {
+      "name": "son-motion",
+      "category": "interface",
+      "description": "Name, build, review, or audit animation with frequency, accessibility, interruption, and performance checks. Use for motion work; keep audits read-only unless implementation is requested.",
+      "explicit_only": true,
+      "sources": [
+        {
+          "id": "emil:animate",
+          "path": "skills/animate/SKILL.md"
+        },
+        {
+          "id": "emil:animate-expo",
+          "path": "skills/animate-expo/SKILL.md"
+        },
+        {
+          "id": "emil:animation-vocabulary",
+          "path": "skills/animation-vocabulary/SKILL.md"
+        },
+        {
+          "id": "emil:review-animations",
+          "path": "skills/review-animations/SKILL.md"
+        },
+        {
+          "id": "emil:improve-animations",
+          "path": "skills/improve-animations/SKILL.md"
+        },
+        {
+          "id": "emil:find-animation-opportunities",
+          "path": "skills/find-animation-opportunities/SKILL.md"
+        },
+        {
+          "id": "emil:apple-design",
+          "path": "skills/apple-design/SKILL.md"
+        }
+      ],
+      "owner": "Son",
+      "validation": "structural and scenario review; real-task pilot pending"
+    },
+    {
+      "name": "son-ui-stress",
+      "category": "verification",
+      "description": "Stress-test UI with realistic extreme data and capture visual failures. Use for long names, missing fields, empty collections, localized labels, large counts, and narrow layouts.",
+      "explicit_only": false,
+      "sources": [
+        {
+          "id": "emil:break-ui",
+          "path": "skills/break-ui/SKILL.md"
+        },
+        {
+          "id": "pstack:principle-prove-it-works",
+          "path": "pstack/skills/principle-prove-it-works/SKILL.md"
+        },
+        {
+          "id": "humanlayer:narrow-react-prop-types",
+          "path": "plugins/narrow-react-prop-types/skills/narrow-react-prop-types/SKILL.md"
+        }
+      ],
+      "owner": "Son",
+      "validation": "structural and scenario review; real-task pilot pending"
+    },
+    {
+      "name": "son-types",
+      "category": "engineering",
+      "description": "Tighten TypeScript or React contracts against real callers, or inspect Swift value and concurrency boundaries. Use for overly broad props, invalid states, unsafe assertions, or concurrency errors.",
+      "explicit_only": false,
+      "sources": [
+        {
+          "id": "humanlayer:narrow-react-prop-types",
+          "path": "plugins/narrow-react-prop-types/skills/narrow-react-prop-types/SKILL.md"
+        },
+        {
+          "id": "pstack:typescript-best-practices",
+          "path": "pstack/skills/typescript-best-practices/SKILL.md"
+        },
+        {
+          "id": "pstack:principle-type-system-discipline",
+          "path": "pstack/skills/principle-type-system-discipline/SKILL.md"
+        },
+        {
+          "id": "matt:codebase-design",
+          "path": "skills/engineering/codebase-design/SKILL.md"
+        },
+        {
+          "id": "emil:write-swift",
+          "path": "skills/write-swift/SKILL.md"
+        }
+      ],
+      "owner": "Son",
+      "validation": "structural and scenario review; real-task pilot pending"
+    },
+    {
+      "name": "son-research",
+      "category": "discovery",
+      "description": "Investigate a concrete technical or workflow question using primary sources and save concise findings with dates, versions, and unresolved uncertainty.",
+      "explicit_only": false,
+      "sources": [
+        {
+          "id": "matt:research",
+          "path": "skills/engineering/research/SKILL.md"
+        },
+        {
+          "id": "pstack:how",
+          "path": "pstack/skills/how/SKILL.md"
+        },
+        {
+          "id": "pstack:why",
+          "path": "pstack/skills/why/SKILL.md"
+        }
+      ],
+      "owner": "Son",
+      "validation": "structural and scenario review; real-task pilot pending"
+    },
+    {
+      "name": "son-handoff",
+      "category": "continuity",
+      "description": "Prepare or recover a concise continuation record across Codex, Claude Code, and Cursor. Use when pausing work, resuming another session, or handing a task to another agent.",
+      "explicit_only": true,
+      "sources": [
+        {
+          "id": "matt:handoff",
+          "path": "skills/productivity/handoff/SKILL.md"
+        },
+        {
+          "id": "pstack:recall",
+          "path": "pstack/skills/recall/SKILL.md"
+        }
+      ],
+      "owner": "Son",
+      "validation": "structural and scenario review; real-task pilot pending"
+    },
+    {
+      "name": "son-writing",
+      "category": "communication",
+      "description": "Write or edit concise agent instructions, technical documentation, or decision notes with specific triggers, source references, and completion criteria.",
+      "explicit_only": false,
+      "sources": [
+        {
+          "id": "matt:writing-for-agents",
+          "path": "skills/productivity/writing-for-agents/SKILL.md"
+        },
+        {
+          "id": "pstack:technical-writing",
+          "path": "pstack/skills/technical-writing/SKILL.md"
+        },
+        {
+          "id": "pstack:unslop",
+          "path": "pstack/skills/unslop/SKILL.md"
+        },
+        {
+          "id": "humanlayer:improve-claude-md",
+          "path": "plugins/improve-claude-md/skills/improve-claude-md/SKILL.md"
+        }
+      ],
+      "owner": "Son",
+      "validation": "structural and scenario review; real-task pilot pending"
+    }
+  ]
+}

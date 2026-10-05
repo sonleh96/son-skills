@@ -1,0 +1,14 @@
+test_f1_modified_baseline_is_rejected (test_tooling.ToolingTests.test_f1_modified_baseline_is_rejected) ... ok
+test_f2_changes_licenses_modes_and_renames_are_reported (test_tooling.ToolingTests.test_f2_changes_licenses_modes_and_renames_are_reported) ... ok
+test_f3_out_of_scope_commit_has_no_content_change (test_tooling.ToolingTests.test_f3_out_of_scope_commit_has_no_content_change) ... ok
+test_f4_failed_remote_keeps_partial_report_and_fails_exit (test_tooling.ToolingTests.test_f4_failed_remote_keeps_partial_report_and_fails_exit) ... ok
+test_f5_collision_preflight_does_not_overwrite (test_tooling.ToolingTests.test_f5_collision_preflight_does_not_overwrite) ... ok
+test_f6_bundles_are_self_contained_and_install_is_idempotent (test_tooling.ToolingTests.test_f6_bundles_are_self_contained_and_install_is_idempotent) ... ok
+test_f7_repeat_check_deduplicates_without_moving_baseline (test_tooling.ToolingTests.test_f7_repeat_check_deduplicates_without_moving_baseline) ... ok
+test_f8_unsafe_paths_are_rejected (test_tooling.ToolingTests.test_f8_unsafe_paths_are_rejected) ... ok
+test_f9_invocation_policy_drift_is_rejected (test_tooling.ToolingTests.test_f9_invocation_policy_drift_is_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 1.103s
+
+OK

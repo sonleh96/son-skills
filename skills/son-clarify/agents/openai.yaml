@@ -1,0 +1,6 @@
+interface:
+  display_name: "Son clarify"
+  short_description: "Resolve decisions, terms, and stakeholder questions"
+  default_prompt: "Use $son-clarify for the current task, within its requested scope."
+policy:
+  allow_implicit_invocation: false

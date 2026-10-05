@@ -1,0 +1,6 @@
+interface:
+  display_name: "Son types"
+  short_description: "Tighten real TypeScript, React, and Swift contracts"
+  default_prompt: "Use $son-types for the current task, within its requested scope."
+policy:
+  allow_implicit_invocation: true

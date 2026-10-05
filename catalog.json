@@ -1,0 +1,1867 @@
+{
+  "generated_by": "scripts/stack.py catalog",
+  "skills": [
+    {
+      "id": "pstack:reproduce-and-fix-issues",
+      "source": "pstack",
+      "name": "reproduce-and-fix-issues",
+      "path": "pstack/automations/benny/skills/reproduce-and-fix-issues/SKILL.md",
+      "description": "Reproduce triaged Slack bugs through a configured app-control adapter, verify existing fixes, and open a bounded draft pull request only after before-and-after proof. Use only from the configured Benny repro automation.",
+      "categories": [
+        "automation"
+      ],
+      "upstream_explicit_only": true,
+      "disposition": "deferred",
+      "combined_skills": [],
+      "rationale": "Benny requires configured Slack, tracker, app control, and explicit message and PR authority.",
+      "url": "https://github.com/cursor/plugins/blob/4e5b1cf2ccb0ea3716f08c8ee0a5856b5ab93536/pstack/automations/benny/skills/reproduce-and-fix-issues/SKILL.md"
+    },
+    {
+      "id": "pstack:setup-benny",
+      "source": "pstack",
+      "name": "setup-benny",
+      "path": "pstack/automations/benny/skills/setup-benny/SKILL.md",
+      "description": "Configure Benny and prepare its triage and repro automations. Use when installing Benny or changing its Slack, tracker, repository, routing, control, model, or budget settings.",
+      "categories": [
+        "setup"
+      ],
+      "upstream_explicit_only": true,
+      "disposition": "deferred",
+      "combined_skills": [],
+      "rationale": "Benny service setup is outside the local personal stack.",
+      "url": "https://github.com/cursor/plugins/blob/4e5b1cf2ccb0ea3716f08c8ee0a5856b5ab93536/pstack/automations/benny/skills/setup-benny/SKILL.md"
+    },
+    {
+      "id": "pstack:triage-issue-reports",
+      "source": "pstack",
+      "name": "triage-issue-reports",
+      "path": "pstack/automations/benny/skills/triage-issue-reports/SKILL.md",
+      "description": "Triage Slack issue reports with one thread-only verdict, evidence review, cause-aware routing, tracker dedupe, and fail-closed ticket creation. Use only from the configured Benny triage automation.",
+      "categories": [
+        "automation"
+      ],
+      "upstream_explicit_only": true,
+      "disposition": "deferred",
+      "combined_skills": [],
+      "rationale": "Slack thread verdicts and tracker writes need a separately configured and authorized workflow.",
+      "url": "https://github.com/cursor/plugins/blob/4e5b1cf2ccb0ea3716f08c8ee0a5856b5ab93536/pstack/automations/benny/skills/triage-issue-reports/SKILL.md"
+    },
+    {
+      "id": "pstack:architect",
+      "source": "pstack",
+      "name": "architect",
+      "path": "pstack/skills/architect/SKILL.md",
+      "description": "Sketch types, signatures, and module structure before code, then stay in the loop while implementation fills in. Use for /architect, 'architect this', 'design this', or non-trivial work where jumping to code would lock in the wrong shape.",
+      "categories": [
+        "planning"
+      ],
+      "upstream_explicit_only": true,
+      "disposition": "adapted",
+      "combined_skills": [
+        "son-plan"
+      ],
+      "rationale": "Adapted into the listed workflows; source execution and policy are not imported.",
+      "url": "https://github.com/cursor/plugins/blob/4e5b1cf2ccb0ea3716f08c8ee0a5856b5ab93536/pstack/skills/architect/SKILL.md"
+    },
+    {
+      "id": "pstack:arena",
+      "source": "pstack",
+      "name": "arena",
+      "path": "pstack/skills/arena/SKILL.md",
+      "description": "Spawn N parallel candidates at the same task, pick a base, graft the strongest parts of the losers into it. Use for /arena, 'arena this', 'throw it in the arena', or when one attempt at a non-trivial artifact would lock in the wrong shape.",
+      "categories": [
+        "orchestration"
+      ],
+      "upstream_explicit_only": true,
+      "disposition": "reference-only",
+      "combined_skills": [],
+      "rationale": "Competing candidates can help selected design decisions, but fixed model panels and default fan-out conflict with Son's model policy.",
+      "url": "https://github.com/cursor/plugins/blob/4e5b1cf2ccb0ea3716f08c8ee0a5856b5ab93536/pstack/skills/arena/SKILL.md"
+    },
+    {
+      "id": "pstack:automate-me",
+      "source": "pstack",
+      "name": "automate-me",
+      "path": "pstack/skills/automate-me/SKILL.md",
+      "description": "Use for \"automate me\", \"create/update/refresh my -mode skill\", \"turn/capture my preferences or working style into a skill\", or wanting agents to follow how the user works. Drafts or revises a personal -mode skill via create-skill + unslop, optionally pulling fresh evidence from recent transcripts.",
+      "categories": [
+        "automation"
+      ],
+      "upstream_explicit_only": true,
+      "disposition": "adapted",
+      "combined_skills": [
+        "son-automate"
+      ],
+      "rationale": "Adapted into the listed workflows; source execution and policy are not imported.",
+      "url": "https://github.com/cursor/plugins/blob/4e5b1cf2ccb0ea3716f08c8ee0a5856b5ab93536/pstack/skills/automate-me/SKILL.md"
+    },
+    {
+      "id": "pstack:benchmark-checklist",
+      "source": "pstack",
+      "name": "benchmark-checklist",
+      "path": "pstack/skills/benchmark-checklist/SKILL.md",
+      "description": "Vet a perf measurement (limiter, tuning, limits, errors, repeatability, relevance, and whether the work happened) before you report or act on it. Use when you run a benchmark or report a speedup or regression you measured.",
+      "categories": [
+        "diagnosis",
+        "verification"
+      ],
+      "upstream_explicit_only": true,
+      "disposition": "adapted",
+      "combined_skills": [
+        "son-debug",
+        "son-verify"
+      ],
+      "rationale": "Adapted into the listed workflows; source execution and policy are not imported.",
+      "url": "https://github.com/cursor/plugins/blob/4e5b1cf2ccb0ea3716f08c8ee0a5856b5ab93536/pstack/skills/benchmark-checklist/SKILL.md"
+    },
+    {
+      "id": "pstack:blast-radius",
+      "source": "pstack",
+      "name": "blast-radius",
+      "path": "pstack/skills/blast-radius/SKILL.md",
+      "description": "Find what a change could break somewhere else before it ships, beyond the diff, and prove the one fact it's safe because of by running real code instead of writing it up. Use for 'blast radius of X', 'what could this break', or reviewing a small diff you don't trust.",
+      "categories": [
+        "communication",
+        "verification"
+      ],
+      "upstream_explicit_only": true,
+      "disposition": "adapted",
+      "combined_skills": [
+        "son-review",
+        "son-pr"
+      ],
+      "rationale": "Adapted into the listed workflows; source execution and policy are not imported.",
+      "url": "https://github.com/cursor/plugins/blob/4e5b1cf2ccb0ea3716f08c8ee0a5856b5ab93536/pstack/skills/blast-radius/SKILL.md"
+    },
+    {
+      "id": "pstack:bro",
+      "source": "pstack",
+      "name": "bro",
+      "path": "pstack/skills/bro/SKILL.md",
+      "description": "Restate the last message in plain human language, with no jargon.",
+      "categories": [
+        "communication"
+      ],
+      "upstream_explicit_only": true,
+      "disposition": "adapted",
+      "combined_skills": [
+        "son-explain"
+      ],
+      "rationale": "Adapted into the listed workflows; source execution and policy are not imported.",
+      "url": "https://github.com/cursor/plugins/blob/4e5b1cf2ccb0ea3716f08c8ee0a5856b5ab93536/pstack/skills/bro/SKILL.md"
+    },
+    {
+      "id": "pstack:correct",
+      "source": "pstack",
+      "name": "correct",
+      "path": "pstack/skills/correct/SKILL.md",
+      "description": "Find the mistakes agents keep repeating in this repo and make each one impossible. Try architecture first, then types, then a lint whose error names the fix, then a test, and write docs last. Prove each check fails on a real past mistake. Repeat this each time the operator corrects you. Use for /correct.",
+      "categories": [
+        "improvement"
+      ],
+      "upstream_explicit_only": true,
+      "disposition": "adapted",
+      "combined_skills": [
+        "son-retro"
+      ],
+      "rationale": "Adapted into the listed workflows; source execution and policy are not imported.",
+      "url": "https://github.com/cursor/plugins/blob/4e5b1cf2ccb0ea3716f08c8ee0a5856b5ab93536/pstack/skills/correct/SKILL.md"
+    },
+    {
+      "id": "pstack:create-verification-skill",
+      "source": "pstack",
+      "name": "create-verification-skill",
+      "path": "pstack/skills/create-verification-skill/SKILL.md",
+      "description": "Generate a project-local verification skill that drives your app the way a user does — any language, framework, or platform. Use for /create-verification-skill, \"make a control skill for this repo\", or when a project has no scripted way to prove UI/CLI/service behavior.",
+      "categories": [
+        "verification"
+      ],
+      "upstream_explicit_only": true,
+      "disposition": "adapted",
+      "combined_skills": [
+        "son-verify"
+      ],
+      "rationale": "Adapted into the listed workflows; source execution and policy are not imported.",
+      "url": "https://github.com/cursor/plugins/blob/4e5b1cf2ccb0ea3716f08c8ee0a5856b5ab93536/pstack/skills/create-verification-skill/SKILL.md"
+    },
+    {
+      "id": "pstack:figure-it-out",
+      "source": "pstack",
+      "name": "figure-it-out",
+      "path": "pstack/skills/figure-it-out/SKILL.md",
+      "description": "Design an auditable playbook when no narrower one fits: a large migration, an ambitious multi-part change, or work a human reviews after stepping away. Scales rigor to the task, runs a hypothesis loop, and logs decisions via show-me-your-work. Use for /figure-it-out, 'figure it out', a large migration, or when no narrower playbook applies.",
+      "categories": [
+        "automation"
+      ],
+      "upstream_explicit_only": true,
+      "disposition": "adapted",
+      "combined_skills": [
+        "son-automate"
+      ],
+      "rationale": "Adapted into the listed workflows; source execution and policy are not imported.",
+      "url": "https://github.com/cursor/plugins/blob/4e5b1cf2ccb0ea3716f08c8ee0a5856b5ab93536/pstack/skills/figure-it-out/SKILL.md"
+    },
+    {
+      "id": "pstack:how",
+      "source": "pstack",
+      "name": "how",
+      "path": "pstack/skills/how/SKILL.md",
+      "description": "Use for \"how does X work\", code walkthroughs before changing something, and placement / ownership / layering questions (\"where should this live\", \"which package owns this\", \"is this the right layer\"). Explains subsystem architecture, runtime flow, onboarding mental models. Use why for motivation.",
+      "categories": [
+        "communication",
+        "discovery"
+      ],
+      "upstream_explicit_only": true,
+      "disposition": "adapted",
+      "combined_skills": [
+        "son-explain",
+        "son-research"
+      ],
+      "rationale": "Adapted into the listed workflows; source execution and policy are not imported.",
+      "url": "https://github.com/cursor/plugins/blob/4e5b1cf2ccb0ea3716f08c8ee0a5856b5ab93536/pstack/skills/how/SKILL.md"
+    },
+    {
+      "id": "pstack:interrogate",
+      "source": "pstack",
+      "name": "interrogate",
+      "path": "pstack/skills/interrogate/SKILL.md",
+      "description": "Use for \"interrogate\", \"adversarial review\", \"multi-model review\", \"challenge this\", \"stress test this code\", \"find blind spots\", or \"tear this apart\". Multiple LLM reviewers challenge changes from independent angles.",
+      "categories": [
+        "verification"
+      ],
+      "upstream_explicit_only": true,
+      "disposition": "adapted",
+      "combined_skills": [
+        "son-review"
+      ],
+      "rationale": "Adapted into the listed workflows; source execution and policy are not imported.",
+      "url": "https://github.com/cursor/plugins/blob/4e5b1cf2ccb0ea3716f08c8ee0a5856b5ab93536/pstack/skills/interrogate/SKILL.md"
+    },
+    {
+      "id": "pstack:maintain-verification-skill",
+      "source": "pstack",
+      "name": "maintain-verification-skill",
+      "path": "pstack/skills/maintain-verification-skill/SKILL.md",
+      "description": "Periodic pass that keeps a project's verification skill and feature map honest: parallel source readers per feature, one live session driving every feature, at most one PR of proven corrections. Use for /maintain-verification-skill or \"audit the verify skill\".",
+      "categories": [
+        "verification"
+      ],
+      "upstream_explicit_only": true,
+      "disposition": "adapted",
+      "combined_skills": [
+        "son-verify"
+      ],
+      "rationale": "Adapted into the listed workflows; source execution and policy are not imported.",
+      "url": "https://github.com/cursor/plugins/blob/4e5b1cf2ccb0ea3716f08c8ee0a5856b5ab93536/pstack/skills/maintain-verification-skill/SKILL.md"
+    },
+    {
+      "id": "pstack:make-bot-ui",
+      "source": "pstack",
+      "name": "make-bot-ui",
+      "path": "pstack/skills/make-bot-ui/SKILL.md",
+      "description": "Use when building a custom UI (page, dashboard, buttons) that should wake a Grok Bot over a webhook, when the user must provide a webhook sender key, or when exposing that UI on Tailscale.",
+      "categories": [
+        "automation"
+      ],
+      "upstream_explicit_only": true,
+      "disposition": "deferred",
+      "combined_skills": [],
+      "rationale": "Requires bot webhooks, sender credentials, hosting, and tailnet setup unrelated to the current stack.",
+      "url": "https://github.com/cursor/plugins/blob/4e5b1cf2ccb0ea3716f08c8ee0a5856b5ab93536/pstack/skills/make-bot-ui/SKILL.md"
+    },
+    {
+      "id": "pstack:no-comments",
+      "source": "pstack",
+      "name": "no-comments",
+      "path": "pstack/skills/no-comments/SKILL.md",
+      "description": "Spawn Comment Sicko, fix accepted findings, and offer encodings for claimed constraints.",
+      "categories": [
+        "engineering"
+      ],
+      "upstream_explicit_only": true,
+      "disposition": "excluded",
+      "combined_skills": [],
+      "rationale": "Broad comment deletion and Comment Sicko coupling are too aggressive for a default cross-repository workflow.",
+      "url": "https://github.com/cursor/plugins/blob/4e5b1cf2ccb0ea3716f08c8ee0a5856b5ab93536/pstack/skills/no-comments/SKILL.md"
+    },
+    {
+      "id": "pstack:poteto-help",
+      "source": "pstack",
+      "name": "poteto-help",
+      "path": "pstack/skills/poteto-help/SKILL.md",
+      "description": "Guides users through pstack setup, /poteto-mode, and picking the skill, playbook, or principle for a task. Use for /poteto-help, or when the user asks how to install, set up, or use pstack, or which pstack skill fits. Not for requests to do work, even ones that name pstack.",
+      "categories": [
+        "routing"
+      ],
+      "upstream_explicit_only": false,
+      "disposition": "superseded",
+      "combined_skills": [],
+      "rationale": "The personal README and routing table describe the combined stack instead.",
+      "url": "https://github.com/cursor/plugins/blob/4e5b1cf2ccb0ea3716f08c8ee0a5856b5ab93536/pstack/skills/poteto-help/SKILL.md"
+    },
+    {
+      "id": "pstack:poteto-mode",
+      "source": "pstack",
+      "name": "poteto-mode",
+      "path": "pstack/skills/poteto-mode/SKILL.md",
+      "description": "poteto's agent style for concise, detailed responses, deliberate subagents, unslopped prose, simple code, and verified work. Use for poteto, /poteto-mode, or requests to work in this style.",
+      "categories": [
+        "orchestration"
+      ],
+      "upstream_explicit_only": true,
+      "disposition": "reference-only",
+      "combined_skills": [],
+      "rationale": "A sticky Cursor mode would compete with Son's instructions and the combined task-specific workflows.",
+      "url": "https://github.com/cursor/plugins/blob/4e5b1cf2ccb0ea3716f08c8ee0a5856b5ab93536/pstack/skills/poteto-mode/SKILL.md"
+    },
+    {
+      "id": "pstack:principle-attack-the-premise",
+      "source": "pstack",
+      "name": "principle-attack-the-premise",
+      "path": "pstack/skills/principle-attack-the-premise/SKILL.md",
+      "description": "Apply when two or more fixes that share one premise have failed the same gate. Take a census of which actors hold the imbalance before the next fix, then question the premise instead of writing another fix that assumes it.",
+      "categories": [
+        "diagnosis"
+      ],
+      "upstream_explicit_only": true,
+      "disposition": "adapted",
+      "combined_skills": [
+        "son-debug"
+      ],
+      "rationale": "Adapted into the listed workflows; source execution and policy are not imported.",
+      "url": "https://github.com/cursor/plugins/blob/4e5b1cf2ccb0ea3716f08c8ee0a5856b5ab93536/pstack/skills/principle-attack-the-premise/SKILL.md"
+    },
+    {
+      "id": "pstack:principle-boundary-discipline",
+      "source": "pstack",
+      "name": "principle-boundary-discipline",
+      "path": "pstack/skills/principle-boundary-discipline/SKILL.md",
+      "description": "Apply when wiring validation, error handling, or framework adapters. Concentrate guards at system boundaries (CLI, config, network, external APIs); trust internal types and keep business logic in pure functions.",
+      "categories": [
+        "verification"
+      ],
+      "upstream_explicit_only": true,
+      "disposition": "adapted",
+      "combined_skills": [
+        "son-review"
+      ],
+      "rationale": "Adapted into the listed workflows; source execution and policy are not imported.",
+      "url": "https://github.com/cursor/plugins/blob/4e5b1cf2ccb0ea3716f08c8ee0a5856b5ab93536/pstack/skills/principle-boundary-discipline/SKILL.md"
+    },
+    {
+      "id": "pstack:principle-build-the-lever",
+      "source": "pstack",
+      "name": "principle-build-the-lever",
+      "path": "pstack/skills/principle-build-the-lever/SKILL.md",
+      "description": "Apply to any non-trivial work, not just bulk work: edits, migrations, analyses, checks. Build the tool that does it or proves it (codemod, script, generator, or a skill your subagents follow) instead of working by hand. The tool is the artifact a reviewer can rerun.",
+      "categories": [
+        "working agreements"
+      ],
+      "upstream_explicit_only": true,
+      "disposition": "absorbed-policy",
+      "combined_skills": [],
+      "rationale": "Repeatable commands and evidence are part of the shared rules and verification workflow.",
+      "url": "https://github.com/cursor/plugins/blob/4e5b1cf2ccb0ea3716f08c8ee0a5856b5ab93536/pstack/skills/principle-build-the-lever/SKILL.md"
+    },
+    {
+      "id": "pstack:principle-encode-lessons-in-structure",
+      "source": "pstack",
+      "name": "principle-encode-lessons-in-structure",
+      "path": "pstack/skills/principle-encode-lessons-in-structure/SKILL.md",
+      "description": "Apply when you catch yourself writing the same instruction a second time, or notice a recurring correction. Encode the rule as a lint, metadata flag, runtime check, or script instead of more text.",
+      "categories": [
+        "improvement"
+      ],
+      "upstream_explicit_only": true,
+      "disposition": "adapted",
+      "combined_skills": [
+        "son-retro"
+      ],
+      "rationale": "Adapted into the listed workflows; source execution and policy are not imported.",
+      "url": "https://github.com/cursor/plugins/blob/4e5b1cf2ccb0ea3716f08c8ee0a5856b5ab93536/pstack/skills/principle-encode-lessons-in-structure/SKILL.md"
+    },
+    {
+      "id": "pstack:principle-exhaust-the-design-space",
+      "source": "pstack",
+      "name": "principle-exhaust-the-design-space",
+      "path": "pstack/skills/principle-exhaust-the-design-space/SKILL.md",
+      "description": "Apply when facing a novel UI interaction or architectural decision with no precedent in the codebase. Build 2-3 competing prototypes and compare side by side before committing.",
+      "categories": [
+        "interface"
+      ],
+      "upstream_explicit_only": true,
+      "disposition": "adapted",
+      "combined_skills": [
+        "son-prototype"
+      ],
+      "rationale": "Adapted into the listed workflows; source execution and policy are not imported.",
+      "url": "https://github.com/cursor/plugins/blob/4e5b1cf2ccb0ea3716f08c8ee0a5856b5ab93536/pstack/skills/principle-exhaust-the-design-space/SKILL.md"
+    },
+    {
+      "id": "pstack:principle-experience-first",
+      "source": "pstack",
+      "name": "principle-experience-first",
+      "path": "pstack/skills/principle-experience-first/SKILL.md",
+      "description": "Apply when product, UX, or feature-scope tradeoffs come up. Choose user delight over implementation convenience; ship fewer polished features over more rough ones.",
+      "categories": [
+        "interface"
+      ],
+      "upstream_explicit_only": true,
+      "disposition": "adapted",
+      "combined_skills": [
+        "son-ui"
+      ],
+      "rationale": "Adapted into the listed workflows; source execution and policy are not imported.",
+      "url": "https://github.com/cursor/plugins/blob/4e5b1cf2ccb0ea3716f08c8ee0a5856b5ab93536/pstack/skills/principle-experience-first/SKILL.md"
+    },
+    {
+      "id": "pstack:principle-explain-the-number",
+      "source": "pstack",
+      "name": "principle-explain-the-number",
+      "path": "pstack/skills/principle-explain-the-number/SKILL.md",
+      "description": "Apply before you trust, report, or act on a number you measured: a speedup, a regression, a throughput, a latency, or an eval result. Find what limits it, and rule out that it measured something other than the work you think.",
+      "categories": [
+        "verification"
+      ],
+      "upstream_explicit_only": true,
+      "disposition": "adapted",
+      "combined_skills": [
+        "son-verify"
+      ],
+      "rationale": "Adapted into the listed workflows; source execution and policy are not imported.",
+      "url": "https://github.com/cursor/plugins/blob/4e5b1cf2ccb0ea3716f08c8ee0a5856b5ab93536/pstack/skills/principle-explain-the-number/SKILL.md"
+    },
+    {
+      "id": "pstack:principle-fix-root-causes",
+      "source": "pstack",
+      "name": "principle-fix-root-causes",
+      "path": "pstack/skills/principle-fix-root-causes/SKILL.md",
+      "description": "Apply when debugging. Trace each symptom to its root cause and fix it there; reproduce first, ask why until you reach it, resist nil-check guards that silence crashes.",
+      "categories": [
+        "diagnosis"
+      ],
+      "upstream_explicit_only": true,
+      "disposition": "adapted",
+      "combined_skills": [
+        "son-debug"
+      ],
+      "rationale": "Adapted into the listed workflows; source execution and policy are not imported.",
+      "url": "https://github.com/cursor/plugins/blob/4e5b1cf2ccb0ea3716f08c8ee0a5856b5ab93536/pstack/skills/principle-fix-root-causes/SKILL.md"
+    },
+    {
+      "id": "pstack:principle-foundational-thinking",
+      "source": "pstack",
+      "name": "principle-foundational-thinking",
+      "path": "pstack/skills/principle-foundational-thinking/SKILL.md",
+      "description": "Apply before writing logic: choosing core types and data structures, sequencing scaffold-vs-feature work, asking what concurrent actors share. Get the data structures right so downstream code becomes obvious.",
+      "categories": [
+        "interface"
+      ],
+      "upstream_explicit_only": true,
+      "disposition": "adapted",
+      "combined_skills": [
+        "son-prototype"
+      ],
+      "rationale": "Adapted into the listed workflows; source execution and policy are not imported.",
+      "url": "https://github.com/cursor/plugins/blob/4e5b1cf2ccb0ea3716f08c8ee0a5856b5ab93536/pstack/skills/principle-foundational-thinking/SKILL.md"
+    },
+    {
+      "id": "pstack:principle-guard-the-context-window",
+      "source": "pstack",
+      "name": "principle-guard-the-context-window",
+      "path": "pstack/skills/principle-guard-the-context-window/SKILL.md",
+      "description": "Apply when context is filling up: large outputs, long files, repeated reads, fan-out planning. Route bulk to subagents; keep summaries in the main thread, not raw payloads.",
+      "categories": [
+        "working agreements"
+      ],
+      "upstream_explicit_only": true,
+      "disposition": "absorbed-policy",
+      "combined_skills": [],
+      "rationale": "Load relevant evidence selectively; do not make delegation mandatory when it is unavailable or unauthorized.",
+      "url": "https://github.com/cursor/plugins/blob/4e5b1cf2ccb0ea3716f08c8ee0a5856b5ab93536/pstack/skills/principle-guard-the-context-window/SKILL.md"
+    },
+    {
+      "id": "pstack:principle-laziness-protocol",
+      "source": "pstack",
+      "name": "principle-laziness-protocol",
+      "path": "pstack/skills/principle-laziness-protocol/SKILL.md",
+      "description": "Apply when refactoring, evaluating diff size, or tempted to add abstractions, layers, or signal threading. Bias toward deletion and the smallest change that solves the problem.",
+      "categories": [
+        "working agreements"
+      ],
+      "upstream_explicit_only": true,
+      "disposition": "absorbed-policy",
+      "combined_skills": [],
+      "rationale": "The existing preference for the smallest sufficient change owns this behavior.",
+      "url": "https://github.com/cursor/plugins/blob/4e5b1cf2ccb0ea3716f08c8ee0a5856b5ab93536/pstack/skills/principle-laziness-protocol/SKILL.md"
+    },
+    {
+      "id": "pstack:principle-make-operations-idempotent",
+      "source": "pstack",
+      "name": "principle-make-operations-idempotent",
+      "path": "pstack/skills/principle-make-operations-idempotent/SKILL.md",
+      "description": "Apply when designing commands, lifecycle steps, or processing loops that run amid crashes, restarts, and retries. Converge to the same end state regardless of partial prior runs.",
+      "categories": [
+        "automation",
+        "delivery"
+      ],
+      "upstream_explicit_only": true,
+      "disposition": "adapted",
+      "combined_skills": [
+        "son-build",
+        "son-automate"
+      ],
+      "rationale": "Adapted into the listed workflows; source execution and policy are not imported.",
+      "url": "https://github.com/cursor/plugins/blob/4e5b1cf2ccb0ea3716f08c8ee0a5856b5ab93536/pstack/skills/principle-make-operations-idempotent/SKILL.md"
+    },
+    {
+      "id": "pstack:principle-migrate-callers-then-delete-legacy-apis",
+      "source": "pstack",
+      "name": "principle-migrate-callers-then-delete-legacy-apis",
+      "path": "pstack/skills/principle-migrate-callers-then-delete-legacy-apis/SKILL.md",
+      "description": "Apply when introducing a new internal API while old callers still exist. Migrate callers and delete the old API in the same wave instead of preserving compatibility layers.",
+      "categories": [
+        "engineering"
+      ],
+      "upstream_explicit_only": true,
+      "disposition": "reference-only",
+      "combined_skills": [],
+      "rationale": "Useful for internal migrations, but public compatibility and caller scope must be established first.",
+      "url": "https://github.com/cursor/plugins/blob/4e5b1cf2ccb0ea3716f08c8ee0a5856b5ab93536/pstack/skills/principle-migrate-callers-then-delete-legacy-apis/SKILL.md"
+    },
+    {
+      "id": "pstack:principle-minimize-reader-load",
+      "source": "pstack",
+      "name": "principle-minimize-reader-load",
+      "path": "pstack/skills/principle-minimize-reader-load/SKILL.md",
+      "description": "Apply when reviewing or shaping code that's hard to trace. Count layers between question and answer, and hidden state in the reader's head; collapse one-caller wrappers and shrink mutable scope.",
+      "categories": [
+        "working agreements"
+      ],
+      "upstream_explicit_only": true,
+      "disposition": "absorbed-policy",
+      "combined_skills": [],
+      "rationale": "Concise interfaces, explanations, and instructions are covered by the combined workflows.",
+      "url": "https://github.com/cursor/plugins/blob/4e5b1cf2ccb0ea3716f08c8ee0a5856b5ab93536/pstack/skills/principle-minimize-reader-load/SKILL.md"
+    },
+    {
+      "id": "pstack:principle-model-the-domain",
+      "source": "pstack",
+      "name": "principle-model-the-domain",
+      "path": "pstack/skills/principle-model-the-domain/SKILL.md",
+      "description": "Apply when writing stateful logic, or when code branches a lot or repeats a shape assumption across files. Encode the domain in a structure instead of scattered conditionals.",
+      "categories": [
+        "decisions"
+      ],
+      "upstream_explicit_only": true,
+      "disposition": "adapted",
+      "combined_skills": [
+        "son-clarify"
+      ],
+      "rationale": "Adapted into the listed workflows; source execution and policy are not imported.",
+      "url": "https://github.com/cursor/plugins/blob/4e5b1cf2ccb0ea3716f08c8ee0a5856b5ab93536/pstack/skills/principle-model-the-domain/SKILL.md"
+    },
+    {
+      "id": "pstack:principle-never-block-on-the-human",
+      "source": "pstack",
+      "name": "principle-never-block-on-the-human",
+      "path": "pstack/skills/principle-never-block-on-the-human/SKILL.md",
+      "description": "Apply when tempted to ask 'should I do X?' on reversible work. Proceed, present the result, let the human course-correct after the fact; reserve confirmation for irreversible actions.",
+      "categories": [
+        "working agreements"
+      ],
+      "upstream_explicit_only": true,
+      "disposition": "absorbed-policy",
+      "combined_skills": [],
+      "rationale": "Son's existing authority and autonomy rules already govern reversible work and material decisions.",
+      "url": "https://github.com/cursor/plugins/blob/4e5b1cf2ccb0ea3716f08c8ee0a5856b5ab93536/pstack/skills/principle-never-block-on-the-human/SKILL.md"
+    },
+    {
+      "id": "pstack:principle-outcome-oriented-execution",
+      "source": "pstack",
+      "name": "principle-outcome-oriented-execution",
+      "path": "pstack/skills/principle-outcome-oriented-execution/SKILL.md",
+      "description": "Apply during planned rewrites and migrations with explicit phase boundaries. Converge on the target architecture; don't preserve smooth intermediate states with throwaway compatibility code.",
+      "categories": [
+        "engineering"
+      ],
+      "upstream_explicit_only": true,
+      "disposition": "reference-only",
+      "combined_skills": [],
+      "rationale": "Keep the target outcome, but do not import permission for broken intermediate states into every repository.",
+      "url": "https://github.com/cursor/plugins/blob/4e5b1cf2ccb0ea3716f08c8ee0a5856b5ab93536/pstack/skills/principle-outcome-oriented-execution/SKILL.md"
+    },
+    {
+      "id": "pstack:principle-prove-it-works",
+      "source": "pstack",
+      "name": "principle-prove-it-works",
+      "path": "pstack/skills/principle-prove-it-works/SKILL.md",
+      "description": "Apply after completing a task, before declaring done. Verify against the real artifact (run the feature, read the actual value, inspect the diff), not a proxy, self-report, or 'it compiles.'",
+      "categories": [
+        "verification"
+      ],
+      "upstream_explicit_only": true,
+      "disposition": "adapted",
+      "combined_skills": [
+        "son-verify",
+        "son-ui-stress"
+      ],
+      "rationale": "Adapted into the listed workflows; source execution and policy are not imported.",
+      "url": "https://github.com/cursor/plugins/blob/4e5b1cf2ccb0ea3716f08c8ee0a5856b5ab93536/pstack/skills/principle-prove-it-works/SKILL.md"
+    },
+    {
+      "id": "pstack:principle-redesign-from-first-principles",
+      "source": "pstack",
+      "name": "principle-redesign-from-first-principles",
+      "path": "pstack/skills/principle-redesign-from-first-principles/SKILL.md",
+      "description": "Apply when integrating a new requirement into an existing design. Redesign as if the requirement had been a foundational assumption from day one, instead of bolting it on.",
+      "categories": [
+        "engineering"
+      ],
+      "upstream_explicit_only": true,
+      "disposition": "absorbed-policy",
+      "combined_skills": [],
+      "rationale": "Revisit repeated failed assumptions within the authorized scope; a symptom does not authorize a broad rewrite.",
+      "url": "https://github.com/cursor/plugins/blob/4e5b1cf2ccb0ea3716f08c8ee0a5856b5ab93536/pstack/skills/principle-redesign-from-first-principles/SKILL.md"
+    },
+    {
+      "id": "pstack:principle-separate-before-serializing-shared-state",
+      "source": "pstack",
+      "name": "principle-separate-before-serializing-shared-state",
+      "path": "pstack/skills/principle-separate-before-serializing-shared-state/SKILL.md",
+      "description": "Apply when concurrent actors might write to the same file, branch, key, or state object. Eliminate the sharing first; serialize structurally only when one shared writer is a real invariant.",
+      "categories": [
+        "delivery"
+      ],
+      "upstream_explicit_only": true,
+      "disposition": "adapted",
+      "combined_skills": [
+        "son-build"
+      ],
+      "rationale": "Adapted into the listed workflows; source execution and policy are not imported.",
+      "url": "https://github.com/cursor/plugins/blob/4e5b1cf2ccb0ea3716f08c8ee0a5856b5ab93536/pstack/skills/principle-separate-before-serializing-shared-state/SKILL.md"
+    },
+    {
+      "id": "pstack:principle-sequence-verifiable-units",
+      "source": "pstack",
+      "name": "principle-sequence-verifiable-units",
+      "path": "pstack/skills/principle-sequence-verifiable-units/SKILL.md",
+      "description": "Apply to multi-step work (sweeps, migrations, runs of similar edits) and to how you stack commits and PRs. Break work into small units that each end in a verifiable state, check each before the next, and order delivery so the sequence proves itself to a reviewer.",
+      "categories": [
+        "planning"
+      ],
+      "upstream_explicit_only": true,
+      "disposition": "adapted",
+      "combined_skills": [
+        "son-plan"
+      ],
+      "rationale": "Adapted into the listed workflows; source execution and policy are not imported.",
+      "url": "https://github.com/cursor/plugins/blob/4e5b1cf2ccb0ea3716f08c8ee0a5856b5ab93536/pstack/skills/principle-sequence-verifiable-units/SKILL.md"
+    },
+    {
+      "id": "pstack:principle-subtract-before-you-add",
+      "source": "pstack",
+      "name": "principle-subtract-before-you-add",
+      "path": "pstack/skills/principle-subtract-before-you-add/SKILL.md",
+      "description": "Apply when sequencing an addition, refactor, or rewrite. Remove dead code, redundant validators, and stub references first, then build on the simpler base.",
+      "categories": [
+        "engineering"
+      ],
+      "upstream_explicit_only": true,
+      "disposition": "absorbed-policy",
+      "combined_skills": [],
+      "rationale": "Simplify within task scope; do not delete unrelated code merely because it appears unused.",
+      "url": "https://github.com/cursor/plugins/blob/4e5b1cf2ccb0ea3716f08c8ee0a5856b5ab93536/pstack/skills/principle-subtract-before-you-add/SKILL.md"
+    },
+    {
+      "id": "pstack:principle-test-behavior-not-implementation",
+      "source": "pstack",
+      "name": "principle-test-behavior-not-implementation",
+      "path": "pstack/skills/principle-test-behavior-not-implementation/SKILL.md",
+      "description": "Apply when you write, change, or keep a test. Call the code the way its users do and assert the result they observe against a literal expected value. If the test would still pass when every imported function returns undefined, rewrite the assertion or delete the test.",
+      "categories": [
+        "delivery"
+      ],
+      "upstream_explicit_only": true,
+      "disposition": "adapted",
+      "combined_skills": [
+        "son-build"
+      ],
+      "rationale": "Adapted into the listed workflows; source execution and policy are not imported.",
+      "url": "https://github.com/cursor/plugins/blob/4e5b1cf2ccb0ea3716f08c8ee0a5856b5ab93536/pstack/skills/principle-test-behavior-not-implementation/SKILL.md"
+    },
+    {
+      "id": "pstack:principle-type-system-discipline",
+      "source": "pstack",
+      "name": "principle-type-system-discipline",
+      "path": "pstack/skills/principle-type-system-discipline/SKILL.md",
+      "description": "Apply when designing types, reviewing a function signature, or writing code in any statically-typed language. Make illegal states unrepresentable, brand semantic primitives, parse external data at boundaries, refuse to lie to the compiler, exhaust variants, derive from authoritative schemas.",
+      "categories": [
+        "engineering",
+        "verification"
+      ],
+      "upstream_explicit_only": true,
+      "disposition": "adapted",
+      "combined_skills": [
+        "son-review",
+        "son-types"
+      ],
+      "rationale": "Adapted into the listed workflows; source execution and policy are not imported.",
+      "url": "https://github.com/cursor/plugins/blob/4e5b1cf2ccb0ea3716f08c8ee0a5856b5ab93536/pstack/skills/principle-type-system-discipline/SKILL.md"
+    },
+    {
+      "id": "pstack:recall",
+      "source": "pstack",
+      "name": "recall",
+      "path": "pstack/skills/recall/SKILL.md",
+      "description": "Reconstruct your recent working context from your own chat history, live state, and the shared record (user reports, prior fixes, incidents), then hand back a tight current-state brief. Use for 'recall my work on X', 'catch me up', 'what have I been working on', 'where did I leave off', before starting or resuming work.",
+      "categories": [
+        "continuity"
+      ],
+      "upstream_explicit_only": true,
+      "disposition": "adapted",
+      "combined_skills": [
+        "son-handoff"
+      ],
+      "rationale": "Adapted into the listed workflows; source execution and policy are not imported.",
+      "url": "https://github.com/cursor/plugins/blob/4e5b1cf2ccb0ea3716f08c8ee0a5856b5ab93536/pstack/skills/recall/SKILL.md"
+    },
+    {
+      "id": "pstack:reflect",
+      "source": "pstack",
+      "name": "reflect",
+      "path": "pstack/skills/reflect/SKILL.md",
+      "description": "Spawn three parallel review subagents over the active transcript, surface learnings, and route each to a concrete edit on an existing skill. Use when the user says reflect.",
+      "categories": [
+        "improvement"
+      ],
+      "upstream_explicit_only": true,
+      "disposition": "adapted",
+      "combined_skills": [
+        "son-retro"
+      ],
+      "rationale": "Adapted into the listed workflows; source execution and policy are not imported.",
+      "url": "https://github.com/cursor/plugins/blob/4e5b1cf2ccb0ea3716f08c8ee0a5856b5ab93536/pstack/skills/reflect/SKILL.md"
+    },
+    {
+      "id": "pstack:setup-pstack",
+      "source": "pstack",
+      "name": "setup-pstack",
+      "path": "pstack/skills/setup-pstack/SKILL.md",
+      "description": "Configure which models pstack uses per role and at what reasoning budget. Detects your available models and writes an always-applied rule that overrides the skill defaults. Use for /setup-pstack, \"configure pstack models\", \"pstack budget\", or changing pstack's model choices.",
+      "categories": [
+        "setup"
+      ],
+      "upstream_explicit_only": false,
+      "disposition": "excluded",
+      "combined_skills": [],
+      "rationale": "Do not write an always-applied Cursor model rule over Son's canonical model policy.",
+      "url": "https://github.com/cursor/plugins/blob/4e5b1cf2ccb0ea3716f08c8ee0a5856b5ab93536/pstack/skills/setup-pstack/SKILL.md"
+    },
+    {
+      "id": "pstack:show-me-your-work",
+      "source": "pstack",
+      "name": "show-me-your-work",
+      "path": "pstack/skills/show-me-your-work/SKILL.md",
+      "description": "Keep a reviewable decision trail for long-running or unattended work: a TSV log with one row per decision (what, why, evidence, result). Local by default; commit it when a reviewer needs the trail to trust the result. Use for /show-me-your-work, autonomous or multi-phase runs, or work a human reviews after stepping away.",
+      "categories": [
+        "automation",
+        "verification"
+      ],
+      "upstream_explicit_only": true,
+      "disposition": "adapted",
+      "combined_skills": [
+        "son-verify",
+        "son-automate"
+      ],
+      "rationale": "Adapted into the listed workflows; source execution and policy are not imported.",
+      "url": "https://github.com/cursor/plugins/blob/4e5b1cf2ccb0ea3716f08c8ee0a5856b5ab93536/pstack/skills/show-me-your-work/SKILL.md"
+    },
+    {
+      "id": "pstack:swarm",
+      "source": "pstack",
+      "name": "swarm",
+      "path": "pstack/skills/swarm/SKILL.md",
+      "description": "Fan out N parallel workers, drain them, and return one report. Use for /swarm, 'swarm this', or parallel coverage, races, gauntlets, and exploration.",
+      "categories": [
+        "orchestration"
+      ],
+      "upstream_explicit_only": true,
+      "disposition": "reference-only",
+      "combined_skills": [],
+      "rationale": "Delegation is an optional execution method under active authorization, not a default skill dependency.",
+      "url": "https://github.com/cursor/plugins/blob/4e5b1cf2ccb0ea3716f08c8ee0a5856b5ab93536/pstack/skills/swarm/SKILL.md"
+    },
+    {
+      "id": "pstack:tdd",
+      "source": "pstack",
+      "name": "tdd",
+      "path": "pstack/skills/tdd/SKILL.md",
+      "description": "Use only when the user explicitly asks for TDD, a failing test, or a regression test, OR when the bug has an obvious cheap local test target. Skip when the test path is unclear, expensive, integration-heavy, or not requested.",
+      "categories": [
+        "delivery",
+        "diagnosis"
+      ],
+      "upstream_explicit_only": true,
+      "disposition": "adapted",
+      "combined_skills": [
+        "son-build",
+        "son-debug"
+      ],
+      "rationale": "Adapted into the listed workflows; source execution and policy are not imported.",
+      "url": "https://github.com/cursor/plugins/blob/4e5b1cf2ccb0ea3716f08c8ee0a5856b5ab93536/pstack/skills/tdd/SKILL.md"
+    },
+    {
+      "id": "pstack:teach",
+      "source": "pstack",
+      "name": "teach",
+      "path": "pstack/skills/teach/SKILL.md",
+      "description": "Explain a body of work plainly so a person actually understands it. Runs the `how` and `why` skills and weaves what they find into one clear explanation. Use for 'teach me this', 'help me really understand X', 'explain this change or subsystem to me'.",
+      "categories": [
+        "communication"
+      ],
+      "upstream_explicit_only": true,
+      "disposition": "adapted",
+      "combined_skills": [
+        "son-explain"
+      ],
+      "rationale": "Adapted into the listed workflows; source execution and policy are not imported.",
+      "url": "https://github.com/cursor/plugins/blob/4e5b1cf2ccb0ea3716f08c8ee0a5856b5ab93536/pstack/skills/teach/SKILL.md"
+    },
+    {
+      "id": "pstack:technical-writing",
+      "source": "pstack",
+      "name": "technical-writing",
+      "path": "pstack/skills/technical-writing/SKILL.md",
+      "description": "Layered technical-writing standard: Diátaxis structure, Google developer style sentences, STE instruction rules, Global English syntax. Use for /technical-writing or when writing or reviewing docs, RFCs, readmes, PR descriptions, or commit messages.",
+      "categories": [
+        "communication"
+      ],
+      "upstream_explicit_only": true,
+      "disposition": "adapted",
+      "combined_skills": [
+        "son-pr",
+        "son-writing"
+      ],
+      "rationale": "Adapted into the listed workflows; source execution and policy are not imported.",
+      "url": "https://github.com/cursor/plugins/blob/4e5b1cf2ccb0ea3716f08c8ee0a5856b5ab93536/pstack/skills/technical-writing/SKILL.md"
+    },
+    {
+      "id": "pstack:typescript-best-practices",
+      "source": "pstack",
+      "name": "typescript-best-practices",
+      "path": "pstack/skills/typescript-best-practices/SKILL.md",
+      "description": "TypeScript best practices. Use when reading or editing any .ts or .tsx file.",
+      "categories": [
+        "engineering"
+      ],
+      "upstream_explicit_only": true,
+      "disposition": "adapted",
+      "combined_skills": [
+        "son-types"
+      ],
+      "rationale": "Adapted into the listed workflows; source execution and policy are not imported.",
+      "url": "https://github.com/cursor/plugins/blob/4e5b1cf2ccb0ea3716f08c8ee0a5856b5ab93536/pstack/skills/typescript-best-practices/SKILL.md"
+    },
+    {
+      "id": "pstack:unslop",
+      "source": "pstack",
+      "name": "unslop",
+      "path": "pstack/skills/unslop/SKILL.md",
+      "description": "Cut AI tells from any writing. Must always apply.",
+      "categories": [
+        "communication"
+      ],
+      "upstream_explicit_only": true,
+      "disposition": "adapted",
+      "combined_skills": [
+        "son-writing"
+      ],
+      "rationale": "Adapted into the listed workflows; source execution and policy are not imported.",
+      "url": "https://github.com/cursor/plugins/blob/4e5b1cf2ccb0ea3716f08c8ee0a5856b5ab93536/pstack/skills/unslop/SKILL.md"
+    },
+    {
+      "id": "pstack:why",
+      "source": "pstack",
+      "name": "why",
+      "path": "pstack/skills/why/SKILL.md",
+      "description": "Use for 'why does X work this way', 'why we picked Y', design rationale, regressions, postmortems, or data-backed thresholds. Discovers available MCPs and queries each evidence category (source control, issue tracker, long-form docs, real-time chat, infrastructure observability, error tracking, product analytics warehouse) in parallel, then returns a cited read on decisions and tradeoffs. Use how for runtime behavior.",
+      "categories": [
+        "communication",
+        "discovery"
+      ],
+      "upstream_explicit_only": true,
+      "disposition": "adapted",
+      "combined_skills": [
+        "son-explain",
+        "son-research"
+      ],
+      "rationale": "Adapted into the listed workflows; source execution and policy are not imported.",
+      "url": "https://github.com/cursor/plugins/blob/4e5b1cf2ccb0ea3716f08c8ee0a5856b5ab93536/pstack/skills/why/SKILL.md"
+    },
+    {
+      "id": "emil:animate-expo",
+      "source": "emil",
+      "name": "animate-expo",
+      "path": "skills/animate-expo/SKILL.md",
+      "description": "Build animations in React Native and Expo, making the decisions in the order that determines whether they feel right — should it animate, which thread it runs on, which properties, spring or timing, how the gesture hands off, how it degrades. Writes the implementation with Reanimated, Gesture Handler, Expo Router and expo-haptics. Use when animating anything in an Expo app, adding gestures, sheets, screen transitions, press feedback or haptics, or fixing motion that stutters on device. For web animation use `animate`.",
+      "categories": [
+        "interface"
+      ],
+      "upstream_explicit_only": false,
+      "disposition": "adapted",
+      "combined_skills": [
+        "son-motion"
+      ],
+      "rationale": "Adapted into the listed workflows; source execution and policy are not imported.",
+      "url": "https://github.com/emilkowalski/skills/blob/e8a175de22ae1e49370fc144c1f3bb9aeedf988d/skills/animate-expo/SKILL.md"
+    },
+    {
+      "id": "emil:animate",
+      "source": "emil",
+      "name": "animate",
+      "path": "skills/animate/SKILL.md",
+      "description": "Build an animation from scratch, making the decisions in the order that determines whether it feels right — should it animate at all, what purpose, which tool, which properties, which curve and duration, how it interrupts, how it exits. Writes the implementation. Use when asked to animate something, add motion, make a component feel alive, or build a transition. For critiquing existing motion use review-animations; for auditing a whole codebase use improve-animations.",
+      "categories": [
+        "interface"
+      ],
+      "upstream_explicit_only": false,
+      "disposition": "adapted",
+      "combined_skills": [
+        "son-motion"
+      ],
+      "rationale": "Adapted into the listed workflows; source execution and policy are not imported.",
+      "url": "https://github.com/emilkowalski/skills/blob/e8a175de22ae1e49370fc144c1f3bb9aeedf988d/skills/animate/SKILL.md"
+    },
+    {
+      "id": "emil:animation-vocabulary",
+      "source": "emil",
+      "name": "animation-vocabulary",
+      "path": "skills/animation-vocabulary/SKILL.md",
+      "description": "Reverse-lookup glossary that turns a vague description of a web animation or motion effect into its exact term (\"the bouncy thing when a popover opens\" → Pop in; \"the iOS rubber-band scroll\" → Rubber-banding). Use when the user asks \"what's it called when…\", or describes a motion effect without knowing its name and wants the right word to prompt an AI or designer with. For naming an effect, not designing or building one.",
+      "categories": [
+        "interface"
+      ],
+      "upstream_explicit_only": false,
+      "disposition": "adapted",
+      "combined_skills": [
+        "son-motion"
+      ],
+      "rationale": "Adapted into the listed workflows; source execution and policy are not imported.",
+      "url": "https://github.com/emilkowalski/skills/blob/e8a175de22ae1e49370fc144c1f3bb9aeedf988d/skills/animation-vocabulary/SKILL.md"
+    },
+    {
+      "id": "emil:apple-design",
+      "source": "emil",
+      "name": "apple-design",
+      "path": "skills/apple-design/SKILL.md",
+      "description": "Apple's approach to interface design and fluid, physical motion, translated for the web. Use when building or reviewing gesture-driven UI, spring animations, drag/swipe/sheet interactions, momentum and interruptible transitions, translucent materials and depth, typography (optical sizing, tracking, leading), reduced-motion, or the design foundations (feedback, spatial consistency, restraint) behind Apple-style interfaces.",
+      "categories": [
+        "interface"
+      ],
+      "upstream_explicit_only": false,
+      "disposition": "adapted",
+      "combined_skills": [
+        "son-ui",
+        "son-motion"
+      ],
+      "rationale": "Adapted into the listed workflows; source execution and policy are not imported.",
+      "url": "https://github.com/emilkowalski/skills/blob/e8a175de22ae1e49370fc144c1f3bb9aeedf988d/skills/apple-design/SKILL.md"
+    },
+    {
+      "id": "emil:ask-sonner",
+      "source": "emil",
+      "name": "ask-sonner",
+      "path": "skills/ask-sonner/SKILL.md",
+      "description": "Guide to Sonner, the React toast library — install and wire up the Toaster, pick the right toast() call, promise and loading toasts, updating, dismissing and persisting toasts, styling, theming and icons, positioning and multiple toasters. Use when working with Sonner or troubleshooting it — toasts that don't appear, appear twice, lose their styles, ignore Tailwind classes, sit behind a modal, or don't follow dark mode.",
+      "categories": [
+        "interface"
+      ],
+      "upstream_explicit_only": false,
+      "disposition": "adapted",
+      "combined_skills": [
+        "son-ui"
+      ],
+      "rationale": "Adapted into the listed workflows; source execution and policy are not imported.",
+      "url": "https://github.com/emilkowalski/skills/blob/e8a175de22ae1e49370fc144c1f3bb9aeedf988d/skills/ask-sonner/SKILL.md"
+    },
+    {
+      "id": "emil:break-ui",
+      "source": "emil",
+      "name": "break-ui",
+      "path": "skills/break-ui/SKILL.md",
+      "description": "Try to break a piece of UI by feeding it worst-case data — long names, unbreakable emails, one-letter names, missing fields, huge counts, zero items, long labels, non-Latin text, emoji, extreme numbers — then render it behind a \"Demo data / Worst case\" toggle and report everything that broke, with the fix for each. Use when the user asks to stress-test, break, or find edge cases in a component or screen, or to \"try the worst case\". For visual design critique use emil-design-eng; for motion use review-animations.",
+      "categories": [
+        "verification"
+      ],
+      "upstream_explicit_only": false,
+      "disposition": "adapted",
+      "combined_skills": [
+        "son-ui-stress"
+      ],
+      "rationale": "Adapted into the listed workflows; source execution and policy are not imported.",
+      "url": "https://github.com/emilkowalski/skills/blob/e8a175de22ae1e49370fc144c1f3bb9aeedf988d/skills/break-ui/SKILL.md"
+    },
+    {
+      "id": "emil:emil-design-eng",
+      "source": "emil",
+      "name": "emil-design-eng",
+      "path": "skills/emil-design-eng/SKILL.md",
+      "description": "This skill encodes Emil Kowalski's philosophy on UI polish, component design, animation decisions, and the invisible details that make software feel great.",
+      "categories": [
+        "interface"
+      ],
+      "upstream_explicit_only": false,
+      "disposition": "adapted",
+      "combined_skills": [
+        "son-ui"
+      ],
+      "rationale": "Adapted into the listed workflows; source execution and policy are not imported.",
+      "url": "https://github.com/emilkowalski/skills/blob/e8a175de22ae1e49370fc144c1f3bb9aeedf988d/skills/emil-design-eng/SKILL.md"
+    },
+    {
+      "id": "emil:find-animation-opportunities",
+      "source": "emil",
+      "name": "find-animation-opportunities",
+      "path": "skills/find-animation-opportunities/SKILL.md",
+      "description": "Search a codebase or UI for places that don't animate but should, and reject everything that shouldn't. Read-only; it proposes motion with exact values, it does not implement it. Use when the user asks \"what could be animated here?\" or wants to \"make this feel more alive\". For fixing existing animations, use improve-animations or review-animations instead.",
+      "categories": [
+        "interface"
+      ],
+      "upstream_explicit_only": false,
+      "disposition": "adapted",
+      "combined_skills": [
+        "son-motion"
+      ],
+      "rationale": "Adapted into the listed workflows; source execution and policy are not imported.",
+      "url": "https://github.com/emilkowalski/skills/blob/e8a175de22ae1e49370fc144c1f3bb9aeedf988d/skills/find-animation-opportunities/SKILL.md"
+    },
+    {
+      "id": "emil:improve-animations",
+      "source": "emil",
+      "name": "improve-animations",
+      "path": "skills/improve-animations/SKILL.md",
+      "description": "Survey a codebase's animation and motion code as a senior motion advisor, then produce a prioritized audit and self-contained implementation plans for other agents (or cheaper models) to execute. Read-only on source code — it plans improvements, it does not apply them. Use when the user asks to \"improve the animations\", \"audit the motion\", \"make this app feel better\", or wants a roadmap of animation fixes rather than a review of a single diff.",
+      "categories": [
+        "interface"
+      ],
+      "upstream_explicit_only": false,
+      "disposition": "adapted",
+      "combined_skills": [
+        "son-motion"
+      ],
+      "rationale": "Adapted into the listed workflows; source execution and policy are not imported.",
+      "url": "https://github.com/emilkowalski/skills/blob/e8a175de22ae1e49370fc144c1f3bb9aeedf988d/skills/improve-animations/SKILL.md"
+    },
+    {
+      "id": "emil:mobile-native",
+      "source": "emil",
+      "name": "mobile-native",
+      "path": "skills/mobile-native/SKILL.md",
+      "description": "Make a web app feel native on a phone — the small CSS and meta-tag fixes that separate \"a website in a browser\" from something that feels installed. Covers sticky hover states, tap highlight flashes, the 100vh bug, inputs that zoom the page, laggy taps, pull-to-refresh hijacking scroll, content under the notch, long-press selecting button text, carousels that scroll the wrong way, mismatched status bars, and the rule that you test on real hardware. Use when a web app is being built for or reviewed on mobile, when something \"works in Chrome but feels wrong on my phone\", when building a PWA, a bottom sheet, a carousel, a full-screen layout, or any touch interaction. For motion itself use animate; for React Native use animate-expo.",
+      "categories": [
+        "interface"
+      ],
+      "upstream_explicit_only": false,
+      "disposition": "adapted",
+      "combined_skills": [
+        "son-ui"
+      ],
+      "rationale": "Adapted into the listed workflows; source execution and policy are not imported.",
+      "url": "https://github.com/emilkowalski/skills/blob/e8a175de22ae1e49370fc144c1f3bb9aeedf988d/skills/mobile-native/SKILL.md"
+    },
+    {
+      "id": "emil:pick-ui-library",
+      "source": "emil",
+      "name": "pick-ui-library",
+      "path": "skills/pick-ui-library/SKILL.md",
+      "description": "Pick the right library for a given frontend task from a curated, opinionated list — numbers, OTP inputs, charts, command menus, virtualization, drag and drop, toasts, state, styling, and more. Only runs when explicitly invoked; it does not trigger on its own.",
+      "categories": [
+        "interface"
+      ],
+      "upstream_explicit_only": true,
+      "disposition": "reference-only",
+      "combined_skills": [],
+      "rationale": "Useful opinionated shortlist, but package selection must check current official docs and existing dependencies; no automatic installs.",
+      "url": "https://github.com/emilkowalski/skills/blob/e8a175de22ae1e49370fc144c1f3bb9aeedf988d/skills/pick-ui-library/SKILL.md"
+    },
+    {
+      "id": "emil:prototype",
+      "source": "emil",
+      "name": "prototype",
+      "path": "skills/prototype/SKILL.md",
+      "description": "Build multiple genuinely different versions of a UI piece you describe, rendered behind a visual picker so you can flip through them live and promote the one that feels right. Only runs when explicitly invoked; it does not trigger on its own.",
+      "categories": [
+        "interface"
+      ],
+      "upstream_explicit_only": true,
+      "disposition": "adapted",
+      "combined_skills": [
+        "son-prototype"
+      ],
+      "rationale": "Adapted into the listed workflows; source execution and policy are not imported.",
+      "url": "https://github.com/emilkowalski/skills/blob/e8a175de22ae1e49370fc144c1f3bb9aeedf988d/skills/prototype/SKILL.md"
+    },
+    {
+      "id": "emil:review-animations",
+      "source": "emil",
+      "name": "review-animations",
+      "path": "skills/review-animations/SKILL.md",
+      "description": "Reviews animation and motion code against a high craft bar derived from Emil Kowalski's design engineering philosophy. Default to flagging; approval is earned.",
+      "categories": [
+        "interface"
+      ],
+      "upstream_explicit_only": true,
+      "disposition": "adapted",
+      "combined_skills": [
+        "son-motion"
+      ],
+      "rationale": "Adapted into the listed workflows; source execution and policy are not imported.",
+      "url": "https://github.com/emilkowalski/skills/blob/e8a175de22ae1e49370fc144c1f3bb9aeedf988d/skills/review-animations/SKILL.md"
+    },
+    {
+      "id": "emil:write-swift",
+      "source": "emil",
+      "name": "write-swift",
+      "path": "skills/write-swift/SKILL.md",
+      "description": "How to write modern Swift well — modeling with value types, Swift 6 data-race safety and approachable concurrency (@concurrent, main-actor-by-default, actors, task groups), protocols and generics (some vs any), API design, performance and ARC, Swift Testing, macros, and the modern language features agents don't know about yet. Use when writing, reviewing, or migrating Swift, or when a concurrency error, a hang, a data race, a retain cycle, or a performance problem needs fixing.",
+      "categories": [
+        "engineering"
+      ],
+      "upstream_explicit_only": false,
+      "disposition": "adapted",
+      "combined_skills": [
+        "son-types"
+      ],
+      "rationale": "Adapted into the listed workflows; source execution and policy are not imported.",
+      "url": "https://github.com/emilkowalski/skills/blob/e8a175de22ae1e49370fc144c1f3bb9aeedf988d/skills/write-swift/SKILL.md"
+    },
+    {
+      "id": "humanlayer:build-iterated-agentic-loop",
+      "source": "humanlayer",
+      "name": "build-iterated-agentic-loop",
+      "path": "plugins/build-iterated-agentic-loop/skills/build-iterated-agentic-loop/SKILL.md",
+      "description": "build a repo-local skill and install a matching iterated coding-agent GitHub Actions workflow, prompt, memory file, and reference templates",
+      "categories": [
+        "automation"
+      ],
+      "upstream_explicit_only": false,
+      "disposition": "adapted",
+      "combined_skills": [
+        "son-automate"
+      ],
+      "rationale": "Adapted into the listed workflows; source execution and policy are not imported.",
+      "url": "https://github.com/humanlayer/skills/blob/ca7c8088db69e315a8b2deea43820270457f8f3c/plugins/build-iterated-agentic-loop/skills/build-iterated-agentic-loop/SKILL.md"
+    },
+    {
+      "id": "humanlayer:design-control-loop",
+      "source": "humanlayer",
+      "name": "design-control-loop",
+      "path": "plugins/design-control-loop/skills/design-control-loop/SKILL.md",
+      "description": "interview the user to design an agentic control loop (sensor, controller, actuator under disturbances) tailored to their codebase, then build it as locally-runnable components plus a scheduled coding-agent workflow",
+      "categories": [
+        "automation"
+      ],
+      "upstream_explicit_only": false,
+      "disposition": "adapted",
+      "combined_skills": [
+        "son-automate"
+      ],
+      "rationale": "Adapted into the listed workflows; source execution and policy are not imported.",
+      "url": "https://github.com/humanlayer/skills/blob/ca7c8088db69e315a8b2deea43820270457f8f3c/plugins/design-control-loop/skills/design-control-loop/SKILL.md"
+    },
+    {
+      "id": "humanlayer:improve-claude-md",
+      "source": "humanlayer",
+      "name": "improve-claude-md",
+      "path": "plugins/improve-claude-md/skills/improve-claude-md/SKILL.md",
+      "description": "improve a CLAUDE.md file using <important if> blocks to improve instruction adherence",
+      "categories": [
+        "communication",
+        "improvement"
+      ],
+      "upstream_explicit_only": false,
+      "disposition": "adapted",
+      "combined_skills": [
+        "son-retro",
+        "son-writing"
+      ],
+      "rationale": "Adapted into the listed workflows; source execution and policy are not imported.",
+      "url": "https://github.com/humanlayer/skills/blob/ca7c8088db69e315a8b2deea43820270457f8f3c/plugins/improve-claude-md/skills/improve-claude-md/SKILL.md"
+    },
+    {
+      "id": "humanlayer:narrow-react-prop-types",
+      "source": "humanlayer",
+      "name": "narrow-react-prop-types",
+      "path": "plugins/narrow-react-prop-types/skills/narrow-react-prop-types/SKILL.md",
+      "description": "narrow React component prop types to match live code paths",
+      "categories": [
+        "engineering",
+        "verification"
+      ],
+      "upstream_explicit_only": false,
+      "disposition": "adapted",
+      "combined_skills": [
+        "son-ui-stress",
+        "son-types"
+      ],
+      "rationale": "Adapted into the listed workflows; source execution and policy are not imported.",
+      "url": "https://github.com/humanlayer/skills/blob/ca7c8088db69e315a8b2deea43820270457f8f3c/plugins/narrow-react-prop-types/skills/narrow-react-prop-types/SKILL.md"
+    },
+    {
+      "id": "humanlayer:show-me",
+      "source": "humanlayer",
+      "name": "show-me",
+      "path": "plugins/show-me/skills/show-me/SKILL.md",
+      "description": "Help the user understand the current topic visually with concise diagrams, code-shape sketches, and focused HTML artifacts.",
+      "categories": [
+        "communication"
+      ],
+      "upstream_explicit_only": true,
+      "disposition": "adapted",
+      "combined_skills": [
+        "son-pr",
+        "son-explain"
+      ],
+      "rationale": "Adapted into the listed workflows; source execution and policy are not imported.",
+      "url": "https://github.com/humanlayer/skills/blob/ca7c8088db69e315a8b2deea43820270457f8f3c/plugins/show-me/skills/show-me/SKILL.md"
+    },
+    {
+      "id": "humanlayer:visual-pr",
+      "source": "humanlayer",
+      "name": "visual-pr",
+      "path": "plugins/visual-pr/skills/visual-pr/SKILL.md",
+      "description": "Only use when the user explicitly invokes this skill by name.",
+      "categories": [
+        "communication"
+      ],
+      "upstream_explicit_only": true,
+      "disposition": "adapted",
+      "combined_skills": [
+        "son-pr"
+      ],
+      "rationale": "Adapted into the listed workflows; source execution and policy are not imported.",
+      "url": "https://github.com/humanlayer/skills/blob/ca7c8088db69e315a8b2deea43820270457f8f3c/plugins/visual-pr/skills/visual-pr/SKILL.md"
+    },
+    {
+      "id": "matt:ask-matt",
+      "source": "matt",
+      "name": "ask-matt",
+      "path": "skills/engineering/ask-matt/SKILL.md",
+      "description": "Ask which skill or flow fits your situation. A router over the skills in this repo.",
+      "categories": [
+        "routing"
+      ],
+      "upstream_explicit_only": true,
+      "disposition": "superseded",
+      "combined_skills": [],
+      "rationale": "The personal routing table spans all four creators and replaces the Matt-only router.",
+      "url": "https://github.com/mattpocock/skills/blob/4588b32ecab9ecc9fc8cc6b6c5e7d675b6004b0d/skills/engineering/ask-matt/SKILL.md"
+    },
+    {
+      "id": "matt:code-review",
+      "source": "matt",
+      "name": "code-review",
+      "path": "skills/engineering/code-review/SKILL.md",
+      "description": "Review the changes since a fixed point (commit, branch, tag, or merge-base) along two axes: Standards (does the code follow this repo's documented coding standards?) and Spec (does the code match what the originating issue/spec asked for?). Runs both reviews in parallel sub-agents and reports them side by side. Use when the user wants to review a branch, a PR, work-in-progress changes, or asks to \"review since X\".",
+      "categories": [
+        "verification"
+      ],
+      "upstream_explicit_only": false,
+      "disposition": "adapted",
+      "combined_skills": [
+        "son-review"
+      ],
+      "rationale": "Adapted into the listed workflows; source execution and policy are not imported.",
+      "url": "https://github.com/mattpocock/skills/blob/4588b32ecab9ecc9fc8cc6b6c5e7d675b6004b0d/skills/engineering/code-review/SKILL.md"
+    },
+    {
+      "id": "matt:codebase-design",
+      "source": "matt",
+      "name": "codebase-design",
+      "path": "skills/engineering/codebase-design/SKILL.md",
+      "description": "Shared vocabulary for designing deep modules. Use when the user wants to design or improve a module's interface, find deepening opportunities, decide where a seam goes, make code more testable or AI-navigable, or when another skill needs the deep-module vocabulary.",
+      "categories": [
+        "engineering",
+        "planning"
+      ],
+      "upstream_explicit_only": false,
+      "disposition": "adapted",
+      "combined_skills": [
+        "son-plan",
+        "son-types"
+      ],
+      "rationale": "Adapted into the listed workflows; source execution and policy are not imported.",
+      "url": "https://github.com/mattpocock/skills/blob/4588b32ecab9ecc9fc8cc6b6c5e7d675b6004b0d/skills/engineering/codebase-design/SKILL.md"
+    },
+    {
+      "id": "matt:diagnosing-bugs",
+      "source": "matt",
+      "name": "diagnosing-bugs",
+      "path": "skills/engineering/diagnosing-bugs/SKILL.md",
+      "description": "Diagnosis loop for hard bugs and performance regressions. Use when the user says \"diagnose\"/\"debug this\", or reports something broken/throwing/failing/slow.",
+      "categories": [
+        "diagnosis"
+      ],
+      "upstream_explicit_only": false,
+      "disposition": "adapted",
+      "combined_skills": [
+        "son-debug"
+      ],
+      "rationale": "Adapted into the listed workflows; source execution and policy are not imported.",
+      "url": "https://github.com/mattpocock/skills/blob/4588b32ecab9ecc9fc8cc6b6c5e7d675b6004b0d/skills/engineering/diagnosing-bugs/SKILL.md"
+    },
+    {
+      "id": "matt:domain-modeling",
+      "source": "matt",
+      "name": "domain-modeling",
+      "path": "skills/engineering/domain-modeling/SKILL.md",
+      "description": "Build and sharpen a project's domain model. Use when discussing codebase terminology, writing or editing a GLOSSARY.md, or recording or editing an ADR.",
+      "categories": [
+        "decisions"
+      ],
+      "upstream_explicit_only": false,
+      "disposition": "adapted",
+      "combined_skills": [
+        "son-clarify"
+      ],
+      "rationale": "Adapted into the listed workflows; source execution and policy are not imported.",
+      "url": "https://github.com/mattpocock/skills/blob/4588b32ecab9ecc9fc8cc6b6c5e7d675b6004b0d/skills/engineering/domain-modeling/SKILL.md"
+    },
+    {
+      "id": "matt:grill-with-docs",
+      "source": "matt",
+      "name": "grill-with-docs",
+      "path": "skills/engineering/grill-with-docs/SKILL.md",
+      "description": "A relentless interview to sharpen a plan or design, which also creates docs (ADR's and glossary) as we go.",
+      "categories": [
+        "decisions"
+      ],
+      "upstream_explicit_only": true,
+      "disposition": "adapted",
+      "combined_skills": [
+        "son-clarify"
+      ],
+      "rationale": "Adapted into the listed workflows; source execution and policy are not imported.",
+      "url": "https://github.com/mattpocock/skills/blob/4588b32ecab9ecc9fc8cc6b6c5e7d675b6004b0d/skills/engineering/grill-with-docs/SKILL.md"
+    },
+    {
+      "id": "matt:implement-spec",
+      "source": "matt",
+      "name": "implement-spec",
+      "path": "skills/engineering/implement-spec/SKILL.md",
+      "description": "Implement the result of /to-spec and /to-tickets in code.",
+      "categories": [
+        "delivery"
+      ],
+      "upstream_explicit_only": true,
+      "disposition": "adapted",
+      "combined_skills": [
+        "son-build"
+      ],
+      "rationale": "Adapted into the listed workflows; source execution and policy are not imported.",
+      "url": "https://github.com/mattpocock/skills/blob/4588b32ecab9ecc9fc8cc6b6c5e7d675b6004b0d/skills/engineering/implement-spec/SKILL.md"
+    },
+    {
+      "id": "matt:implement",
+      "source": "matt",
+      "name": "implement",
+      "path": "skills/engineering/implement/SKILL.md",
+      "description": "Implement a piece of work based on a spec or set of tickets.",
+      "categories": [
+        "delivery"
+      ],
+      "upstream_explicit_only": true,
+      "disposition": "adapted",
+      "combined_skills": [
+        "son-build"
+      ],
+      "rationale": "Adapted into the listed workflows; source execution and policy are not imported.",
+      "url": "https://github.com/mattpocock/skills/blob/4588b32ecab9ecc9fc8cc6b6c5e7d675b6004b0d/skills/engineering/implement/SKILL.md"
+    },
+    {
+      "id": "matt:improve-codebase-architecture",
+      "source": "matt",
+      "name": "improve-codebase-architecture",
+      "path": "skills/engineering/improve-codebase-architecture/SKILL.md",
+      "description": "Scan a codebase for deepening opportunities, present them as a visual HTML report, then grill through whichever one you pick.",
+      "categories": [
+        "planning"
+      ],
+      "upstream_explicit_only": true,
+      "disposition": "adapted",
+      "combined_skills": [
+        "son-plan"
+      ],
+      "rationale": "Adapted into the listed workflows; source execution and policy are not imported.",
+      "url": "https://github.com/mattpocock/skills/blob/4588b32ecab9ecc9fc8cc6b6c5e7d675b6004b0d/skills/engineering/improve-codebase-architecture/SKILL.md"
+    },
+    {
+      "id": "matt:pr",
+      "source": "matt",
+      "name": "pr",
+      "path": "skills/engineering/pr/SKILL.md",
+      "description": "Use when writing a PR body.",
+      "categories": [
+        "communication"
+      ],
+      "upstream_explicit_only": false,
+      "disposition": "adapted",
+      "combined_skills": [
+        "son-pr"
+      ],
+      "rationale": "Adapted into the listed workflows; source execution and policy are not imported.",
+      "url": "https://github.com/mattpocock/skills/blob/4588b32ecab9ecc9fc8cc6b6c5e7d675b6004b0d/skills/engineering/pr/SKILL.md"
+    },
+    {
+      "id": "matt:prototype",
+      "source": "matt",
+      "name": "prototype",
+      "path": "skills/engineering/prototype/SKILL.md",
+      "description": "Build a throwaway prototype to answer a design question. Use when the user wants to sanity-check whether a state model or logic feels right, or explore what a UI should look like.",
+      "categories": [
+        "interface"
+      ],
+      "upstream_explicit_only": false,
+      "disposition": "adapted",
+      "combined_skills": [
+        "son-prototype"
+      ],
+      "rationale": "Adapted into the listed workflows; source execution and policy are not imported.",
+      "url": "https://github.com/mattpocock/skills/blob/4588b32ecab9ecc9fc8cc6b6c5e7d675b6004b0d/skills/engineering/prototype/SKILL.md"
+    },
+    {
+      "id": "matt:research",
+      "source": "matt",
+      "name": "research",
+      "path": "skills/engineering/research/SKILL.md",
+      "description": "Investigate a question against high-trust primary sources and capture the findings as a Markdown file in the repo. Use when the user wants a topic researched, docs or API facts gathered, or reading legwork delegated to a background agent.",
+      "categories": [
+        "discovery"
+      ],
+      "upstream_explicit_only": false,
+      "disposition": "adapted",
+      "combined_skills": [
+        "son-research"
+      ],
+      "rationale": "Adapted into the listed workflows; source execution and policy are not imported.",
+      "url": "https://github.com/mattpocock/skills/blob/4588b32ecab9ecc9fc8cc6b6c5e7d675b6004b0d/skills/engineering/research/SKILL.md"
+    },
+    {
+      "id": "matt:retro",
+      "source": "matt",
+      "name": "retro",
+      "path": "skills/engineering/retro/SKILL.md",
+      "description": "Conduct a retrospective on a coding session.",
+      "categories": [
+        "improvement"
+      ],
+      "upstream_explicit_only": true,
+      "disposition": "adapted",
+      "combined_skills": [
+        "son-retro"
+      ],
+      "rationale": "Adapted into the listed workflows; source execution and policy are not imported.",
+      "url": "https://github.com/mattpocock/skills/blob/4588b32ecab9ecc9fc8cc6b6c5e7d675b6004b0d/skills/engineering/retro/SKILL.md"
+    },
+    {
+      "id": "matt:setup-matt-pocock-skills",
+      "source": "matt",
+      "name": "setup-matt-pocock-skills",
+      "path": "skills/engineering/setup-matt-pocock-skills/SKILL.md",
+      "description": "Configure this repo for the engineering skills: set up its issue tracker, triage label vocabulary, and domain doc layout. Run once before first use of the other engineering skills.",
+      "categories": [
+        "setup"
+      ],
+      "upstream_explicit_only": true,
+      "disposition": "superseded",
+      "combined_skills": [],
+      "rationale": "The personal setup guide reuses real tracker conventions and permits local specs without invented labels.",
+      "url": "https://github.com/mattpocock/skills/blob/4588b32ecab9ecc9fc8cc6b6c5e7d675b6004b0d/skills/engineering/setup-matt-pocock-skills/SKILL.md"
+    },
+    {
+      "id": "matt:tdd",
+      "source": "matt",
+      "name": "tdd",
+      "path": "skills/engineering/tdd/SKILL.md",
+      "description": "Test-driven development. Use when the user wants to build features or fix bugs test-first, mentions \"red-green-refactor\", or wants integration tests.",
+      "categories": [
+        "delivery"
+      ],
+      "upstream_explicit_only": false,
+      "disposition": "adapted",
+      "combined_skills": [
+        "son-build"
+      ],
+      "rationale": "Adapted into the listed workflows; source execution and policy are not imported.",
+      "url": "https://github.com/mattpocock/skills/blob/4588b32ecab9ecc9fc8cc6b6c5e7d675b6004b0d/skills/engineering/tdd/SKILL.md"
+    },
+    {
+      "id": "matt:to-spec",
+      "source": "matt",
+      "name": "to-spec",
+      "path": "skills/engineering/to-spec/SKILL.md",
+      "description": "Turn the current conversation into a spec and publish it to the project issue tracker: no interview, just synthesis of what you've already discussed.",
+      "categories": [
+        "planning"
+      ],
+      "upstream_explicit_only": true,
+      "disposition": "adapted",
+      "combined_skills": [
+        "son-plan"
+      ],
+      "rationale": "Adapted into the listed workflows; source execution and policy are not imported.",
+      "url": "https://github.com/mattpocock/skills/blob/4588b32ecab9ecc9fc8cc6b6c5e7d675b6004b0d/skills/engineering/to-spec/SKILL.md"
+    },
+    {
+      "id": "matt:to-tickets",
+      "source": "matt",
+      "name": "to-tickets",
+      "path": "skills/engineering/to-tickets/SKILL.md",
+      "description": "Break a plan, spec, or the current conversation into a set of tracer-bullet tickets, each declaring its blocking edges, published to the configured tracker (edges as text in one file per ticket locally, or native blocking links on a real tracker).",
+      "categories": [
+        "planning"
+      ],
+      "upstream_explicit_only": true,
+      "disposition": "adapted",
+      "combined_skills": [
+        "son-plan"
+      ],
+      "rationale": "Adapted into the listed workflows; source execution and policy are not imported.",
+      "url": "https://github.com/mattpocock/skills/blob/4588b32ecab9ecc9fc8cc6b6c5e7d675b6004b0d/skills/engineering/to-tickets/SKILL.md"
+    },
+    {
+      "id": "matt:triage",
+      "source": "matt",
+      "name": "triage",
+      "path": "skills/engineering/triage/SKILL.md",
+      "description": "Move issues and external PRs through a state machine of triage roles, categorise, verify, grill if needed, and write agent-ready briefs.",
+      "categories": [
+        "planning"
+      ],
+      "upstream_explicit_only": true,
+      "disposition": "deferred",
+      "combined_skills": [],
+      "rationale": "Tracker roles, triage states, and labels need per-project configuration before activation.",
+      "url": "https://github.com/mattpocock/skills/blob/4588b32ecab9ecc9fc8cc6b6c5e7d675b6004b0d/skills/engineering/triage/SKILL.md"
+    },
+    {
+      "id": "matt:wayfinder",
+      "source": "matt",
+      "name": "wayfinder",
+      "path": "skills/engineering/wayfinder/SKILL.md",
+      "description": "Plan a huge chunk of work (more than one agent session can hold) as a shared map of decision tickets on your issue tracker, and resolve them one at a time until the way to the destination is clear.",
+      "categories": [
+        "planning"
+      ],
+      "upstream_explicit_only": true,
+      "disposition": "adapted",
+      "combined_skills": [
+        "son-plan"
+      ],
+      "rationale": "Adapted into the listed workflows; source execution and policy are not imported.",
+      "url": "https://github.com/mattpocock/skills/blob/4588b32ecab9ecc9fc8cc6b6c5e7d675b6004b0d/skills/engineering/wayfinder/SKILL.md"
+    },
+    {
+      "id": "matt:wizard",
+      "source": "matt",
+      "name": "wizard",
+      "path": "skills/engineering/wizard/SKILL.md",
+      "description": "Generate an interactive bash wizard that walks a human through steps only they can perform. Use when provisioning infrastructure, setting up credentials or CI secrets, walking an unfamiliar third-party dashboard, or running a one-off migration or cutover. Don't invoke this for steps the agent can perform itself.",
+      "categories": [
+        "setup"
+      ],
+      "upstream_explicit_only": false,
+      "disposition": "reference-only",
+      "combined_skills": [],
+      "rationale": "Keep for genuinely human-only provisioning steps; routine automation should use available tools directly.",
+      "url": "https://github.com/mattpocock/skills/blob/4588b32ecab9ecc9fc8cc6b6c5e7d675b6004b0d/skills/engineering/wizard/SKILL.md"
+    },
+    {
+      "id": "matt:chief-of-staff",
+      "source": "matt",
+      "name": "chief-of-staff",
+      "path": "skills/in-progress/chief-of-staff/SKILL.md",
+      "description": "Pursue a long-running goal in a single session by co-ordinating subagents.",
+      "categories": [
+        "experimental"
+      ],
+      "upstream_explicit_only": true,
+      "disposition": "deferred",
+      "combined_skills": [],
+      "rationale": "Upstream in-progress skill; long-running multi-agent orchestration needs separate authority and evaluation.",
+      "url": "https://github.com/mattpocock/skills/blob/4588b32ecab9ecc9fc8cc6b6c5e7d675b6004b0d/skills/in-progress/chief-of-staff/SKILL.md"
+    },
+    {
+      "id": "matt:claude-handoff",
+      "source": "matt",
+      "name": "claude-handoff",
+      "path": "skills/in-progress/claude-handoff/SKILL.md",
+      "description": "Hand the current conversation off to a fresh background agent that picks up the work immediately.",
+      "categories": [
+        "experimental"
+      ],
+      "upstream_explicit_only": true,
+      "disposition": "deferred",
+      "combined_skills": [],
+      "rationale": "Upstream in-progress skill; Son's existing cross-harness handoff protocol owns continuation.",
+      "url": "https://github.com/mattpocock/skills/blob/4588b32ecab9ecc9fc8cc6b6c5e7d675b6004b0d/skills/in-progress/claude-handoff/SKILL.md"
+    },
+    {
+      "id": "matt:loop-me",
+      "source": "matt",
+      "name": "loop-me",
+      "path": "skills/in-progress/loop-me/SKILL.md",
+      "description": "Grill me about specs for the workflows I want to build, within this workspace.",
+      "categories": [
+        "experimental"
+      ],
+      "upstream_explicit_only": true,
+      "disposition": "deferred",
+      "combined_skills": [],
+      "rationale": "Upstream in-progress skill; use the bounded combined automation workflow for now.",
+      "url": "https://github.com/mattpocock/skills/blob/4588b32ecab9ecc9fc8cc6b6c5e7d675b6004b0d/skills/in-progress/loop-me/SKILL.md"
+    },
+    {
+      "id": "matt:setup-ts-deep-modules",
+      "source": "matt",
+      "name": "setup-ts-deep-modules",
+      "path": "skills/in-progress/setup-ts-deep-modules/SKILL.md",
+      "description": "Wire dependency-cruiser into a TypeScript repo so each package is a deep module, with implementation hidden in subfolders and reachable only through its entry-point files. User-invoked.",
+      "categories": [
+        "experimental"
+      ],
+      "upstream_explicit_only": true,
+      "disposition": "deferred",
+      "combined_skills": [],
+      "rationale": "Upstream in-progress dependency-cruiser setup changes repository tooling and needs a project-specific decision.",
+      "url": "https://github.com/mattpocock/skills/blob/4588b32ecab9ecc9fc8cc6b6c5e7d675b6004b0d/skills/in-progress/setup-ts-deep-modules/SKILL.md"
+    },
+    {
+      "id": "matt:writing-beats",
+      "source": "matt",
+      "name": "writing-beats",
+      "path": "skills/in-progress/writing-beats/SKILL.md",
+      "description": "Writing, exploit; assemble raw material into a journey of beats, grounding each term before a beat leans on it.",
+      "categories": [
+        "experimental"
+      ],
+      "upstream_explicit_only": true,
+      "disposition": "deferred",
+      "combined_skills": [],
+      "rationale": "Upstream in-progress long-form writing workflow; not part of the initial engineering and decision stack.",
+      "url": "https://github.com/mattpocock/skills/blob/4588b32ecab9ecc9fc8cc6b6c5e7d675b6004b0d/skills/in-progress/writing-beats/SKILL.md"
+    },
+    {
+      "id": "matt:writing-fragments",
+      "source": "matt",
+      "name": "writing-fragments",
+      "path": "skills/in-progress/writing-fragments/SKILL.md",
+      "description": "Writing, explore: mine raw fragments, no structure yet.",
+      "categories": [
+        "experimental"
+      ],
+      "upstream_explicit_only": true,
+      "disposition": "deferred",
+      "combined_skills": [],
+      "rationale": "Upstream in-progress writing exploration; retain for a later writing-focused evaluation.",
+      "url": "https://github.com/mattpocock/skills/blob/4588b32ecab9ecc9fc8cc6b6c5e7d675b6004b0d/skills/in-progress/writing-fragments/SKILL.md"
+    },
+    {
+      "id": "matt:writing-shape",
+      "source": "matt",
+      "name": "writing-shape",
+      "path": "skills/in-progress/writing-shape/SKILL.md",
+      "description": "Writing, exploit: shape raw material into an article, paragraph by paragraph.",
+      "categories": [
+        "experimental"
+      ],
+      "upstream_explicit_only": true,
+      "disposition": "deferred",
+      "combined_skills": [],
+      "rationale": "Upstream in-progress article shaping; retain for a later writing-focused evaluation.",
+      "url": "https://github.com/mattpocock/skills/blob/4588b32ecab9ecc9fc8cc6b6c5e7d675b6004b0d/skills/in-progress/writing-shape/SKILL.md"
+    },
+    {
+      "id": "matt:git-guardrails-claude-code",
+      "source": "matt",
+      "name": "git-guardrails-claude-code",
+      "path": "skills/misc/git-guardrails-claude-code/SKILL.md",
+      "description": "Set up Claude Code hooks to block dangerous git commands (push, reset --hard, clean, branch -D, etc.) before they execute. Use when user wants to prevent destructive git operations, add git safety hooks, or block git push/reset in Claude Code.",
+      "categories": [
+        "setup"
+      ],
+      "upstream_explicit_only": false,
+      "disposition": "reference-only",
+      "combined_skills": [],
+      "rationale": "Claude-specific hooks should be reconciled with the existing canonical safety configuration before installation.",
+      "url": "https://github.com/mattpocock/skills/blob/4588b32ecab9ecc9fc8cc6b6c5e7d675b6004b0d/skills/misc/git-guardrails-claude-code/SKILL.md"
+    },
+    {
+      "id": "matt:migrate-to-shoehorn",
+      "source": "matt",
+      "name": "migrate-to-shoehorn",
+      "path": "skills/misc/migrate-to-shoehorn/SKILL.md",
+      "description": "Migrate test files from `as` type assertions to @total-typescript/shoehorn. Use when user mentions shoehorn, wants to replace `as` in tests, or needs partial test data.",
+      "categories": [
+        "engineering"
+      ],
+      "upstream_explicit_only": false,
+      "disposition": "reference-only",
+      "combined_skills": [],
+      "rationale": "Narrow dependency-specific migration, useful only in a repository that adopts shoehorn.",
+      "url": "https://github.com/mattpocock/skills/blob/4588b32ecab9ecc9fc8cc6b6c5e7d675b6004b0d/skills/misc/migrate-to-shoehorn/SKILL.md"
+    },
+    {
+      "id": "matt:scaffold-exercises",
+      "source": "matt",
+      "name": "scaffold-exercises",
+      "path": "skills/misc/scaffold-exercises/SKILL.md",
+      "description": "Create exercise directory structures with sections, problems, solutions, and explainers that pass linting. Use when user wants to scaffold exercises, create exercise stubs, or set up a new course section.",
+      "categories": [
+        "teaching"
+      ],
+      "upstream_explicit_only": false,
+      "disposition": "reference-only",
+      "combined_skills": [],
+      "rationale": "Course exercise scaffolding is a separate specialist workflow rather than a default engineering skill.",
+      "url": "https://github.com/mattpocock/skills/blob/4588b32ecab9ecc9fc8cc6b6c5e7d675b6004b0d/skills/misc/scaffold-exercises/SKILL.md"
+    },
+    {
+      "id": "matt:setup-pre-commit",
+      "source": "matt",
+      "name": "setup-pre-commit",
+      "path": "skills/misc/setup-pre-commit/SKILL.md",
+      "description": "Set up Husky pre-commit hooks with lint-staged (Prettier), type checking, and tests in the current repo. Use when user wants to add pre-commit hooks, set up Husky, configure lint-staged, or add commit-time formatting/typechecking/testing.",
+      "categories": [
+        "setup"
+      ],
+      "upstream_explicit_only": false,
+      "disposition": "reference-only",
+      "combined_skills": [],
+      "rationale": "Husky and lint-staged setup must fit the actual package manager and existing checks; no global dependency policy.",
+      "url": "https://github.com/mattpocock/skills/blob/4588b32ecab9ecc9fc8cc6b6c5e7d675b6004b0d/skills/misc/setup-pre-commit/SKILL.md"
+    },
+    {
+      "id": "matt:grill-me",
+      "source": "matt",
+      "name": "grill-me",
+      "path": "skills/productivity/grill-me/SKILL.md",
+      "description": "A relentless interview to sharpen a plan or design.",
+      "categories": [
+        "decisions"
+      ],
+      "upstream_explicit_only": true,
+      "disposition": "adapted",
+      "combined_skills": [
+        "son-clarify"
+      ],
+      "rationale": "Adapted into the listed workflows; source execution and policy are not imported.",
+      "url": "https://github.com/mattpocock/skills/blob/4588b32ecab9ecc9fc8cc6b6c5e7d675b6004b0d/skills/productivity/grill-me/SKILL.md"
+    },
+    {
+      "id": "matt:grilling",
+      "source": "matt",
+      "name": "grilling",
+      "path": "skills/productivity/grilling/SKILL.md",
+      "description": "Grill the user relentlessly about a plan, decision, or idea. Use when the user wants to stress-test their thinking, or uses any 'grill' trigger phrases.",
+      "categories": [
+        "decisions"
+      ],
+      "upstream_explicit_only": false,
+      "disposition": "adapted",
+      "combined_skills": [
+        "son-clarify"
+      ],
+      "rationale": "Adapted into the listed workflows; source execution and policy are not imported.",
+      "url": "https://github.com/mattpocock/skills/blob/4588b32ecab9ecc9fc8cc6b6c5e7d675b6004b0d/skills/productivity/grilling/SKILL.md"
+    },
+    {
+      "id": "matt:handoff",
+      "source": "matt",
+      "name": "handoff",
+      "path": "skills/productivity/handoff/SKILL.md",
+      "description": "Compact the current conversation into a handoff document for another agent to pick up.",
+      "categories": [
+        "continuity"
+      ],
+      "upstream_explicit_only": true,
+      "disposition": "adapted",
+      "combined_skills": [
+        "son-handoff"
+      ],
+      "rationale": "Adapted into the listed workflows; source execution and policy are not imported.",
+      "url": "https://github.com/mattpocock/skills/blob/4588b32ecab9ecc9fc8cc6b6c5e7d675b6004b0d/skills/productivity/handoff/SKILL.md"
+    },
+    {
+      "id": "matt:teach",
+      "source": "matt",
+      "name": "teach",
+      "path": "skills/productivity/teach/SKILL.md",
+      "description": "Teach the user a new skill or concept, within this workspace.",
+      "categories": [
+        "communication"
+      ],
+      "upstream_explicit_only": true,
+      "disposition": "adapted",
+      "combined_skills": [
+        "son-explain"
+      ],
+      "rationale": "Adapted into the listed workflows; source execution and policy are not imported.",
+      "url": "https://github.com/mattpocock/skills/blob/4588b32ecab9ecc9fc8cc6b6c5e7d675b6004b0d/skills/productivity/teach/SKILL.md"
+    },
+    {
+      "id": "matt:to-questionnaire",
+      "source": "matt",
+      "name": "to-questionnaire",
+      "path": "skills/productivity/to-questionnaire/SKILL.md",
+      "description": "Turn a decision you can't fully answer into a questionnaire for someone else to fill in.",
+      "categories": [
+        "decisions"
+      ],
+      "upstream_explicit_only": true,
+      "disposition": "adapted",
+      "combined_skills": [
+        "son-clarify"
+      ],
+      "rationale": "Adapted into the listed workflows; source execution and policy are not imported.",
+      "url": "https://github.com/mattpocock/skills/blob/4588b32ecab9ecc9fc8cc6b6c5e7d675b6004b0d/skills/productivity/to-questionnaire/SKILL.md"
+    },
+    {
+      "id": "matt:wait-what",
+      "source": "matt",
+      "name": "wait-what",
+      "path": "skills/productivity/wait-what/SKILL.md",
+      "description": "Stop. That last message did not land: re-pitch it.",
+      "categories": [
+        "communication"
+      ],
+      "upstream_explicit_only": true,
+      "disposition": "adapted",
+      "combined_skills": [
+        "son-explain"
+      ],
+      "rationale": "Adapted into the listed workflows; source execution and policy are not imported.",
+      "url": "https://github.com/mattpocock/skills/blob/4588b32ecab9ecc9fc8cc6b6c5e7d675b6004b0d/skills/productivity/wait-what/SKILL.md"
+    },
+    {
+      "id": "matt:writing-for-agents",
+      "source": "matt",
+      "name": "writing-for-agents",
+      "path": "skills/productivity/writing-for-agents/SKILL.md",
+      "description": "Writing documents for agents. Use when creating or editing skills, or modifying AGENTS.md or CLAUDE.md.",
+      "categories": [
+        "communication",
+        "improvement"
+      ],
+      "upstream_explicit_only": false,
+      "disposition": "adapted",
+      "combined_skills": [
+        "son-retro",
+        "son-writing"
+      ],
+      "rationale": "Adapted into the listed workflows; source execution and policy are not imported.",
+      "url": "https://github.com/mattpocock/skills/blob/4588b32ecab9ecc9fc8cc6b6c5e7d675b6004b0d/skills/productivity/writing-for-agents/SKILL.md"
+    }
+  ]
+}

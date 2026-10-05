@@ -1,0 +1,6 @@
+interface:
+  display_name: "Son motion"
+  short_description: "Build and review purposeful UI animation"
+  default_prompt: "Use $son-motion for the current task, within its requested scope."
+policy:
+  allow_implicit_invocation: false
