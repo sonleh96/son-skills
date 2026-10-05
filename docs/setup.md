@@ -2,7 +2,8 @@
 
 The stack is local first and applies across repositories.
 It does not choose a project tracker, branch convention, or deployment target.
-No global skills were replaced during this redesign.
+Son's installation uses the Codex and Claude Code personal directories.
+Existing personal writing rules remain in place.
 
 ## Build and preview
 
@@ -30,6 +31,8 @@ The installer writes `son-agent` to the adjacent `agents/` directory and renders
 Repeat with `--apply` only when installation is intended.
 It preflights every skill and agent, refuses differing existing copies, and leaves identical copies alone.
 Many original names may already exist in your current setup; review those collisions before migrating them.
+Use `--keep-existing unslop` to retain an existing personal writing skill unchanged.
+The installer reports every retained skill explicitly.
 There is no force option.
 Do not bulk-install `upstream/`, which also contains inactive skills and original control commands.
 

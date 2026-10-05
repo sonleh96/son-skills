@@ -291,6 +291,20 @@ class ToolingTests(unittest.TestCase):
                           {('matt','engineering/teach/SKILL.md'):'skills/matt-teach/SKILL.md'})
         self.assertEqual(result,'Use `matt-prototype` and /matt-tdd. A prototype is disposable. [Other](../matt-teach/SKILL.md)')
 
+    def test_f15_explicit_keep_preserves_personal_skill(self):
+        destination=self.base/'installed'
+        folder=destination/'son-fixture';folder.mkdir(parents=True)
+        entry=folder/'SKILL.md';entry.write_text('Personal writing rules.\n')
+        before=entry.read_bytes()
+        result=stack.install(destination,apply=True,root=self.root,keep_existing=['son-fixture'])
+        self.assertEqual(result['retained_skills'],['son-fixture'])
+        self.assertEqual(entry.read_bytes(),before)
+        with self.assertRaisesRegex(ValueError,'Unknown keep-existing'):
+            stack.install(destination,apply=True,root=self.root,keep_existing=['not-a-skill'])
+        entry.unlink()
+        with self.assertRaisesRegex(ValueError,'Cannot keep missing'):
+            stack.install(destination,apply=True,root=self.root,keep_existing=['son-fixture'])
+
 
 if __name__=='__main__':
     unittest.main()

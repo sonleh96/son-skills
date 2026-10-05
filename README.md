@@ -10,7 +10,7 @@ The creator skills keep their original instructions and examples, so you can ins
 
 ## Install
 
-This repository is local and has not been installed globally or published.
+Clone this repository, then install the skills for the application you use.
 From this checkout, preview the installation for the application you use:
 
 ```bash
@@ -300,4 +300,4 @@ reviews/                Validation evidence and update reports
 ## License
 
 Creator material retains its MIT licenses and [attribution](THIRD_PARTY_NOTICES.md).
-The license for Son's original tooling remains undecided while this repository is local.
+Son's original tooling and adaptations are also available under the [MIT license](LICENSE).

@@ -1,6 +1,6 @@
 # Third-party sources
 
-This local repository preserves sources and licenses from four MIT-licensed projects.
+This repository preserves sources and licenses from four MIT-licensed projects.
 The active skills and Son controls are adaptations and are not endorsed by their original authors.
 Original wording, punctuation, generated files, and source metadata remain intact in the snapshots.
 
@@ -17,6 +17,5 @@ Built skill bundles include the relevant original licenses.
 Exact pinned attribution remains in stack.json, sources.lock.json, and the catalog.
 Matt's `pr` already credits HumanLayer's `show-me`; the original PR skill keeps that credit.
 
-This is a local repository with no remote.
-A publication license for Son's original tooling and adaptations has not been selected.
+Son's original tooling and adaptations use the [MIT license](LICENSE).
 Upstream material retains its MIT terms.

@@ -222,7 +222,7 @@ def build(root=ROOT, harness='codex', agent_skills_path=None):
     return {'built':len(registry['skills']),'path':str(parent/'skills'),'agent':agent is not None}
 
 
-def install(destination, apply=False, root=ROOT, harness='codex'):
+def install(destination, apply=False, root=ROOT, harness='codex', keep_existing=()):
     """Preflight every skill and agent before writing. Existing edits are never overwritten."""
     destination=Path(destination).expanduser().resolve()
     if destination.is_relative_to(root.resolve()):
@@ -230,6 +230,11 @@ def install(destination, apply=False, root=ROOT, harness='codex'):
     build(root,harness,agent_skills_path=destination)
     source=root/'.build'/harness/'skills'
     pairs=[(p,destination/p.name) for p in sorted(source.iterdir())]
+    keep_existing=set(keep_existing)
+    unknown=keep_existing-{p.name for p in source.iterdir()}
+    if unknown:
+        raise ValueError('Unknown keep-existing skill: '+', '.join(sorted(unknown)))
+    retained=[]
     agents=root/'.build'/harness/'agents'
     if agents.exists():
         pairs.extend((p,destination.parent/'agents'/p.name) for p in sorted(agents.iterdir()))
@@ -237,6 +242,11 @@ def install(destination, apply=False, root=ROOT, harness='codex'):
     conflicts=[]
     identical=0
     for src,dst in pairs:
+        if src.parent==source and src.name in keep_existing:
+            if not (dst/'SKILL.md').is_file():
+                raise ValueError('Cannot keep missing skill: '+str(dst))
+            retained.append(src.name)
+            continue
         if dst.exists() or dst.is_symlink():
             equal=(not dst.is_symlink() and dst.is_dir() and tree_records(dst)==tree_records(src)) if src.is_dir() else (not dst.is_symlink() and dst.is_file() and content(dst)==content(src))
             if not equal:
@@ -257,7 +267,7 @@ def install(destination, apply=False, root=ROOT, harness='codex'):
     return {'mode':'installed' if apply else 'preview','destination':str(destination),
             'new_skills':[src.name for src,dst in pending if src.parent==source],
             'new_agents':[str(dst) for src,dst in pending if src.parent!=source],
-            'already_identical':identical}
+            'already_identical':identical,'retained_skills':retained}
 
 
 def main():
@@ -270,11 +280,12 @@ def main():
     installer = sub.add_parser('install')
     installer.add_argument('--dest',required=True)
     installer.add_argument('--apply',action='store_true')
+    installer.add_argument('--keep-existing',action='append',default=[],metavar='SKILL',help='Retain this installed personal skill unchanged; may be repeated')
     installer.add_argument('--harness',choices=['codex','claude','cursor'],default='codex')
     args = parser.parse_args()
     try:
         if args.command=='install':
-            result=install(args.dest,args.apply,harness=args.harness)
+            result=install(args.dest,args.apply,harness=args.harness,keep_existing=args.keep_existing)
         elif args.command=='build':
             result=build(harness=args.harness)
         else:

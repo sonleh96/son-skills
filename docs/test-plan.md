@@ -30,3 +30,5 @@ Listed before adding tests for the original-skill redesign.
 | F12 | Setup invents a model or selects an unsupported reasoning effort | Exercise unavailable choices, inherited settings, and supported effort boundaries |
 | F13 | A custom agent points to the build directory after installation or bypasses collision preflight | Install the native agent with a real fixture, check its installed path, then pre-create a conflicting agent |
 | F14 | A name collision rewires a creator's dependency to a different creator | Check explicit references, prose preservation, and relative link rewriting against fixed examples |
+
+| F15 | Keeping a personal skill during installation overwrites it or hides an invalid selection | Install with an explicit keep-existing name, verify its bytes survive, and reject unknown names or missing skill entry points |
