@@ -1,6 +1,0 @@
-interface:
-  display_name: "Son review"
-  short_description: "Review intent, standards, and downstream risk"
-  default_prompt: "Use $son-review for the current task, within its requested scope."
-policy:
-  allow_implicit_invocation: true

@@ -1,0 +1,24 @@
+diff --git a/ours/SKILL.md b/latest/SKILL.md
+--- a/ours/SKILL.md
++++ b/latest/SKILL.md
+@@ -1,9 +1,7 @@
+ ---
+-name: matt-tdd
++name: tdd
+ description: Test-driven development. Use when the user wants to build features or fix bugs test-first, mentions "red-green-refactor", or wants integration tests.
+ ---
+-
+-Read [Son compatibility](SON-COMPATIBILITY.md) before following this skill.
+ 
+ # Test-Driven Development
+ 
+diff --git a/ours/agents/openai.yaml b/latest/agents/openai.yaml
+--- a/ours/agents/openai.yaml
++++ b/latest/agents/openai.yaml
+@@ -1,6 +1,3 @@
+ interface:
+   display_name: "TDD"
+   short_description: "Test-driven red-green-refactor"
+-
+-policy:
+-  allow_implicit_invocation: true

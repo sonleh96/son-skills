@@ -1,0 +1,19 @@
+diff --git a/ours/SKILL.md b/latest/SKILL.md
+--- a/ours/SKILL.md
++++ b/latest/SKILL.md
+@@ -2,8 +2,6 @@
+ name: design-control-loop
+ description: interview the user to design an agentic control loop (sensor, controller, actuator under disturbances) tailored to their codebase, then build it as locally-runnable components plus a scheduled coding-agent workflow
+ ---
+-
+-Read [Son compatibility](SON-COMPATIBILITY.md) before following this skill.
+ 
+ # Design Control Loop
+ 
+diff --git a/ours/agents/openai.yaml b/latest/agents/openai.yaml
+deleted file mode 100644
+--- a/ours/agents/openai.yaml
++++ b/latest/agents/openai.yaml
+@@ -1,2 +0,0 @@
+-policy:
+-  allow_implicit_invocation: true

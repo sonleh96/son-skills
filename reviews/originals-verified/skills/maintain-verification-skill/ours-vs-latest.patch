@@ -1,0 +1,19 @@
+diff --git a/ours/SKILL.md b/latest/SKILL.md
+--- a/ours/SKILL.md
++++ b/latest/SKILL.md
+@@ -3,8 +3,6 @@
+ description: "Periodic pass that keeps a project's verification skill and feature map honest: parallel source readers per feature, one live session driving every feature, at most one PR of proven corrections. Use for /maintain-verification-skill or \"audit the verify skill\"."
+ disable-model-invocation: true
+ ---
+-
+-Read [Son compatibility](SON-COMPATIBILITY.md) before following this skill.
+ 
+ # Maintain a verification skill
+ 
+diff --git a/ours/agents/openai.yaml b/latest/agents/openai.yaml
+deleted file mode 100644
+--- a/ours/agents/openai.yaml
++++ b/latest/agents/openai.yaml
+@@ -1,2 +0,0 @@
+-policy:
+-  allow_implicit_invocation: false

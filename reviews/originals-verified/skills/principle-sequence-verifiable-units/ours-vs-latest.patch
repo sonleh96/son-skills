@@ -1,0 +1,19 @@
+diff --git a/ours/SKILL.md b/latest/SKILL.md
+--- a/ours/SKILL.md
++++ b/latest/SKILL.md
+@@ -3,8 +3,6 @@
+ description: "Apply to multi-step work (sweeps, migrations, runs of similar edits) and to how you stack commits and PRs. Break work into small units that each end in a verifiable state, check each before the next, and order delivery so the sequence proves itself to a reviewer."
+ disable-model-invocation: true
+ ---
+-
+-Read [Son compatibility](SON-COMPATIBILITY.md) before following this skill.
+ 
+ # Sequence work into verifiable units
+ 
+diff --git a/ours/agents/openai.yaml b/latest/agents/openai.yaml
+deleted file mode 100644
+--- a/ours/agents/openai.yaml
++++ b/latest/agents/openai.yaml
+@@ -1,2 +0,0 @@
+-policy:
+-  allow_implicit_invocation: false

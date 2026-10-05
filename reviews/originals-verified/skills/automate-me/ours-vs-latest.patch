@@ -1,0 +1,28 @@
+diff --git a/ours/SKILL.md b/latest/SKILL.md
+--- a/ours/SKILL.md
++++ b/latest/SKILL.md
+@@ -3,8 +3,6 @@
+ description: "Use for \"automate me\", \"create/update/refresh my -mode skill\", \"turn/capture my preferences or working style into a skill\", or wanting agents to follow how the user works. Drafts or revises a personal -mode skill via create-skill + unslop, optionally pulling fresh evidence from recent transcripts."
+ disable-model-invocation: true
+ ---
+-
+-Read [Son compatibility](SON-COMPATIBILITY.md) before following this skill.
+ 
+ # Automate me
+ 
+@@ -62,7 +60,7 @@
+ - **Process**: git worktrees, commits, PRs, review/merge tooling.
+ - **Skills**: skill-authoring habits, fix-the-skill-first, proposing new skills.
+ 
+-The **son-mode** skill shows the shape. Read it for granularity. Don't copy its content. The user's rules are not the same as poteto-mode's.
++The **poteto-mode** skill shows the shape. Read it for granularity. Don't copy its content. The user's rules are not the same as poteto-mode's.
+ 
+ ### 4. Draft the skill
+ 
+diff --git a/ours/agents/openai.yaml b/latest/agents/openai.yaml
+deleted file mode 100644
+--- a/ours/agents/openai.yaml
++++ b/latest/agents/openai.yaml
+@@ -1,2 +0,0 @@
+-policy:
+-  allow_implicit_invocation: false

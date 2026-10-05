@@ -1,0 +1,12 @@
+diff --git a/ours/SKILL.md b/latest/SKILL.md
+--- a/ours/SKILL.md
++++ b/latest/SKILL.md
+@@ -3,8 +3,6 @@
+ description: Scan a codebase for deepening opportunities, present them as a visual HTML report, then grill through whichever one you pick.
+ disable-model-invocation: true
+ ---
+-
+-Read [Son compatibility](SON-COMPATIBILITY.md) before following this skill.
+ 
+ # Improve Codebase Architecture
+ 

@@ -1,0 +1,19 @@
+diff --git a/pinned/SKILL.md b/ours/SKILL.md
+--- a/pinned/SKILL.md
++++ b/ours/SKILL.md
+@@ -2,6 +2,8 @@
+ name: animate-expo
+ description: Build animations in React Native and Expo, making the decisions in the order that determines whether they feel right — should it animate, which thread it runs on, which properties, spring or timing, how the gesture hands off, how it degrades. Writes the implementation with Reanimated, Gesture Handler, Expo Router and expo-haptics. Use when animating anything in an Expo app, adding gestures, sheets, screen transitions, press feedback or haptics, or fixing motion that stutters on device. For web animation use `animate`.
+ ---
++
++Read [Son compatibility](SON-COMPATIBILITY.md) before following this skill.
+ 
+ # Building Animations in Expo
+ 
+diff --git a/pinned/agents/openai.yaml b/ours/agents/openai.yaml
+new file mode 100644
+--- a/pinned/agents/openai.yaml
++++ b/ours/agents/openai.yaml
+@@ -0,0 +1,2 @@
++policy:
++  allow_implicit_invocation: true

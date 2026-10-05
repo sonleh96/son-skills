@@ -1,0 +1,19 @@
+diff --git a/pinned/SKILL.md b/ours/SKILL.md
+--- a/pinned/SKILL.md
++++ b/ours/SKILL.md
+@@ -3,6 +3,8 @@
+ description: "Apply when you catch yourself writing the same instruction a second time, or notice a recurring correction. Encode the rule as a lint, metadata flag, runtime check, or script instead of more text."
+ disable-model-invocation: true
+ ---
++
++Read [Son compatibility](SON-COMPATIBILITY.md) before following this skill.
+ 
+ # Encode Lessons in Structure
+ 
+diff --git a/pinned/agents/openai.yaml b/ours/agents/openai.yaml
+new file mode 100644
+--- a/pinned/agents/openai.yaml
++++ b/ours/agents/openai.yaml
+@@ -0,0 +1,2 @@
++policy:
++  allow_implicit_invocation: false

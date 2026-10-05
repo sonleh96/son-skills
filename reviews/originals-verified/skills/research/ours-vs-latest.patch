@@ -1,0 +1,22 @@
+diff --git a/ours/SKILL.md b/latest/SKILL.md
+--- a/ours/SKILL.md
++++ b/latest/SKILL.md
+@@ -2,8 +2,6 @@
+ name: research
+ description: Investigate a question against high-trust primary sources and capture the findings as a Markdown file in the repo. Use when the user wants a topic researched, docs or API facts gathered, or reading legwork delegated to a background agent.
+ ---
+-
+-Read [Son compatibility](SON-COMPATIBILITY.md) before following this skill.
+ 
+ Spin up a **background agent** to do the research, so you keep working while it reads.
+ 
+diff --git a/ours/agents/openai.yaml b/latest/agents/openai.yaml
+--- a/ours/agents/openai.yaml
++++ b/latest/agents/openai.yaml
+@@ -1,6 +1,3 @@
+ interface:
+   display_name: "Research"
+   short_description: "Research from high-trust sources"
+-
+-policy:
+-  allow_implicit_invocation: true

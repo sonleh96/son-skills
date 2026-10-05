@@ -1,0 +1,477 @@
+[
+  {
+    "skill": "animate",
+    "files_checked": 2,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "animate-expo",
+    "files_checked": 2,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "animation-vocabulary",
+    "files_checked": 1,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "apple-design",
+    "files_checked": 1,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "architect",
+    "files_checked": 4,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "arena",
+    "files_checked": 1,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "ask-matt",
+    "files_checked": 3,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "ask-sonner",
+    "files_checked": 2,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "automate-me",
+    "files_checked": 1,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "benchmark-checklist",
+    "files_checked": 1,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "blast-radius",
+    "files_checked": 1,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "break-ui",
+    "files_checked": 2,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "bro",
+    "files_checked": 1,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "build-iterated-agentic-loop",
+    "files_checked": 9,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "code-review",
+    "files_checked": 2,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "codebase-design",
+    "files_checked": 4,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "correct",
+    "files_checked": 1,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "create-verification-skill",
+    "files_checked": 4,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "design-control-loop",
+    "files_checked": 11,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "diagnosing-bugs",
+    "files_checked": 3,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "domain-modeling",
+    "files_checked": 4,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "emil-design-eng",
+    "files_checked": 1,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "emil-prototype",
+    "files_checked": 2,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "figure-it-out",
+    "files_checked": 1,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "find-animation-opportunities",
+    "files_checked": 1,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "grill-me",
+    "files_checked": 2,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "grill-with-docs",
+    "files_checked": 2,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "grilling",
+    "files_checked": 2,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "handoff",
+    "files_checked": 2,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "how",
+    "files_checked": 3,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "implement",
+    "files_checked": 2,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "implement-spec",
+    "files_checked": 2,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "improve-animations",
+    "files_checked": 3,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "improve-claude-md",
+    "files_checked": 1,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "improve-codebase-architecture",
+    "files_checked": 3,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "interrogate",
+    "files_checked": 5,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "maintain-verification-skill",
+    "files_checked": 1,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "make-bot-ui",
+    "files_checked": 1,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "matt-prototype",
+    "files_checked": 4,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "matt-tdd",
+    "files_checked": 4,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "matt-teach",
+    "files_checked": 6,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "mobile-native",
+    "files_checked": 1,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "narrow-react-prop-types",
+    "files_checked": 4,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "no-comments",
+    "files_checked": 1,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "pick-ui-library",
+    "files_checked": 1,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "pr",
+    "files_checked": 3,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "principle-attack-the-premise",
+    "files_checked": 1,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "principle-boundary-discipline",
+    "files_checked": 1,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "principle-build-the-lever",
+    "files_checked": 1,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "principle-encode-lessons-in-structure",
+    "files_checked": 1,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "principle-exhaust-the-design-space",
+    "files_checked": 1,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "principle-experience-first",
+    "files_checked": 1,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "principle-explain-the-number",
+    "files_checked": 1,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "principle-fix-root-causes",
+    "files_checked": 1,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "principle-foundational-thinking",
+    "files_checked": 1,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "principle-guard-the-context-window",
+    "files_checked": 1,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "principle-laziness-protocol",
+    "files_checked": 1,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "principle-make-operations-idempotent",
+    "files_checked": 1,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "principle-migrate-callers-then-delete-legacy-apis",
+    "files_checked": 1,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "principle-minimize-reader-load",
+    "files_checked": 1,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "principle-model-the-domain",
+    "files_checked": 1,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "principle-never-block-on-the-human",
+    "files_checked": 1,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "principle-outcome-oriented-execution",
+    "files_checked": 1,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "principle-prove-it-works",
+    "files_checked": 1,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "principle-redesign-from-first-principles",
+    "files_checked": 1,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "principle-separate-before-serializing-shared-state",
+    "files_checked": 1,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "principle-sequence-verifiable-units",
+    "files_checked": 1,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "principle-subtract-before-you-add",
+    "files_checked": 1,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "principle-test-behavior-not-implementation",
+    "files_checked": 1,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "principle-type-system-discipline",
+    "files_checked": 1,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "pstack-tdd",
+    "files_checked": 1,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "pstack-teach",
+    "files_checked": 1,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "recall",
+    "files_checked": 1,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "reflect",
+    "files_checked": 5,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "research",
+    "files_checked": 2,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "retro",
+    "files_checked": 2,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "review-animations",
+    "files_checked": 2,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "setup-matt-pocock-skills",
+    "files_checked": 7,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "show-me",
+    "files_checked": 2,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "show-me-your-work",
+    "files_checked": 3,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "swarm",
+    "files_checked": 1,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "technical-writing",
+    "files_checked": 1,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "to-questionnaire",
+    "files_checked": 2,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "to-spec",
+    "files_checked": 2,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "to-tickets",
+    "files_checked": 2,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "triage",
+    "files_checked": 4,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "typescript-best-practices",
+    "files_checked": 2,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "unslop",
+    "files_checked": 1,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "visual-pr",
+    "files_checked": 4,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "wait-what",
+    "files_checked": 2,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "wayfinder",
+    "files_checked": 2,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "why",
+    "files_checked": 13,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "wizard",
+    "files_checked": 3,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "write-swift",
+    "files_checked": 1,
+    "unexpected_changes": []
+  },
+  {
+    "skill": "writing-for-agents",
+    "files_checked": 3,
+    "unexpected_changes": []
+  }
+]

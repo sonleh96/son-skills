@@ -1,0 +1,492 @@
+[
+  {
+    "skill": "animate",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "animate-expo",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "animation-vocabulary",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "apple-design",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "architect",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "arena",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "ask-matt",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "ask-sonner",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "automate-me",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "benchmark-checklist",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "blast-radius",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "break-ui",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "bro",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "build-iterated-agentic-loop",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "code-review",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "codebase-design",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "correct",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "create-verification-skill",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "design-control-loop",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "diagnosing-bugs",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "domain-modeling",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "emil-design-eng",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "emil-prototype",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "figure-it-out",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "find-animation-opportunities",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "grill-me",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "grill-with-docs",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "grilling",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "handoff",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "how",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "implement",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "implement-spec",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "improve-animations",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "improve-claude-md",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "improve-codebase-architecture",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "interrogate",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "maintain-verification-skill",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "make-bot-ui",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "matt-prototype",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "matt-tdd",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "matt-teach",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "mobile-native",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "narrow-react-prop-types",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "no-comments",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "pick-ui-library",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "pr",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "principle-attack-the-premise",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "principle-boundary-discipline",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "principle-build-the-lever",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "principle-encode-lessons-in-structure",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "principle-exhaust-the-design-space",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "principle-experience-first",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "principle-explain-the-number",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "principle-fix-root-causes",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "principle-foundational-thinking",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "principle-guard-the-context-window",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "principle-laziness-protocol",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "principle-make-operations-idempotent",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "principle-migrate-callers-then-delete-legacy-apis",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "principle-minimize-reader-load",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "principle-model-the-domain",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "principle-never-block-on-the-human",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "principle-outcome-oriented-execution",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "principle-prove-it-works",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "principle-redesign-from-first-principles",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "principle-separate-before-serializing-shared-state",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "principle-sequence-verifiable-units",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "principle-subtract-before-you-add",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "principle-test-behavior-not-implementation",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "principle-type-system-discipline",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "pstack-tdd",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "pstack-teach",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "recall",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "reflect",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "research",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "retro",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "review-animations",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "setup-matt-pocock-skills",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "setup-son-skills",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "show-me",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "show-me-your-work",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "son-mode",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "swarm",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "technical-writing",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "to-questionnaire",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "to-spec",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "to-tickets",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "triage",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "typescript-best-practices",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "unslop",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "update-son-skills",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "visual-pr",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "wait-what",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "wayfinder",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "why",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "wizard",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "write-swift",
+    "valid": true,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "writing-for-agents",
+    "valid": true,
+    "message": "Skill is valid!"
+  }
+]

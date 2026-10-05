@@ -1,0 +1,19 @@
+diff --git a/ours/SKILL.md b/latest/SKILL.md
+--- a/ours/SKILL.md
++++ b/latest/SKILL.md
+@@ -3,8 +3,6 @@
+ description: "Apply when integrating a new requirement into an existing design. Redesign as if the requirement had been a foundational assumption from day one, instead of bolting it on."
+ disable-model-invocation: true
+ ---
+-
+-Read [Son compatibility](SON-COMPATIBILITY.md) before following this skill.
+ 
+ # Redesign From First Principles
+ 
+diff --git a/ours/agents/openai.yaml b/latest/agents/openai.yaml
+deleted file mode 100644
+--- a/ours/agents/openai.yaml
++++ b/latest/agents/openai.yaml
+@@ -1,2 +0,0 @@
+-policy:
+-  allow_implicit_invocation: false

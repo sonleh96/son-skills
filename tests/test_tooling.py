@@ -102,7 +102,7 @@ class ToolingTests(unittest.TestCase):
         self.assertEqual(source['removed_skills'],['skills/old/SKILL.md'])
         self.assertEqual(source['rename_hints'],[{'from':'skills/old/SKILL.md','to':'skills/new/SKILL.md'}])
         self.assertTrue(source['license_changed'])
-        self.assertEqual(source['affected_combined_skills'],['son-fixture'])
+        self.assertEqual(source['affected_skills'],['son-fixture'])
         patch=(Path(report['output'])/'fixture.patch').read_text()
         self.assertIn('+Changed behavior.',patch)
         self.assertIn('new mode 100755',patch)
@@ -202,6 +202,94 @@ class ToolingTests(unittest.TestCase):
         meta.write_text('policy:\n  allow_implicit_invocation: true\n')
         with self.assertRaisesRegex(ValueError,'invocation policy mismatch'):
             stack.validate(self.root)
+
+    def original_fixture(self):
+        self.skill['kind']='original'
+        self.skill['imported_files']=stack.tree_records(self.root/'skills/son-fixture')
+        self.write_json('stack.json',{'schema_version':2,'skills':[self.skill]})
+
+    def test_f10_three_way_diff_preserves_local_edits(self):
+        self.original_fixture()
+        entry=self.root/'skills/son-fixture/SKILL.md'
+        entry.write_text(entry.read_text()+'Son local preference.\n')
+        before=entry.read_bytes()
+        self.put('skills/alpha/SKILL.md','Latest upstream behavior.\n')
+        self.put('skills/alpha/reference.md','New supporting example.\n')
+        self.commit()
+        result,report=self.check()
+        self.assertEqual(result.returncode,0,result.stderr)
+        row=report['sources']['fixture']['skill_comparisons'][0]
+        self.assertEqual(row['user_changed_files'],['SKILL.md'])
+        self.assertEqual(row['overlapping_files'],['SKILL.md'])
+        out=Path(report['output'])/row['patch_directory']
+        self.assertIn('+Son local preference.',(out/'local.patch').read_text())
+        self.assertIn('-Son local preference.',(out/'ours-vs-latest.patch').read_text())
+        self.assertIn('+Latest upstream behavior.',(out/'upstream.patch').read_text())
+        self.assertIn('+New supporting example.',(out/'ours-vs-latest.patch').read_text())
+        self.assertEqual(entry.read_bytes(),before)
+
+    def test_f11_installed_copy_has_separate_evidence(self):
+        import upstream
+        self.original_fixture()
+        installed=self.base/'installed';installed.mkdir()
+        folder=installed/'son-fixture';folder.mkdir()
+        (folder/'SKILL.md').write_text('Installed edit.\n')
+        report=upstream.check(root=self.root,installed=installed)
+        row=report['sources']['fixture']['skill_comparisons'][0]
+        self.assertTrue(row['installed']['present'])
+        patch=Path(report['output'])/row['patch_directory']/'installed-vs-latest.patch'
+        self.assertIn('-Installed edit.',patch.read_text())
+        shutil.rmtree(folder)
+        report=upstream.check(root=self.root,installed=installed)
+        self.assertFalse(report['sources']['fixture']['skill_comparisons'][0]['installed']['present'])
+
+    def test_f12_model_budget_and_availability(self):
+        import models
+        inventory={'harness':'codex','observed_at':'2026-10-05T00:00:00Z','evidence':'Fixture native listing',
+                   'models':{'test-model':{'efforts':['low','high']}}}
+        choices={'roles':{r:'test-model' for r in models.ROLES}}
+        self.assertEqual(models.propose(inventory,choices,'small')['roles']['review']['effort'],'low')
+        self.assertEqual(models.propose(inventory,choices,'large')['roles']['review']['effort'],'high')
+        choices['roles']['review']='inherit-parent'
+        self.assertIsNone(models.propose(inventory,choices,'large')['roles']['review']['effort'])
+        choices['roles']['review']='missing-model'
+        with self.assertRaisesRegex(ValueError,'not advertised'):
+            models.propose(inventory,choices,'large')
+        choices['roles']['review']={'model':'test-model','effort':'max'}
+        with self.assertRaisesRegex(ValueError,'Unsupported'):
+            models.propose(inventory,choices,'large')
+        choices['roles']['review']={'model':'inherit-parent','effort':'high'}
+        with self.assertRaisesRegex(ValueError,'Inherited'):
+            models.propose(inventory,choices,'large')
+
+    def test_f13_native_agent_paths_and_collision(self):
+        (self.root/'agents').mkdir()
+        shutil.copy2(ROOT/'agents/son-agent.md',self.root/'agents/son-agent.md')
+        mode=dict(self.skill,name='son-mode')
+        shutil.copytree(self.root/'skills/son-fixture',self.root/'skills/son-mode',symlinks=True)
+        entry=self.root/'skills/son-mode/SKILL.md'
+        entry.write_text(entry.read_text().replace('name: son-fixture','name: son-mode'))
+        self.write_json('stack.json',{'skills':[self.skill,mode]})
+        for harness in ['codex','claude','cursor']:
+            destination=self.base/harness/'skills'
+            stack.install(destination,apply=True,root=self.root,harness=harness)
+            agent=destination.parent/'agents'/('son-agent.toml' if harness=='codex' else 'son-agent.md')
+            text=agent.read_text()
+            self.assertIn(str(destination/'son-mode/SKILL.md'),text)
+            self.assertNotIn('.build/',text)
+        conflict=self.base/'conflict';(conflict/'agents').mkdir(parents=True)
+        agent=conflict/'agents/son-agent.toml';agent.write_text('User agent.\n')
+        with self.assertRaisesRegex(ValueError,'nothing installed'):
+            stack.install(conflict/'skills',apply=True,root=self.root)
+        self.assertFalse((conflict/'skills').exists())
+        self.assertEqual(agent.read_text(),'User agent.\n')
+
+    def test_f14_creator_reference_mapping(self):
+        from port import adapt_text
+        raw='Use `prototype` and /tdd. A prototype is disposable. [Other](../teach/SKILL.md)'
+        result=adapt_text(raw,'matt','engineering/prototype/SKILL.md','skills/matt-prototype/SKILL.md',
+                          {('matt','engineering/teach/SKILL.md'):'skills/matt-teach/SKILL.md'})
+        self.assertEqual(result,'Use `matt-prototype` and /matt-tdd. A prototype is disposable. [Other](../matt-teach/SKILL.md)')
 
 
 if __name__=='__main__':

@@ -23,11 +23,11 @@ The strongest additions are proof and maintenance.
 `maintain-verification-skill` checks that the recipe still describes the application.
 `benchmark-checklist` tests whether a speed claim measured real work under comparable conditions.
 `show-me-your-work` preserves decisions during long runs.
-These ideas become `son-review`, `son-verify`, `son-debug`, and `son-automate`.
+These skills remain available under their original names and are selected by Son mode playbooks.
 
-The principles mostly belong inside shared working agreements or focused workflows.
-Installing 24 additional principle commands would add discovery noise without adding distinct tasks.
-The comment-deletion workflow and model setup are excluded from the active stack.
+All 24 principle skills remain intact and are indexed by Son mode.
+The Son setup command replaces the original model setup.
+The comment workflow remains available but requires its external agent and Son compatibility rules.
 Benny remains deferred because it needs Slack, tracker, app-control, and notification configuration.
 
 Sources: [pstack README](../upstream/pstack/pstack/README.md), [mode](../upstream/pstack/pstack/skills/poteto-mode/SKILL.md), [verification](../upstream/pstack/pstack/skills/create-verification-skill/SKILL.md), [benchmark checklist](../upstream/pstack/pstack/skills/benchmark-checklist/SKILL.md).
@@ -43,16 +43,16 @@ The useful distinction is between tasks.
 `improve-animations` surveys a codebase and writes implementation plans.
 `find-animation-opportunities` identifies where motion is justified.
 `animation-vocabulary` names an effect without implementing it.
-Combining these into `son-motion` is safe only if it selects the mode before editing and keeps audits read-only.
+The motion-design playbook selects the original appropriate to the task and keeps audits read-only.
 
 `prototype` compares genuinely different UI directions with a live picker.
 `break-ui` changes data at the real boundary and tests realistic extremes, including empty and single-item states.
 Those workflows complement Matt's decision-oriented prototype and HumanLayer's insistence that production prop types describe real states.
 
-The detailed examples are retained in source references rather than reduced to a generic instruction to make the UI polished.
-The combined motion reference also resolves an internal tension between the source's sub-300 ms preference and its longer modal and drawer range.
+Detailed examples remain inside the active original skill folders.
+The source's sub-300 ms preference and longer modal and drawer range require task-specific judgment.
 Browser acceleration and library advice remain version-sensitive claims to verify.
-The library shortlist remains reference-only because selection must fit the project's existing dependencies and current official documentation.
+The library skill remains available; selection must fit existing dependencies and current official documentation.
 
 Sources: [README](../upstream/emil/README.md), [animate](../upstream/emil/skills/animate/SKILL.md), [prototype](../upstream/emil/skills/prototype/SKILL.md), [break-ui](../upstream/emil/skills/break-ui/SKILL.md), [write-swift](../upstream/emil/skills/write-swift/SKILL.md).
 
@@ -64,11 +64,11 @@ Its contributions are visual explanation, PR descriptions, conditional agent ins
 `show-me` selects a concise diagram, diff sketch, tree, or focused HTML artifact.
 `visual-pr` applies that technique to the shape of a change.
 Matt's `pr` already credits `show-me`, so these are related approaches rather than three independent review methods.
-The combined stack gives PR writing one owner, `son-pr`.
+The stack keeps all three; route by the requested artifact and preserve visual-pr's explicit invocation boundary.
 
 `narrow-react-prop-types` distinguishes live call sites from stories and mocks.
 It complements pstack's type-system principles and Matt's deep-module vocabulary.
-The adaptation adds a public-library check because local callers do not prove that an exported state is unused.
+For a public library, local callers do not prove that an exported state is unused; review public consumers before narrowing an exported contract.
 
 `design-control-loop` identifies a sensor, selection logic, action, disturbances, and human feedback.
 `build-iterated-agentic-loop` packages a task into a skill and scheduled GitHub workflow.
@@ -100,7 +100,8 @@ Those choices should not be invented for every repository.
 The personal stack accepts local specs and tickets when no tracker is configured.
 It uses `GLOSSARY.md` and `GLOSSARY-MAP.md`, consistent with the earlier v1.3 migration.
 
-The combined implementation flow preserves dependency ordering and verified slices but removes mandatory fan-out, dirty-checkout reset behavior, and automatic ticket closure.
+The original implementation skills preserve their steps.
+Shared Son compatibility governs delegation, dirty checkouts, and ticket changes.
 The user's requested outcome and current authority govern those actions.
 In-progress skills remain deferred until a task demonstrates a need.
 
@@ -108,7 +109,8 @@ Sources: [engineering catalog](../upstream/matt/skills/engineering/README.md), [
 
 ## Selection result
 
-77 original skills contribute directly to the 18 combined workflows.
-Seven principles are absorbed into working agreements, three routers or setup flows are superseded, 11 specialists remain reference-only, 12 skills are deferred, and two are excluded from activation.
-All 112 remain in the catalog and pinned snapshots.
-This is an initial curation decision, not evidence that every combined skill has improved a real task.
+95 original skills remain active with minimal adapters.
+Three Son controls replace the synthesized workflow layer.
+Six pstack originals and 11 Matt originals remain inactive, with explicit reasons in the catalog.
+All 112 originals remain pinned for comparison.
+This is a curation decision, not evidence of improved outcomes on real tasks.

@@ -1,6 +1,0 @@
-interface:
-  display_name: "Son retro"
-  short_description: "Find improvements for the next session"
-  default_prompt: "Use $son-retro for the current task, within its requested scope."
-policy:
-  allow_implicit_invocation: false

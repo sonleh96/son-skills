@@ -1,0 +1,12 @@
+diff --git a/ours/SKILL.md b/latest/SKILL.md
+--- a/ours/SKILL.md
++++ b/latest/SKILL.md
+@@ -3,8 +3,6 @@
+ description: "Conduct a retrospective on a coding session."
+ disable-model-invocation: true
+ ---
+-
+-Read [Son compatibility](SON-COMPATIBILITY.md) before following this skill.
+ 
+ The user has asked for a **retrospective**. You are suggesting improvements to the coding agent's **environment** to improve future runs.
+ 

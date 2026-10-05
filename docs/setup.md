@@ -1,30 +1,23 @@
-# Set up the personal stack
+# Install and configure Son's skills
 
-The repository is local-first and usable across Lemi, banking, coursework, personal, and other repositories.
-It does not encode a Lemi tracker, branch convention, deployment target, or model catalog.
-No existing global skills were replaced during creation.
+The stack is local first and applies across repositories.
+It does not choose a project tracker, branch convention, or deployment target.
+No global skills were replaced during this redesign.
 
-## Build the right format
-
-From the repository root:
+## Build and preview
 
 ```bash
-python3 scripts/stack.py validate
 python3 scripts/stack.py build --harness codex
 python3 scripts/stack.py build --harness claude
 python3 scripts/stack.py build --harness cursor
 ```
 
-The outputs are `.build/codex/skills`, `.build/claude/skills`, and `.build/cursor/skills`.
-All carry self-contained reference files, original license notices, and pinned provenance.
-Codex uses `agents/openai.yaml` for explicit-only selection.
-Claude and Cursor retain their frontmatter setting.
-The source checkout preserves both forms so a build cannot silently turn a manual workflow into an automatic one.
+Builds appear under `.build/<harness>/skills/` and `.build/<harness>/agents/`.
+Codex uses `agents/openai.yaml` for invocation policy and a TOML custom agent.
+Claude Code and Cursor keep manual-invocation frontmatter and a Markdown custom agent.
+The agent omits fixed model overrides so the parent's explicit role choice can apply.
 
-## Preview installation
-
-Choose the active application's destination rather than installing duplicate copies through several discovery roots.
-These commands only preview the operation:
+Preview the relevant installation:
 
 ```bash
 python3 scripts/stack.py install --harness codex --dest "$HOME/.codex/skills"
@@ -32,34 +25,51 @@ python3 scripts/stack.py install --harness claude --dest "$HOME/.claude/skills"
 python3 scripts/stack.py install --harness cursor --dest "$HOME/.cursor/skills"
 ```
 
-For a repository-local installation, use its actual skill directory as `--dest`.
-When installation is desired, repeat the chosen command with `--apply`.
-The installer checks every destination first and refuses to overwrite any differing skill.
-Identical copies are a no-op.
-For a later version, review and back up existing `son-` directories before replacing them; the initial installer intentionally has no force option.
+Use the project's corresponding directory for a repository-local installation.
+The installer writes `son-agent` to the adjacent `agents/` directory and renders its skill path for that destination.
+Repeat with `--apply` only when installation is intended.
+It preflights every skill and agent, refuses differing existing copies, and leaves identical copies alone.
+Many original names may already exist in your current setup; review those collisions before migrating them.
+There is no force option.
+Do not bulk-install `upstream/`, which also contains inactive skills and original control commands.
 
-Do not run a recursive bulk installer over `upstream/`.
-That would discover the original stacks and reintroduce conflicting names, orchestration, and policies.
-Use the built combined skills.
+## /setup-son-skills
 
-## Per-project setup
+After installation and application refresh, invoke `/setup-son-skills`, or `$setup-son-skills` in Codex.
+The command reads the active application's available models and supported efforts.
+If no native model listing exists, it asks for your available choices.
+It reads the canonical model policy, lets you choose a budget, then shows six role assignments for acceptance.
 
-1. Read the project's instructions and existing tooling.
-2. Reuse its actual issue tracker, labels, docs directories, and validation commands.
-3. If no tracker is configured, keep specs and tickets as local documents.
-4. Read `GLOSSARY.md` or `GLOSSARY-MAP.md` when present.
-   Create glossary content only when a term has been resolved.
-5. Read Son's canonical model policy when a task requires model selection.
-   Do not copy pstack model slugs or write a competing model rule.
-6. Use the installed personal `unslop` skill for prose.
+| Budget | Reasoning target |
+| --- | --- |
+| Small | Medium |
+| Medium | High |
+| Large | Extra high |
+| Unlimited | Max |
 
-Matt's original setup skill remains in the snapshot for reference.
-The combined stack does not require running it before a local spec or review.
-Tracker-driven triage remains deferred until its states and roles are configured for a real project.
+A budget is a reasoning preset, not a dollar or token cap.
+A selected model receives the highest supported effort at or below the target, unless you explicitly choose another supported effort.
+`inherit-parent` preserves the parent model and effort.
+Unsupported choices fail validation.
 
-## What is and is not verified
+The setup saves `.local/models.<harness>.json` in this repository.
+It does not change the parent model picker or rewrite `/Users/sonle/model-policy.md`.
+Son mode rechecks runtime availability before delegation and uses only controls the current application exposes.
+See the [configuration schema](../skills/setup-son-skills/references/configuration.md) for scripted setup.
 
-The tooling has been exercised with real temporary Git repositories and a live check of all four upstreams.
-Built Codex skills are checked with the installed skill-creator validator.
-The formats preserve each application's intended invocation metadata.
-Actual discovery and task quality in fresh Codex, Claude Code, and Cursor sessions still need a pilot after installation.
+## Project use
+
+Invoke `/son-mode` for substantial work and choose its primary playbook by task.
+Matt's `setup-matt-pocock-skills` remains available for actual tracker, label, and glossary configuration.
+Use `GLOSSARY.md` and `GLOSSARY-MAP.md`; create terminology only when it has been resolved.
+The three Son controls do not replace project-specific setup.
+
+Creator instructions retain their tool and agent references.
+[Son compatibility](../policies/compatibility.md) specifies how to resolve them with real available tools and current authority.
+Keep this checkout at the path recorded in `SON-RUNTIME.json`; rebuild after moving it.
+
+## Verification limits
+
+Build and temporary-install checks verify files, schemas, references, and collision handling.
+Actual skill discovery, model routing, and task quality in fresh Codex, Claude Code, and Cursor sessions require a pilot after installation.
+Native custom-agent formats follow [Codex](https://developers.openai.com/codex/subagents/), [Claude Code](https://code.claude.com/docs/en/sub-agents), and [Cursor](https://cursor.com/docs/subagents) documentation checked for this redesign.

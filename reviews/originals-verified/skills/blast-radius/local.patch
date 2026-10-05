@@ -1,0 +1,19 @@
+diff --git a/pinned/SKILL.md b/ours/SKILL.md
+--- a/pinned/SKILL.md
++++ b/ours/SKILL.md
+@@ -3,6 +3,8 @@
+ description: "Find what a change could break somewhere else before it ships, beyond the diff, and prove the one fact it's safe because of by running real code instead of writing it up. Use for 'blast radius of X', 'what could this break', or reviewing a small diff you don't trust."
+ disable-model-invocation: true
+ ---
++
++Read [Son compatibility](SON-COMPATIBILITY.md) before following this skill.
+ 
+ # Blast radius
+ 
+diff --git a/pinned/agents/openai.yaml b/ours/agents/openai.yaml
+new file mode 100644
+--- a/pinned/agents/openai.yaml
++++ b/ours/agents/openai.yaml
+@@ -0,0 +1,2 @@
++policy:
++  allow_implicit_invocation: false

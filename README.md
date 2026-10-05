@@ -1,105 +1,101 @@
 # Son's skills
 
-A personal stack for work across all repositories, with 18 combined workflows drawn from 112 skills by Matt Pocock, Emil Kowalski, HumanLayer, and Lauren Tan's pstack.
-The original sources are pinned and preserved for comparison.
-The combined skills keep Son's working agreements and use the active tool's capabilities.
-
-This is a local Git repository.
-The stack has not been installed globally or published.
+A personal stack of 95 minimally adapted creator skills, with three Son commands, `son-agent`, 24 original principles, and 29 playbooks.
+It works across repositories without a Lemi-specific configuration.
+The repository is local and has not been installed globally or published.
 
 ## Start here
 
-- [Creator analysis](docs/creator-analysis.md) explains each stack's strengths and assumptions.
-- [Combination decisions](docs/decisions.md) records overlaps, conflicts, and exclusions.
-- [Complete catalog](docs/catalog.md) accounts for every original skill.
-- [Setup](docs/setup.md) builds portable Codex, Claude Code, and Cursor copies.
-- [Update review](docs/update-review.md) describes the active review every two weeks.
-- [Pilot](docs/pilot.md) connects the stack to Son's observed workflow and defines what still needs real-task testing.
+| Command | Purpose |
+| --- | --- |
+| [/setup-son-skills](skills/setup-son-skills/SKILL.md) | Detect available models, choose a reasoning budget, and save assignments by role |
+| [/son-mode](skills/son-mode/SKILL.md) | Follow a rigorous playbook with applicable principles, creator skills, verification, and scoped son-agent work |
+| [/update-son-skills](skills/update-son-skills/SKILL.md) | Compare pinned originals, your editable skills, and the creators' latest versions on demand |
 
-## Pick the task, then the skill
+Use the slash command where supported, or `$setup-son-skills`, `$son-mode`, and `$update-son-skills` in Codex.
+Commands become discoverable after installation and application refresh.
+The equivalent update command works now from this checkout:
 
-Use `$son-<name>` in Codex or the corresponding slash command where the active application supports it.
-Manual skills require an explicit request.
-Automatic skills may be selected when their descriptions match the task.
-Neither mode expands the user's authorization.
+```bash
+python3 scripts/upstream.py check
+```
 
-| Task | Skill | Selection |
+The check writes three patches per active creator skill.
+They show upstream changes since the accepted version, local differences from that version, and your current copy versus latest upstream.
+The report separates expected adapter edits from later customizations and flags files changed on both sides.
+It never applies an update.
+
+## What stays close to the creators
+
+Skill bodies, examples, scripts, templates, and supporting files remain in their original folders under `skills/`.
+The adapter adds one compatibility reference, original license notices, and invocation metadata.
+Only duplicate command names and their explicit references receive prefixes.
+Pstack's `teach` and `tdd` become `pstack-teach` and `pstack-tdd`.
+Matt's `prototype`, `teach`, and `tdd` receive `matt-` prefixes; Emil's `prototype` becomes `emil-prototype`.
+
+[Son compatibility](policies/compatibility.md) resolves differences in model selection, tool availability, task authority, testing, and personal instructions.
+Playbooks select the relevant originals without combining their bodies.
+The earlier 18 synthesized workflows are preserved in Git history at `52020e7`.
+
+| Creator | Active originals | Original skills retained in snapshots |
 | --- | --- | --- |
-| Challenge a decision, resolve terms, or prepare stakeholder questions | [son-clarify](skills/son-clarify/SKILL.md) | Manual |
-| Turn an understood problem into a spec and dependency-ordered tickets | [son-plan](skills/son-plan/SKILL.md) | Manual |
-| Implement authorized work in verified slices | [son-build](skills/son-build/SKILL.md) | Manual |
-| Reproduce a bug and establish its cause | [son-debug](skills/son-debug/SKILL.md) | Automatic |
-| Review intent, standards, and downstream effects | [son-review](skills/son-review/SKILL.md) | Automatic |
-| Prove behavior or maintain a repeatable verification recipe | [son-verify](skills/son-verify/SKILL.md) | Manual |
-| Write a concise, evidence-backed PR body | [son-pr](skills/son-pr/SKILL.md) | Automatic |
-| Explain behavior, rationale, or a concept | [son-explain](skills/son-explain/SKILL.md) | Manual |
-| Find improvements for the next session | [son-retro](skills/son-retro/SKILL.md) | Manual |
-| Design a bounded recurring workflow | [son-automate](skills/son-automate/SKILL.md) | Automatic |
-| Build or polish web UI and mobile interactions | [son-ui](skills/son-ui/SKILL.md) | Automatic |
-| Resolve a behavior question or compare UI directions | [son-prototype](skills/son-prototype/SKILL.md) | Manual |
-| Name, build, review, or audit motion | [son-motion](skills/son-motion/SKILL.md) | Manual |
-| Exercise UI with realistic extreme data | [son-ui-stress](skills/son-ui-stress/SKILL.md) | Automatic |
-| Tighten React and TypeScript contracts or inspect Swift boundaries | [son-types](skills/son-types/SKILL.md) | Automatic |
-| Research a concrete decision against primary sources | [son-research](skills/son-research/SKILL.md) | Automatic |
-| Prepare or recover a cross-tool continuation record | [son-handoff](skills/son-handoff/SKILL.md) | Manual |
-| Edit agent instructions and technical documents | [son-writing](skills/son-writing/SKILL.md) | Automatic |
+| [Pstack](https://github.com/cursor/plugins/tree/main/pstack) | 48 | 54 |
+| [Emil Kowalski](https://github.com/emilkowalski/skills) | 14 | 14 |
+| [HumanLayer](https://github.com/humanlayer/skills) | 6 | 6 |
+| [Matt Pocock](https://github.com/mattpocock/skills) | 27 | 38 |
 
-For a substantial feature, the usual sequence is clarify, plan, build, review, then PR.
-Skip stages whose work is already settled.
-A bug begins with debug.
-A UI question may need a prototype before a plan.
-The skills do not automatically invoke the next manual skill.
+Pstack's three original control commands are replaced by Son's controls, and Benny's three automations remain inactive.
+Matt's seven in-progress and four miscellaneous skills remain inactive.
+All 112 originals have a disposition in the [catalog](docs/catalog.md).
+The 23 pstack playbooks retain their steps with renamed references; six Son playbooks route work across creators.
 
-## Validate and build
+## Build and verify
 
 Requires Python 3.9 or newer and Git.
-The repository scripts use only Python's standard library.
+Repository tooling uses the Python standard library.
+Creator support scripts retain their own dependencies; building a bundle does not install or run them.
 
 ```bash
 python3 scripts/stack.py validate
 python3 -m unittest discover -s tests -v
 python3 scripts/stack.py build --harness codex
-python3 scripts/upstream.py check
+python3 scripts/stack.py build --harness claude
+python3 scripts/stack.py build --harness cursor
 ```
 
-The build produces self-contained skills under `.build/codex/skills/`.
-Each contains local working agreements, detailed source references, pinned attribution, and the relevant MIT license notices.
-Creator source files are references, not additional discoverable skills.
+Each build includes complete skill folders and a native `son-agent` definition.
+Skills contain local compatibility and license files.
+Setup and update commands use `SON-RUNTIME.json` to locate this checkout, so keep it at its recorded path or rebuild after moving it.
+Model assignments stay in ignored `.local/` configuration and never rewrite the canonical model policy.
 
-## Sources and updates
+See [installation and setup](docs/setup.md), [routing decisions](docs/decisions.md), [creator analysis](docs/creator-analysis.md), and the [pilot scenarios](docs/pilot.md).
 
-| Source | Original skills | Pinned commit |
-| --- | --- | --- |
-| [pstack](https://github.com/cursor/plugins/tree/main/pstack) | 54 | `4e5b1cf2ccb0ea3716f08c8ee0a5856b5ab93536` |
-| [Emil Kowalski](https://github.com/emilkowalski/skills) | 14 | `e8a175de22ae1e49370fc144c1f3bb9aeedf988d` |
-| [HumanLayer](https://github.com/humanlayer/skills) | 6 | `ca7c8088db69e315a8b2deea43820270457f8f3c` |
-| [Matt Pocock](https://github.com/mattpocock/skills) | 38 | `4588b32ecab9ecc9fc8cc6b6c5e7d675b6004b0d` |
+## Update on demand or every two weeks
 
-Captured on October 5, 2026.
-The Matt snapshot includes 27 promoted skills, seven in-progress skills, and four miscellaneous skills.
-The pstack count includes three Benny automation skills.
-Experimental and specialist originals remain catalogued even when they are not active in the combined stack.
+Run `/update-son-skills` whenever you want a fresh comparison.
+Use `--source matt` to inspect one creator or `--installed-skills /absolute/path/to/skills` to compare a separate installed copy as well.
+Without that option, your copy means this repository's editable `skills/` directory.
 
-The Codex automation checks these sources every two weeks on Monday at 09:00 in the configured local timezone.
-It reports meaningful new changes and failed checks in the originating chat.
-It does not apply updates.
-The first live check found no changes against the captured snapshots.
+The existing Codex automation checks all four creators every two weeks on Monday at 09:00 in the configured local timezone.
+It reports meaningful new upstream changes and failed checks, and stays quiet on repeated pending diffs.
+Both paths use the same checker and preserve your skills and accepted source pins.
+See [update review and adoption](docs/update-review.md).
 
-## Repository layout
+## Layout
 
 ```text
-skills/                 Combined workflow instructions and discovery metadata
-policies/               Shared working agreements and motion reference
-stack.json              Ownership and source mapping for each combined skill
-catalog.json            Generated inventory of every original skill
+skills/                 95 creator skills and three Son commands
+agents/                 Canonical son-agent instructions
+policies/               Shared Son compatibility rules
+stack.json              Exact source mappings and imported file baselines
+catalog.json            Generated inventory of all 112 source skills
 sources.lock.json       Accepted commits, modes, sizes, and file hashes
-upstream/               Immutable tracked source snapshots
-scripts/                Build, validation, installation, and diff tooling
-tests/                  Real Git and filesystem failure-case tests
-docs/                   Analysis, decisions, setup, review, and pilot guidance
-reviews/                Initial verification and local update reports
+upstream/               Immutable creator snapshots
+scripts/                Model setup, build, validation, install, and diff tooling
+.local/                 Ignored local model configuration
+.build/                 Ignored application-specific bundles
+reviews/                Verification evidence and local update reports
 ```
 
-Read [third-party notices](THIRD_PARTY_NOTICES.md) before redistribution.
-Creator sources retain their MIT licenses.
-The publication license for Son's original adaptations and tooling remains undecided while this repository is local.
+[Third-party notices](THIRD_PARTY_NOTICES.md) preserve the original MIT attributions.
+The license for Son's original tooling remains undecided while this repository is local.

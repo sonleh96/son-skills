@@ -1,0 +1,12 @@
+diff --git a/pinned/SKILL.md b/ours/SKILL.md
+--- a/pinned/SKILL.md
++++ b/ours/SKILL.md
+@@ -3,6 +3,8 @@
+ description: Move issues and external PRs through a state machine of triage roles, categorise, verify, grill if needed, and write agent-ready briefs.
+ disable-model-invocation: true
+ ---
++
++Read [Son compatibility](SON-COMPATIBILITY.md) before following this skill.
+ 
+ # Triage
+ 

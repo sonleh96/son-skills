@@ -1,0 +1,30 @@
+diff --git a/ours/SKILL.md b/latest/SKILL.md
+--- a/ours/SKILL.md
++++ b/latest/SKILL.md
+@@ -3,8 +3,6 @@
+ description: "Generate a project-local verification skill that drives your app the way a user does — any language, framework, or platform. Use for /create-verification-skill, \"make a control skill for this repo\", or when a project has no scripted way to prove UI/CLI/service behavior."
+ disable-model-invocation: true
+ ---
+-
+-Read [Son compatibility](SON-COMPATIBILITY.md) before following this skill.
+ 
+ # Create a verification skill
+ 
+diff --git a/ours/agents/openai.yaml b/latest/agents/openai.yaml
+deleted file mode 100644
+--- a/ours/agents/openai.yaml
++++ b/latest/agents/openai.yaml
+@@ -1,2 +0,0 @@
+-policy:
+-  allow_implicit_invocation: false
+diff --git a/ours/references/feature-map-example/README.md b/latest/references/feature-map-example/README.md
+--- a/ours/references/feature-map-example/README.md
++++ b/latest/references/feature-map-example/README.md
+@@ -43,5 +43,5 @@
+ 
+ ## Features
+ 
+-- [Create a note](create-note.md) covers browser and CLI creation, cancellation, persistence, and cleanup.
+-- [Search notes](search.md) covers toolbar, keyboard, and CLI search with matching, empty, and clear states.
++- [Create a note](./create-note.md) covers browser and CLI creation, cancellation, persistence, and cleanup.
++- [Search notes](./search.md) covers toolbar, keyboard, and CLI search with matching, empty, and clear states.

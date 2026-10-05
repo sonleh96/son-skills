@@ -1,0 +1,22 @@
+diff --git a/pinned/SKILL.md b/ours/SKILL.md
+--- a/pinned/SKILL.md
++++ b/ours/SKILL.md
+@@ -2,6 +2,8 @@
+ name: writing-for-agents
+ description: Writing documents for agents. Use when creating or editing skills, or modifying AGENTS.md or CLAUDE.md.
+ ---
++
++Read [Son compatibility](SON-COMPATIBILITY.md) before following this skill.
+ 
+ Reference for writing any document an agent consumes: a skill, an `AGENTS.md` / `CLAUDE.md`, a doc reached by a pointer. The packaging differs; the writing does not: the same levers make each one predictable, since the agent takes the same _process_ every run rather than producing the same output.
+ 
+diff --git a/pinned/agents/openai.yaml b/ours/agents/openai.yaml
+--- a/pinned/agents/openai.yaml
++++ b/ours/agents/openai.yaml
+@@ -1,3 +1,6 @@
+ interface:
+   display_name: "Writing for Agents"
+   short_description: "Write documents agents consume"
++
++policy:
++  allow_implicit_invocation: true

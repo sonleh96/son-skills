@@ -1,557 +1,3891 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "skills": [
     {
-      "name": "son-clarify",
-      "category": "decisions",
-      "description": "Stress-test a plan, resolve domain terminology, or prepare questions for a stakeholder. Use when Son asks to grill an idea, define terms, or create a questionnaire.",
-      "explicit_only": true,
-      "sources": [
-        {
-          "id": "matt:grilling",
-          "path": "skills/productivity/grilling/SKILL.md"
-        },
-        {
-          "id": "matt:grill-me",
-          "path": "skills/productivity/grill-me/SKILL.md"
-        },
-        {
-          "id": "matt:grill-with-docs",
-          "path": "skills/engineering/grill-with-docs/SKILL.md"
-        },
-        {
-          "id": "matt:domain-modeling",
-          "path": "skills/engineering/domain-modeling/SKILL.md"
-        },
-        {
-          "id": "matt:to-questionnaire",
-          "path": "skills/productivity/to-questionnaire/SKILL.md"
-        },
-        {
-          "id": "pstack:principle-model-the-domain",
-          "path": "pstack/skills/principle-model-the-domain/SKILL.md"
-        }
-      ],
-      "owner": "Son",
-      "validation": "structural and scenario review; real-task pilot pending"
-    },
-    {
-      "name": "son-plan",
-      "category": "planning",
-      "description": "Turn an understood problem into a concise spec, module sketch, and dependency-ordered tickets. Use when asked to plan substantial work or convert a discussion into implementation work.",
-      "explicit_only": true,
-      "sources": [
-        {
-          "id": "matt:to-spec",
-          "path": "skills/engineering/to-spec/SKILL.md"
-        },
-        {
-          "id": "matt:to-tickets",
-          "path": "skills/engineering/to-tickets/SKILL.md"
-        },
-        {
-          "id": "matt:wayfinder",
-          "path": "skills/engineering/wayfinder/SKILL.md"
-        },
-        {
-          "id": "matt:codebase-design",
-          "path": "skills/engineering/codebase-design/SKILL.md"
-        },
-        {
-          "id": "matt:improve-codebase-architecture",
-          "path": "skills/engineering/improve-codebase-architecture/SKILL.md"
-        },
-        {
-          "id": "pstack:architect",
-          "path": "pstack/skills/architect/SKILL.md"
-        },
-        {
-          "id": "pstack:principle-sequence-verifiable-units",
-          "path": "pstack/skills/principle-sequence-verifiable-units/SKILL.md"
-        }
-      ],
-      "owner": "Son",
-      "validation": "structural and scenario review; real-task pilot pending"
-    },
-    {
-      "name": "son-build",
-      "category": "delivery",
-      "description": "Implement an authorized feature or ticket graph in small verified slices. Use for implementation from a settled spec, including dependency ordering and evidence-based completion.",
-      "explicit_only": true,
-      "sources": [
-        {
-          "id": "matt:implement",
-          "path": "skills/engineering/implement/SKILL.md"
-        },
-        {
-          "id": "matt:implement-spec",
-          "path": "skills/engineering/implement-spec/SKILL.md"
-        },
-        {
-          "id": "matt:tdd",
-          "path": "skills/engineering/tdd/SKILL.md"
-        },
-        {
-          "id": "pstack:tdd",
-          "path": "pstack/skills/tdd/SKILL.md"
-        },
-        {
-          "id": "pstack:principle-test-behavior-not-implementation",
-          "path": "pstack/skills/principle-test-behavior-not-implementation/SKILL.md"
-        },
-        {
-          "id": "pstack:principle-make-operations-idempotent",
-          "path": "pstack/skills/principle-make-operations-idempotent/SKILL.md"
-        },
-        {
-          "id": "pstack:principle-separate-before-serializing-shared-state",
-          "path": "pstack/skills/principle-separate-before-serializing-shared-state/SKILL.md"
-        }
-      ],
-      "owner": "Son",
-      "validation": "structural and scenario review; real-task pilot pending"
-    },
-    {
-      "name": "son-debug",
-      "category": "diagnosis",
-      "description": "Reproduce and diagnose broken behavior or a performance regression before fixing it. Use for errors, flaky behavior, wrong results, and unexplained slowness.",
-      "explicit_only": false,
-      "sources": [
-        {
-          "id": "matt:diagnosing-bugs",
-          "path": "skills/engineering/diagnosing-bugs/SKILL.md"
-        },
-        {
-          "id": "pstack:tdd",
-          "path": "pstack/skills/tdd/SKILL.md"
-        },
-        {
-          "id": "pstack:principle-fix-root-causes",
-          "path": "pstack/skills/principle-fix-root-causes/SKILL.md"
-        },
-        {
-          "id": "pstack:principle-attack-the-premise",
-          "path": "pstack/skills/principle-attack-the-premise/SKILL.md"
-        },
-        {
-          "id": "pstack:benchmark-checklist",
-          "path": "pstack/skills/benchmark-checklist/SKILL.md"
-        }
-      ],
-      "owner": "Son",
-      "validation": "structural and scenario review; real-task pilot pending"
-    },
-    {
-      "name": "son-review",
-      "category": "verification",
-      "description": "Review a diff against the requested behavior and repository standards, then inspect downstream effects. Use for code review, PR review, or questions about what a change could break.",
-      "explicit_only": false,
-      "sources": [
-        {
-          "id": "matt:code-review",
-          "path": "skills/engineering/code-review/SKILL.md"
-        },
-        {
-          "id": "pstack:blast-radius",
-          "path": "pstack/skills/blast-radius/SKILL.md"
-        },
-        {
-          "id": "pstack:interrogate",
-          "path": "pstack/skills/interrogate/SKILL.md"
-        },
-        {
-          "id": "pstack:principle-boundary-discipline",
-          "path": "pstack/skills/principle-boundary-discipline/SKILL.md"
-        },
-        {
-          "id": "pstack:principle-type-system-discipline",
-          "path": "pstack/skills/principle-type-system-discipline/SKILL.md"
-        }
-      ],
-      "owner": "Son",
-      "validation": "structural and scenario review; real-task pilot pending"
-    },
-    {
-      "name": "son-verify",
-      "category": "verification",
-      "description": "Build or maintain a repeatable way to exercise an app and preserve evidence, or verify a performance claim. Use when asked to prove behavior or make project verification repeatable.",
-      "explicit_only": true,
-      "sources": [
-        {
-          "id": "pstack:create-verification-skill",
-          "path": "pstack/skills/create-verification-skill/SKILL.md"
-        },
-        {
-          "id": "pstack:maintain-verification-skill",
-          "path": "pstack/skills/maintain-verification-skill/SKILL.md"
-        },
-        {
-          "id": "pstack:benchmark-checklist",
-          "path": "pstack/skills/benchmark-checklist/SKILL.md"
-        },
-        {
-          "id": "pstack:principle-prove-it-works",
-          "path": "pstack/skills/principle-prove-it-works/SKILL.md"
-        },
-        {
-          "id": "pstack:principle-explain-the-number",
-          "path": "pstack/skills/principle-explain-the-number/SKILL.md"
-        },
-        {
-          "id": "pstack:show-me-your-work",
-          "path": "pstack/skills/show-me-your-work/SKILL.md"
-        }
-      ],
-      "owner": "Son",
-      "validation": "structural and scenario review; real-task pilot pending"
-    },
-    {
-      "name": "son-pr",
-      "category": "communication",
-      "description": "Write a concise PR description with the reason, change shape, proof, and rollout risk. Use when drafting or updating a PR body; publishing requires the task to authorize it.",
-      "explicit_only": false,
-      "sources": [
-        {
-          "id": "matt:pr",
-          "path": "skills/engineering/pr/SKILL.md"
-        },
-        {
-          "id": "humanlayer:visual-pr",
-          "path": "plugins/visual-pr/skills/visual-pr/SKILL.md"
-        },
-        {
-          "id": "humanlayer:show-me",
-          "path": "plugins/show-me/skills/show-me/SKILL.md"
-        },
-        {
-          "id": "pstack:blast-radius",
-          "path": "pstack/skills/blast-radius/SKILL.md"
-        },
-        {
-          "id": "pstack:technical-writing",
-          "path": "pstack/skills/technical-writing/SKILL.md"
-        }
-      ],
-      "owner": "Son",
-      "validation": "structural and scenario review; real-task pilot pending"
-    },
-    {
-      "name": "son-explain",
-      "category": "communication",
-      "description": "Explain how a subsystem works, why a decision was made, or teach a concept using source-backed examples and a small visual when useful.",
-      "explicit_only": true,
-      "sources": [
-        {
-          "id": "pstack:how",
-          "path": "pstack/skills/how/SKILL.md"
-        },
-        {
-          "id": "pstack:why",
-          "path": "pstack/skills/why/SKILL.md"
-        },
-        {
-          "id": "pstack:teach",
-          "path": "pstack/skills/teach/SKILL.md"
-        },
-        {
-          "id": "pstack:bro",
-          "path": "pstack/skills/bro/SKILL.md"
-        },
-        {
-          "id": "matt:teach",
-          "path": "skills/productivity/teach/SKILL.md"
-        },
-        {
-          "id": "matt:wait-what",
-          "path": "skills/productivity/wait-what/SKILL.md"
-        },
-        {
-          "id": "humanlayer:show-me",
-          "path": "plugins/show-me/skills/show-me/SKILL.md"
-        }
-      ],
-      "owner": "Son",
-      "validation": "structural and scenario review; real-task pilot pending"
-    },
-    {
-      "name": "son-retro",
-      "category": "improvement",
-      "description": "Review a session for recurring mistakes and propose small changes to tools, navigation, verification, or instructions. Use for retrospectives or improving agent guidance.",
-      "explicit_only": true,
-      "sources": [
-        {
-          "id": "matt:retro",
-          "path": "skills/engineering/retro/SKILL.md"
-        },
-        {
-          "id": "matt:writing-for-agents",
-          "path": "skills/productivity/writing-for-agents/SKILL.md"
-        },
-        {
-          "id": "pstack:reflect",
-          "path": "pstack/skills/reflect/SKILL.md"
-        },
-        {
-          "id": "pstack:correct",
-          "path": "pstack/skills/correct/SKILL.md"
-        },
-        {
-          "id": "pstack:principle-encode-lessons-in-structure",
-          "path": "pstack/skills/principle-encode-lessons-in-structure/SKILL.md"
-        },
-        {
-          "id": "humanlayer:improve-claude-md",
-          "path": "plugins/improve-claude-md/skills/improve-claude-md/SKILL.md"
-        }
-      ],
-      "owner": "Son",
-      "validation": "structural and scenario review; real-task pilot pending"
-    },
-    {
-      "name": "son-automate",
-      "category": "automation",
-      "description": "Design a bounded recurring agent workflow with measurable inputs, selection rules, validation, and review feedback. Use when asked to automate repeated work or monitor changes.",
-      "explicit_only": false,
-      "sources": [
-        {
-          "id": "humanlayer:design-control-loop",
-          "path": "plugins/design-control-loop/skills/design-control-loop/SKILL.md"
-        },
-        {
-          "id": "humanlayer:build-iterated-agentic-loop",
-          "path": "plugins/build-iterated-agentic-loop/skills/build-iterated-agentic-loop/SKILL.md"
-        },
-        {
-          "id": "pstack:automate-me",
-          "path": "pstack/skills/automate-me/SKILL.md"
-        },
-        {
-          "id": "pstack:figure-it-out",
-          "path": "pstack/skills/figure-it-out/SKILL.md"
-        },
-        {
-          "id": "pstack:show-me-your-work",
-          "path": "pstack/skills/show-me-your-work/SKILL.md"
-        },
-        {
-          "id": "pstack:principle-make-operations-idempotent",
-          "path": "pstack/skills/principle-make-operations-idempotent/SKILL.md"
-        }
-      ],
-      "owner": "Son",
-      "validation": "structural and scenario review; real-task pilot pending"
-    },
-    {
-      "name": "son-ui",
+      "name": "animate",
+      "kind": "original",
       "category": "interface",
-      "description": "Build or polish a web interface using existing design tokens, accessible components, mobile behavior, and rendered verification. Use for layout, interaction details, touch behavior, or Sonner integration.",
+      "description": "Build an animation from scratch, making the decisions in the order that determines whether it feels right \u2014 should it animate at all, what purpose, which tool, which properties, which curve and duration, how it interrupts, how it exits. Writes the implementation. Use when asked to animate something, add motion, make a component feel alive, or build a transition. For critiquing existing motion use review-animations; for auditing a whole codebase use improve-animations.",
       "explicit_only": false,
-      "sources": [
-        {
-          "id": "emil:emil-design-eng",
-          "path": "skills/emil-design-eng/SKILL.md"
-        },
-        {
-          "id": "emil:mobile-native",
-          "path": "skills/mobile-native/SKILL.md"
-        },
-        {
-          "id": "emil:apple-design",
-          "path": "skills/apple-design/SKILL.md"
-        },
-        {
-          "id": "emil:ask-sonner",
-          "path": "skills/ask-sonner/SKILL.md"
-        },
-        {
-          "id": "pstack:principle-experience-first",
-          "path": "pstack/skills/principle-experience-first/SKILL.md"
-        }
-      ],
-      "owner": "Son",
-      "validation": "structural and scenario review; real-task pilot pending"
-    },
-    {
-      "name": "son-prototype",
-      "category": "interface",
-      "description": "Build a disposable experiment to resolve a behavior question or compare distinct UI directions in a live picker. Use when asked to prototype, explore variants, or test a design assumption.",
-      "explicit_only": true,
-      "sources": [
-        {
-          "id": "matt:prototype",
-          "path": "skills/engineering/prototype/SKILL.md"
-        },
-        {
-          "id": "emil:prototype",
-          "path": "skills/prototype/SKILL.md"
-        },
-        {
-          "id": "pstack:principle-exhaust-the-design-space",
-          "path": "pstack/skills/principle-exhaust-the-design-space/SKILL.md"
-        },
-        {
-          "id": "pstack:principle-foundational-thinking",
-          "path": "pstack/skills/principle-foundational-thinking/SKILL.md"
-        }
-      ],
-      "owner": "Son",
-      "validation": "structural and scenario review; real-task pilot pending"
-    },
-    {
-      "name": "son-motion",
-      "category": "interface",
-      "description": "Name, build, review, or audit animation with frequency, accessibility, interruption, and performance checks. Use for motion work; keep audits read-only unless implementation is requested.",
-      "explicit_only": true,
       "sources": [
         {
           "id": "emil:animate",
           "path": "skills/animate/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "RECIPES.md": {
+          "sha256": "21ff63d84391db8d96ecdf9170095f55a42c836ccc36fd3269c4772bab031ba2",
+          "mode": "100644",
+          "size": 7957
         },
+        "SKILL.md": {
+          "sha256": "b6ca593057c10d70052402cbae5988415e3f723e64bdb63f9979e00e8c6e423f",
+          "mode": "100644",
+          "size": 11937
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "8619a54e8c098122a7f3881394f84ca89b684366e848233a29ad18b6ec363935",
+          "mode": "100644",
+          "size": 42
+        },
+        "licenses/emil.txt": {
+          "sha256": "4ff5bdb7887ec1435c9cab0e8d1a7caee704d894d65c2a008ccc68b1cc2f260b",
+          "mode": "100644",
+          "size": 1070
+        }
+      }
+    },
+    {
+      "name": "animate-expo",
+      "kind": "original",
+      "category": "interface",
+      "description": "Build animations in React Native and Expo, making the decisions in the order that determines whether they feel right \u2014 should it animate, which thread it runs on, which properties, spring or timing, how the gesture hands off, how it degrades. Writes the implementation with Reanimated, Gesture Handler, Expo Router and expo-haptics. Use when animating anything in an Expo app, adding gestures, sheets, screen transitions, press feedback or haptics, or fixing motion that stutters on device. For web animation use `animate`.",
+      "explicit_only": false,
+      "sources": [
         {
           "id": "emil:animate-expo",
           "path": "skills/animate-expo/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "RECIPES.md": {
+          "sha256": "1193cb71334da2e2341778dd92bec9ac79d989cb07fd55d661f324ed5871e718",
+          "mode": "100644",
+          "size": 16808
         },
+        "SKILL.md": {
+          "sha256": "39a417d61429053b76d6958306fb3abe5095f79453f5340528390e99b1a71a65",
+          "mode": "100644",
+          "size": 17968
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "8619a54e8c098122a7f3881394f84ca89b684366e848233a29ad18b6ec363935",
+          "mode": "100644",
+          "size": 42
+        },
+        "licenses/emil.txt": {
+          "sha256": "4ff5bdb7887ec1435c9cab0e8d1a7caee704d894d65c2a008ccc68b1cc2f260b",
+          "mode": "100644",
+          "size": 1070
+        }
+      }
+    },
+    {
+      "name": "animation-vocabulary",
+      "kind": "original",
+      "category": "interface",
+      "description": "Reverse-lookup glossary that turns a vague description of a web animation or motion effect into its exact term (\"the bouncy thing when a popover opens\" \u2192 Pop in; \"the iOS rubber-band scroll\" \u2192 Rubber-banding). Use when the user asks \"what's it called when\u2026\", or describes a motion effect without knowing its name and wants the right word to prompt an AI or designer with. For naming an effect, not designing or building one.",
+      "explicit_only": false,
+      "sources": [
         {
           "id": "emil:animation-vocabulary",
           "path": "skills/animation-vocabulary/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "b8b5e53a2062daee6595ca6bd7f0ca060ef01f4fcde996b5eb8d6174733136e1",
+          "mode": "100644",
+          "size": 13502
         },
-        {
-          "id": "emil:review-animations",
-          "path": "skills/review-animations/SKILL.md"
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
         },
-        {
-          "id": "emil:improve-animations",
-          "path": "skills/improve-animations/SKILL.md"
+        "agents/openai.yaml": {
+          "sha256": "8619a54e8c098122a7f3881394f84ca89b684366e848233a29ad18b6ec363935",
+          "mode": "100644",
+          "size": 42
         },
-        {
-          "id": "emil:find-animation-opportunities",
-          "path": "skills/find-animation-opportunities/SKILL.md"
-        },
+        "licenses/emil.txt": {
+          "sha256": "4ff5bdb7887ec1435c9cab0e8d1a7caee704d894d65c2a008ccc68b1cc2f260b",
+          "mode": "100644",
+          "size": 1070
+        }
+      }
+    },
+    {
+      "name": "apple-design",
+      "kind": "original",
+      "category": "interface",
+      "description": "Apple's approach to interface design and fluid, physical motion, translated for the web. Use when building or reviewing gesture-driven UI, spring animations, drag/swipe/sheet interactions, momentum and interruptible transitions, translucent materials and depth, typography (optical sizing, tracking, leading), reduced-motion, or the design foundations (feedback, spatial consistency, restraint) behind Apple-style interfaces.",
+      "explicit_only": false,
+      "sources": [
         {
           "id": "emil:apple-design",
           "path": "skills/apple-design/SKILL.md"
         }
       ],
-      "owner": "Son",
-      "validation": "structural and scenario review; real-task pilot pending"
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "977767e33263b6ed2bcb5f84a36da49afc8c03a0a32288ed6c16149e82717bbc",
+          "mode": "100644",
+          "size": 23113
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "8619a54e8c098122a7f3881394f84ca89b684366e848233a29ad18b6ec363935",
+          "mode": "100644",
+          "size": 42
+        },
+        "licenses/emil.txt": {
+          "sha256": "4ff5bdb7887ec1435c9cab0e8d1a7caee704d894d65c2a008ccc68b1cc2f260b",
+          "mode": "100644",
+          "size": 1070
+        }
+      }
     },
     {
-      "name": "son-ui-stress",
+      "name": "architect",
+      "kind": "original",
+      "category": "planning",
+      "description": "Sketch types, signatures, and module structure before code, then stay in the loop while implementation fills in. Use for /architect, 'architect this', 'design this', or non-trivial work where jumping to code would lock in the wrong shape.",
+      "explicit_only": true,
+      "sources": [
+        {
+          "id": "pstack:architect",
+          "path": "pstack/skills/architect/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "feb45feee8567b0d5aeae0f2309d1199907c968bd4706e5f6cc231238b2a430e",
+          "mode": "100644",
+          "size": 5752
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+          "mode": "100644",
+          "size": 43
+        },
+        "licenses/pstack.txt": {
+          "sha256": "bc957ca6bee02792566a1a028d105e02e247c6e77cf057061674273da77b200e",
+          "mode": "100644",
+          "size": 1067
+        },
+        "references/design-red-flags.md": {
+          "sha256": "d0e639e4cc588ec865f930d3a4111faad60987ae36925917e319d7ceca7c69ce",
+          "mode": "100644",
+          "size": 3009
+        },
+        "references/rationale-template.md": {
+          "sha256": "0cedfccdc7b47fc881febd5a8293eecbc542c20f8df825639904a8102d2eb5d3",
+          "mode": "100644",
+          "size": 3050
+        },
+        "references/runner-prompt.md": {
+          "sha256": "983bf2820cc14ed8ecab6e448e1033e5cfe6031967d0a9287b48c7fa9c33d925",
+          "mode": "100644",
+          "size": 3087
+        }
+      }
+    },
+    {
+      "name": "arena",
+      "kind": "original",
+      "category": "orchestration",
+      "description": "Spawn N parallel candidates at the same task, pick a base, graft the strongest parts of the losers into it. Use for /arena, 'arena this', 'throw it in the arena', or when one attempt at a non-trivial artifact would lock in the wrong shape.",
+      "explicit_only": true,
+      "sources": [
+        {
+          "id": "pstack:arena",
+          "path": "pstack/skills/arena/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "9a786b7d2103224413fcb4a48e1919c3506fe0051ad12a2c95e7c2c921149bcb",
+          "mode": "100644",
+          "size": 5050
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+          "mode": "100644",
+          "size": 43
+        },
+        "licenses/pstack.txt": {
+          "sha256": "bc957ca6bee02792566a1a028d105e02e247c6e77cf057061674273da77b200e",
+          "mode": "100644",
+          "size": 1067
+        }
+      }
+    },
+    {
+      "name": "ask-matt",
+      "kind": "original",
+      "category": "routing",
+      "description": "Ask which skill or flow fits your situation. A router over the skills in this repo.",
+      "explicit_only": true,
+      "sources": [
+        {
+          "id": "matt:ask-matt",
+          "path": "skills/engineering/ask-matt/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "PHASE-BOUNDARIES.md": {
+          "sha256": "a8aa20158609ef39e2b308b6ba0660c91066838d07a867202e63a7744a88a3ed",
+          "mode": "100644",
+          "size": 4249
+        },
+        "SKILL.md": {
+          "sha256": "dee203267528d58a26b762f8e1a57a01154718dfcb537b4a3228bdc0497b5ac0",
+          "mode": "100644",
+          "size": 12564
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "bdffbc5a0a99ed1b6ef3253d251d755fd18162b9845972e380007f844b09b05c",
+          "mode": "100644",
+          "size": 137
+        },
+        "licenses/matt.txt": {
+          "sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+          "mode": "100644",
+          "size": 1068
+        }
+      }
+    },
+    {
+      "name": "ask-sonner",
+      "kind": "original",
+      "category": "interface",
+      "description": "Guide to Sonner, the React toast library \u2014 install and wire up the Toaster, pick the right toast() call, promise and loading toasts, updating, dismissing and persisting toasts, styling, theming and icons, positioning and multiple toasters. Use when working with Sonner or troubleshooting it \u2014 toasts that don't appear, appear twice, lose their styles, ignore Tailwind classes, sit behind a modal, or don't follow dark mode.",
+      "explicit_only": false,
+      "sources": [
+        {
+          "id": "emil:ask-sonner",
+          "path": "skills/ask-sonner/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "API.md": {
+          "sha256": "4bb06f482c5757529e3d7a672a30fbeed42d24919a63e2571384a9ce1549aa7f",
+          "mode": "100644",
+          "size": 4545
+        },
+        "SKILL.md": {
+          "sha256": "c88c54dbf4ed033f44202ea5c8f9ec30259cce8e05ddb1b81ddc089eaec52def",
+          "mode": "100644",
+          "size": 7310
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "8619a54e8c098122a7f3881394f84ca89b684366e848233a29ad18b6ec363935",
+          "mode": "100644",
+          "size": 42
+        },
+        "licenses/emil.txt": {
+          "sha256": "4ff5bdb7887ec1435c9cab0e8d1a7caee704d894d65c2a008ccc68b1cc2f260b",
+          "mode": "100644",
+          "size": 1070
+        }
+      }
+    },
+    {
+      "name": "automate-me",
+      "kind": "original",
+      "category": "automation",
+      "description": "Use for \"automate me\", \"create/update/refresh my -mode skill\", \"turn/capture my preferences or working style into a skill\", or wanting agents to follow how the user works. Drafts or revises a personal -mode skill via create-skill + unslop, optionally pulling fresh evidence from recent transcripts.",
+      "explicit_only": true,
+      "sources": [
+        {
+          "id": "pstack:automate-me",
+          "path": "pstack/skills/automate-me/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "f67da7385cf7055ddb0b08b00949bac91141b5ecefb6e40a0965731d31179a40",
+          "mode": "100644",
+          "size": 7238
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+          "mode": "100644",
+          "size": 43
+        },
+        "licenses/pstack.txt": {
+          "sha256": "bc957ca6bee02792566a1a028d105e02e247c6e77cf057061674273da77b200e",
+          "mode": "100644",
+          "size": 1067
+        }
+      }
+    },
+    {
+      "name": "benchmark-checklist",
+      "kind": "original",
+      "category": "diagnosis",
+      "description": "Vet a perf measurement (limiter, tuning, limits, errors, repeatability, relevance, and whether the work happened) before you report or act on it. Use when you run a benchmark or report a speedup or regression you measured.",
+      "explicit_only": true,
+      "sources": [
+        {
+          "id": "pstack:benchmark-checklist",
+          "path": "pstack/skills/benchmark-checklist/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "21a9599826f50a4bc13638182884eed1de45ef3c43563952d65396f7c0beba53",
+          "mode": "100644",
+          "size": 5486
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+          "mode": "100644",
+          "size": 43
+        },
+        "licenses/pstack.txt": {
+          "sha256": "bc957ca6bee02792566a1a028d105e02e247c6e77cf057061674273da77b200e",
+          "mode": "100644",
+          "size": 1067
+        }
+      }
+    },
+    {
+      "name": "blast-radius",
+      "kind": "original",
+      "category": "communication",
+      "description": "Find what a change could break somewhere else before it ships, beyond the diff, and prove the one fact it's safe because of by running real code instead of writing it up. Use for 'blast radius of X', 'what could this break', or reviewing a small diff you don't trust.",
+      "explicit_only": true,
+      "sources": [
+        {
+          "id": "pstack:blast-radius",
+          "path": "pstack/skills/blast-radius/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "4ade4bead1eb68a865424321939764ae5265201b40cdd875f04990c7ca923fc9",
+          "mode": "100644",
+          "size": 3928
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+          "mode": "100644",
+          "size": 43
+        },
+        "licenses/pstack.txt": {
+          "sha256": "bc957ca6bee02792566a1a028d105e02e247c6e77cf057061674273da77b200e",
+          "mode": "100644",
+          "size": 1067
+        }
+      }
+    },
+    {
+      "name": "break-ui",
+      "kind": "original",
       "category": "verification",
-      "description": "Stress-test UI with realistic extreme data and capture visual failures. Use for long names, missing fields, empty collections, localized labels, large counts, and narrow layouts.",
+      "description": "Try to break a piece of UI by feeding it worst-case data \u2014 long names, unbreakable emails, one-letter names, missing fields, huge counts, zero items, long labels, non-Latin text, emoji, extreme numbers \u2014 then render it behind a \"Demo data / Worst case\" toggle and report everything that broke, with the fix for each. Use when the user asks to stress-test, break, or find edge cases in a component or screen, or to \"try the worst case\". For visual design critique use emil-design-eng; for motion use review-animations.",
       "explicit_only": false,
       "sources": [
         {
           "id": "emil:break-ui",
           "path": "skills/break-ui/SKILL.md"
-        },
-        {
-          "id": "pstack:principle-prove-it-works",
-          "path": "pstack/skills/principle-prove-it-works/SKILL.md"
-        },
-        {
-          "id": "humanlayer:narrow-react-prop-types",
-          "path": "plugins/narrow-react-prop-types/skills/narrow-react-prop-types/SKILL.md"
         }
       ],
-      "owner": "Son",
-      "validation": "structural and scenario review; real-task pilot pending"
+      "imported_files": {
+        "CATALOG.md": {
+          "sha256": "7358efcc6bb48e35187be1c064cf60022dcb18c72c18fab58b606dfc5f421f15",
+          "mode": "100644",
+          "size": 8268
+        },
+        "SKILL.md": {
+          "sha256": "2c49fb9c45bfb10f13d29d8b0198d74c6807d034ada0afd1e1a019a2f2309d19",
+          "mode": "100644",
+          "size": 14462
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "8619a54e8c098122a7f3881394f84ca89b684366e848233a29ad18b6ec363935",
+          "mode": "100644",
+          "size": 42
+        },
+        "licenses/emil.txt": {
+          "sha256": "4ff5bdb7887ec1435c9cab0e8d1a7caee704d894d65c2a008ccc68b1cc2f260b",
+          "mode": "100644",
+          "size": 1070
+        }
+      }
     },
     {
-      "name": "son-types",
-      "category": "engineering",
-      "description": "Tighten TypeScript or React contracts against real callers, or inspect Swift value and concurrency boundaries. Use for overly broad props, invalid states, unsafe assertions, or concurrency errors.",
+      "name": "bro",
+      "kind": "original",
+      "category": "communication",
+      "description": "Restate the last message in plain human language, with no jargon.",
+      "explicit_only": true,
+      "sources": [
+        {
+          "id": "pstack:bro",
+          "path": "pstack/skills/bro/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "9e350bd54f2c27a51e9c9ff8242cc8e67dc49a26d1d3cd62246044ddb827575b",
+          "mode": "100644",
+          "size": 344
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+          "mode": "100644",
+          "size": 43
+        },
+        "licenses/pstack.txt": {
+          "sha256": "bc957ca6bee02792566a1a028d105e02e247c6e77cf057061674273da77b200e",
+          "mode": "100644",
+          "size": 1067
+        }
+      }
+    },
+    {
+      "name": "build-iterated-agentic-loop",
+      "kind": "original",
+      "category": "automation",
+      "description": "build a repo-local skill and install a matching iterated coding-agent GitHub Actions workflow, prompt, memory file, and reference templates",
       "explicit_only": false,
       "sources": [
         {
-          "id": "humanlayer:narrow-react-prop-types",
-          "path": "plugins/narrow-react-prop-types/skills/narrow-react-prop-types/SKILL.md"
+          "id": "humanlayer:build-iterated-agentic-loop",
+          "path": "plugins/build-iterated-agentic-loop/skills/build-iterated-agentic-loop/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "762b101a8e94d693af63920cba14a7a2308faced856798547303a447eb1c0f91",
+          "mode": "100644",
+          "size": 13630
         },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "8619a54e8c098122a7f3881394f84ca89b684366e848233a29ad18b6ec363935",
+          "mode": "100644",
+          "size": 42
+        },
+        "licenses/humanlayer.txt": {
+          "sha256": "5f13c18ea00ea5c1384f41745feeca774079164f7f59a92e4ac0899ad217b26f",
+          "mode": "100644",
+          "size": 1067
+        },
+        "references/agent-iteration.ts": {
+          "sha256": "b7a4b53d388faef2a677b11d8b38e44ac53bc8a6734ef905b76afa2f4a0fc6ec",
+          "mode": "100644",
+          "size": 5896
+        },
+        "references/agent-runner-templates.md": {
+          "sha256": "7b8a5fb3e962a53ebb4a10613f9dd60d255d805a71da01277f9bf10c0a633b29",
+          "mode": "100644",
+          "size": 4369
+        },
+        "references/example-skill.md": {
+          "sha256": "2610898e4fef5ae4f296bf711d539df42862bad4266642b19809fcad87322c94",
+          "mode": "100644",
+          "size": 7466
+        },
+        "references/memory-template.md": {
+          "sha256": "0e819e4a6b950ce3f000f1ce29eaf8822038b1cc7ef74e620d415250e2876167",
+          "mode": "100644",
+          "size": 178
+        },
+        "references/prompt-template.md": {
+          "sha256": "96f647f062c563d78983ac6d4acd7c8acceba4749893f794c0fe5a12c9cc5ccd",
+          "mode": "100644",
+          "size": 1456
+        },
+        "references/response-template.md": {
+          "sha256": "083743eb8bdc117c70450c24ed5dcc3194d34932bb42f2493d866e4809a24d99",
+          "mode": "100644",
+          "size": 2442
+        },
+        "references/skill-template.md": {
+          "sha256": "d1acee14854ee6a6d0f5522fa8afc11390fe8182f9a350d4f9403b790adae2e1",
+          "mode": "100644",
+          "size": 1847
+        },
+        "references/workflow-template.yml": {
+          "sha256": "d6cc402f945c9311574d99763fa5a1a94208c3eb5a271c8d2d6d0e175c00c7ab",
+          "mode": "100644",
+          "size": 10521
+        }
+      }
+    },
+    {
+      "name": "code-review",
+      "kind": "original",
+      "category": "verification",
+      "description": "Review the changes since a fixed point (commit, branch, tag, or merge-base) along two axes: Standards (does the code follow this repo's documented coding standards?) and Spec (does the code match what the originating issue/spec asked for?). Runs both reviews in parallel sub-agents and reports them side by side. Use when the user wants to review a branch, a PR, work-in-progress changes, or asks to \"review since X\".",
+      "explicit_only": false,
+      "sources": [
         {
-          "id": "pstack:typescript-best-practices",
-          "path": "pstack/skills/typescript-best-practices/SKILL.md"
+          "id": "matt:code-review",
+          "path": "skills/engineering/code-review/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "590d6563d0a853cc780bd899d70e10e354f98c73df15b8784c76b388f5610fcf",
+          "mode": "100644",
+          "size": 6666
         },
-        {
-          "id": "pstack:principle-type-system-discipline",
-          "path": "pstack/skills/principle-type-system-discipline/SKILL.md"
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
         },
+        "agents/openai.yaml": {
+          "sha256": "0d5ff56fbbaa9c6f2bb8270b450e30b0d1955e57f6b903a8963e0a05e27c2a47",
+          "mode": "100644",
+          "size": 143
+        },
+        "licenses/matt.txt": {
+          "sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+          "mode": "100644",
+          "size": 1068
+        }
+      }
+    },
+    {
+      "name": "codebase-design",
+      "kind": "original",
+      "category": "engineering",
+      "description": "Shared vocabulary for designing deep modules. Use when the user wants to design or improve a module's interface, find deepening opportunities, decide where a seam goes, make code more testable or AI-navigable, or when another skill needs the deep-module vocabulary.",
+      "explicit_only": false,
+      "sources": [
         {
           "id": "matt:codebase-design",
           "path": "skills/engineering/codebase-design/SKILL.md"
-        },
-        {
-          "id": "emil:write-swift",
-          "path": "skills/write-swift/SKILL.md"
         }
       ],
-      "owner": "Son",
-      "validation": "structural and scenario review; real-task pilot pending"
+      "imported_files": {
+        "DEEPENING.md": {
+          "sha256": "f3dd099ce99289bd213914d8ee3e2429b78309c3957ca4583f7659551b1d53c1",
+          "mode": "100644",
+          "size": 2553
+        },
+        "DESIGN-IT-TWICE.md": {
+          "sha256": "52b52e75655a27aea59c6966b410bac82448968ad46ef1ebb9f07c274e3ae010",
+          "mode": "100644",
+          "size": 2665
+        },
+        "SKILL.md": {
+          "sha256": "c346b35a9f12b2cec248a42b0edbda7bf9afae94490d5086d2a27659ecf74c68",
+          "mode": "100644",
+          "size": 6523
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "7bf9ef6adff0baf30b1a27fedaf7ce6a395e129b6870a118e07d1f9604116b32",
+          "mode": "100644",
+          "size": 145
+        },
+        "licenses/matt.txt": {
+          "sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+          "mode": "100644",
+          "size": 1068
+        }
+      }
     },
     {
-      "name": "son-research",
-      "category": "discovery",
-      "description": "Investigate a concrete technical or workflow question using primary sources and save concise findings with dates, versions, and unresolved uncertainty.",
+      "name": "correct",
+      "kind": "original",
+      "category": "improvement",
+      "description": "Find the mistakes agents keep repeating in this repo and make each one impossible. Try architecture first, then types, then a lint whose error names the fix, then a test, and write docs last. Prove each check fails on a real past mistake. Repeat this each time the operator corrects you. Use for /correct.",
+      "explicit_only": true,
+      "sources": [
+        {
+          "id": "pstack:correct",
+          "path": "pstack/skills/correct/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "310ed408223ac18856adf46f27891e98289e70034bbb2a5b0d689b16925e7163",
+          "mode": "100644",
+          "size": 2522
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+          "mode": "100644",
+          "size": 43
+        },
+        "licenses/pstack.txt": {
+          "sha256": "bc957ca6bee02792566a1a028d105e02e247c6e77cf057061674273da77b200e",
+          "mode": "100644",
+          "size": 1067
+        }
+      }
+    },
+    {
+      "name": "create-verification-skill",
+      "kind": "original",
+      "category": "verification",
+      "description": "Generate a project-local verification skill that drives your app the way a user does \u2014 any language, framework, or platform. Use for /create-verification-skill, \"make a control skill for this repo\", or when a project has no scripted way to prove UI/CLI/service behavior.",
+      "explicit_only": true,
+      "sources": [
+        {
+          "id": "pstack:create-verification-skill",
+          "path": "pstack/skills/create-verification-skill/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "d8064eef4299cc9a1545768ecc97fb4b96a2b8c80f0acac9b149f50e4c6055b2",
+          "mode": "100644",
+          "size": 5956
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+          "mode": "100644",
+          "size": 43
+        },
+        "licenses/pstack.txt": {
+          "sha256": "bc957ca6bee02792566a1a028d105e02e247c6e77cf057061674273da77b200e",
+          "mode": "100644",
+          "size": 1067
+        },
+        "references/feature-map-example/README.md": {
+          "sha256": "6ac34cad74b882ae2a28871be03090b73329ce9d976277fe8fa961d7b358fb4f",
+          "mode": "100644",
+          "size": 2597
+        },
+        "references/feature-map-example/create-note.md": {
+          "sha256": "644a44c74f35d38c2feb7cd05a0121fdebbb623e8dc376c185b565a581d1ccf7",
+          "mode": "100644",
+          "size": 2926
+        },
+        "references/feature-map-example/search.md": {
+          "sha256": "6e87b9e7f2791a7776ba1bb83f371cd285c306c67f19d245cc4dd6ca3015c823",
+          "mode": "100644",
+          "size": 3478
+        }
+      }
+    },
+    {
+      "name": "design-control-loop",
+      "kind": "original",
+      "category": "automation",
+      "description": "interview the user to design an agentic control loop (sensor, controller, actuator under disturbances) tailored to their codebase, then build it as locally-runnable components plus a scheduled coding-agent workflow",
       "explicit_only": false,
       "sources": [
         {
-          "id": "matt:research",
-          "path": "skills/engineering/research/SKILL.md"
-        },
-        {
-          "id": "pstack:how",
-          "path": "pstack/skills/how/SKILL.md"
-        },
-        {
-          "id": "pstack:why",
-          "path": "pstack/skills/why/SKILL.md"
+          "id": "humanlayer:design-control-loop",
+          "path": "plugins/design-control-loop/skills/design-control-loop/SKILL.md"
         }
       ],
-      "owner": "Son",
-      "validation": "structural and scenario review; real-task pilot pending"
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "5f26bc1691256ab20d443360eb29898c1ecd5621a9d5a794c9ed64398fac1ea7",
+          "mode": "100644",
+          "size": 15572
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "8619a54e8c098122a7f3881394f84ca89b684366e848233a29ad18b6ec363935",
+          "mode": "100644",
+          "size": 42
+        },
+        "licenses/humanlayer.txt": {
+          "sha256": "5f13c18ea00ea5c1384f41745feeca774079164f7f59a92e4ac0899ad217b26f",
+          "mode": "100644",
+          "size": 1067
+        },
+        "references/agent-iteration.ts": {
+          "sha256": "b7a4b53d388faef2a677b11d8b38e44ac53bc8a6734ef905b76afa2f4a0fc6ec",
+          "mode": "100644",
+          "size": 5896
+        },
+        "references/agent-runner-templates.md": {
+          "sha256": "add0e8e771f79f98c3d5e9a30b5d4a9f583a6496908e4edac4ec30171365520a",
+          "mode": "100644",
+          "size": 4841
+        },
+        "references/control-loop-taxonomy.md": {
+          "sha256": "03bf2e862f8322cc698c0ace1b63450b23f0a908794976a0be8780b6617be3fa",
+          "mode": "100644",
+          "size": 5593
+        },
+        "references/example-control-loop.md": {
+          "sha256": "faee7f1f7ffb0f98edbd2c985da75e5c2c8b8e5d0bbc427db3ac98b9a64a2219",
+          "mode": "100644",
+          "size": 4241
+        },
+        "references/example-skill.md": {
+          "sha256": "2610898e4fef5ae4f296bf711d539df42862bad4266642b19809fcad87322c94",
+          "mode": "100644",
+          "size": 7466
+        },
+        "references/memory-template.md": {
+          "sha256": "df37b1f52cdfdb804f71f5e5e8fccd1174e9a217d6fbf603951beb1039ce06e1",
+          "mode": "100644",
+          "size": 456
+        },
+        "references/prompt-template.md": {
+          "sha256": "8b9a1d76321adfe73b05eff2f4601492bd209caad47eb4fe0390978b48078988",
+          "mode": "100644",
+          "size": 1521
+        },
+        "references/response-template.md": {
+          "sha256": "083743eb8bdc117c70450c24ed5dcc3194d34932bb42f2493d866e4809a24d99",
+          "mode": "100644",
+          "size": 2442
+        },
+        "references/skill-template.md": {
+          "sha256": "d1acee14854ee6a6d0f5522fa8afc11390fe8182f9a350d4f9403b790adae2e1",
+          "mode": "100644",
+          "size": 1847
+        },
+        "references/workflow-template.yml": {
+          "sha256": "a80828159bd01f099d3e48725395359e8f20a1dc824dc21c742d2c669ddfe563",
+          "mode": "100644",
+          "size": 12081
+        }
+      }
     },
     {
-      "name": "son-handoff",
+      "name": "diagnosing-bugs",
+      "kind": "original",
+      "category": "diagnosis",
+      "description": "Diagnosis loop for hard bugs and performance regressions. Use when the user says \"diagnose\"/\"debug this\", or reports something broken/throwing/failing/slow.",
+      "explicit_only": false,
+      "sources": [
+        {
+          "id": "matt:diagnosing-bugs",
+          "path": "skills/engineering/diagnosing-bugs/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "ab00fd1a27384965be38eb8c90912634107609250bdb7bd61728051dae908ff4",
+          "mode": "100644",
+          "size": 8607
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "5e95ccdb1e63a77ac8fdefd5a31d3bfb60b43c227a0cbefdc4b0763fc5da7cff",
+          "mode": "100644",
+          "size": 146
+        },
+        "licenses/matt.txt": {
+          "sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+          "mode": "100644",
+          "size": 1068
+        },
+        "scripts/hitl-loop.template.sh": {
+          "sha256": "35103539fc36873eea36074769ad454f9379d6fc8b2dc0e26ce987fd3bfe5503",
+          "mode": "100644",
+          "size": 1316
+        }
+      }
+    },
+    {
+      "name": "domain-modeling",
+      "kind": "original",
+      "category": "decisions",
+      "description": "Build and sharpen a project's domain model. Use when discussing codebase terminology, writing or editing a GLOSSARY.md, or recording or editing an ADR.",
+      "explicit_only": false,
+      "sources": [
+        {
+          "id": "matt:domain-modeling",
+          "path": "skills/engineering/domain-modeling/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "ADR-FORMAT.md": {
+          "sha256": "944c92aa790e8fbdc9199640b170979abb8a34ba8d0fe18c2a01a63bce140ca0",
+          "mode": "100644",
+          "size": 2733
+        },
+        "GLOSSARY-FORMAT.md": {
+          "sha256": "21dcc40cdec8e151a829b98ab1517c1867bc444e3665134a98c6983411996801",
+          "mode": "100644",
+          "size": 2300
+        },
+        "SKILL.md": {
+          "sha256": "371dd8f01f15ba6c3b2b7bc6991b5e50a4a2a4eb7ed8114efef07e9c6ba9eeb1",
+          "mode": "100644",
+          "size": 3419
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "348269d2953653e70d1c8b68e2d2c95fbc307dc08b94cba1fe334610c4c5600f",
+          "mode": "100644",
+          "size": 144
+        },
+        "licenses/matt.txt": {
+          "sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+          "mode": "100644",
+          "size": 1068
+        }
+      }
+    },
+    {
+      "name": "emil-design-eng",
+      "kind": "original",
+      "category": "interface",
+      "description": "This skill encodes Emil Kowalski's philosophy on UI polish, component design, animation decisions, and the invisible details that make software feel great.",
+      "explicit_only": false,
+      "sources": [
+        {
+          "id": "emil:emil-design-eng",
+          "path": "skills/emil-design-eng/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "9e8f4dd5974217a64d63bc341d3a997b59015d8e6ef5b2d9702de988d413bb73",
+          "mode": "100644",
+          "size": 27200
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "8619a54e8c098122a7f3881394f84ca89b684366e848233a29ad18b6ec363935",
+          "mode": "100644",
+          "size": 42
+        },
+        "licenses/emil.txt": {
+          "sha256": "4ff5bdb7887ec1435c9cab0e8d1a7caee704d894d65c2a008ccc68b1cc2f260b",
+          "mode": "100644",
+          "size": 1070
+        }
+      }
+    },
+    {
+      "name": "emil-prototype",
+      "kind": "original",
+      "category": "interface",
+      "description": "Build multiple genuinely different versions of a UI piece you describe, rendered behind a visual picker so you can flip through them live and promote the one that feels right. Only runs when explicitly invoked; it does not trigger on its own.",
+      "explicit_only": true,
+      "sources": [
+        {
+          "id": "emil:prototype",
+          "path": "skills/prototype/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "PICKER.md": {
+          "sha256": "31a55eec94715cc79942e91e172e539e3031dcd5e2e5ee7c1446cf2caee960a6",
+          "mode": "100644",
+          "size": 7548
+        },
+        "SKILL.md": {
+          "sha256": "df6d4ab2994f76390b200a6446e129705b717a97850a65894807efa948e725d4",
+          "mode": "100644",
+          "size": 7912
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+          "mode": "100644",
+          "size": 43
+        },
+        "licenses/emil.txt": {
+          "sha256": "4ff5bdb7887ec1435c9cab0e8d1a7caee704d894d65c2a008ccc68b1cc2f260b",
+          "mode": "100644",
+          "size": 1070
+        }
+      }
+    },
+    {
+      "name": "figure-it-out",
+      "kind": "original",
+      "category": "automation",
+      "description": "Design an auditable playbook when no narrower one fits: a large migration, an ambitious multi-part change, or work a human reviews after stepping away. Scales rigor to the task, runs a hypothesis loop, and logs decisions via show-me-your-work. Use for /figure-it-out, 'figure it out', a large migration, or when no narrower playbook applies.",
+      "explicit_only": true,
+      "sources": [
+        {
+          "id": "pstack:figure-it-out",
+          "path": "pstack/skills/figure-it-out/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "6a82dddb4350d8b072787027d72137cdc9498aa34cc7b3e98c6d19c8c8a4a9ca",
+          "mode": "100644",
+          "size": 4133
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+          "mode": "100644",
+          "size": 43
+        },
+        "licenses/pstack.txt": {
+          "sha256": "bc957ca6bee02792566a1a028d105e02e247c6e77cf057061674273da77b200e",
+          "mode": "100644",
+          "size": 1067
+        }
+      }
+    },
+    {
+      "name": "find-animation-opportunities",
+      "kind": "original",
+      "category": "interface",
+      "description": "Search a codebase or UI for places that don't animate but should, and reject everything that shouldn't. Read-only; it proposes motion with exact values, it does not implement it. Use when the user asks \"what could be animated here?\" or wants to \"make this feel more alive\". For fixing existing animations, use improve-animations or review-animations instead.",
+      "explicit_only": false,
+      "sources": [
+        {
+          "id": "emil:find-animation-opportunities",
+          "path": "skills/find-animation-opportunities/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "17948484127f64eb26ba67cabc35726c6d20a25ff3a77f96a086732f9b810e7c",
+          "mode": "100644",
+          "size": 9885
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "8619a54e8c098122a7f3881394f84ca89b684366e848233a29ad18b6ec363935",
+          "mode": "100644",
+          "size": 42
+        },
+        "licenses/emil.txt": {
+          "sha256": "4ff5bdb7887ec1435c9cab0e8d1a7caee704d894d65c2a008ccc68b1cc2f260b",
+          "mode": "100644",
+          "size": 1070
+        }
+      }
+    },
+    {
+      "name": "grill-me",
+      "kind": "original",
+      "category": "decisions",
+      "description": "A relentless interview to sharpen a plan or design.",
+      "explicit_only": true,
+      "sources": [
+        {
+          "id": "matt:grill-me",
+          "path": "skills/productivity/grill-me/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "2fa373cee988c585582154d64d3ad64b26af23da28eb9a46f12c401d35b51dd7",
+          "mode": "100644",
+          "size": 234
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "c061e39c3e0f9d865fb1b97556d485704af2a8a58f4b8221a8917a5c2074a32b",
+          "mode": "100644",
+          "size": 137
+        },
+        "licenses/matt.txt": {
+          "sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+          "mode": "100644",
+          "size": 1068
+        }
+      }
+    },
+    {
+      "name": "grill-with-docs",
+      "kind": "original",
+      "category": "decisions",
+      "description": "A relentless interview to sharpen a plan or design, which also creates docs (ADR's and glossary) as we go.",
+      "explicit_only": true,
+      "sources": [
+        {
+          "id": "matt:grill-with-docs",
+          "path": "skills/engineering/grill-with-docs/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "a106abddfb204c30edd3415c1e4fe23abd413fc5d6feb3509bde813f825cc704",
+          "mode": "100644",
+          "size": 324
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "94cd0ab161fb468a836349f5ed482ba58ce8e709a05c57ce533d739dbd35cca9",
+          "mode": "100644",
+          "size": 145
+        },
+        "licenses/matt.txt": {
+          "sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+          "mode": "100644",
+          "size": 1068
+        }
+      }
+    },
+    {
+      "name": "grilling",
+      "kind": "original",
+      "category": "decisions",
+      "description": "Grill the user relentlessly about a plan, decision, or idea. Use when the user wants to stress-test their thinking, or uses any 'grill' trigger phrases.",
+      "explicit_only": false,
+      "sources": [
+        {
+          "id": "matt:grilling",
+          "path": "skills/productivity/grilling/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "afec34218f79b7852bf9e7b5bf232c1f6e641341d356c5fded8defa1afdc0ec1",
+          "mode": "100644",
+          "size": 2064
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "d2f63ba0a3f2cdadf2075d77aff07fe67cb930a8fbd202a47087d5442924b48e",
+          "mode": "100644",
+          "size": 156
+        },
+        "licenses/matt.txt": {
+          "sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+          "mode": "100644",
+          "size": 1068
+        }
+      }
+    },
+    {
+      "name": "handoff",
+      "kind": "original",
       "category": "continuity",
-      "description": "Prepare or recover a concise continuation record across Codex, Claude Code, and Cursor. Use when pausing work, resuming another session, or handing a task to another agent.",
+      "description": "Compact the current conversation into a handoff document for another agent to pick up.",
       "explicit_only": true,
       "sources": [
         {
           "id": "matt:handoff",
           "path": "skills/productivity/handoff/SKILL.md"
-        },
-        {
-          "id": "pstack:recall",
-          "path": "pstack/skills/recall/SKILL.md"
         }
       ],
-      "owner": "Son",
-      "validation": "structural and scenario review; real-task pilot pending"
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "2bb509b814f39159a652fa98398b3d75f54bcdb8951e44f16f101f4ef9d83529",
+          "mode": "100644",
+          "size": 971
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "5c479fd562c691851690e8b18c8501045bef0943c10743d636b2fae26add1d28",
+          "mode": "100644",
+          "size": 141
+        },
+        "licenses/matt.txt": {
+          "sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+          "mode": "100644",
+          "size": 1068
+        }
+      }
     },
     {
-      "name": "son-writing",
+      "name": "how",
+      "kind": "original",
       "category": "communication",
-      "description": "Write or edit concise agent instructions, technical documentation, or decision notes with specific triggers, source references, and completion criteria.",
+      "description": "Use for \"how does X work\", code walkthroughs before changing something, and placement / ownership / layering questions (\"where should this live\", \"which package owns this\", \"is this the right layer\"). Explains subsystem architecture, runtime flow, onboarding mental models. Use why for motivation.",
+      "explicit_only": true,
+      "sources": [
+        {
+          "id": "pstack:how",
+          "path": "pstack/skills/how/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "28659f0bb888bb741bbcbf886dcf85bf80fe9254fa9e137d463b563e70a8127f",
+          "mode": "100644",
+          "size": 3154
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+          "mode": "100644",
+          "size": 43
+        },
+        "licenses/pstack.txt": {
+          "sha256": "bc957ca6bee02792566a1a028d105e02e247c6e77cf057061674273da77b200e",
+          "mode": "100644",
+          "size": 1067
+        },
+        "references/explainer-prompt.md": {
+          "sha256": "ddb89cebefc24e2b54517a331aedfe045b6971e101f45c71b8cef4cccff45bff",
+          "mode": "100644",
+          "size": 3085
+        },
+        "references/explorer-prompt.md": {
+          "sha256": "a3b44a6e5bb16a6d4d1cac19db8ed5322ffd5f5f5d45baca4e73990ca096f8be",
+          "mode": "100644",
+          "size": 2684
+        }
+      }
+    },
+    {
+      "name": "implement",
+      "kind": "original",
+      "category": "delivery",
+      "description": "Implement a piece of work based on a spec or set of tickets.",
+      "explicit_only": true,
+      "sources": [
+        {
+          "id": "matt:implement",
+          "path": "skills/engineering/implement/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "f5b93e621136a880b294e81646e9e1ff9dca13d8c88af2ba8adada27b19173fc",
+          "mode": "100644",
+          "size": 515
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "8970a8596ade0c28ab427f41a4ea242d6bdf6186c59ebf55e1238dbecaab79dc",
+          "mode": "100644",
+          "size": 139
+        },
+        "licenses/matt.txt": {
+          "sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+          "mode": "100644",
+          "size": 1068
+        }
+      }
+    },
+    {
+      "name": "implement-spec",
+      "kind": "original",
+      "category": "delivery",
+      "description": "Implement the result of /to-spec and /to-tickets in code.",
+      "explicit_only": true,
+      "sources": [
+        {
+          "id": "matt:implement-spec",
+          "path": "skills/engineering/implement-spec/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "7b3a6e6a54ddb2e3a1e8fb09d1098904500c8b02c503cbba3aac1a1633c11ed5",
+          "mode": "100644",
+          "size": 2862
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "fd41efb42c60c96320d6531be7e4bf15cbf5518cd652d57dff27ccffa46988e9",
+          "mode": "100644",
+          "size": 168
+        },
+        "licenses/matt.txt": {
+          "sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+          "mode": "100644",
+          "size": 1068
+        }
+      }
+    },
+    {
+      "name": "improve-animations",
+      "kind": "original",
+      "category": "interface",
+      "description": "Survey a codebase's animation and motion code as a senior motion advisor, then produce a prioritized audit and self-contained implementation plans for other agents (or cheaper models) to execute. Read-only on source code \u2014 it plans improvements, it does not apply them. Use when the user asks to \"improve the animations\", \"audit the motion\", \"make this app feel better\", or wants a roadmap of animation fixes rather than a review of a single diff.",
       "explicit_only": false,
       "sources": [
         {
-          "id": "matt:writing-for-agents",
-          "path": "skills/productivity/writing-for-agents/SKILL.md"
+          "id": "emil:improve-animations",
+          "path": "skills/improve-animations/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "AUDIT.md": {
+          "sha256": "551c8473e20e5f4774680bc24d45e1c68e50992582720905c6b077756b7b5a55",
+          "mode": "100644",
+          "size": 7387
         },
-        {
-          "id": "pstack:technical-writing",
-          "path": "pstack/skills/technical-writing/SKILL.md"
+        "PLAN-TEMPLATE.md": {
+          "sha256": "0a08ac8e23fd2082d7ffb86aeed7b789de77328c3cf874b16f1a755f2ef0a6ad",
+          "mode": "100644",
+          "size": 3100
         },
-        {
-          "id": "pstack:unslop",
-          "path": "pstack/skills/unslop/SKILL.md"
+        "SKILL.md": {
+          "sha256": "42ebfd3e6def244752ea08906c794fc5981708dcba02564e615553a440ae5920",
+          "mode": "100644",
+          "size": 8285
         },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "8619a54e8c098122a7f3881394f84ca89b684366e848233a29ad18b6ec363935",
+          "mode": "100644",
+          "size": 42
+        },
+        "licenses/emil.txt": {
+          "sha256": "4ff5bdb7887ec1435c9cab0e8d1a7caee704d894d65c2a008ccc68b1cc2f260b",
+          "mode": "100644",
+          "size": 1070
+        }
+      }
+    },
+    {
+      "name": "improve-claude-md",
+      "kind": "original",
+      "category": "communication",
+      "description": "improve a CLAUDE.md file using <important if> blocks to improve instruction adherence",
+      "explicit_only": false,
+      "sources": [
         {
           "id": "humanlayer:improve-claude-md",
           "path": "plugins/improve-claude-md/skills/improve-claude-md/SKILL.md"
         }
       ],
-      "owner": "Son",
-      "validation": "structural and scenario review; real-task pilot pending"
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "e0f1124b433420846ffed528fec0a4f49a8533a1fffb245e08056e402c6b5bcd",
+          "mode": "100644",
+          "size": 9527
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "8619a54e8c098122a7f3881394f84ca89b684366e848233a29ad18b6ec363935",
+          "mode": "100644",
+          "size": 42
+        },
+        "licenses/humanlayer.txt": {
+          "sha256": "5f13c18ea00ea5c1384f41745feeca774079164f7f59a92e4ac0899ad217b26f",
+          "mode": "100644",
+          "size": 1067
+        }
+      }
+    },
+    {
+      "name": "improve-codebase-architecture",
+      "kind": "original",
+      "category": "planning",
+      "description": "Scan a codebase for deepening opportunities, present them as a visual HTML report, then grill through whichever one you pick.",
+      "explicit_only": true,
+      "sources": [
+        {
+          "id": "matt:improve-codebase-architecture",
+          "path": "skills/engineering/improve-codebase-architecture/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "HTML-REPORT.md": {
+          "sha256": "581e8bb5a521e46bbda8ca7e19b15948bed882187108092ebb90c62513b77528",
+          "mode": "100644",
+          "size": 6641
+        },
+        "SKILL.md": {
+          "sha256": "8a8d81e9f905af6ff33856424bb4a8129ccc7503b6d7601f121f718b53ab0a11",
+          "mode": "100644",
+          "size": 6077
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "c8cb20f68ebf0edb4e497bc11ae5fcaa196004e661cd189015b04f4109ced7f1",
+          "mode": "100644",
+          "size": 166
+        },
+        "licenses/matt.txt": {
+          "sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+          "mode": "100644",
+          "size": 1068
+        }
+      }
+    },
+    {
+      "name": "interrogate",
+      "kind": "original",
+      "category": "verification",
+      "description": "Use for \"interrogate\", \"adversarial review\", \"multi-model review\", \"challenge this\", \"stress test this code\", \"find blind spots\", or \"tear this apart\". Multiple LLM reviewers challenge changes from independent angles.",
+      "explicit_only": true,
+      "sources": [
+        {
+          "id": "pstack:interrogate",
+          "path": "pstack/skills/interrogate/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "2ced28d127bc5cae7abc3b7f8a03ce58face3bf9a6e5e98778f0b01efac37ca6",
+          "mode": "100644",
+          "size": 5131
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+          "mode": "100644",
+          "size": 43
+        },
+        "licenses/pstack.txt": {
+          "sha256": "bc957ca6bee02792566a1a028d105e02e247c6e77cf057061674273da77b200e",
+          "mode": "100644",
+          "size": 1067
+        },
+        "references/code-quality-review.md": {
+          "sha256": "79162fda183eafd40d51661fbb5e151c7ba250f89e506ba17f5bd135dcbd50a8",
+          "mode": "100644",
+          "size": 5217
+        },
+        "references/lead-judgment.md": {
+          "sha256": "6e5bdf5670eb34017692e9b6c546f36ac7552e6bb9f3f2f3429164fcc46a9361",
+          "mode": "100644",
+          "size": 3465
+        },
+        "references/reviewer-prompt.md": {
+          "sha256": "e0598e254792b56de39bb16b1e6db559b03a522fdc54b98f942d254090920ae6",
+          "mode": "100644",
+          "size": 2491
+        },
+        "references/rubric.md": {
+          "sha256": "a85aa801abbaf14434f00579440abc0d8e2723227ba8bf57de7cca8d6e7d2f25",
+          "mode": "100644",
+          "size": 5025
+        }
+      }
+    },
+    {
+      "name": "maintain-verification-skill",
+      "kind": "original",
+      "category": "verification",
+      "description": "Periodic pass that keeps a project's verification skill and feature map honest: parallel source readers per feature, one live session driving every feature, at most one PR of proven corrections. Use for /maintain-verification-skill or \"audit the verify skill\".",
+      "explicit_only": true,
+      "sources": [
+        {
+          "id": "pstack:maintain-verification-skill",
+          "path": "pstack/skills/maintain-verification-skill/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "ea9bcc51837ffd860cc085976cb3093f1f8722c85c363ff2179c15067604b4ca",
+          "mode": "100644",
+          "size": 4999
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+          "mode": "100644",
+          "size": 43
+        },
+        "licenses/pstack.txt": {
+          "sha256": "bc957ca6bee02792566a1a028d105e02e247c6e77cf057061674273da77b200e",
+          "mode": "100644",
+          "size": 1067
+        }
+      }
+    },
+    {
+      "name": "make-bot-ui",
+      "kind": "original",
+      "category": "automation",
+      "description": "Use when building a custom UI (page, dashboard, buttons) that should wake a Grok Bot over a webhook, when the user must provide a webhook sender key, or when exposing that UI on Tailscale.",
+      "explicit_only": true,
+      "sources": [
+        {
+          "id": "pstack:make-bot-ui",
+          "path": "pstack/skills/make-bot-ui/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "d42d1fe022f19bed6f9d3bbd29100aae29dc533a5004f4ef4e95ed38d87ea1ea",
+          "mode": "100644",
+          "size": 4727
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+          "mode": "100644",
+          "size": 43
+        },
+        "licenses/pstack.txt": {
+          "sha256": "bc957ca6bee02792566a1a028d105e02e247c6e77cf057061674273da77b200e",
+          "mode": "100644",
+          "size": 1067
+        }
+      }
+    },
+    {
+      "name": "matt-prototype",
+      "kind": "original",
+      "category": "interface",
+      "description": "Build a throwaway prototype to answer a design question. Use when the user wants to sanity-check whether a state model or logic feels right, or explore what a UI should look like.",
+      "explicit_only": false,
+      "sources": [
+        {
+          "id": "matt:prototype",
+          "path": "skills/engineering/prototype/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "LOGIC.md": {
+          "sha256": "f61c7d249e786a79ef289018901c348271e1798dd0b0bc5607b5c6f4d4a01ab9",
+          "mode": "100644",
+          "size": 6036
+        },
+        "SKILL.md": {
+          "sha256": "de94c8d50853095cb7ff81770370e821a9ebdc7380c995044ec55350b44f8edd",
+          "mode": "100644",
+          "size": 3013
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "UI.md": {
+          "sha256": "ff0373912934bbc92259d4710282c26eb3b47bb6362bec42ecc50a0c30f82546",
+          "mode": "100644",
+          "size": 6923
+        },
+        "agents/openai.yaml": {
+          "sha256": "0afbea01570c71b8243f1fe8abb185012a89a579367048eb26aac79ca4654a4e",
+          "mode": "100644",
+          "size": 143
+        },
+        "licenses/matt.txt": {
+          "sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+          "mode": "100644",
+          "size": 1068
+        }
+      }
+    },
+    {
+      "name": "matt-tdd",
+      "kind": "original",
+      "category": "delivery",
+      "description": "Test-driven development. Use when the user wants to build features or fix bugs test-first, mentions \"red-green-refactor\", or wants integration tests.",
+      "explicit_only": false,
+      "sources": [
+        {
+          "id": "matt:tdd",
+          "path": "skills/engineering/tdd/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "d29ad741841f8b9999bfc8233a9232a37a13c5d6d573f81afa65edab77ed28e4",
+          "mode": "100644",
+          "size": 3632
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "9c20f8ad8de3870365ac3d2de696a6f72f43e4ddb21db039956fb6d4d87fa5d8",
+          "mode": "100644",
+          "size": 130
+        },
+        "licenses/matt.txt": {
+          "sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+          "mode": "100644",
+          "size": 1068
+        },
+        "mocking.md": {
+          "sha256": "3ceb807fdf4a47d6a93d4d9a891e5ba6d362a6247bd08adc451feebfc17361ef",
+          "mode": "100644",
+          "size": 1481
+        },
+        "tests.md": {
+          "sha256": "859f9e592c188fda4fc7277dd180e4ce9c7a2e13f6efe1f6f29eccc9d28c106a",
+          "mode": "100644",
+          "size": 2214
+        }
+      }
+    },
+    {
+      "name": "matt-teach",
+      "kind": "original",
+      "category": "communication",
+      "description": "Teach the user a new skill or concept, within this workspace.",
+      "explicit_only": true,
+      "sources": [
+        {
+          "id": "matt:teach",
+          "path": "skills/productivity/teach/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "GLOSSARY-FORMAT.md": {
+          "sha256": "9b99859ec28437668130d8f2ce5a342938970f8a1ed4fd38c3eab4f4b5fff210",
+          "mode": "100644",
+          "size": 2122
+        },
+        "LEARNING-RECORD-FORMAT.md": {
+          "sha256": "701fa34b6748aa89e6c960ffb815257f481a7d77fb2900f9028f7edf3fdd6052",
+          "mode": "100644",
+          "size": 2747
+        },
+        "MISSION-FORMAT.md": {
+          "sha256": "8cacbb3c0644d3ae0ea4965564797099401a6930a23f7cf462918576587f2418",
+          "mode": "100644",
+          "size": 1540
+        },
+        "RESOURCES-FORMAT.md": {
+          "sha256": "89dc01d0b6288108229eede0e4b7981ce2d6f3df4900b38dac405dd7f3c7ee09",
+          "mode": "100644",
+          "size": 1922
+        },
+        "SKILL.md": {
+          "sha256": "634cf203c0aede1ca33251f091bb2b4b5e83b392a3f460da7c1a010aa3492651",
+          "mode": "100644",
+          "size": 9582
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "5856f3ae8aec742f1499c640aecdd5f1d6af5fa210a7c6ec794de8263a6f733f",
+          "mode": "100644",
+          "size": 139
+        },
+        "licenses/matt.txt": {
+          "sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+          "mode": "100644",
+          "size": 1068
+        }
+      }
+    },
+    {
+      "name": "mobile-native",
+      "kind": "original",
+      "category": "interface",
+      "description": "Make a web app feel native on a phone \u2014 the small CSS and meta-tag fixes that separate \"a website in a browser\" from something that feels installed. Covers sticky hover states, tap highlight flashes, the 100vh bug, inputs that zoom the page, laggy taps, pull-to-refresh hijacking scroll, content under the notch, long-press selecting button text, carousels that scroll the wrong way, mismatched status bars, and the rule that you test on real hardware. Use when a web app is being built for or reviewed on mobile, when something \"works in Chrome but feels wrong on my phone\", when building a PWA, a bottom sheet, a carousel, a full-screen layout, or any touch interaction. For motion itself use animate; for React Native use animate-expo.",
+      "explicit_only": false,
+      "sources": [
+        {
+          "id": "emil:mobile-native",
+          "path": "skills/mobile-native/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "01e1a4160b7a279fa8ef4d0cf250fd262efd86db9355d9ba5f9273600d24610d",
+          "mode": "100644",
+          "size": 16915
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "8619a54e8c098122a7f3881394f84ca89b684366e848233a29ad18b6ec363935",
+          "mode": "100644",
+          "size": 42
+        },
+        "licenses/emil.txt": {
+          "sha256": "4ff5bdb7887ec1435c9cab0e8d1a7caee704d894d65c2a008ccc68b1cc2f260b",
+          "mode": "100644",
+          "size": 1070
+        }
+      }
+    },
+    {
+      "name": "narrow-react-prop-types",
+      "kind": "original",
+      "category": "engineering",
+      "description": "narrow React component prop types to match live code paths",
+      "explicit_only": false,
+      "sources": [
+        {
+          "id": "humanlayer:narrow-react-prop-types",
+          "path": "plugins/narrow-react-prop-types/skills/narrow-react-prop-types/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "5307d381b98a517318e375b06a020589faead8da370876487687afd7573e3b98",
+          "mode": "100644",
+          "size": 7841
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "8619a54e8c098122a7f3881394f84ca89b684366e848233a29ad18b6ec363935",
+          "mode": "100644",
+          "size": 42
+        },
+        "licenses/humanlayer.txt": {
+          "sha256": "5f13c18ea00ea5c1384f41745feeca774079164f7f59a92e4ac0899ad217b26f",
+          "mode": "100644",
+          "size": 1067
+        },
+        "references/agent-narrow-component-props.yml": {
+          "sha256": "2bc871899d6c895ae4acffab408858005890cd8a7ddc626652deca3f3ab1dd8c",
+          "mode": "100644",
+          "size": 11103
+        },
+        "references/narrow-component-props-memory.md": {
+          "sha256": "08b9fb28be6498b7a6e2cfda5d08fd47ce8f47c5026c6e3c8f09e1c17af87c34",
+          "mode": "100644",
+          "size": 213
+        },
+        "references/response-template.md": {
+          "sha256": "b00950e0ad42a3e3dd15356204953a7585a2b36fb5529c58e77f3e2403701016",
+          "mode": "100644",
+          "size": 1879
+        }
+      }
+    },
+    {
+      "name": "no-comments",
+      "kind": "original",
+      "category": "engineering",
+      "description": "Spawn Comment Sicko, fix accepted findings, and offer encodings for claimed constraints.",
+      "explicit_only": true,
+      "sources": [
+        {
+          "id": "pstack:no-comments",
+          "path": "pstack/skills/no-comments/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "49d9f356c77bdcf5710b63a3cc61252475bc40280944f3523147c9548e7e8598",
+          "mode": "100644",
+          "size": 2637
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+          "mode": "100644",
+          "size": 43
+        },
+        "licenses/pstack.txt": {
+          "sha256": "bc957ca6bee02792566a1a028d105e02e247c6e77cf057061674273da77b200e",
+          "mode": "100644",
+          "size": 1067
+        }
+      }
+    },
+    {
+      "name": "pick-ui-library",
+      "kind": "original",
+      "category": "interface",
+      "description": "Pick the right library for a given frontend task from a curated, opinionated list \u2014 numbers, OTP inputs, charts, command menus, virtualization, drag and drop, toasts, state, styling, and more. Only runs when explicitly invoked; it does not trigger on its own.",
+      "explicit_only": true,
+      "sources": [
+        {
+          "id": "emil:pick-ui-library",
+          "path": "skills/pick-ui-library/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "cfff567c8ded604352aae019cfd433868f81f63c1c7ac95f3b38a773d353b188",
+          "mode": "100644",
+          "size": 4867
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+          "mode": "100644",
+          "size": 43
+        },
+        "licenses/emil.txt": {
+          "sha256": "4ff5bdb7887ec1435c9cab0e8d1a7caee704d894d65c2a008ccc68b1cc2f260b",
+          "mode": "100644",
+          "size": 1070
+        }
+      }
+    },
+    {
+      "name": "pr",
+      "kind": "original",
+      "category": "communication",
+      "description": "Use when writing a PR body.",
+      "explicit_only": false,
+      "sources": [
+        {
+          "id": "matt:pr",
+          "path": "skills/engineering/pr/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "CREDITS.md": {
+          "sha256": "a7a087127665d7298a72280ef6e19c41ad8404523712a788c8dc3ab414bc2497",
+          "mode": "100644",
+          "size": 604
+        },
+        "SKILL.md": {
+          "sha256": "98c6c6bbe9e169630692fca6c29aa00c663110c9f3d5d42880cb3f20e5f2b77e",
+          "mode": "100644",
+          "size": 4246
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "5f2370ce1a6cda42fcd7446554ff14c89e46d2f9240aa17bbc1d3bda4df038d6",
+          "mode": "100644",
+          "size": 136
+        },
+        "licenses/matt.txt": {
+          "sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+          "mode": "100644",
+          "size": 1068
+        }
+      }
+    },
+    {
+      "name": "principle-attack-the-premise",
+      "kind": "original",
+      "category": "diagnosis",
+      "description": "Apply when two or more fixes that share one premise have failed the same gate. Take a census of which actors hold the imbalance before the next fix, then question the premise instead of writing another fix that assumes it.",
+      "explicit_only": true,
+      "sources": [
+        {
+          "id": "pstack:principle-attack-the-premise",
+          "path": "pstack/skills/principle-attack-the-premise/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "bef031fcdd086d3d745d293c579f305f29acf4ab53c9a06ce1e9aad20074dcdd",
+          "mode": "100644",
+          "size": 2018
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+          "mode": "100644",
+          "size": 43
+        },
+        "licenses/pstack.txt": {
+          "sha256": "bc957ca6bee02792566a1a028d105e02e247c6e77cf057061674273da77b200e",
+          "mode": "100644",
+          "size": 1067
+        }
+      }
+    },
+    {
+      "name": "principle-boundary-discipline",
+      "kind": "original",
+      "category": "verification",
+      "description": "Apply when wiring validation, error handling, or framework adapters. Concentrate guards at system boundaries (CLI, config, network, external APIs); trust internal types and keep business logic in pure functions.",
+      "explicit_only": true,
+      "sources": [
+        {
+          "id": "pstack:principle-boundary-discipline",
+          "path": "pstack/skills/principle-boundary-discipline/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "6b1542d8acf009982badb331585aa06001fdcc086bf7d3d3fd80b42aa524d3f3",
+          "mode": "100644",
+          "size": 1960
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+          "mode": "100644",
+          "size": 43
+        },
+        "licenses/pstack.txt": {
+          "sha256": "bc957ca6bee02792566a1a028d105e02e247c6e77cf057061674273da77b200e",
+          "mode": "100644",
+          "size": 1067
+        }
+      }
+    },
+    {
+      "name": "principle-build-the-lever",
+      "kind": "original",
+      "category": "working agreements",
+      "description": "Apply to any non-trivial work, not just bulk work: edits, migrations, analyses, checks. Build the tool that does it or proves it (codemod, script, generator, or a skill your subagents follow) instead of working by hand. The tool is the artifact a reviewer can rerun.",
+      "explicit_only": true,
+      "sources": [
+        {
+          "id": "pstack:principle-build-the-lever",
+          "path": "pstack/skills/principle-build-the-lever/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "bd6d1e983ff9de52a26783bffa755f1672a3a931c76389e7d09538346303dbb1",
+          "mode": "100644",
+          "size": 2536
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+          "mode": "100644",
+          "size": 43
+        },
+        "licenses/pstack.txt": {
+          "sha256": "bc957ca6bee02792566a1a028d105e02e247c6e77cf057061674273da77b200e",
+          "mode": "100644",
+          "size": 1067
+        }
+      }
+    },
+    {
+      "name": "principle-encode-lessons-in-structure",
+      "kind": "original",
+      "category": "improvement",
+      "description": "Apply when you catch yourself writing the same instruction a second time, or notice a recurring correction. Encode the rule as a lint, metadata flag, runtime check, or script instead of more text.",
+      "explicit_only": true,
+      "sources": [
+        {
+          "id": "pstack:principle-encode-lessons-in-structure",
+          "path": "pstack/skills/principle-encode-lessons-in-structure/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "f4a54049a9bd628f3ce71d257723ba2fa9328157c0e11de3d9b86693d9c2b76a",
+          "mode": "100644",
+          "size": 2288
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+          "mode": "100644",
+          "size": 43
+        },
+        "licenses/pstack.txt": {
+          "sha256": "bc957ca6bee02792566a1a028d105e02e247c6e77cf057061674273da77b200e",
+          "mode": "100644",
+          "size": 1067
+        }
+      }
+    },
+    {
+      "name": "principle-exhaust-the-design-space",
+      "kind": "original",
+      "category": "interface",
+      "description": "Apply when facing a novel UI interaction or architectural decision with no precedent in the codebase. Build 2-3 competing prototypes and compare side by side before committing.",
+      "explicit_only": true,
+      "sources": [
+        {
+          "id": "pstack:principle-exhaust-the-design-space",
+          "path": "pstack/skills/principle-exhaust-the-design-space/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "a4e5806f3fa0cf7c6771d06c7f53b891920223bec58f96c08c398d99086b09f5",
+          "mode": "100644",
+          "size": 1229
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+          "mode": "100644",
+          "size": 43
+        },
+        "licenses/pstack.txt": {
+          "sha256": "bc957ca6bee02792566a1a028d105e02e247c6e77cf057061674273da77b200e",
+          "mode": "100644",
+          "size": 1067
+        }
+      }
+    },
+    {
+      "name": "principle-experience-first",
+      "kind": "original",
+      "category": "interface",
+      "description": "Apply when product, UX, or feature-scope tradeoffs come up. Choose user delight over implementation convenience; ship fewer polished features over more rough ones.",
+      "explicit_only": true,
+      "sources": [
+        {
+          "id": "pstack:principle-experience-first",
+          "path": "pstack/skills/principle-experience-first/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "c6468b1adb7c938ae7116acb6305ffae2b020d1c4a8cecf65874449e8a2be6eb",
+          "mode": "100644",
+          "size": 1261
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+          "mode": "100644",
+          "size": 43
+        },
+        "licenses/pstack.txt": {
+          "sha256": "bc957ca6bee02792566a1a028d105e02e247c6e77cf057061674273da77b200e",
+          "mode": "100644",
+          "size": 1067
+        }
+      }
+    },
+    {
+      "name": "principle-explain-the-number",
+      "kind": "original",
+      "category": "verification",
+      "description": "Apply before you trust, report, or act on a number you measured: a speedup, a regression, a throughput, a latency, or an eval result. Find what limits it, and rule out that it measured something other than the work you think.",
+      "explicit_only": true,
+      "sources": [
+        {
+          "id": "pstack:principle-explain-the-number",
+          "path": "pstack/skills/principle-explain-the-number/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "f827dc2b50df3b5e29ffc9f0f7656fff57104260e2e62d50757cc45dfde9cbdf",
+          "mode": "100644",
+          "size": 2186
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+          "mode": "100644",
+          "size": 43
+        },
+        "licenses/pstack.txt": {
+          "sha256": "bc957ca6bee02792566a1a028d105e02e247c6e77cf057061674273da77b200e",
+          "mode": "100644",
+          "size": 1067
+        }
+      }
+    },
+    {
+      "name": "principle-fix-root-causes",
+      "kind": "original",
+      "category": "diagnosis",
+      "description": "Apply when debugging. Trace each symptom to its root cause and fix it there; reproduce first, ask why until you reach it, resist nil-check guards that silence crashes.",
+      "explicit_only": true,
+      "sources": [
+        {
+          "id": "pstack:principle-fix-root-causes",
+          "path": "pstack/skills/principle-fix-root-causes/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "22cb4efa4a72e6a39e3c087dd681a6678c54a1b1504af67d43555dd2bb31ba37",
+          "mode": "100644",
+          "size": 1323
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+          "mode": "100644",
+          "size": 43
+        },
+        "licenses/pstack.txt": {
+          "sha256": "bc957ca6bee02792566a1a028d105e02e247c6e77cf057061674273da77b200e",
+          "mode": "100644",
+          "size": 1067
+        }
+      }
+    },
+    {
+      "name": "principle-foundational-thinking",
+      "kind": "original",
+      "category": "interface",
+      "description": "Apply before writing logic: choosing core types and data structures, sequencing scaffold-vs-feature work, asking what concurrent actors share. Get the data structures right so downstream code becomes obvious.",
+      "explicit_only": true,
+      "sources": [
+        {
+          "id": "pstack:principle-foundational-thinking",
+          "path": "pstack/skills/principle-foundational-thinking/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "43188acd513a4310cdda467fe661a51264342ef7236b235721e5b07ba11fb40a",
+          "mode": "100644",
+          "size": 1607
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+          "mode": "100644",
+          "size": 43
+        },
+        "licenses/pstack.txt": {
+          "sha256": "bc957ca6bee02792566a1a028d105e02e247c6e77cf057061674273da77b200e",
+          "mode": "100644",
+          "size": 1067
+        }
+      }
+    },
+    {
+      "name": "principle-guard-the-context-window",
+      "kind": "original",
+      "category": "working agreements",
+      "description": "Apply when context is filling up: large outputs, long files, repeated reads, fan-out planning. Route bulk to subagents; keep summaries in the main thread, not raw payloads.",
+      "explicit_only": true,
+      "sources": [
+        {
+          "id": "pstack:principle-guard-the-context-window",
+          "path": "pstack/skills/principle-guard-the-context-window/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "c1cb56ee73b5419cfc3b0d7b82020205c0a38bbdcc0d8167164db9038f8a8e26",
+          "mode": "100644",
+          "size": 1016
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+          "mode": "100644",
+          "size": 43
+        },
+        "licenses/pstack.txt": {
+          "sha256": "bc957ca6bee02792566a1a028d105e02e247c6e77cf057061674273da77b200e",
+          "mode": "100644",
+          "size": 1067
+        }
+      }
+    },
+    {
+      "name": "principle-laziness-protocol",
+      "kind": "original",
+      "category": "working agreements",
+      "description": "Apply when refactoring, evaluating diff size, or tempted to add abstractions, layers, or signal threading. Bias toward deletion and the smallest change that solves the problem.",
+      "explicit_only": true,
+      "sources": [
+        {
+          "id": "pstack:principle-laziness-protocol",
+          "path": "pstack/skills/principle-laziness-protocol/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "b02fba273d2de981797974e118d8401d1a511f9330f2a501d20b951af3ddddc4",
+          "mode": "100644",
+          "size": 1448
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+          "mode": "100644",
+          "size": 43
+        },
+        "licenses/pstack.txt": {
+          "sha256": "bc957ca6bee02792566a1a028d105e02e247c6e77cf057061674273da77b200e",
+          "mode": "100644",
+          "size": 1067
+        }
+      }
+    },
+    {
+      "name": "principle-make-operations-idempotent",
+      "kind": "original",
+      "category": "automation",
+      "description": "Apply when designing commands, lifecycle steps, or processing loops that run amid crashes, restarts, and retries. Converge to the same end state regardless of partial prior runs.",
+      "explicit_only": true,
+      "sources": [
+        {
+          "id": "pstack:principle-make-operations-idempotent",
+          "path": "pstack/skills/principle-make-operations-idempotent/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "6340ba2903f597b0a0620695d8af47674be986e53725311ccaef3b10bbb503b0",
+          "mode": "100644",
+          "size": 1467
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+          "mode": "100644",
+          "size": 43
+        },
+        "licenses/pstack.txt": {
+          "sha256": "bc957ca6bee02792566a1a028d105e02e247c6e77cf057061674273da77b200e",
+          "mode": "100644",
+          "size": 1067
+        }
+      }
+    },
+    {
+      "name": "principle-migrate-callers-then-delete-legacy-apis",
+      "kind": "original",
+      "category": "engineering",
+      "description": "Apply when introducing a new internal API while old callers still exist. Migrate callers and delete the old API in the same wave instead of preserving compatibility layers.",
+      "explicit_only": true,
+      "sources": [
+        {
+          "id": "pstack:principle-migrate-callers-then-delete-legacy-apis",
+          "path": "pstack/skills/principle-migrate-callers-then-delete-legacy-apis/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "41c3001f10ef83a4f55997b55871651499e1daae2f1d787342b3f8155c39d383",
+          "mode": "100644",
+          "size": 1223
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+          "mode": "100644",
+          "size": 43
+        },
+        "licenses/pstack.txt": {
+          "sha256": "bc957ca6bee02792566a1a028d105e02e247c6e77cf057061674273da77b200e",
+          "mode": "100644",
+          "size": 1067
+        }
+      }
+    },
+    {
+      "name": "principle-minimize-reader-load",
+      "kind": "original",
+      "category": "working agreements",
+      "description": "Apply when reviewing or shaping code that's hard to trace. Count layers between question and answer, and hidden state in the reader's head; collapse one-caller wrappers and shrink mutable scope.",
+      "explicit_only": true,
+      "sources": [
+        {
+          "id": "pstack:principle-minimize-reader-load",
+          "path": "pstack/skills/principle-minimize-reader-load/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "3fc6648439c984d4fe22317b4d0d85df5a1a49d2310099e64f8c6b799fe1fdc0",
+          "mode": "100644",
+          "size": 2172
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+          "mode": "100644",
+          "size": 43
+        },
+        "licenses/pstack.txt": {
+          "sha256": "bc957ca6bee02792566a1a028d105e02e247c6e77cf057061674273da77b200e",
+          "mode": "100644",
+          "size": 1067
+        }
+      }
+    },
+    {
+      "name": "principle-model-the-domain",
+      "kind": "original",
+      "category": "decisions",
+      "description": "Apply when writing stateful logic, or when code branches a lot or repeats a shape assumption across files. Encode the domain in a structure instead of scattered conditionals.",
+      "explicit_only": true,
+      "sources": [
+        {
+          "id": "pstack:principle-model-the-domain",
+          "path": "pstack/skills/principle-model-the-domain/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "f752447133a82687596a3c12dad044efd026bd279b76968bea025ed72b3c29b6",
+          "mode": "100644",
+          "size": 2159
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+          "mode": "100644",
+          "size": 43
+        },
+        "licenses/pstack.txt": {
+          "sha256": "bc957ca6bee02792566a1a028d105e02e247c6e77cf057061674273da77b200e",
+          "mode": "100644",
+          "size": 1067
+        }
+      }
+    },
+    {
+      "name": "principle-never-block-on-the-human",
+      "kind": "original",
+      "category": "working agreements",
+      "description": "Apply when tempted to ask 'should I do X?' on reversible work. Proceed, present the result, let the human course-correct after the fact; reserve confirmation for irreversible actions.",
+      "explicit_only": true,
+      "sources": [
+        {
+          "id": "pstack:principle-never-block-on-the-human",
+          "path": "pstack/skills/principle-never-block-on-the-human/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "54ba297c1fb99dad2e477946ca9775e841168bc3b5fe57d98c2b816b006ca273",
+          "mode": "100644",
+          "size": 1249
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+          "mode": "100644",
+          "size": 43
+        },
+        "licenses/pstack.txt": {
+          "sha256": "bc957ca6bee02792566a1a028d105e02e247c6e77cf057061674273da77b200e",
+          "mode": "100644",
+          "size": 1067
+        }
+      }
+    },
+    {
+      "name": "principle-outcome-oriented-execution",
+      "kind": "original",
+      "category": "engineering",
+      "description": "Apply during planned rewrites and migrations with explicit phase boundaries. Converge on the target architecture; don't preserve smooth intermediate states with throwaway compatibility code.",
+      "explicit_only": true,
+      "sources": [
+        {
+          "id": "pstack:principle-outcome-oriented-execution",
+          "path": "pstack/skills/principle-outcome-oriented-execution/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "fc9b67fec9100fef6cc8b63d46d5288ff953ed163618c71eef6fb5b5f87a2d83",
+          "mode": "100644",
+          "size": 1155
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+          "mode": "100644",
+          "size": 43
+        },
+        "licenses/pstack.txt": {
+          "sha256": "bc957ca6bee02792566a1a028d105e02e247c6e77cf057061674273da77b200e",
+          "mode": "100644",
+          "size": 1067
+        }
+      }
+    },
+    {
+      "name": "principle-prove-it-works",
+      "kind": "original",
+      "category": "verification",
+      "description": "Apply after completing a task, before declaring done. Verify against the real artifact (run the feature, read the actual value, inspect the diff), not a proxy, self-report, or 'it compiles.'",
+      "explicit_only": true,
+      "sources": [
+        {
+          "id": "pstack:principle-prove-it-works",
+          "path": "pstack/skills/principle-prove-it-works/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "096ccbb777647884b5fe3ae5c3885fb42d19b7b145ac715d2573609c6327dc38",
+          "mode": "100644",
+          "size": 1448
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+          "mode": "100644",
+          "size": 43
+        },
+        "licenses/pstack.txt": {
+          "sha256": "bc957ca6bee02792566a1a028d105e02e247c6e77cf057061674273da77b200e",
+          "mode": "100644",
+          "size": 1067
+        }
+      }
+    },
+    {
+      "name": "principle-redesign-from-first-principles",
+      "kind": "original",
+      "category": "engineering",
+      "description": "Apply when integrating a new requirement into an existing design. Redesign as if the requirement had been a foundational assumption from day one, instead of bolting it on.",
+      "explicit_only": true,
+      "sources": [
+        {
+          "id": "pstack:principle-redesign-from-first-principles",
+          "path": "pstack/skills/principle-redesign-from-first-principles/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "cc8f402c8fb075d12236b59cb52f4deabf1a772273cf5be41b822b4224f7e9e5",
+          "mode": "100644",
+          "size": 921
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+          "mode": "100644",
+          "size": 43
+        },
+        "licenses/pstack.txt": {
+          "sha256": "bc957ca6bee02792566a1a028d105e02e247c6e77cf057061674273da77b200e",
+          "mode": "100644",
+          "size": 1067
+        }
+      }
+    },
+    {
+      "name": "principle-separate-before-serializing-shared-state",
+      "kind": "original",
+      "category": "delivery",
+      "description": "Apply when concurrent actors might write to the same file, branch, key, or state object. Eliminate the sharing first; serialize structurally only when one shared writer is a real invariant.",
+      "explicit_only": true,
+      "sources": [
+        {
+          "id": "pstack:principle-separate-before-serializing-shared-state",
+          "path": "pstack/skills/principle-separate-before-serializing-shared-state/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "dfdafbf9cb92997005f82ab34c877790a32a2fdc62f039c47184b9d644a697ce",
+          "mode": "100644",
+          "size": 1642
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+          "mode": "100644",
+          "size": 43
+        },
+        "licenses/pstack.txt": {
+          "sha256": "bc957ca6bee02792566a1a028d105e02e247c6e77cf057061674273da77b200e",
+          "mode": "100644",
+          "size": 1067
+        }
+      }
+    },
+    {
+      "name": "principle-sequence-verifiable-units",
+      "kind": "original",
+      "category": "planning",
+      "description": "Apply to multi-step work (sweeps, migrations, runs of similar edits) and to how you stack commits and PRs. Break work into small units that each end in a verifiable state, check each before the next, and order delivery so the sequence proves itself to a reviewer.",
+      "explicit_only": true,
+      "sources": [
+        {
+          "id": "pstack:principle-sequence-verifiable-units",
+          "path": "pstack/skills/principle-sequence-verifiable-units/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "28ec761037c83f07f502acd48450394fa74c85032b7a203dbe567a0f5759fedd",
+          "mode": "100644",
+          "size": 1782
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+          "mode": "100644",
+          "size": 43
+        },
+        "licenses/pstack.txt": {
+          "sha256": "bc957ca6bee02792566a1a028d105e02e247c6e77cf057061674273da77b200e",
+          "mode": "100644",
+          "size": 1067
+        }
+      }
+    },
+    {
+      "name": "principle-subtract-before-you-add",
+      "kind": "original",
+      "category": "engineering",
+      "description": "Apply when sequencing an addition, refactor, or rewrite. Remove dead code, redundant validators, and stub references first, then build on the simpler base.",
+      "explicit_only": true,
+      "sources": [
+        {
+          "id": "pstack:principle-subtract-before-you-add",
+          "path": "pstack/skills/principle-subtract-before-you-add/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "f3a4a501350da1cecff355c04ced297ebeb6318aee0d6525ee0276f6e41c60ef",
+          "mode": "100644",
+          "size": 1171
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+          "mode": "100644",
+          "size": 43
+        },
+        "licenses/pstack.txt": {
+          "sha256": "bc957ca6bee02792566a1a028d105e02e247c6e77cf057061674273da77b200e",
+          "mode": "100644",
+          "size": 1067
+        }
+      }
+    },
+    {
+      "name": "principle-test-behavior-not-implementation",
+      "kind": "original",
+      "category": "delivery",
+      "description": "Apply when you write, change, or keep a test. Call the code the way its users do and assert the result they observe against a literal expected value. If the test would still pass when every imported function returns undefined, rewrite the assertion or delete the test.",
+      "explicit_only": true,
+      "sources": [
+        {
+          "id": "pstack:principle-test-behavior-not-implementation",
+          "path": "pstack/skills/principle-test-behavior-not-implementation/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "be502bfca8873eb52fc65dc5d0135411703f96193b8db6d4b534962f875d2bf6",
+          "mode": "100644",
+          "size": 2652
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+          "mode": "100644",
+          "size": 43
+        },
+        "licenses/pstack.txt": {
+          "sha256": "bc957ca6bee02792566a1a028d105e02e247c6e77cf057061674273da77b200e",
+          "mode": "100644",
+          "size": 1067
+        }
+      }
+    },
+    {
+      "name": "principle-type-system-discipline",
+      "kind": "original",
+      "category": "engineering",
+      "description": "Apply when designing types, reviewing a function signature, or writing code in any statically-typed language. Make illegal states unrepresentable, brand semantic primitives, parse external data at boundaries, refuse to lie to the compiler, exhaust variants, derive from authoritative schemas.",
+      "explicit_only": true,
+      "sources": [
+        {
+          "id": "pstack:principle-type-system-discipline",
+          "path": "pstack/skills/principle-type-system-discipline/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "e8df6f68793418ac481dd19191e472c70473cf2ad6defeae9e9a308df1c94a36",
+          "mode": "100644",
+          "size": 4999
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+          "mode": "100644",
+          "size": 43
+        },
+        "licenses/pstack.txt": {
+          "sha256": "bc957ca6bee02792566a1a028d105e02e247c6e77cf057061674273da77b200e",
+          "mode": "100644",
+          "size": 1067
+        }
+      }
+    },
+    {
+      "name": "pstack-tdd",
+      "kind": "original",
+      "category": "delivery",
+      "description": "Use only when the user explicitly asks for TDD, a failing test, or a regression test, OR when the bug has an obvious cheap local test target. Skip when the test path is unclear, expensive, integration-heavy, or not requested.",
+      "explicit_only": true,
+      "sources": [
+        {
+          "id": "pstack:tdd",
+          "path": "pstack/skills/tdd/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "af964f0ff14c10e80c937cf1a80d0806436bc78985b32ae52393b74564f87153",
+          "mode": "100644",
+          "size": 3227
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+          "mode": "100644",
+          "size": 43
+        },
+        "licenses/pstack.txt": {
+          "sha256": "bc957ca6bee02792566a1a028d105e02e247c6e77cf057061674273da77b200e",
+          "mode": "100644",
+          "size": 1067
+        }
+      }
+    },
+    {
+      "name": "pstack-teach",
+      "kind": "original",
+      "category": "communication",
+      "description": "Explain a body of work plainly so a person actually understands it. Runs the `how` and `why` skills and weaves what they find into one clear explanation. Use for 'teach me this', 'help me really understand X', 'explain this change or subsystem to me'.",
+      "explicit_only": true,
+      "sources": [
+        {
+          "id": "pstack:teach",
+          "path": "pstack/skills/teach/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "8c9ec005fe0bd8bb9c07726f5d63a7eab0cc8d19da81d0affc63a211fcf8eb40",
+          "mode": "100644",
+          "size": 5707
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+          "mode": "100644",
+          "size": 43
+        },
+        "licenses/pstack.txt": {
+          "sha256": "bc957ca6bee02792566a1a028d105e02e247c6e77cf057061674273da77b200e",
+          "mode": "100644",
+          "size": 1067
+        }
+      }
+    },
+    {
+      "name": "recall",
+      "kind": "original",
+      "category": "continuity",
+      "description": "Reconstruct your recent working context from your own chat history, live state, and the shared record (user reports, prior fixes, incidents), then hand back a tight current-state brief. Use for 'recall my work on X', 'catch me up', 'what have I been working on', 'where did I leave off', before starting or resuming work.",
+      "explicit_only": true,
+      "sources": [
+        {
+          "id": "pstack:recall",
+          "path": "pstack/skills/recall/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "6b45fbd6494204565ac27c297bacfb434708cdf2a43ac22ff4d1ec41738f28f5",
+          "mode": "100644",
+          "size": 5289
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+          "mode": "100644",
+          "size": 43
+        },
+        "licenses/pstack.txt": {
+          "sha256": "bc957ca6bee02792566a1a028d105e02e247c6e77cf057061674273da77b200e",
+          "mode": "100644",
+          "size": 1067
+        }
+      }
+    },
+    {
+      "name": "reflect",
+      "kind": "original",
+      "category": "improvement",
+      "description": "Spawn three parallel review subagents over the active transcript, surface learnings, and route each to a concrete edit on an existing skill. Use when the user says reflect.",
+      "explicit_only": true,
+      "sources": [
+        {
+          "id": "pstack:reflect",
+          "path": "pstack/skills/reflect/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "37a7862c735dfaa9b900f8fc49df1ef06974b9948bd1620310d2d077b23092c6",
+          "mode": "100644",
+          "size": 5059
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+          "mode": "100644",
+          "size": 43
+        },
+        "licenses/pstack.txt": {
+          "sha256": "bc957ca6bee02792566a1a028d105e02e247c6e77cf057061674273da77b200e",
+          "mode": "100644",
+          "size": 1067
+        },
+        "references/divergent-reviewer.md": {
+          "sha256": "221dfc0abf7cbcd25e1da3cd87323f5d1050fc3bf652e096d093584e183c98fb",
+          "mode": "100644",
+          "size": 3889
+        },
+        "references/judgment-reviewer.md": {
+          "sha256": "a40ecb9b28bd2a3491e11a541157fe58efe158e0eda7b61a5006c14590aabe61",
+          "mode": "100644",
+          "size": 3255
+        },
+        "references/synthesizer.md": {
+          "sha256": "2f76c847eb45b182dc6fbcbf7d96c8ee7e2986ecfd9e0d640fec44e3cc5a617c",
+          "mode": "100644",
+          "size": 4164
+        },
+        "references/tooling-reviewer.md": {
+          "sha256": "bc49ced90fa81eaba3083b88aeb430d900a6d8f14ff40c1d6b52263bacfc77b6",
+          "mode": "100644",
+          "size": 4609
+        }
+      }
+    },
+    {
+      "name": "research",
+      "kind": "original",
+      "category": "discovery",
+      "description": "Investigate a question against high-trust primary sources and capture the findings as a Markdown file in the repo. Use when the user wants a topic researched, docs or API facts gathered, or reading legwork delegated to a background agent.",
+      "explicit_only": false,
+      "sources": [
+        {
+          "id": "matt:research",
+          "path": "skills/engineering/research/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "c45d4964c77265c09f1853682e0a3f5b24edac85e8438cc0ce27028ccf73078b",
+          "mode": "100644",
+          "size": 871
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "44c7d730c3319539edc8aa067bc6c45f060546d2f8e2febe1bcda68aaae54c9b",
+          "mode": "100644",
+          "size": 137
+        },
+        "licenses/matt.txt": {
+          "sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+          "mode": "100644",
+          "size": 1068
+        }
+      }
+    },
+    {
+      "name": "retro",
+      "kind": "original",
+      "category": "improvement",
+      "description": "Conduct a retrospective on a coding session.",
+      "explicit_only": true,
+      "sources": [
+        {
+          "id": "matt:retro",
+          "path": "skills/engineering/retro/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "8a87827e1eb1071b925f32024da09a995316fd57a779e0adc2911f6b06bda0a9",
+          "mode": "100644",
+          "size": 4446
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "cb6fb9d7e6b4be5975f41f6def1dd00a1255bad5d9b02696b124c924a8b8745c",
+          "mode": "100644",
+          "size": 146
+        },
+        "licenses/matt.txt": {
+          "sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+          "mode": "100644",
+          "size": 1068
+        }
+      }
+    },
+    {
+      "name": "review-animations",
+      "kind": "original",
+      "category": "interface",
+      "description": "Reviews animation and motion code against a high craft bar derived from Emil Kowalski's design engineering philosophy. Default to flagging; approval is earned.",
+      "explicit_only": true,
+      "sources": [
+        {
+          "id": "emil:review-animations",
+          "path": "skills/review-animations/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "6ea35bd750328944096640262b407c7d3a529a1a4db037423d4a41ce17802803",
+          "mode": "100644",
+          "size": 8484
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "STANDARDS.md": {
+          "sha256": "e7d3605034acda54ca13e43aec9e64d65b53de20f75b11b8d694e373012fbe07",
+          "mode": "100644",
+          "size": 9801
+        },
+        "agents/openai.yaml": {
+          "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+          "mode": "100644",
+          "size": 43
+        },
+        "licenses/emil.txt": {
+          "sha256": "4ff5bdb7887ec1435c9cab0e8d1a7caee704d894d65c2a008ccc68b1cc2f260b",
+          "mode": "100644",
+          "size": 1070
+        }
+      }
+    },
+    {
+      "name": "setup-matt-pocock-skills",
+      "kind": "original",
+      "category": "setup",
+      "description": "Configure this repo for the engineering skills: set up its issue tracker, triage label vocabulary, and domain doc layout. Run once before first use of the other engineering skills.",
+      "explicit_only": true,
+      "sources": [
+        {
+          "id": "matt:setup-matt-pocock-skills",
+          "path": "skills/engineering/setup-matt-pocock-skills/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "3e9c6b91c1f430b3584df174a9f07a0bdf406d5a33853d15ba62b5aacff5f7a4",
+          "mode": "100644",
+          "size": 6914
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "9527de0110541c45712319025155aeab8dc7d77c6ed6e5e83271bab1851ab939",
+          "mode": "100644",
+          "size": 152
+        },
+        "domain.md": {
+          "sha256": "593a7042218689f1d24df89df14eaf0a20e19e0d0a7d479a01947ac78f0784b9",
+          "mode": "100644",
+          "size": 2042
+        },
+        "issue-tracker-github.md": {
+          "sha256": "254a96869e607094d527e74ddbfe53ed7ffeb83fa0ccdd5d29947f257b07b4cb",
+          "mode": "100644",
+          "size": 3736
+        },
+        "issue-tracker-gitlab.md": {
+          "sha256": "bfbfc0da2f658fa50491b8c2ad48cf1f0db690c461da4c212f52f849917f4f29",
+          "mode": "100644",
+          "size": 3814
+        },
+        "issue-tracker-local.md": {
+          "sha256": "390e3fe339fba68e8eb8692a9ba27cccc7acec8aab3db6724a0bc1cba24b5022",
+          "mode": "100644",
+          "size": 1815
+        },
+        "licenses/matt.txt": {
+          "sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+          "mode": "100644",
+          "size": 1068
+        },
+        "triage-labels.md": {
+          "sha256": "4f53c9b40ce2651e3611aa090eaedbd6dbc9b71ef8c5f7e65eac0d8263190d0d",
+          "mode": "100644",
+          "size": 1045
+        }
+      }
+    },
+    {
+      "name": "setup-son-skills",
+      "kind": "control",
+      "category": "orchestration",
+      "description": "Detect the active application's available models, choose a reasoning budget and models by role, and save Son's skill configuration. Use for initial setup or changing the budget or role assignments.",
+      "explicit_only": false,
+      "sources": [
+        {
+          "id": "pstack:setup-pstack",
+          "path": "pstack/skills/setup-pstack/SKILL.md"
+        }
+      ]
+    },
+    {
+      "name": "show-me",
+      "kind": "original",
+      "category": "communication",
+      "description": "Help the user understand the current topic visually with concise diagrams, code-shape sketches, and focused HTML artifacts.",
+      "explicit_only": true,
+      "sources": [
+        {
+          "id": "humanlayer:show-me",
+          "path": "plugins/show-me/skills/show-me/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "4a9f4d5da2904b792588e2972101f7353bf45ea46d6e36c7b9ff005ed9cfa7ea",
+          "mode": "100644",
+          "size": 3405
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+          "mode": "100644",
+          "size": 43
+        },
+        "licenses/humanlayer.txt": {
+          "sha256": "5f13c18ea00ea5c1384f41745feeca774079164f7f59a92e4ac0899ad217b26f",
+          "mode": "100644",
+          "size": 1067
+        }
+      }
+    },
+    {
+      "name": "show-me-your-work",
+      "kind": "original",
+      "category": "automation",
+      "description": "Keep a reviewable decision trail for long-running or unattended work: a TSV log with one row per decision (what, why, evidence, result). Local by default; commit it when a reviewer needs the trail to trust the result. Use for /show-me-your-work, autonomous or multi-phase runs, or work a human reviews after stepping away.",
+      "explicit_only": true,
+      "sources": [
+        {
+          "id": "pstack:show-me-your-work",
+          "path": "pstack/skills/show-me-your-work/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "1cf555008bff9bc26d246e8eb5b519c1a87cb5b7cfc806e5b63976441a2df91d",
+          "mode": "100644",
+          "size": 6495
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+          "mode": "100644",
+          "size": 43
+        },
+        "licenses/pstack.txt": {
+          "sha256": "bc957ca6bee02792566a1a028d105e02e247c6e77cf057061674273da77b200e",
+          "mode": "100644",
+          "size": 1067
+        },
+        "references/decision-log-template.tsv": {
+          "sha256": "6779378006a2f5225e8c06deb84f1d913fb532041ebbb6e50d94600bfe3f4b76",
+          "mode": "100644",
+          "size": 38
+        },
+        "scripts/log.sh": {
+          "sha256": "a65a4bc5fb7cdeadbdb7b7ff1ca4682f4d9c42420942b2977cd17b46c4ac338e",
+          "mode": "100755",
+          "size": 1377
+        }
+      }
+    },
+    {
+      "name": "son-mode",
+      "kind": "control",
+      "category": "orchestration",
+      "description": "Run Son's rigorous workflow for substantial engineering, design, investigation, or planning work. Use when the user invokes son-mode or asks to work in Son mode.",
+      "explicit_only": true,
+      "sources": [
+        {
+          "id": "pstack:poteto-mode",
+          "path": "pstack/skills/poteto-mode/SKILL.md"
+        }
+      ]
+    },
+    {
+      "name": "swarm",
+      "kind": "original",
+      "category": "orchestration",
+      "description": "Fan out N parallel workers, drain them, and return one report. Use for /swarm, 'swarm this', or parallel coverage, races, gauntlets, and exploration.",
+      "explicit_only": true,
+      "sources": [
+        {
+          "id": "pstack:swarm",
+          "path": "pstack/skills/swarm/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "69d3a1443ba92a07d2cbbd53639986d216fd482f88c83d55ceeb0f4772944c88",
+          "mode": "100644",
+          "size": 3026
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+          "mode": "100644",
+          "size": 43
+        },
+        "licenses/pstack.txt": {
+          "sha256": "bc957ca6bee02792566a1a028d105e02e247c6e77cf057061674273da77b200e",
+          "mode": "100644",
+          "size": 1067
+        }
+      }
+    },
+    {
+      "name": "technical-writing",
+      "kind": "original",
+      "category": "communication",
+      "description": "Layered technical-writing standard: Di\u00e1taxis structure, Google developer style sentences, STE instruction rules, Global English syntax. Use for /technical-writing or when writing or reviewing docs, RFCs, readmes, PR descriptions, or commit messages.",
+      "explicit_only": true,
+      "sources": [
+        {
+          "id": "pstack:technical-writing",
+          "path": "pstack/skills/technical-writing/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "9c0f96137148d164414221b5dc1031b0ff71989027159949e352e36454896316",
+          "mode": "100644",
+          "size": 9869
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+          "mode": "100644",
+          "size": 43
+        },
+        "licenses/pstack.txt": {
+          "sha256": "bc957ca6bee02792566a1a028d105e02e247c6e77cf057061674273da77b200e",
+          "mode": "100644",
+          "size": 1067
+        }
+      }
+    },
+    {
+      "name": "to-questionnaire",
+      "kind": "original",
+      "category": "decisions",
+      "description": "Turn a decision you can't fully answer into a questionnaire for someone else to fill in.",
+      "explicit_only": true,
+      "sources": [
+        {
+          "id": "matt:to-questionnaire",
+          "path": "skills/productivity/to-questionnaire/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "ac9a17f5beb01e25da50c5f37b8e5ff4e69c0eda4dbea78f6fcc133f278624e9",
+          "mode": "100644",
+          "size": 2981
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "9e8a06c38c8842eea8d4922cb9d1ead8e3ace647bab259b943c994a1b4742bc2",
+          "mode": "100644",
+          "size": 166
+        },
+        "licenses/matt.txt": {
+          "sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+          "mode": "100644",
+          "size": 1068
+        }
+      }
+    },
+    {
+      "name": "to-spec",
+      "kind": "original",
+      "category": "planning",
+      "description": "Turn the current conversation into a spec and publish it to the project issue tracker: no interview, just synthesis of what you've already discussed.",
+      "explicit_only": true,
+      "sources": [
+        {
+          "id": "matt:to-spec",
+          "path": "skills/engineering/to-spec/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "256f50d63b6e929765ca23510ffa918c5b7ce81eb396ac521e2b2aa6bc3cb3e4",
+          "mode": "100644",
+          "size": 3120
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "1c5b4d1e3d8e52287ef19cc2742fdbbfae1914ac75d33af3e4c8174f08cc55bb",
+          "mode": "100644",
+          "size": 135
+        },
+        "licenses/matt.txt": {
+          "sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+          "mode": "100644",
+          "size": 1068
+        }
+      }
+    },
+    {
+      "name": "to-tickets",
+      "kind": "original",
+      "category": "planning",
+      "description": "Break a plan, spec, or the current conversation into a set of tracer-bullet tickets, each declaring its blocking edges, published to the configured tracker (edges as text in one file per ticket locally, or native blocking links on a real tracker).",
+      "explicit_only": true,
+      "sources": [
+        {
+          "id": "matt:to-tickets",
+          "path": "skills/engineering/to-tickets/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "19e61f177ba1b57f0aed3e999e1c589aad7f6c510bb4da982983ee9861b9f94e",
+          "mode": "100644",
+          "size": 5748
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "21bc6215fffcd7614e9f772bb1760e87cc5fc7dcc707e7d282bc9414267a6090",
+          "mode": "100644",
+          "size": 146
+        },
+        "licenses/matt.txt": {
+          "sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+          "mode": "100644",
+          "size": 1068
+        }
+      }
+    },
+    {
+      "name": "triage",
+      "kind": "original",
+      "category": "planning",
+      "description": "Move issues and external PRs through a state machine of triage roles, categorise, verify, grill if needed, and write agent-ready briefs.",
+      "explicit_only": true,
+      "sources": [
+        {
+          "id": "matt:triage",
+          "path": "skills/engineering/triage/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "AGENT-BRIEF.md": {
+          "sha256": "7f5f87fed3033df1b06e083c480f3e847b1fbb0647746b8a4c6a50f9f26ef44f",
+          "mode": "100644",
+          "size": 7942
+        },
+        "OUT-OF-SCOPE.md": {
+          "sha256": "1fbf9b432130c6380aa65813b55553cfda150309b27c595e183f8e335b8a190d",
+          "mode": "100644",
+          "size": 4667
+        },
+        "SKILL.md": {
+          "sha256": "8b91a32af8356f30537f4d9f95c7fa1b83e154fc79a194a327f130cce340b7c6",
+          "mode": "100644",
+          "size": 6635
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "2e683717720cf456d165d0bb1a68bb600d0b6a8ccb61841c172e50d26f95351c",
+          "mode": "100644",
+          "size": 135
+        },
+        "licenses/matt.txt": {
+          "sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+          "mode": "100644",
+          "size": 1068
+        }
+      }
+    },
+    {
+      "name": "typescript-best-practices",
+      "kind": "original",
+      "category": "engineering",
+      "description": "TypeScript best practices. Use when reading or editing any .ts or .tsx file.",
+      "explicit_only": true,
+      "sources": [
+        {
+          "id": "pstack:typescript-best-practices",
+          "path": "pstack/skills/typescript-best-practices/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "79347c679655cfb49b53130b299c1a8850cca17782927b717bf3887f784da4c1",
+          "mode": "100644",
+          "size": 2761
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+          "mode": "100644",
+          "size": 43
+        },
+        "licenses/pstack.txt": {
+          "sha256": "bc957ca6bee02792566a1a028d105e02e247c6e77cf057061674273da77b200e",
+          "mode": "100644",
+          "size": 1067
+        },
+        "references/patterns.md": {
+          "sha256": "faa1362055374452efccac1b629677c61acfb0bcc6c4e3311836b5715638ee18",
+          "mode": "100644",
+          "size": 9214
+        }
+      }
+    },
+    {
+      "name": "unslop",
+      "kind": "original",
+      "category": "communication",
+      "description": "Cut AI tells from any writing. Must always apply.",
+      "explicit_only": true,
+      "sources": [
+        {
+          "id": "pstack:unslop",
+          "path": "pstack/skills/unslop/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "71b1ac3111899e6058f66ddba6ddecbc5ebdbefd39592f2ccb3e50df398ece09",
+          "mode": "100644",
+          "size": 6092
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+          "mode": "100644",
+          "size": 43
+        },
+        "licenses/pstack.txt": {
+          "sha256": "bc957ca6bee02792566a1a028d105e02e247c6e77cf057061674273da77b200e",
+          "mode": "100644",
+          "size": 1067
+        }
+      }
+    },
+    {
+      "name": "update-son-skills",
+      "kind": "control",
+      "category": "orchestration",
+      "description": "Fetch the latest creator sources and compare them with Son's pinned originals and current adapted skills. Use for an on-demand skill update review, local drift check, or upstream diff. Produce review artifacts before applying any change.",
+      "explicit_only": false,
+      "sources": []
+    },
+    {
+      "name": "visual-pr",
+      "kind": "original",
+      "category": "communication",
+      "description": "Only use when the user explicitly invokes this skill by name.",
+      "explicit_only": true,
+      "sources": [
+        {
+          "id": "humanlayer:visual-pr",
+          "path": "plugins/visual-pr/skills/visual-pr/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "717fddfcb30c5deedce0c38d529d1c254c0d50bdb27474b080b8c4cab5eae4c0",
+          "mode": "100644",
+          "size": 3454
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+          "mode": "100644",
+          "size": 43
+        },
+        "licenses/humanlayer.txt": {
+          "sha256": "5f13c18ea00ea5c1384f41745feeca774079164f7f59a92e4ac0899ad217b26f",
+          "mode": "100644",
+          "size": 1067
+        },
+        "references/describe_pr_final_answer.md": {
+          "sha256": "dfc26d73c816e77010c87218ac0f03b41038938bc889ada5c90dc95e414c9d39",
+          "mode": "100644",
+          "size": 421
+        },
+        "references/pr_description_template.md": {
+          "sha256": "42d449ef3dd4e170fc193d9ded447c281bf467e2bb7f6630bb1683220357c378",
+          "mode": "100644",
+          "size": 1979
+        },
+        "references/show-me.md": {
+          "sha256": "968f25af5bce778c06826f5bc4540631c3eab3e067be0fe48b48552cc1664a1f",
+          "mode": "100644",
+          "size": 3039
+        }
+      }
+    },
+    {
+      "name": "wait-what",
+      "kind": "original",
+      "category": "communication",
+      "description": "Stop. That last message did not land: re-pitch it.",
+      "explicit_only": true,
+      "sources": [
+        {
+          "id": "matt:wait-what",
+          "path": "skills/productivity/wait-what/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "9c6ff2bc4fe8fdf22ae0d4d0a6f2744527be1712e0579fdf21803f67d652cc19",
+          "mode": "100644",
+          "size": 473
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "b41faadf741d51e4ea184148b2d1854d93f947aaf754c7844f70a00f04194999",
+          "mode": "100644",
+          "size": 158
+        },
+        "licenses/matt.txt": {
+          "sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+          "mode": "100644",
+          "size": 1068
+        }
+      }
+    },
+    {
+      "name": "wayfinder",
+      "kind": "original",
+      "category": "planning",
+      "description": "Plan a huge chunk of work (more than one agent session can hold) as a shared map of decision tickets on your issue tracker, and resolve them one at a time until the way to the destination is clear.",
+      "explicit_only": true,
+      "sources": [
+        {
+          "id": "matt:wayfinder",
+          "path": "skills/engineering/wayfinder/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "3b509601f78ce1083b64834c7f68637c9ed1827481820355d23095061a962084",
+          "mode": "100644",
+          "size": 11995
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "88bc81a11a6d52ac67aeaa76b8b619e387020d47c5133a4dd4927fd15c4ad073",
+          "mode": "100644",
+          "size": 144
+        },
+        "licenses/matt.txt": {
+          "sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+          "mode": "100644",
+          "size": 1068
+        }
+      }
+    },
+    {
+      "name": "why",
+      "kind": "original",
+      "category": "communication",
+      "description": "Use for 'why does X work this way', 'why we picked Y', design rationale, regressions, postmortems, or data-backed thresholds. Discovers available MCPs and queries each evidence category (source control, issue tracker, long-form docs, real-time chat, infrastructure observability, error tracking, product analytics warehouse) in parallel, then returns a cited read on decisions and tradeoffs. Use how for runtime behavior.",
+      "explicit_only": true,
+      "sources": [
+        {
+          "id": "pstack:why",
+          "path": "pstack/skills/why/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "0f2c3383544401257f7c0ac15efbded75de8ccb0b11d7a3d0285290125aefd76",
+          "mode": "100644",
+          "size": 10437
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+          "mode": "100644",
+          "size": 43
+        },
+        "licenses/pstack.txt": {
+          "sha256": "bc957ca6bee02792566a1a028d105e02e247c6e77cf057061674273da77b200e",
+          "mode": "100644",
+          "size": 1067
+        },
+        "references/epistemics.md": {
+          "sha256": "fcc0f559c072832c869a5ada72434b4849320a637ae63c09e8ee14f7ad787059",
+          "mode": "100644",
+          "size": 7749
+        },
+        "references/investigator-prompt.md": {
+          "sha256": "6892956a7ab0b5ee6c4babaf4f793703abe89b350ea7cb9463b4a56eea1c8266",
+          "mode": "100644",
+          "size": 6985
+        },
+        "references/source-playbook.md": {
+          "sha256": "37c3e85b03106463f098c021ff678d744a1957b1f829a0e74b034c6f2f204d19",
+          "mode": "100644",
+          "size": 1347
+        },
+        "references/sources/code-archaeology.md": {
+          "sha256": "8c14aa382f0de40829b2668d43e3f54814480bb93a486c9282ada4003f6b9dbd",
+          "mode": "100644",
+          "size": 3489
+        },
+        "references/sources/databricks.md": {
+          "sha256": "236ede7aab6454662a992db088a5393537a5233a4c26719c93188f9e174488f6",
+          "mode": "100644",
+          "size": 6994
+        },
+        "references/sources/datadog.md": {
+          "sha256": "ebe9c07bac28e47757ee7f16fb93b0c01d427a08c501957d047f395a2f37b7e7",
+          "mode": "100644",
+          "size": 5323
+        },
+        "references/sources/incident-postmortem.md": {
+          "sha256": "a899470f05f86029630a13a2696491cc708ca7b56a6e822a69ff6e954d6ff8cf",
+          "mode": "100644",
+          "size": 1973
+        },
+        "references/sources/linear.md": {
+          "sha256": "01304e7f1badfcfb78babbb0edcadeb3cc8dd3f713793420cdff24ba190f907c",
+          "mode": "100644",
+          "size": 2996
+        },
+        "references/sources/notion.md": {
+          "sha256": "3bcfa695c49dfad4ac036d5d7181c12585f55ac04f1936198d16ab75a2788997",
+          "mode": "100644",
+          "size": 2853
+        },
+        "references/sources/sentry.md": {
+          "sha256": "6f292bc4fb1548e956f95e1900b9481abf5134254419f1cd9edec95428c82d73",
+          "mode": "100644",
+          "size": 4947
+        },
+        "references/sources/slack.md": {
+          "sha256": "58fee61d024b3700b407e7acbed367944720ff05adfddb6954d36c88368f3ba7",
+          "mode": "100644",
+          "size": 3105
+        },
+        "references/synthesizer-prompt.md": {
+          "sha256": "733a3e9cf897b1aca56aaddeae01a3832e4bfed024c2f602db2d1bf807d7a73b",
+          "mode": "100644",
+          "size": 7984
+        }
+      }
+    },
+    {
+      "name": "wizard",
+      "kind": "original",
+      "category": "setup",
+      "description": "Generate an interactive bash wizard that walks a human through steps only they can perform. Use when provisioning infrastructure, setting up credentials or CI secrets, walking an unfamiliar third-party dashboard, or running a one-off migration or cutover. Don't invoke this for steps the agent can perform itself.",
+      "explicit_only": false,
+      "sources": [
+        {
+          "id": "matt:wizard",
+          "path": "skills/engineering/wizard/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "bbb7f868daf53719dcfcd768d427da1c678fc31aa8c23a816ed9a068b167ed8e",
+          "mode": "100644",
+          "size": 4200
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "21c09a157acc442dbb0e54ae3c370bbcc8cb90cb5c085c88d1feb2383c8389d9",
+          "mode": "100644",
+          "size": 139
+        },
+        "licenses/matt.txt": {
+          "sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+          "mode": "100644",
+          "size": 1068
+        },
+        "template.sh": {
+          "sha256": "33cbe9dfb1d0e9185b60248a52aabed14bc64785a00cac695e302e739dd6c153",
+          "mode": "100644",
+          "size": 8567
+        }
+      }
+    },
+    {
+      "name": "write-swift",
+      "kind": "original",
+      "category": "engineering",
+      "description": "How to write modern Swift well \u2014 modeling with value types, Swift 6 data-race safety and approachable concurrency (@concurrent, main-actor-by-default, actors, task groups), protocols and generics (some vs any), API design, performance and ARC, Swift Testing, macros, and the modern language features agents don't know about yet. Use when writing, reviewing, or migrating Swift, or when a concurrency error, a hang, a data race, a retain cycle, or a performance problem needs fixing.",
+      "explicit_only": false,
+      "sources": [
+        {
+          "id": "emil:write-swift",
+          "path": "skills/write-swift/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "01c91f76c9f6b553ba8fcc9a953025df798163524532530e1cadc253ee0f91f2",
+          "mode": "100644",
+          "size": 42522
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "8619a54e8c098122a7f3881394f84ca89b684366e848233a29ad18b6ec363935",
+          "mode": "100644",
+          "size": 42
+        },
+        "licenses/emil.txt": {
+          "sha256": "4ff5bdb7887ec1435c9cab0e8d1a7caee704d894d65c2a008ccc68b1cc2f260b",
+          "mode": "100644",
+          "size": 1070
+        }
+      }
+    },
+    {
+      "name": "writing-for-agents",
+      "kind": "original",
+      "category": "communication",
+      "description": "Writing documents for agents. Use when creating or editing skills, or modifying AGENTS.md or CLAUDE.md.",
+      "explicit_only": false,
+      "sources": [
+        {
+          "id": "matt:writing-for-agents",
+          "path": "skills/productivity/writing-for-agents/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "SKILL-MECHANICS.md": {
+          "sha256": "c768e6307c7c10728c401c213f2c4ba71c542127eeb7ad2956aabd15a0fa0059",
+          "mode": "100644",
+          "size": 2629
+        },
+        "SKILL.md": {
+          "sha256": "336301f5fde4aa7a51f6122a38b6cc4f84db12374eba4da0f4eb5fb2af3ab64e",
+          "mode": "100644",
+          "size": 10963
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "d7cb18c6e6441a080320f28a6ba5358b9174460c8dd90d160314b39b43b9ad61",
+          "mode": "100644",
+          "size": 145
+        },
+        "licenses/matt.txt": {
+          "sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+          "mode": "100644",
+          "size": 1068
+        }
+      }
+    }
+  ],
+  "excluded": [
+    {
+      "id": "pstack:reproduce-and-fix-issues",
+      "path": "pstack/automations/benny/skills/reproduce-and-fix-issues/SKILL.md",
+      "reason": "Benny requires separately configured external services."
+    },
+    {
+      "id": "pstack:setup-benny",
+      "path": "pstack/automations/benny/skills/setup-benny/SKILL.md",
+      "reason": "Benny requires separately configured external services."
+    },
+    {
+      "id": "pstack:triage-issue-reports",
+      "path": "pstack/automations/benny/skills/triage-issue-reports/SKILL.md",
+      "reason": "Benny requires separately configured external services."
+    },
+    {
+      "id": "pstack:poteto-help",
+      "path": "pstack/skills/poteto-help/SKILL.md",
+      "reason": "Replaced by the Son setup and mode controls."
+    },
+    {
+      "id": "pstack:poteto-mode",
+      "path": "pstack/skills/poteto-mode/SKILL.md",
+      "reason": "Replaced by the Son setup and mode controls."
+    },
+    {
+      "id": "pstack:setup-pstack",
+      "path": "pstack/skills/setup-pstack/SKILL.md",
+      "reason": "Replaced by the Son setup and mode controls."
+    },
+    {
+      "id": "matt:chief-of-staff",
+      "path": "skills/in-progress/chief-of-staff/SKILL.md",
+      "reason": "Retained in the snapshot as an optional or experimental skill."
+    },
+    {
+      "id": "matt:claude-handoff",
+      "path": "skills/in-progress/claude-handoff/SKILL.md",
+      "reason": "Retained in the snapshot as an optional or experimental skill."
+    },
+    {
+      "id": "matt:loop-me",
+      "path": "skills/in-progress/loop-me/SKILL.md",
+      "reason": "Retained in the snapshot as an optional or experimental skill."
+    },
+    {
+      "id": "matt:setup-ts-deep-modules",
+      "path": "skills/in-progress/setup-ts-deep-modules/SKILL.md",
+      "reason": "Retained in the snapshot as an optional or experimental skill."
+    },
+    {
+      "id": "matt:writing-beats",
+      "path": "skills/in-progress/writing-beats/SKILL.md",
+      "reason": "Retained in the snapshot as an optional or experimental skill."
+    },
+    {
+      "id": "matt:writing-fragments",
+      "path": "skills/in-progress/writing-fragments/SKILL.md",
+      "reason": "Retained in the snapshot as an optional or experimental skill."
+    },
+    {
+      "id": "matt:writing-shape",
+      "path": "skills/in-progress/writing-shape/SKILL.md",
+      "reason": "Retained in the snapshot as an optional or experimental skill."
+    },
+    {
+      "id": "matt:git-guardrails-claude-code",
+      "path": "skills/misc/git-guardrails-claude-code/SKILL.md",
+      "reason": "Retained in the snapshot as an optional or experimental skill."
+    },
+    {
+      "id": "matt:migrate-to-shoehorn",
+      "path": "skills/misc/migrate-to-shoehorn/SKILL.md",
+      "reason": "Retained in the snapshot as an optional or experimental skill."
+    },
+    {
+      "id": "matt:scaffold-exercises",
+      "path": "skills/misc/scaffold-exercises/SKILL.md",
+      "reason": "Retained in the snapshot as an optional or experimental skill."
+    },
+    {
+      "id": "matt:setup-pre-commit",
+      "path": "skills/misc/setup-pre-commit/SKILL.md",
+      "reason": "Retained in the snapshot as an optional or experimental skill."
     }
   ]
 }

@@ -1,70 +1,63 @@
-# Combination decisions
+# Routing and adaptation decisions
 
-Each task has one combined workflow that owns its sequence and output.
-Other creators contribute techniques or reference material.
-The combined workflow governs execution; upstream source text does not automatically activate tools, agents, or side effects.
+The 95 active creator skills keep their own workflows and supporting files.
+Son mode selects a playbook and loads the relevant originals.
+Shared compatibility rules resolve conflicts without rewriting each skill.
 
-| Area | Relationship | Decision |
+| Area | Relationship | Route |
 | --- | --- | --- |
-| Matt interviews, domain modeling, and questionnaires | Complementary stages of resolving a decision | Combine in `son-clarify`, with explicit interview, glossary, and external-questionnaire modes |
-| Matt specs and tickets; pstack architect | Complementary planning artifacts | `son-plan` owns the spec and task graph; sketches are proportionate to uncertainty |
-| Matt implement-spec; pstack mode, arena, and swarm | Competing orchestration and model assumptions | Keep ticket ordering in `son-build`; use one writer unless delegation is separately authorized |
-| Matt and pstack TDD | Shared red-before-green discipline, different default test seams | Son's failure-mode and end-to-end policy wins; use the closest meaningful reproduction for a bug |
-| Matt diagnosing-bugs; pstack root-cause and benchmark guidance | Complementary diagnosis and measurement | `son-debug` owns the loop and labels unreproduced hypotheses |
-| Matt code-review; pstack interrogate and blast-radius | Overlapping review plus useful downstream analysis | One `son-review` flow, separate spec and standards passes, executable proof for material risks |
-| Pstack verification generation and maintenance | Complementary lifecycle stages | One `son-verify` skill with distinct one-time, creation, maintenance, and benchmark modes |
-| Matt pr; HumanLayer visual-pr and show-me | Substantial overlap with shared ancestry | One `son-pr` flow; repository templates win and visuals are optional |
-| Pstack how, why, teach, and bro; Matt teach and wait-what; HumanLayer show-me | Overlapping explanations with different evidence needs | `son-explain` distinguishes runtime behavior, historical rationale, teaching, and rephrasing |
-| Matt retro; pstack reflect and correct | Overlapping learning loops | `son-retro` proposes evidence-backed improvements; applying changes follows existing authority |
-| Matt writing-for-agents; pstack technical-writing and unslop; HumanLayer improve-claude-md | Overlapping writing guidance and a Claude-specific mechanism | `son-writing` handles document structure; installed personal unslop remains mandatory; XML is optional and local |
-| HumanLayer loop design and loop packaging; pstack automate-me | Complementary automation design, packaging, and preference discovery | `son-automate` uses the active scheduler and bounded work; it does not auto-create personal modes |
-| Matt prototype; Emil prototype; pstack design-space exploration | Same name, different output | `son-prototype` chooses a behavior experiment or visual picker; no automatic promotion to production |
-| Emil motion construction, review, audit, naming, and discovery | Shared domain with conflicting write scopes | `son-motion` selects mode before editing; audits and opportunity scans leave product code unchanged |
-| Emil web design, Apple-style interaction, mobile web, and Sonner | Complementary specialist guidance | `son-ui` reuses product tokens and preserves rendered verification and device caveats |
-| Emil break-ui; HumanLayer narrow props | Complementary stress testing with possible fixture conflict | `son-ui-stress` uses valid extreme data and never widens production contracts for a demo |
-| HumanLayer prop narrowing; pstack types; Matt deep modules; Emil Swift | Shared contract discipline across distinct languages | `son-types` selects by language and checks actual public contracts and compiler mode |
-| Matt research; pstack how and why | Source investigation with different scopes | `son-research` uses primary sources, distinguishes inference, and avoids mandatory background agents |
-| Matt handoff; pstack recall | Overlapping continuity | `son-handoff` follows the existing cross-harness protocol and leaves generated memory to its hooks |
+| Matt grilling, domain modeling, specs, and tickets | Complementary stages | Product-planning playbook; skip settled stages |
+| Matt implement-spec and pstack feature orchestration | Competing owners for execution | Select one primary playbook and implementation owner |
+| Matt and pstack TDD | Overlap with different default test seams | Keep both names; Son's failure-mode and end-to-end policy wins |
+| Matt code-review, pstack interrogate, and blast-radius | Overlapping review with distinct risk checks | Choose the relevant review; add downstream proof where needed |
+| Verification creation and maintenance | Complementary lifecycle stages | Keep separate skills and choose by existing project state |
+| Matt pr, HumanLayer visual-pr, and show-me | Related communication workflows | Use pr for PR prose, show-me for explanation, visual-pr when explicitly requested |
+| Matt and pstack teach | Different teaching approaches | Preserve both with creator prefixes |
+| Matt retro and pstack reflect or correct | Overlapping learning loops | Choose task retrospective, broader reflection, or a specific correction |
+| Technical writing, writing-for-agents, and improve-claude-md | Different audiences and formats | Route by artifact; apply personal unslop to prose |
+| HumanLayer loops and pstack automate-me | Complementary discovery, design, and packaging | Agent-automation playbook; use the supported scheduler |
+| Matt and Emil prototype | Same name, different purpose | Matt for a behavior experiment; Emil for interface alternatives |
+| Emil motion skills | Different write scopes | Keep construction, review, audit, naming, and discovery separate |
+| Emil break-ui and HumanLayer prop narrowing | Stress data versus production contracts | Use realistic valid data; inspect public consumers before narrowing exported types |
+| Matt handoff and pstack recall | Overlapping continuity | Follow Son's canonical continuation protocol |
 
-## Conflicts resolved by Son's rules
+## Minimal changes
 
-The following adaptations are intentional and should survive future upstream refreshes.
+Each original receives a one-line compatibility reference, license copy, and discovery metadata.
+The six colliding skill names receive creator prefixes.
+Explicit references and resolvable relative links follow those names.
+Ordinary prose, examples, and support files remain intact.
+Build-time frontmatter translation supports the target application's schema without editing the canonical body.
 
-- Analysis stays analysis unless the user also asked for implementation.
-- A request to draft a spec or PR body does not authorize publishing it.
-- Model selection stays in the canonical model policy.
-- Delegation requires active authorization and available tools.
-- Unit tests do not become the default for user-visible behavior merely because they are cheap.
-- Test fixtures do not broaden production types, but undocumented public consumers are not assumed absent.
-- Creator-specific absolute paths and Claude or Cursor APIs are not portable tool calls.
-- A retrospective does not automatically write global skills, memory, or backlog tickets.
-- A planning flow does not force another interview after the user has already settled the decision.
-- A preview or compiled artifact is not proof of acceptance or deployment.
+`stack.json` records the exact source path and the hashes of each initially adapted file.
+The update checker compares those hashes with current local files to distinguish later edits from the adapter.
+Never refresh the imported baseline merely to make a local customization disappear from a report.
 
-## Deliberate exclusions
+## Controls and principles
 
-`setup-pstack` is excluded from activation because it writes model rules that would compete with Son's existing configuration.
-`no-comments` is excluded because its broad deletion stance and agent dependency are unsuitable as a default across repositories.
-The full source remains available for selective study.
+`setup-son-skills` keeps pstack's model discovery, reasoning presets, role table, and confirmation flow.
+It writes local configuration instead of a competing global model rule.
+`son-mode` owns the playbook and completion loop.
+`son-agent` loads that mode for scoped delegated work when the active application allows it.
+The 24 pstack principle skills remain intact and available.
 
-Benny, Matt's in-progress skills, and tracker-driven triage remain deferred.
-Their value depends on project-specific services, experimental behavior, or authority that this repository does not supply.
-Specialists such as library selection, provisioning wizards, exercise scaffolding, and dependency-specific migrations remain reference-only.
+`update-son-skills` is Son's on-demand review command.
+Its comparison tool fetches upstream files as data and never runs their scripts.
 
-## Portability
+## Inactive originals and external dependencies
 
-All combined names use the `son-` prefix, avoiding collisions with the installed creator skills.
-The canonical source includes explicit-only frontmatter where applicable.
-Codex builds encode this in `agents/openai.yaml` and omit Claude's unsupported frontmatter extension.
-Claude and Cursor builds retain `disable-model-invocation`.
-Each build copies shared references into the skill, so installation does not depend on a symlink back to this checkout.
-Detailed source Markdown is bundled under reference directories with `SKILL.md` renamed to `SOURCE.md` to avoid duplicate discovery.
-Those documents may refer to upstream dependencies outside the selected folder; pinned provenance links locate the originals.
+Benny's three automations need separate service and notification configuration.
+Pstack's poteto-mode, setup-pstack, and poteto-help are replaced by the Son controls.
+Matt's seven in-progress and four miscellaneous skills remain catalogued but inactive.
 
-## Change ownership
+Other promoted originals remain available, including tracker setup and specialist skills.
+Their external dependencies are not installed automatically.
+`no-comments` still requires Comment Sicko; Son compatibility forbids substituting broad comment deletion.
+Pstack's deslop and control tools also require available equivalents or an explicit unmet-capability report.
 
-Update `skills/` for deliberate workflow changes and `policies/` for shared behavior.
-Update `stack.json` when source mappings change.
-Regenerate catalogs and bundles with the scripts.
-Accepted source snapshots and hashes move together only after review.
-The two-week automation never changes them.
+## Ownership
+
+Edit originals under `skills/` only for a deliberate customization.
+Edit shared differences in `policies/compatibility.md` and routing in `skills/son-mode/`.
+Keep source mappings accurate and regenerate the catalog and builds.
+Accepted snapshots and locks move together only after a reviewed adoption.

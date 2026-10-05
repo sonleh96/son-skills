@@ -1,6 +1,0 @@
-interface:
-  display_name: "Son plan"
-  short_description: "Write specs and dependency-ordered tickets"
-  default_prompt: "Use $son-plan for the current task, within its requested scope."
-policy:
-  allow_implicit_invocation: false

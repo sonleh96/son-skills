@@ -13,15 +13,16 @@ The new repository does not rerun or expand that historical session scan.
 
 | Work Son already does | First workflow to try | Expected improvement to test |
 | --- | --- | --- |
-| Banking discovery and IT questionnaires | `son-clarify`, then `son-writing` | Questions tied to decisions, evidence, units, and actual recipient knowledge |
-| Repository handovers and explanations | `son-explain`, then `son-handoff` | Shorter explanations with verified state and useful continuation pointers |
-| Release and PR reviews | `son-review`, then `son-pr` | Clearer behavior, downstream risk, and proof without long status prose |
-| Product UI and prototype work | `son-prototype`, `son-ui`, `son-ui-stress` | Distinct design options and failures exposed by realistic content |
-| Slow or repeatedly corrected engineering sessions | `son-debug`, then `son-retro` | Faster reproduction and fewer repeated instruction fixes |
+| Banking discovery and IT questionnaires | `grilling`, `domain-modeling`, and `to-questionnaire` | Questions tied to decisions, evidence, units, and actual recipient knowledge |
+| Repository handovers and explanations | `how`, `show-me`, and `handoff` | Shorter explanations with verified state and useful continuation pointers |
+| Release and PR reviews | `code-review`, `blast-radius`, and `pr` | Clearer behavior, downstream risk, and proof without long status prose |
+| Product UI and prototype work | `emil-prototype`, `emil-design-eng`, and `break-ui` | Distinct design options and failures exposed by realistic content |
+| Slow or repeatedly corrected engineering sessions | `diagnosing-bugs`, then `retro` | Faster reproduction and fewer repeated instruction fixes |
 
-The sequence is a recommendation, not automatic chaining.
+Use son-mode to choose and execute one primary playbook for substantial tasks.
+The listed skill sequences are recommendations.
 Manual skills run only when requested.
-Use `son-plan` and `son-build` when a real task needs a spec or dependency graph, rather than turning every edit into a large workflow.
+Use `to-spec`, `to-tickets`, and `implement-spec` when a real task needs a spec or dependency graph, rather than turning every edit into a large workflow.
 Keep specialist Swift, native motion, and loop automation available for matching work.
 
 ## Measure a useful result
@@ -38,15 +39,15 @@ These are reasoning checks of the authored instructions, not live agent evaluati
 
 | Prompt | Intended route | Boundary checked |
 | --- | --- | --- |
-| Review this PR without changing code | `son-review` | Findings and evidence only |
-| Turn our settled discussion into tickets | `son-plan` | Synthesis without another interview; local output if tracker unknown |
-| Animate this dropdown | `son-motion` after explicit invocation, or motion guidance within `son-ui` | Purpose, frequency, tokens, reduced motion, and rendered check |
-| Audit all animation and propose improvements | `son-motion` | Source remains unchanged |
-| Try the worst realistic data in this component | `son-ui-stress` | Valid contracts, dev-only fixtures, report before fixing |
-| Create a PR description | `son-pr` | No implied push or PR publication |
-| Reflect on why this session went badly | `son-retro` | Proposed improvements, no automatic global rule or memory edits |
-| Continue the Claude task in this checkout | `son-handoff` | Matching handoff and current-state verification before changes |
-| Watch the original skills for updates | `son-automate` | Supported scheduler, read-only diff, failures reported |
+| Review this PR without changing code | `code-review` | Findings and evidence only |
+| Turn our settled discussion into tickets | `to-tickets` | Synthesis without another interview; local output if tracker unknown |
+| Animate this dropdown | `animate` | Purpose, frequency, tokens, reduced motion, and rendered check |
+| Audit all animation and propose improvements | `improve-animations` | Source remains unchanged |
+| Try the worst realistic data in this component | `break-ui` | Valid contracts, dev-only fixtures, report before fixing |
+| Create a PR description | `pr` | No implied push or PR publication |
+| Reflect on why this session went badly | `retro` | Proposed improvements, no automatic global rule or memory edits |
+| Continue the Claude task in this checkout | `handoff` | Matching handoff and current-state verification before changes |
+| Watch the original skills for updates | `update-son-skills` | Supported scheduler, read-only diff, failures reported |
 
 The local tooling tests establish repository behavior.
 They do not prove reliable skill selection, better UI judgment, or improved task outcomes.

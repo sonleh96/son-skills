@@ -1,6 +1,0 @@
-interface:
-  display_name: "Son handoff"
-  short_description: "Preserve verified state across agent tools"
-  default_prompt: "Use $son-handoff for the current task, within its requested scope."
-policy:
-  allow_implicit_invocation: false

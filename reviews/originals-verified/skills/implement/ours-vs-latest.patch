@@ -1,0 +1,16 @@
+diff --git a/ours/SKILL.md b/latest/SKILL.md
+--- a/ours/SKILL.md
++++ b/latest/SKILL.md
+@@ -4,11 +4,9 @@
+ disable-model-invocation: true
+ ---
+ 
+-Read [Son compatibility](SON-COMPATIBILITY.md) before following this skill.
+-
+ Implement the work described by the user in the spec or tickets.
+ 
+-Use /matt-tdd where possible, at pre-agreed seams.
++Use /tdd where possible, at pre-agreed seams.
+ 
+ Run typechecking regularly, single test files regularly, and the full test suite once at the end.
+ 

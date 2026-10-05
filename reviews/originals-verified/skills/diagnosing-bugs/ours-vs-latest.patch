@@ -1,0 +1,22 @@
+diff --git a/ours/SKILL.md b/latest/SKILL.md
+--- a/ours/SKILL.md
++++ b/latest/SKILL.md
+@@ -2,8 +2,6 @@
+ name: diagnosing-bugs
+ description: Diagnosis loop for hard bugs and performance regressions. Use when the user says "diagnose"/"debug this", or reports something broken/throwing/failing/slow.
+ ---
+-
+-Read [Son compatibility](SON-COMPATIBILITY.md) before following this skill.
+ 
+ # Diagnosing Bugs
+ 
+diff --git a/ours/agents/openai.yaml b/latest/agents/openai.yaml
+--- a/ours/agents/openai.yaml
++++ b/latest/agents/openai.yaml
+@@ -1,6 +1,3 @@
+ interface:
+   display_name: "Diagnosing Bugs"
+   short_description: "Diagnose hard bugs and regressions"
+-
+-policy:
+-  allow_implicit_invocation: true

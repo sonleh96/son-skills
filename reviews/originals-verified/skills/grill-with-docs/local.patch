@@ -1,0 +1,10 @@
+diff --git a/pinned/SKILL.md b/ours/SKILL.md
+--- a/pinned/SKILL.md
++++ b/ours/SKILL.md
+@@ -4,4 +4,6 @@
+ disable-model-invocation: true
+ ---
+ 
++Read [Son compatibility](SON-COMPATIBILITY.md) before following this skill.
++
+ Call the Skill tool twice, for "grilling" and "domain-modeling".

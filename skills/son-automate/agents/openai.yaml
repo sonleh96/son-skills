@@ -1,6 +1,0 @@
-interface:
-  display_name: "Son automate"
-  short_description: "Design bounded recurring agent workflows"
-  default_prompt: "Use $son-automate for the current task, within its requested scope."
-policy:
-  allow_implicit_invocation: true

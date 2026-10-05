@@ -1,0 +1,22 @@
+diff --git a/ours/SKILL.md b/latest/SKILL.md
+--- a/ours/SKILL.md
++++ b/latest/SKILL.md
+@@ -2,8 +2,6 @@
+ name: codebase-design
+ description: Shared vocabulary for designing deep modules. Use when the user wants to design or improve a module's interface, find deepening opportunities, decide where a seam goes, make code more testable or AI-navigable, or when another skill needs the deep-module vocabulary.
+ ---
+-
+-Read [Son compatibility](SON-COMPATIBILITY.md) before following this skill.
+ 
+ # Codebase Design
+ 
+diff --git a/ours/agents/openai.yaml b/latest/agents/openai.yaml
+--- a/ours/agents/openai.yaml
++++ b/latest/agents/openai.yaml
+@@ -1,6 +1,3 @@
+ interface:
+   display_name: "Codebase Design"
+   short_description: "Vocabulary for deep-module design"
+-
+-policy:
+-  allow_implicit_invocation: true

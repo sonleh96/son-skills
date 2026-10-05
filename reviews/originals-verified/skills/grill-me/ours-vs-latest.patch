@@ -1,0 +1,10 @@
+diff --git a/ours/SKILL.md b/latest/SKILL.md
+--- a/ours/SKILL.md
++++ b/latest/SKILL.md
+@@ -4,6 +4,4 @@
+ disable-model-invocation: true
+ ---
+ 
+-Read [Son compatibility](SON-COMPATIBILITY.md) before following this skill.
+-
+ Call the Skill tool with "grilling".

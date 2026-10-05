@@ -1,0 +1,22 @@
+diff --git a/pinned/SKILL.md b/ours/SKILL.md
+--- a/pinned/SKILL.md
++++ b/ours/SKILL.md
+@@ -1,8 +1,10 @@
+ ---
+-name: teach
++name: pstack-teach
+ description: "Explain a body of work plainly so a person actually understands it. Runs the `how` and `why` skills and weaves what they find into one clear explanation. Use for 'teach me this', 'help me really understand X', 'explain this change or subsystem to me'."
+ disable-model-invocation: true
+ ---
++
++Read [Son compatibility](SON-COMPATIBILITY.md) before following this skill.
+ 
+ # Teach
+ 
+diff --git a/pinned/agents/openai.yaml b/ours/agents/openai.yaml
+new file mode 100644
+--- a/pinned/agents/openai.yaml
++++ b/ours/agents/openai.yaml
+@@ -0,0 +1,2 @@
++policy:
++  allow_implicit_invocation: false

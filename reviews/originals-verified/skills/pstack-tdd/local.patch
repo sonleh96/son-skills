@@ -1,0 +1,22 @@
+diff --git a/pinned/SKILL.md b/ours/SKILL.md
+--- a/pinned/SKILL.md
++++ b/ours/SKILL.md
+@@ -1,8 +1,10 @@
+ ---
+-name: tdd
++name: pstack-tdd
+ description: "Use only when the user explicitly asks for TDD, a failing test, or a regression test, OR when the bug has an obvious cheap local test target. Skip when the test path is unclear, expensive, integration-heavy, or not requested."
+ disable-model-invocation: true
+ ---
++
++Read [Son compatibility](SON-COMPATIBILITY.md) before following this skill.
+ 
+ # TDD Bug Fix
+ 
+diff --git a/pinned/agents/openai.yaml b/ours/agents/openai.yaml
+new file mode 100644
+--- a/pinned/agents/openai.yaml
++++ b/ours/agents/openai.yaml
+@@ -0,0 +1,2 @@
++policy:
++  allow_implicit_invocation: false

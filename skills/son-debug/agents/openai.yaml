@@ -1,6 +1,0 @@
-interface:
-  display_name: "Son debug"
-  short_description: "Reproduce bugs and establish their causes"
-  default_prompt: "Use $son-debug for the current task, within its requested scope."
-policy:
-  allow_implicit_invocation: true

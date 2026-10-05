@@ -1,0 +1,22 @@
+diff --git a/pinned/SKILL.md b/ours/SKILL.md
+--- a/pinned/SKILL.md
++++ b/ours/SKILL.md
+@@ -2,6 +2,8 @@
+ name: wizard
+ description: Generate an interactive bash wizard that walks a human through steps only they can perform. Use when provisioning infrastructure, setting up credentials or CI secrets, walking an unfamiliar third-party dashboard, or running a one-off migration or cutover. Don't invoke this for steps the agent can perform itself.
+ ---
++
++Read [Son compatibility](SON-COMPATIBILITY.md) before following this skill.
+ 
+ # Wizard
+ 
+diff --git a/pinned/agents/openai.yaml b/ours/agents/openai.yaml
+--- a/pinned/agents/openai.yaml
++++ b/ours/agents/openai.yaml
+@@ -1,3 +1,6 @@
+ interface:
+   display_name: "Wizard"
+   short_description: "Generate an interactive setup wizard"
++
++policy:
++  allow_implicit_invocation: true

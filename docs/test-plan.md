@@ -18,3 +18,15 @@ Tests use real temporary Git repositories and filesystem operations, without moc
 The initial live check also verifies connectivity to all four real upstreams.
 Structural checks do not establish that the skills improve real tasks.
 The pilot scenarios in `docs/pilot.md` define that next evaluation.
+
+## Original skill and update checks
+
+Listed before adding tests for the original-skill redesign.
+
+| ID | Failure | Verification |
+| --- | --- | --- |
+| F10 | A local edit disappears from a three-way review or the check overwrites it | Edit the same file locally and upstream, add a support file, and inspect all three patches and unchanged local bytes |
+| F11 | An installed copy is mistaken for the editable source or missing copies look current | Compare a separate edited install directory and require its own patch and missing-skill state |
+| F12 | Setup invents a model or selects an unsupported reasoning effort | Exercise unavailable choices, inherited settings, and supported effort boundaries |
+| F13 | A custom agent points to the build directory after installation or bypasses collision preflight | Install the native agent with a real fixture, check its installed path, then pre-create a conflicting agent |
+| F14 | A name collision rewires a creator's dependency to a different creator | Check explicit references, prose preservation, and relative link rewriting against fixed examples |

@@ -1,0 +1,19 @@
+test_f10_three_way_diff_preserves_local_edits (test_tooling.ToolingTests.test_f10_three_way_diff_preserves_local_edits) ... ok
+test_f11_installed_copy_has_separate_evidence (test_tooling.ToolingTests.test_f11_installed_copy_has_separate_evidence) ... ok
+test_f12_model_budget_and_availability (test_tooling.ToolingTests.test_f12_model_budget_and_availability) ... ok
+test_f13_native_agent_paths_and_collision (test_tooling.ToolingTests.test_f13_native_agent_paths_and_collision) ... ok
+test_f14_creator_reference_mapping (test_tooling.ToolingTests.test_f14_creator_reference_mapping) ... ok
+test_f1_modified_baseline_is_rejected (test_tooling.ToolingTests.test_f1_modified_baseline_is_rejected) ... ok
+test_f2_changes_licenses_modes_and_renames_are_reported (test_tooling.ToolingTests.test_f2_changes_licenses_modes_and_renames_are_reported) ... ok
+test_f3_out_of_scope_commit_has_no_content_change (test_tooling.ToolingTests.test_f3_out_of_scope_commit_has_no_content_change) ... ok
+test_f4_failed_remote_keeps_partial_report_and_fails_exit (test_tooling.ToolingTests.test_f4_failed_remote_keeps_partial_report_and_fails_exit) ... ok
+test_f5_collision_preflight_does_not_overwrite (test_tooling.ToolingTests.test_f5_collision_preflight_does_not_overwrite) ... ok
+test_f6_bundles_are_self_contained_and_install_is_idempotent (test_tooling.ToolingTests.test_f6_bundles_are_self_contained_and_install_is_idempotent) ... ok
+test_f7_repeat_check_deduplicates_without_moving_baseline (test_tooling.ToolingTests.test_f7_repeat_check_deduplicates_without_moving_baseline) ... ok
+test_f8_unsafe_paths_are_rejected (test_tooling.ToolingTests.test_f8_unsafe_paths_are_rejected) ... ok
+test_f9_invocation_policy_drift_is_rejected (test_tooling.ToolingTests.test_f9_invocation_policy_drift_is_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 1.597s
+
+OK
