@@ -5,7 +5,8 @@ These files describe checks already run; they do not rerun them when you open th
 
 | You want to know | Read |
 | --- | --- |
-| What passed in the current design? | [Redesign validation](redesign-validation.md) |
+| What passed after the October update? | [Adoption verification](adopted-20261013/report.md), including the full Bun suite |
+| What passed in the original design? | [Redesign validation](redesign-validation.md) |
 | How do our skills differ from the creators' versions? | [Saved comparison](originals-verified/report.md), with links to all three patches for each skill |
 | Did the import change anything beyond the intended adaptations? | [Adaptation audit](redesign-adaptation-audit.json), covering 211 files across 95 skills |
 | Which failure cases did the tooling tests exercise? | [Failure modes](../docs/test-plan.md) and [the 14-test run](redesign-tooling-tests.txt) |

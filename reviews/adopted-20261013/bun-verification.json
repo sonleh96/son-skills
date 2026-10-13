@@ -1,0 +1,143 @@
+{
+  "verified_on": "2026-10-13",
+  "source_commit": "06d4a92a17f9560ca9d5794abd17638dd93ca28c",
+  "bun_version": "1.4.3",
+  "bun_revision": "1.4.3+c6da4a4d3",
+  "installation": "Homebrew oven-sh/bun/bun",
+  "source_directory": "skills/son-mode/scripts",
+  "execution_directory": ".cache/bun-watcher-20261013",
+  "dependency_install": {
+    "command": "bun install --frozen-lockfile",
+    "exit_code": 0,
+    "lockfile_changed": false
+  },
+  "dependencies": {
+    "commander": "14.0.0",
+    "bun-types": "1.3.14",
+    "typescript": "7.0.2"
+  },
+  "tests": {
+    "command": "bun run test",
+    "expanded_command": "bun test orch watch-pr check-plan.test.ts",
+    "exit_code": 0,
+    "passed": 63,
+    "failed": 0,
+    "assertions": 232,
+    "files": 5,
+    "log": "bun-suite.txt"
+  },
+  "typecheck": {
+    "command": "bun run typecheck",
+    "expanded_command": "tsc --project watch-pr/tsconfig.json --noEmit --strict",
+    "exit_code": 0
+  },
+  "source_files": {
+    "bootstrap.ts": {
+      "sha256": "ccd2ed08fd9da9d0d942e5f2491cfc74bb92d8a08fa51755e0da1ac8de287361",
+      "mode": "100644",
+      "size": 1737
+    },
+    "bun.lock": {
+      "sha256": "667d9cf7222e9aae3fa42a4be383e657784216e9df115da02227fbc5ac7bbe46",
+      "mode": "100644",
+      "size": 6679
+    },
+    "check-plan.mjs": {
+      "sha256": "e58c3d871b09d477be00628d69dd23ffa6c2e3a1728f5b867a841baa8e90278b",
+      "mode": "100755",
+      "size": 8153
+    },
+    "check-plan.test.ts": {
+      "sha256": "c80f3ea043b81f219b92c4c8a3af6bdd4f8d32ea596ec15b5b9e0252645f2ae8",
+      "mode": "100644",
+      "size": 3289
+    },
+    "orch/orch.test.ts": {
+      "sha256": "773153ac74de6eb15f58d2682f487f5f30672d7efe3ef1d24a131aa9129d279b",
+      "mode": "100644",
+      "size": 18425
+    },
+    "orch/orch.ts": {
+      "sha256": "f091687df627a0b75fabd54af58945a9cd6c7039ef0622012ac9ed60cd8ec434",
+      "mode": "100755",
+      "size": 15511
+    },
+    "orch/store.ts": {
+      "sha256": "0eae7cf69282e827b1227166f2e32cee3560f2f3e65b3f1f2faf6fb83d3b4c5b",
+      "mode": "100644",
+      "size": 42927
+    },
+    "package.json": {
+      "sha256": "fd511a0c01f522e0c781ddd8eccea0e91697a0856c6e6a3261de78a6a0287c72",
+      "mode": "100644",
+      "size": 371
+    },
+    "watch-pr/cli.test.ts": {
+      "sha256": "a35592b4c6da96caf8d47987e9cd503fab6c7774ab87d11a43f24b4b5df2a9d1",
+      "mode": "100644",
+      "size": 6161
+    },
+    "watch-pr/cli.ts": {
+      "sha256": "89c08863089181a232be782c4b2ed90a1552f44aeecb0dcb7aac2c623620e680",
+      "mode": "100644",
+      "size": 6983
+    },
+    "watch-pr/fakes.test-helper.ts": {
+      "sha256": "cf0c5ee61b4a73444c1b775cfb6c81a40d312e055dd21a1f5eae6276e54de13f",
+      "mode": "100644",
+      "size": 3357
+    },
+    "watch-pr/github.test.ts": {
+      "sha256": "035f4a0f1ab5a17ebf94ad1f7c14d1abd948852be30987c0e9d107b5ea5028ab",
+      "mode": "100644",
+      "size": 12162
+    },
+    "watch-pr/github.ts": {
+      "sha256": "9ea8de77e019de19929fbe4a86bc88492ffbecd89d6816d9857ed49db904c151",
+      "mode": "100644",
+      "size": 25117
+    },
+    "watch-pr/policy.test.ts": {
+      "sha256": "146acabcfee9b6fa3342358eb0a9504aa65fd081bbc15b10adf9c1c5485067d2",
+      "mode": "100644",
+      "size": 12405
+    },
+    "watch-pr/policy.ts": {
+      "sha256": "f2a3e31223d05edc05e5473cc3f8f3cb9bd20c202c30c6abe7f21f0f7aee8fbb",
+      "mode": "100644",
+      "size": 25169
+    },
+    "watch-pr/render.ts": {
+      "sha256": "2b709e86628d5b8fdb61f860e60ababc342b0626c67576305442cf548283a604",
+      "mode": "100644",
+      "size": 7083
+    },
+    "watch-pr/tsconfig.json": {
+      "sha256": "1ecccc72320b086c63ce3f73c959896fd747363e63553b3b1136296ea4069e45",
+      "mode": "100644",
+      "size": 270
+    },
+    "watch-pr/types.compile.ts": {
+      "sha256": "621af4c9a664fbf699a9737efccdc248abb416df8819c9dc5f824beae2b9b1d6",
+      "mode": "100644",
+      "size": 2258
+    },
+    "watch-pr/types.ts": {
+      "sha256": "0cac435294dc85ce1ba755e8e67f6c5ab163dfa252f2722d6e3a2d68c58fec59",
+      "mode": "100644",
+      "size": 12649
+    },
+    "watch-pr/watch-pr": {
+      "sha256": "d955603be6cc0e8b8ffcec722f635192b2261410b1f2929abea94480e47eb5d4",
+      "mode": "100755",
+      "size": 211
+    },
+    "worktree-audit.sh": {
+      "sha256": "9faa9a2534ad64069dec67ac5b5ce1dc23b8fe635ecfd7f6557b1e3ada61fd2f",
+      "mode": "100755",
+      "size": 5494
+    }
+  },
+  "helpers_changed": false,
+  "scope": "Existing offline tests, with local Git fixtures and external-service fakes; no live GitHub readiness or merge was exercised."
+}
