@@ -291,6 +291,18 @@ class ToolingTests(unittest.TestCase):
                           {('matt','engineering/teach/SKILL.md'):'skills/matt-teach/SKILL.md'})
         self.assertEqual(result,'Use `matt-prototype` and /matt-tdd. A prototype is disposable. [Other](../matt-teach/SKILL.md)')
 
+    def test_f16_tracker_types_are_not_skill_aliases(self):
+        from port import adapt_text
+        for path, raw, expected in [
+            ('skills/engineering/setup-matt-pocock-skills/issue-tracker-github.md',
+             'Labels: `wayfinder:<type>` (`research`/`prototype`/`grilling`/`task`).',
+             'Labels: `wayfinder:<type>` (`research`/`prototype`/`grilling`/`task`).'),
+            ('skills/engineering/wayfinder/SKILL.md',
+             'Each ticket carries a label, one of `research`, `prototype`, `grilling`, `task`.\nCall the Skill tool with "prototype" and /tdd.',
+             'Each ticket carries a label, one of `research`, `prototype`, `grilling`, `task`.\nCall the Skill tool with "matt-prototype" and /matt-tdd.')]:
+            with self.subTest(path=path):
+                self.assertEqual(adapt_text(raw, 'matt', path, 'skills/test/SKILL.md', {}), expected)
+
     def test_f15_explicit_keep_preserves_personal_skill(self):
         destination=self.base/'installed'
         folder=destination/'son-fixture';folder.mkdir(parents=True)

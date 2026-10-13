@@ -18,6 +18,14 @@ def name_for(provider, slug):
 
 def adapt_text(text, provider, source_path, destination_path, locations):
     """Change explicit skill references and resolvable links, leaving prose intact."""
+    # Matt's tracker enums are domain values, even when they name a skill too.
+    tracker = provider == 'matt' and (
+        '/setup-matt-pocock-skills/' in source_path or '/wayfinder/' in source_path)
+    marker = '__SON_TRACKER_PROTOTYPE__'
+    if tracker:
+        text = '\n'.join(line.replace('`prototype`', '`'+marker+'`')
+                         if '`research`' in line else line
+                         for line in text.split('\n'))
     for old,new in RENAMES.get(provider,{}).items():
         for left,right in [('`','`'),('"','"'),("'","'"),('**','**')]:
             text=text.replace(left+old+right,left+new+right)
@@ -33,7 +41,7 @@ def adapt_text(text, provider, source_path, destination_path, locations):
             target=os.path.relpath(mapped,Path(destination_path).parent).replace(os.sep,'/')
             return '['+label+']('+target+(sep+anchor if sep else '')+')'
         return match.group(0)
-    return re.sub(r'\[([^\]]*)\]\(([^)]+)\)',link,text)
+    return re.sub(r'\[([^\]]*)\]\(([^)]+)\)',link,text).replace(marker, 'prototype')
 
 
 def entrypoint(text, name):

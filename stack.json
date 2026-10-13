@@ -5,7 +5,7 @@
       "name": "animate",
       "kind": "original",
       "category": "interface",
-      "description": "Build an animation from scratch, making the decisions in the order that determines whether it feels right \u2014 should it animate at all, what purpose, which tool, which properties, which curve and duration, how it interrupts, how it exits. Writes the implementation. Use when asked to animate something, add motion, make a component feel alive, or build a transition. For critiquing existing motion use review-animations; for auditing a whole codebase use improve-animations.",
+      "description": "Build an animation from scratch, making the decisions in the order that determines whether it feels right — should it animate at all, what purpose, which tool, which properties, which curve and duration, how it interrupts, how it exits. Writes the implementation. Use when asked to animate something, add motion, make a component feel alive, or build a transition. For critiquing existing motion use review-animations; for auditing a whole codebase use improve-animations.",
       "explicit_only": false,
       "sources": [
         {
@@ -45,7 +45,7 @@
       "name": "animate-expo",
       "kind": "original",
       "category": "interface",
-      "description": "Build animations in React Native and Expo, making the decisions in the order that determines whether they feel right \u2014 should it animate, which thread it runs on, which properties, spring or timing, how the gesture hands off, how it degrades. Writes the implementation with Reanimated, Gesture Handler, Expo Router and expo-haptics. Use when animating anything in an Expo app, adding gestures, sheets, screen transitions, press feedback or haptics, or fixing motion that stutters on device. For web animation use `animate`.",
+      "description": "Build animations in React Native and Expo, making the decisions in the order that determines whether they feel right — should it animate, which thread it runs on, which properties, spring or timing, how the gesture hands off, how it degrades. Writes the implementation with Reanimated, Gesture Handler, Expo Router and expo-haptics. Use when animating anything in an Expo app, adding gestures, sheets, screen transitions, press feedback or haptics, or fixing motion that stutters on device. For web animation use `animate`.",
       "explicit_only": false,
       "sources": [
         {
@@ -85,7 +85,7 @@
       "name": "animation-vocabulary",
       "kind": "original",
       "category": "interface",
-      "description": "Reverse-lookup glossary that turns a vague description of a web animation or motion effect into its exact term (\"the bouncy thing when a popover opens\" \u2192 Pop in; \"the iOS rubber-band scroll\" \u2192 Rubber-banding). Use when the user asks \"what's it called when\u2026\", or describes a motion effect without knowing its name and wants the right word to prompt an AI or designer with. For naming an effect, not designing or building one.",
+      "description": "Reverse-lookup glossary that turns a vague description of a web animation or motion effect into its exact term (\"the bouncy thing when a popover opens\" → Pop in; \"the iOS rubber-band scroll\" → Rubber-banding). Use when the user asks \"what's it called when…\", or describes a motion effect without knowing its name and wants the right word to prompt an AI or designer with. For naming an effect, not designing or building one.",
       "explicit_only": false,
       "sources": [
         {
@@ -165,9 +165,9 @@
       ],
       "imported_files": {
         "SKILL.md": {
-          "sha256": "feb45feee8567b0d5aeae0f2309d1199907c968bd4706e5f6cc231238b2a430e",
+          "sha256": "eef3f4037e30276694f76662ba18e448b22e9cf83fc9ced9a2f67c2611eb290d",
           "mode": "100644",
-          "size": 5752
+          "size": 5546
         },
         "SON-COMPATIBILITY.md": {
           "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
@@ -195,9 +195,9 @@
           "size": 3050
         },
         "references/runner-prompt.md": {
-          "sha256": "983bf2820cc14ed8ecab6e448e1033e5cfe6031967d0a9287b48c7fa9c33d925",
+          "sha256": "21dd5314aab778c5007228027a4591d97693fbec6ab86524037772b63f40948e",
           "mode": "100644",
-          "size": 3087
+          "size": 3092
         }
       }
     },
@@ -215,9 +215,9 @@
       ],
       "imported_files": {
         "SKILL.md": {
-          "sha256": "9a786b7d2103224413fcb4a48e1919c3506fe0051ad12a2c95e7c2c921149bcb",
+          "sha256": "63198898905144ff0112846f90f447faf5f45925f39c536e5addbc95f21f5fc2",
           "mode": "100644",
-          "size": 5050
+          "size": 4356
         },
         "SON-COMPATIBILITY.md": {
           "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
@@ -255,9 +255,9 @@
           "size": 4249
         },
         "SKILL.md": {
-          "sha256": "dee203267528d58a26b762f8e1a57a01154718dfcb537b4a3228bdc0497b5ac0",
+          "sha256": "2eb786b8de27cc0fee1e326e18bbaae856c50a6c27a685f50214386b904c5349",
           "mode": "100644",
-          "size": 12564
+          "size": 12706
         },
         "SON-COMPATIBILITY.md": {
           "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
@@ -280,7 +280,7 @@
       "name": "ask-sonner",
       "kind": "original",
       "category": "interface",
-      "description": "Guide to Sonner, the React toast library \u2014 install and wire up the Toaster, pick the right toast() call, promise and loading toasts, updating, dismissing and persisting toasts, styling, theming and icons, positioning and multiple toasters. Use when working with Sonner or troubleshooting it \u2014 toasts that don't appear, appear twice, lose their styles, ignore Tailwind classes, sit behind a modal, or don't follow dark mode.",
+      "description": "Guide to Sonner, the React toast library — install and wire up the Toaster, pick the right toast() call, promise and loading toasts, updating, dismissing and persisting toasts, styling, theming and icons, positioning and multiple toasters. Use when working with Sonner or troubleshooting it — toasts that don't appear, appear twice, lose their styles, ignore Tailwind classes, sit behind a modal, or don't follow dark mode.",
       "explicit_only": false,
       "sources": [
         {
@@ -365,9 +365,9 @@
       ],
       "imported_files": {
         "SKILL.md": {
-          "sha256": "21a9599826f50a4bc13638182884eed1de45ef3c43563952d65396f7c0beba53",
+          "sha256": "8f1d88724176eb7893ed9531aa297ada7b6c4d7b85066822fdf407162c935b6b",
           "mode": "100644",
-          "size": 5486
+          "size": 5079
         },
         "SON-COMPATIBILITY.md": {
           "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
@@ -400,9 +400,9 @@
       ],
       "imported_files": {
         "SKILL.md": {
-          "sha256": "4ade4bead1eb68a865424321939764ae5265201b40cdd875f04990c7ca923fc9",
+          "sha256": "ce508a8dbd1cafb07e20dcbfaebd3ec150d1a6460d132f3b83cb854999b7fa01",
           "mode": "100644",
-          "size": 3928
+          "size": 3933
         },
         "SON-COMPATIBILITY.md": {
           "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
@@ -425,7 +425,7 @@
       "name": "break-ui",
       "kind": "original",
       "category": "verification",
-      "description": "Try to break a piece of UI by feeding it worst-case data \u2014 long names, unbreakable emails, one-letter names, missing fields, huge counts, zero items, long labels, non-Latin text, emoji, extreme numbers \u2014 then render it behind a \"Demo data / Worst case\" toggle and report everything that broke, with the fix for each. Use when the user asks to stress-test, break, or find edge cases in a component or screen, or to \"try the worst case\". For visual design critique use emil-design-eng; for motion use review-animations.",
+      "description": "Try to break a piece of UI by feeding it worst-case data — long names, unbreakable emails, one-letter names, missing fields, huge counts, zero items, long labels, non-Latin text, emoji, extreme numbers — then render it behind a \"Demo data / Worst case\" toggle and report everything that broke, with the fix for each. Use when the user asks to stress-test, break, or find edge cases in a component or screen, or to \"try the worst case\". For visual design critique use emil-design-eng; for motion use review-animations.",
       "explicit_only": false,
       "sources": [
         {
@@ -585,9 +585,9 @@
       ],
       "imported_files": {
         "SKILL.md": {
-          "sha256": "590d6563d0a853cc780bd899d70e10e354f98c73df15b8784c76b388f5610fcf",
+          "sha256": "a8fcac292e007b8fe94710b0dc870699579b5fb8cbaff390694fec912e29257a",
           "mode": "100644",
-          "size": 6666
+          "size": 6747
         },
         "SON-COMPATIBILITY.md": {
           "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
@@ -690,7 +690,7 @@
       "name": "create-verification-skill",
       "kind": "original",
       "category": "verification",
-      "description": "Generate a project-local verification skill that drives your app the way a user does \u2014 any language, framework, or platform. Use for /create-verification-skill, \"make a control skill for this repo\", or when a project has no scripted way to prove UI/CLI/service behavior.",
+      "description": "Generate a project-local verification skill that drives your app the way a user does — any language, framework, or platform. Use for /create-verification-skill, \"make a control skill for this repo\", or when a project has no scripted way to prove UI/CLI/service behavior.",
       "explicit_only": true,
       "sources": [
         {
@@ -700,9 +700,9 @@
       ],
       "imported_files": {
         "SKILL.md": {
-          "sha256": "d8064eef4299cc9a1545768ecc97fb4b96a2b8c80f0acac9b149f50e4c6055b2",
+          "sha256": "befb4f23c08f916d839f1802c37c827c7df8d59bfc6c06f8edbc4be54ab9e730",
           "mode": "100644",
-          "size": 5956
+          "size": 6610
         },
         "SON-COMPATIBILITY.md": {
           "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
@@ -835,9 +835,9 @@
       ],
       "imported_files": {
         "SKILL.md": {
-          "sha256": "ab00fd1a27384965be38eb8c90912634107609250bdb7bd61728051dae908ff4",
+          "sha256": "ea3e9da739cba8f6ccea0b1a3576b1f642db72009e5a75b8d1e0d35bff5f0c0d",
           "mode": "100644",
-          "size": 8607
+          "size": 8741
         },
         "SON-COMPATIBILITY.md": {
           "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
@@ -985,7 +985,7 @@
       "name": "figure-it-out",
       "kind": "original",
       "category": "automation",
-      "description": "Design an auditable playbook when no narrower one fits: a large migration, an ambitious multi-part change, or work a human reviews after stepping away. Scales rigor to the task, runs a hypothesis loop, and logs decisions via show-me-your-work. Use for /figure-it-out, 'figure it out', a large migration, or when no narrower playbook applies.",
+      "description": "Design an auditable playbook when no narrower one fits: a large migration, an ambitious multi-part change, or work a human reviews after stepping away. Scales rigor to the task, runs a hypothesis loop, and logs decisions. Use for /figure-it-out or 'figure it out'.",
       "explicit_only": true,
       "sources": [
         {
@@ -995,9 +995,9 @@
       ],
       "imported_files": {
         "SKILL.md": {
-          "sha256": "6a82dddb4350d8b072787027d72137cdc9498aa34cc7b3e98c6d19c8c8a4a9ca",
+          "sha256": "e898e70ed9064ab87953967988027f7cb5d22dfafd7cada3403516fb42bf627c",
           "mode": "100644",
-          "size": 4133
+          "size": 4052
         },
         "SON-COMPATIBILITY.md": {
           "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
@@ -1135,9 +1135,9 @@
       ],
       "imported_files": {
         "SKILL.md": {
-          "sha256": "afec34218f79b7852bf9e7b5bf232c1f6e641341d356c5fded8defa1afdc0ec1",
+          "sha256": "1d0ec7b125319d72d948531d9fe68eb256f68ab06cf6c415da07e7fa30ee6582",
           "mode": "100644",
-          "size": 2064
+          "size": 2126
         },
         "SON-COMPATIBILITY.md": {
           "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
@@ -1170,9 +1170,9 @@
       ],
       "imported_files": {
         "SKILL.md": {
-          "sha256": "2bb509b814f39159a652fa98398b3d75f54bcdb8951e44f16f101f4ef9d83529",
+          "sha256": "647ee667ea3606e28fd575a3c09ce842ed91f6dbc6fc34bbf0496836fb6d6528",
           "mode": "100644",
-          "size": 971
+          "size": 1017
         },
         "SON-COMPATIBILITY.md": {
           "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
@@ -1205,9 +1205,9 @@
       ],
       "imported_files": {
         "SKILL.md": {
-          "sha256": "28659f0bb888bb741bbcbf886dcf85bf80fe9254fa9e137d463b563e70a8127f",
+          "sha256": "16247aacc1ae1513aac3c0767c7f0b2d45467ffb63247d4f021fa5bd728b78b2",
           "mode": "100644",
-          "size": 3154
+          "size": 2595
         },
         "SON-COMPATIBILITY.md": {
           "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
@@ -1230,9 +1230,9 @@
           "size": 3085
         },
         "references/explorer-prompt.md": {
-          "sha256": "a3b44a6e5bb16a6d4d1cac19db8ed5322ffd5f5f5d45baca4e73990ca096f8be",
+          "sha256": "6300128385ee940fd42ecb84b0e623435440a2dc283eae54ee4a52ba56947ba1",
           "mode": "100644",
-          "size": 2684
+          "size": 1135
         }
       }
     },
@@ -1250,9 +1250,9 @@
       ],
       "imported_files": {
         "SKILL.md": {
-          "sha256": "f5b93e621136a880b294e81646e9e1ff9dca13d8c88af2ba8adada27b19173fc",
+          "sha256": "df796bf4f8a73268bcb76800e811e1649f03c8f2b701f8e62a64980681184992",
           "mode": "100644",
-          "size": 515
+          "size": 704
         },
         "SON-COMPATIBILITY.md": {
           "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
@@ -1310,7 +1310,7 @@
       "name": "improve-animations",
       "kind": "original",
       "category": "interface",
-      "description": "Survey a codebase's animation and motion code as a senior motion advisor, then produce a prioritized audit and self-contained implementation plans for other agents (or cheaper models) to execute. Read-only on source code \u2014 it plans improvements, it does not apply them. Use when the user asks to \"improve the animations\", \"audit the motion\", \"make this app feel better\", or wants a roadmap of animation fixes rather than a review of a single diff.",
+      "description": "Survey a codebase's animation and motion code as a senior motion advisor, then produce a prioritized audit and self-contained implementation plans for other agents (or cheaper models) to execute. Read-only on source code — it plans improvements, it does not apply them. Use when the user asks to \"improve the animations\", \"audit the motion\", \"make this app feel better\", or wants a roadmap of animation fixes rather than a review of a single diff.",
       "explicit_only": false,
       "sources": [
         {
@@ -1440,9 +1440,9 @@
       ],
       "imported_files": {
         "SKILL.md": {
-          "sha256": "2ced28d127bc5cae7abc3b7f8a03ce58face3bf9a6e5e98778f0b01efac37ca6",
+          "sha256": "cc49fff5474bce4c2166990c716be2f8f1bc2f39fb872217f84bc5aee1783985",
           "mode": "100644",
-          "size": 5131
+          "size": 4394
         },
         "SON-COMPATIBILITY.md": {
           "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
@@ -1470,14 +1470,14 @@
           "size": 3465
         },
         "references/reviewer-prompt.md": {
-          "sha256": "e0598e254792b56de39bb16b1e6db559b03a522fdc54b98f942d254090920ae6",
+          "sha256": "f6005cc2b535006fca97a96c5bfda49df57312eedf1ffd8d1aaaf3eb33817c25",
           "mode": "100644",
-          "size": 2491
+          "size": 2275
         },
         "references/rubric.md": {
-          "sha256": "a85aa801abbaf14434f00579440abc0d8e2723227ba8bf57de7cca8d6e7d2f25",
+          "sha256": "0f9c6bdb0b96e26dbde5f6407f417e0c02f54080e7a1268d8994f3c3ec6c5ac0",
           "mode": "100644",
-          "size": 5025
+          "size": 4772
         }
       }
     },
@@ -1610,9 +1610,9 @@
       ],
       "imported_files": {
         "SKILL.md": {
-          "sha256": "d29ad741841f8b9999bfc8233a9232a37a13c5d6d573f81afa65edab77ed28e4",
+          "sha256": "42dcab5e60b77399087b40f19f10b1803a605d897af6853300f8b3a9e55b46e5",
           "mode": "100644",
-          "size": 3632
+          "size": 3711
         },
         "SON-COMPATIBILITY.md": {
           "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
@@ -1675,9 +1675,9 @@
           "size": 1922
         },
         "SKILL.md": {
-          "sha256": "634cf203c0aede1ca33251f091bb2b4b5e83b392a3f460da7c1a010aa3492651",
+          "sha256": "ecc1bb0294ac44027e34a1577d2af4eeab274a0fa5f8541beab70cbd39e33894",
           "mode": "100644",
-          "size": 9582
+          "size": 9814
         },
         "SON-COMPATIBILITY.md": {
           "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
@@ -1700,7 +1700,7 @@
       "name": "mobile-native",
       "kind": "original",
       "category": "interface",
-      "description": "Make a web app feel native on a phone \u2014 the small CSS and meta-tag fixes that separate \"a website in a browser\" from something that feels installed. Covers sticky hover states, tap highlight flashes, the 100vh bug, inputs that zoom the page, laggy taps, pull-to-refresh hijacking scroll, content under the notch, long-press selecting button text, carousels that scroll the wrong way, mismatched status bars, and the rule that you test on real hardware. Use when a web app is being built for or reviewed on mobile, when something \"works in Chrome but feels wrong on my phone\", when building a PWA, a bottom sheet, a carousel, a full-screen layout, or any touch interaction. For motion itself use animate; for React Native use animate-expo.",
+      "description": "Make a web app feel native on a phone — the small CSS and meta-tag fixes that separate \"a website in a browser\" from something that feels installed. Covers sticky hover states, tap highlight flashes, the 100vh bug, inputs that zoom the page, laggy taps, pull-to-refresh hijacking scroll, content under the notch, long-press selecting button text, carousels that scroll the wrong way, mismatched status bars, and the rule that you test on real hardware. Use when a web app is being built for or reviewed on mobile, when something \"works in Chrome but feels wrong on my phone\", when building a PWA, a bottom sheet, a carousel, a full-screen layout, or any touch interaction. For motion itself use animate; for React Native use animate-expo.",
       "explicit_only": false,
       "sources": [
         {
@@ -1795,7 +1795,7 @@
       ],
       "imported_files": {
         "SKILL.md": {
-          "sha256": "49d9f356c77bdcf5710b63a3cc61252475bc40280944f3523147c9548e7e8598",
+          "sha256": "fa03614097f84884c0c5343988061294633526382c0fe9b8ab6b666144c4d0aa",
           "mode": "100644",
           "size": 2637
         },
@@ -1820,7 +1820,7 @@
       "name": "pick-ui-library",
       "kind": "original",
       "category": "interface",
-      "description": "Pick the right library for a given frontend task from a curated, opinionated list \u2014 numbers, OTP inputs, charts, command menus, virtualization, drag and drop, toasts, state, styling, and more. Only runs when explicitly invoked; it does not trigger on its own.",
+      "description": "Pick the right library for a given frontend task from a curated, opinionated list — numbers, OTP inputs, charts, command menus, virtualization, drag and drop, toasts, state, styling, and more. Only runs when explicitly invoked; it does not trigger on its own.",
       "explicit_only": true,
       "sources": [
         {
@@ -1975,9 +1975,9 @@
       ],
       "imported_files": {
         "SKILL.md": {
-          "sha256": "bd6d1e983ff9de52a26783bffa755f1672a3a931c76389e7d09538346303dbb1",
+          "sha256": "fd0771b945e98be926d6fe91b03a97b1a28959f713c0b34fa9f70ad7e6f8bf8c",
           "mode": "100644",
-          "size": 2536
+          "size": 2464
         },
         "SON-COMPATIBILITY.md": {
           "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
@@ -2010,9 +2010,9 @@
       ],
       "imported_files": {
         "SKILL.md": {
-          "sha256": "f4a54049a9bd628f3ce71d257723ba2fa9328157c0e11de3d9b86693d9c2b76a",
+          "sha256": "41fe8a47bb2034cc9f67ef07096de985ab62a5c6ec61c1788b1c229aaa0f3513",
           "mode": "100644",
-          "size": 2288
+          "size": 635
         },
         "SON-COMPATIBILITY.md": {
           "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
@@ -2045,9 +2045,9 @@
       ],
       "imported_files": {
         "SKILL.md": {
-          "sha256": "a4e5806f3fa0cf7c6771d06c7f53b891920223bec58f96c08c398d99086b09f5",
+          "sha256": "0361b4cfa98b310e9457687bf6e6747d29a9dac9146676e25b2ad11b4823d970",
           "mode": "100644",
-          "size": 1229
+          "size": 472
         },
         "SON-COMPATIBILITY.md": {
           "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
@@ -2115,9 +2115,9 @@
       ],
       "imported_files": {
         "SKILL.md": {
-          "sha256": "f827dc2b50df3b5e29ffc9f0f7656fff57104260e2e62d50757cc45dfde9cbdf",
+          "sha256": "ddb59c953695f28945c0cde7e84994c4d17c1e88f4f3bab49a0230e2e8c95a8e",
           "mode": "100644",
-          "size": 2186
+          "size": 1740
         },
         "SON-COMPATIBILITY.md": {
           "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
@@ -2220,9 +2220,9 @@
       ],
       "imported_files": {
         "SKILL.md": {
-          "sha256": "c1cb56ee73b5419cfc3b0d7b82020205c0a38bbdcc0d8167164db9038f8a8e26",
+          "sha256": "442a1f6c9cc4acc4ecc6b99b730f4612c57df2c6cee21ef641dbbcb46bf528d4",
           "mode": "100644",
-          "size": 1016
+          "size": 596
         },
         "SON-COMPATIBILITY.md": {
           "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
@@ -2255,9 +2255,9 @@
       ],
       "imported_files": {
         "SKILL.md": {
-          "sha256": "b02fba273d2de981797974e118d8401d1a511f9330f2a501d20b951af3ddddc4",
+          "sha256": "19a97fd471cf05707c41ae1f0588eaa90698265f67068e798acda141eda1c9b9",
           "mode": "100644",
-          "size": 1448
+          "size": 629
         },
         "SON-COMPATIBILITY.md": {
           "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
@@ -2360,9 +2360,9 @@
       ],
       "imported_files": {
         "SKILL.md": {
-          "sha256": "3fc6648439c984d4fe22317b4d0d85df5a1a49d2310099e64f8c6b799fe1fdc0",
+          "sha256": "f34d9401aaa7eb17e7ea8656a68075faf6f635f168dc2a2ab8441be5b525047e",
           "mode": "100644",
-          "size": 2172
+          "size": 2073
         },
         "SON-COMPATIBILITY.md": {
           "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
@@ -2385,7 +2385,7 @@
       "name": "principle-model-the-domain",
       "kind": "original",
       "category": "decisions",
-      "description": "Apply when writing stateful logic, or when code branches a lot or repeats a shape assumption across files. Encode the domain in a structure instead of scattered conditionals.",
+      "description": "Apply when writing stateful logic, or when code branches a lot or repeats a shape assumption across files.",
       "explicit_only": true,
       "sources": [
         {
@@ -2395,9 +2395,9 @@
       ],
       "imported_files": {
         "SKILL.md": {
-          "sha256": "f752447133a82687596a3c12dad044efd026bd279b76968bea025ed72b3c29b6",
+          "sha256": "1f7e3d1de52b0fbcc6b10d24e527ab61a229aba34c60bb5f5865695d2e33c234",
           "mode": "100644",
-          "size": 2159
+          "size": 1935
         },
         "SON-COMPATIBILITY.md": {
           "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
@@ -2420,7 +2420,7 @@
       "name": "principle-never-block-on-the-human",
       "kind": "original",
       "category": "working agreements",
-      "description": "Apply when tempted to ask 'should I do X?' on reversible work. Proceed, present the result, let the human course-correct after the fact; reserve confirmation for irreversible actions.",
+      "description": "Apply when tempted to ask 'should I do X?' on reversible work.",
       "explicit_only": true,
       "sources": [
         {
@@ -2430,9 +2430,9 @@
       ],
       "imported_files": {
         "SKILL.md": {
-          "sha256": "54ba297c1fb99dad2e477946ca9775e841168bc3b5fe57d98c2b816b006ca273",
+          "sha256": "d267bdd35d89ae7fe3b1f5613b3c3a10b2c4af46d96bbb74de954eed5c69e6b9",
           "mode": "100644",
-          "size": 1249
+          "size": 987
         },
         "SON-COMPATIBILITY.md": {
           "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
@@ -2525,7 +2525,7 @@
       "name": "principle-redesign-from-first-principles",
       "kind": "original",
       "category": "engineering",
-      "description": "Apply when integrating a new requirement into an existing design. Redesign as if the requirement had been a foundational assumption from day one, instead of bolting it on.",
+      "description": "Apply when integrating a new requirement into an existing design.",
       "explicit_only": true,
       "sources": [
         {
@@ -2535,9 +2535,9 @@
       ],
       "imported_files": {
         "SKILL.md": {
-          "sha256": "cc8f402c8fb075d12236b59cb52f4deabf1a772273cf5be41b822b4224f7e9e5",
+          "sha256": "3d885989d383669253c884959fc25949157c13f6bd5f90fa24c826001054b4ba",
           "mode": "100644",
-          "size": 921
+          "size": 835
         },
         "SON-COMPATIBILITY.md": {
           "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
@@ -2640,9 +2640,9 @@
       ],
       "imported_files": {
         "SKILL.md": {
-          "sha256": "f3a4a501350da1cecff355c04ced297ebeb6318aee0d6525ee0276f6e41c60ef",
+          "sha256": "a7d0cb9c6e095ea9742123165f6d0b33dfdf0e0fea36c4944bf60f0199ff6e9e",
           "mode": "100644",
-          "size": 1171
+          "size": 986
         },
         "SON-COMPATIBILITY.md": {
           "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
@@ -2665,7 +2665,7 @@
       "name": "principle-test-behavior-not-implementation",
       "kind": "original",
       "category": "delivery",
-      "description": "Apply when you write, change, or keep a test. Call the code the way its users do and assert the result they observe against a literal expected value. If the test would still pass when every imported function returns undefined, rewrite the assertion or delete the test.",
+      "description": "Apply when you write, change, or keep a test. Call the code as its users do and assert the exact result they see. Rewrite or delete a test that would pass if every imported function returned undefined.",
       "explicit_only": true,
       "sources": [
         {
@@ -2675,9 +2675,9 @@
       ],
       "imported_files": {
         "SKILL.md": {
-          "sha256": "be502bfca8873eb52fc65dc5d0135411703f96193b8db6d4b534962f875d2bf6",
+          "sha256": "7e8f54bf54a21a8f91a628bab8979be77d9657596db1888fba22fdcf91dbb6dd",
           "mode": "100644",
-          "size": 2652
+          "size": 1463
         },
         "SON-COMPATIBILITY.md": {
           "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
@@ -2710,9 +2710,9 @@
       ],
       "imported_files": {
         "SKILL.md": {
-          "sha256": "e8df6f68793418ac481dd19191e472c70473cf2ad6defeae9e9a308df1c94a36",
+          "sha256": "f774ce0c0e17c817e7103b4728649cabe954ac5ec45da2799d36ce9197f85ec1",
           "mode": "100644",
-          "size": 4999
+          "size": 3738
         },
         "SON-COMPATIBILITY.md": {
           "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
@@ -2850,9 +2850,9 @@
       ],
       "imported_files": {
         "SKILL.md": {
-          "sha256": "37a7862c735dfaa9b900f8fc49df1ef06974b9948bd1620310d2d077b23092c6",
+          "sha256": "a8d48c228dd67f296cedaa1584902b0524f32fabf2f6ded8f1607c689cd1c715",
           "mode": "100644",
-          "size": 5059
+          "size": 4710
         },
         "SON-COMPATIBILITY.md": {
           "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
@@ -2870,24 +2870,24 @@
           "size": 1067
         },
         "references/divergent-reviewer.md": {
-          "sha256": "221dfc0abf7cbcd25e1da3cd87323f5d1050fc3bf652e096d093584e183c98fb",
+          "sha256": "f6030d88e20e906ef5e2d9ba44cb013ce610c49c2fe2ef74c377d32e0dc9e939",
           "mode": "100644",
-          "size": 3889
+          "size": 3668
         },
         "references/judgment-reviewer.md": {
-          "sha256": "a40ecb9b28bd2a3491e11a541157fe58efe158e0eda7b61a5006c14590aabe61",
+          "sha256": "38f917619fbf346062d643e0ad6b12fc952d58678dfcbbf42ffcf6d8b9c08307",
           "mode": "100644",
-          "size": 3255
+          "size": 3107
         },
         "references/synthesizer.md": {
-          "sha256": "2f76c847eb45b182dc6fbcbf7d96c8ee7e2986ecfd9e0d640fec44e3cc5a617c",
+          "sha256": "6af816963de74d1a1aef4070273c1ff533d2072732e488e159ddc0b299fec3cd",
           "mode": "100644",
-          "size": 4164
+          "size": 4141
         },
         "references/tooling-reviewer.md": {
-          "sha256": "bc49ced90fa81eaba3083b88aeb430d900a6d8f14ff40c1d6b52263bacfc77b6",
+          "sha256": "f81b8697e7366fbbc18feba52c6e3253a101f751091364ebc4396a1d9b5753b4",
           "mode": "100644",
-          "size": 4609
+          "size": 4448
         }
       }
     },
@@ -3015,9 +3015,9 @@
       ],
       "imported_files": {
         "SKILL.md": {
-          "sha256": "3e9c6b91c1f430b3584df174a9f07a0bdf406d5a33853d15ba62b5aacff5f7a4",
+          "sha256": "000db6c123f801fbe7e9e7ef3a6aa23721d2a8dab4fcd224ccbd2076f3285fc7",
           "mode": "100644",
-          "size": 6914
+          "size": 7045
         },
         "SON-COMPATIBILITY.md": {
           "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
@@ -3035,19 +3035,19 @@
           "size": 2042
         },
         "issue-tracker-github.md": {
-          "sha256": "254a96869e607094d527e74ddbfe53ed7ffeb83fa0ccdd5d29947f257b07b4cb",
+          "sha256": "f0653fe106dd8ee7b33be27bd7fe3104b40555896cb45f61997aed20467020c3",
           "mode": "100644",
-          "size": 3736
+          "size": 4117
         },
         "issue-tracker-gitlab.md": {
-          "sha256": "bfbfc0da2f658fa50491b8c2ad48cf1f0db690c461da4c212f52f849917f4f29",
+          "sha256": "591a9e7057382aaccdfbed3f7ea3f2ad07e0cd29f012d18b82ee4e485fd81e24",
           "mode": "100644",
-          "size": 3814
+          "size": 3816
         },
         "issue-tracker-local.md": {
-          "sha256": "390e3fe339fba68e8eb8692a9ba27cccc7acec8aab3db6724a0bc1cba24b5022",
+          "sha256": "7dcda20a2eb4bdc89b95d1143423c0691309921cadae3132e6424f371030506e",
           "mode": "100644",
-          "size": 1815
+          "size": 1810
         },
         "licenses/matt.txt": {
           "sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
@@ -3055,9 +3055,9 @@
           "size": 1068
         },
         "triage-labels.md": {
-          "sha256": "4f53c9b40ce2651e3611aa090eaedbd6dbc9b71ef8c5f7e65eac0d8263190d0d",
+          "sha256": "ae512af838c78b8750471c42cd2b20fa32319553e61d84c9a23d171b40ce14aa",
           "mode": "100644",
-          "size": 1045
+          "size": 1057
         }
       }
     },
@@ -3206,7 +3206,7 @@
       "name": "technical-writing",
       "kind": "original",
       "category": "communication",
-      "description": "Layered technical-writing standard: Di\u00e1taxis structure, Google developer style sentences, STE instruction rules, Global English syntax. Use for /technical-writing or when writing or reviewing docs, RFCs, readmes, PR descriptions, or commit messages.",
+      "description": "Layered technical-writing standard: Diátaxis structure, Google developer style sentences, STE instruction rules, Global English syntax. Use for /technical-writing or when writing or reviewing docs, RFCs, readmes, PR descriptions, or commit messages.",
       "explicit_only": true,
       "sources": [
         {
@@ -3216,9 +3216,9 @@
       ],
       "imported_files": {
         "SKILL.md": {
-          "sha256": "9c0f96137148d164414221b5dc1031b0ff71989027159949e352e36454896316",
+          "sha256": "4e5d7b537435375aadaea3ce192413ec9790d94538676c6c4b9231d0e761d817",
           "mode": "100644",
-          "size": 9869
+          "size": 9170
         },
         "SON-COMPATIBILITY.md": {
           "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
@@ -3321,9 +3321,9 @@
       ],
       "imported_files": {
         "SKILL.md": {
-          "sha256": "19e61f177ba1b57f0aed3e999e1c589aad7f6c510bb4da982983ee9861b9f94e",
+          "sha256": "4f48c64ea78de0c46711a4f4e3d521a870996bcb328e201a97574c72f7d83c1a",
           "mode": "100644",
-          "size": 5748
+          "size": 5889
         },
         "SON-COMPATIBILITY.md": {
           "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
@@ -3441,9 +3441,9 @@
       ],
       "imported_files": {
         "SKILL.md": {
-          "sha256": "71b1ac3111899e6058f66ddba6ddecbc5ebdbefd39592f2ccb3e50df398ece09",
+          "sha256": "d255099cb514dd611f2fd3bbbf0c6d0ec691b0e652e64dce5aa549fc49ac7613",
           "mode": "100644",
-          "size": 6092
+          "size": 5904
         },
         "SON-COMPATIBILITY.md": {
           "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
@@ -3569,9 +3569,9 @@
       ],
       "imported_files": {
         "SKILL.md": {
-          "sha256": "3b509601f78ce1083b64834c7f68637c9ed1827481820355d23095061a962084",
+          "sha256": "efaf6f07c00201de34cb4de598f0c005fe1b70d0c1e1b49291721d075783ce6e",
           "mode": "100644",
-          "size": 11995
+          "size": 12462
         },
         "SON-COMPATIBILITY.md": {
           "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
@@ -3604,9 +3604,9 @@
       ],
       "imported_files": {
         "SKILL.md": {
-          "sha256": "0f2c3383544401257f7c0ac15efbded75de8ccb0b11d7a3d0285290125aefd76",
+          "sha256": "d6f58effc2c4e3d3908ae96cb6699fd8d985999c9494d1c28afa3dc39cd527f3",
           "mode": "100644",
-          "size": 10437
+          "size": 8847
         },
         "SON-COMPATIBILITY.md": {
           "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
@@ -3624,14 +3624,14 @@
           "size": 1067
         },
         "references/epistemics.md": {
-          "sha256": "fcc0f559c072832c869a5ada72434b4849320a637ae63c09e8ee14f7ad787059",
+          "sha256": "d54a2361b2d5973bc3fe2edf62f446d87935974d4b40d47f23b9529f956ca758",
           "mode": "100644",
-          "size": 7749
+          "size": 6736
         },
         "references/investigator-prompt.md": {
-          "sha256": "6892956a7ab0b5ee6c4babaf4f793703abe89b350ea7cb9463b4a56eea1c8266",
+          "sha256": "c44afba186f899094f3694e6c9d6de5d14ff7c4ce28b787a9f50fc789c9a7fc3",
           "mode": "100644",
-          "size": 6985
+          "size": 5554
         },
         "references/source-playbook.md": {
           "sha256": "37c3e85b03106463f098c021ff678d744a1957b1f829a0e74b034c6f2f204d19",
@@ -3639,9 +3639,9 @@
           "size": 1347
         },
         "references/sources/code-archaeology.md": {
-          "sha256": "8c14aa382f0de40829b2668d43e3f54814480bb93a486c9282ada4003f6b9dbd",
+          "sha256": "a4a3970e9db448054aed676f3f7feeee667b4b69f0bd57c8fd72b751be687cc7",
           "mode": "100644",
-          "size": 3489
+          "size": 1440
         },
         "references/sources/databricks.md": {
           "sha256": "236ede7aab6454662a992db088a5393537a5233a4c26719c93188f9e174488f6",
@@ -3649,14 +3649,14 @@
           "size": 6994
         },
         "references/sources/datadog.md": {
-          "sha256": "ebe9c07bac28e47757ee7f16fb93b0c01d427a08c501957d047f395a2f37b7e7",
+          "sha256": "b139faac5dc11b8f26c8255dce6033c1a6ac143b038d3dd103f2034c5dbec9cd",
           "mode": "100644",
-          "size": 5323
+          "size": 4971
         },
         "references/sources/incident-postmortem.md": {
-          "sha256": "a899470f05f86029630a13a2696491cc708ca7b56a6e822a69ff6e954d6ff8cf",
+          "sha256": "bf2661f1a81c37700884a45b77d6289be0c802b065febced31990e6564510839",
           "mode": "100644",
-          "size": 1973
+          "size": 372
         },
         "references/sources/linear.md": {
           "sha256": "01304e7f1badfcfb78babbb0edcadeb3cc8dd3f713793420cdff24ba190f907c",
@@ -3669,19 +3669,19 @@
           "size": 2853
         },
         "references/sources/sentry.md": {
-          "sha256": "6f292bc4fb1548e956f95e1900b9481abf5134254419f1cd9edec95428c82d73",
+          "sha256": "2d4f83048eac1df530b399e2aed75dd7c9c18577b7665420aaeb96d0ceb0b702",
           "mode": "100644",
-          "size": 4947
+          "size": 2089
         },
         "references/sources/slack.md": {
-          "sha256": "58fee61d024b3700b407e7acbed367944720ff05adfddb6954d36c88368f3ba7",
+          "sha256": "3bc6309f5c7b26ace3b919dbd7f7b048861dd2020f910fe24f656cc74b3b661c",
           "mode": "100644",
-          "size": 3105
+          "size": 1336
         },
         "references/synthesizer-prompt.md": {
-          "sha256": "733a3e9cf897b1aca56aaddeae01a3832e4bfed024c2f602db2d1bf807d7a73b",
+          "sha256": "11c62671aa7b7a6e3d36929ffe2b59bf95e6ca664eee4d93e6ee527dd3390ddb",
           "mode": "100644",
-          "size": 7984
+          "size": 7146
         }
       }
     },
@@ -3719,9 +3719,9 @@
           "size": 1068
         },
         "template.sh": {
-          "sha256": "33cbe9dfb1d0e9185b60248a52aabed14bc64785a00cac695e302e739dd6c153",
+          "sha256": "6566f147299bc6f1d941e64591ed04385416d543e11f96f564c7228f5018d0ed",
           "mode": "100644",
-          "size": 8567
+          "size": 9498
         }
       }
     },
@@ -3729,7 +3729,7 @@
       "name": "write-swift",
       "kind": "original",
       "category": "engineering",
-      "description": "How to write modern Swift well \u2014 modeling with value types, Swift 6 data-race safety and approachable concurrency (@concurrent, main-actor-by-default, actors, task groups), protocols and generics (some vs any), API design, performance and ARC, Swift Testing, macros, and the modern language features agents don't know about yet. Use when writing, reviewing, or migrating Swift, or when a concurrency error, a hang, a data race, a retain cycle, or a performance problem needs fixing.",
+      "description": "How to write modern Swift well — modeling with value types, Swift 6 data-race safety and approachable concurrency (@concurrent, main-actor-by-default, actors, task groups), protocols and generics (some vs any), API design, performance and ARC, Swift Testing, macros, and the modern language features agents don't know about yet. Use when writing, reviewing, or migrating Swift, or when a concurrency error, a hang, a data race, a retain cycle, or a performance problem needs fixing.",
       "explicit_only": false,
       "sources": [
         {
@@ -3797,6 +3797,76 @@
           "sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
           "mode": "100644",
           "size": 1068
+        }
+      }
+    },
+    {
+      "name": "ketchup",
+      "kind": "original",
+      "category": "communication",
+      "description": "Catch the user up on everything in this chat since their last message, in plain words. Give each action item an executive summary with enough context to make the call. Use for /ketchup.",
+      "explicit_only": true,
+      "sources": [
+        {
+          "id": "pstack:ketchup",
+          "path": "pstack/skills/ketchup/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "1b11923408a8601f0154571ca36b55868fef9ee261441cd5f50da3f334adfdb4",
+          "mode": "100644",
+          "size": 2803
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
+          "mode": "100644",
+          "size": 43
+        },
+        "licenses/pstack.txt": {
+          "sha256": "bc957ca6bee02792566a1a028d105e02e247c6e77cf057061674273da77b200e",
+          "mode": "100644",
+          "size": 1067
+        }
+      }
+    },
+    {
+      "name": "animation-performance",
+      "kind": "original",
+      "category": "interface",
+      "description": "Keep web animations inside the frame budget — animate composite-only properties, keep motion off the main thread when the page is busy, and find the cause when an animation drops frames. Covers the layout/paint/composite pipeline, cheaper property swaps, CSS vs WAAPI vs requestAnimationFrame, Framer Motion's hardware-accelerated path, React re-rendering per frame, inherited CSS variable recalculation, blur cost, and when `will-change` actually helps. Use when an animation is janky, choppy, stutters, or drops frames; when choosing which property to animate; when deciding between CSS and JS animation on performance grounds; or when reaching for `will-change` or GPU layers. For choosing easing, duration, or whether to animate at all use animate; for reviewing motion as a whole use review-animations.",
+      "explicit_only": false,
+      "sources": [
+        {
+          "id": "emil:animation-performance",
+          "path": "skills/animation-performance/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "663fd4f8bbaa1d5d4ae8915e6c21d8251492741016e6a55d2546896983bd60cd",
+          "mode": "100644",
+          "size": 14043
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "8619a54e8c098122a7f3881394f84ca89b684366e848233a29ad18b6ec363935",
+          "mode": "100644",
+          "size": 42
+        },
+        "licenses/emil.txt": {
+          "sha256": "4ff5bdb7887ec1435c9cab0e8d1a7caee704d894d65c2a008ccc68b1cc2f260b",
+          "mode": "100644",
+          "size": 1070
         }
       }
     }

@@ -184,6 +184,8 @@ These are a few useful starting points; the [catalog](docs/catalog.md) lists eve
 | [/diagnosing-bugs](skills/diagnosing-bugs/SKILL.md) | You have a failure to investigate |
 | [/blast-radius](skills/blast-radius/SKILL.md) | A small change may affect other callers or systems |
 | [/emil-prototype](skills/emil-prototype/SKILL.md) | You want to try different interface directions |
+| [/ketchup](skills/ketchup/SKILL.md) | You need a catch-up on this chat and decisions waiting on you |
+| [/animation-performance](skills/animation-performance/SKILL.md) | Web animation stutters and needs a measured diagnosis |
 | [/animate](skills/animate/SKILL.md) | You need to implement motion in a web interface |
 | [/break-ui](skills/break-ui/SKILL.md) | You want to see what realistic extreme data does to the UI |
 | [/show-me](skills/show-me/SKILL.md) | A diagram or focused visual would explain the change better |
@@ -226,6 +228,7 @@ python3 scripts/upstream.py check --source matt
 By default, your copy means this repository's editable `skills/` directory.
 Add `--installed-skills /absolute/path/to/skills` to compare an installed copy separately.
 Reports go under `reviews/runs/`.
+See the [October adoption decisions](docs/updates/2026-10-13.md) for accepted changes and retained policies.
 See the [saved comparison](reviews/originals-verified/report.md) for an example and [update review](docs/update-review.md) for the adoption steps.
 
 The Codex automation runs this check every two weeks on Monday at 09:00 in the configured local timezone.
@@ -234,15 +237,15 @@ It also leaves updates for review.
 
 ## Make it yours
 
-There are 95 active creator skills and three Son commands.
+There are 97 active creator skills and three Son commands.
 Their instructions, examples, scripts, templates, and licenses remain close to the originals.
 The changes are a compatibility reference, application metadata, and renamed commands or links where needed.
 
 | Creator | Active originals | What they contribute |
 | --- | --- | --- |
-| [Pstack](https://github.com/cursor/plugins/tree/main/pstack) | 48 | Engineering workflows, principles, verification, and delegation |
+| [Pstack](https://github.com/cursor/plugins/tree/main/pstack) | 49 | Engineering workflows, principles, verification, and delegation |
 | [Matt Pocock](https://github.com/mattpocock/skills) | 27 | Questions, domain models, specs, tickets, implementation, and retrospectives |
-| [Emil Kowalski](https://github.com/emilkowalski/skills) | 14 | Interface design, prototypes, motion, and UI stress testing |
+| [Emil Kowalski](https://github.com/emilkowalski/skills) | 15 | Interface design, prototypes, motion, and UI stress testing |
 | [HumanLayer](https://github.com/humanlayer/skills) | 6 | Visual explanation, React contracts, agent instructions, and automation |
 
 Change a playbook when you want a different sequence.
@@ -252,7 +255,8 @@ The source mappings and saved originals let the update checker show those edits 
 
 Pstack's three control commands give way to Son's setup and mode.
 Benny's three automations and Matt's 11 in-progress or miscellaneous skills remain inactive.
-All 112 originals remain in the snapshots and [catalog](docs/catalog.md).
+HumanLayer RPI remains deferred while its planning and iteration routes are evaluated.
+All 114 accepted originals remain in the snapshots and [catalog](docs/catalog.md).
 The [creator analysis](docs/creator-analysis.md) and [routing decisions](docs/decisions.md) explain the selection.
 
 Some originals need tools outside this stack.

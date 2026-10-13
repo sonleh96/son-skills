@@ -34,6 +34,7 @@ Use an explicitly configured panel for arena runners; otherwise use the applicab
 The saved configuration may override these role aliases explicitly.
 
 Read references to `pstack-models.mdc` as references to this model configuration.
+This also covers the combined reflect judgment, divergent, and synthesizer role line.
 Use `son-agent` for scoped playbook work when native custom agents and delegation are available and allowed.
 A routed skill may retain a distinct reviewer role when independence requires it.
 If custom agent types are unavailable, pass the full `son-agent` instructions through the native delegation tool and disclose the fallback.
@@ -48,6 +49,14 @@ Resolve shortened principle names to their `principle-` skill folders.
 Use the active application's existing skill-authoring capability when a playbook names Cursor's built-in create-skill.
 Some bundled pstack helper scripts bootstrap Bun dependencies; inspect their requirements and the task's authority before running them.
 They are optional tools, and building this stack does not install their dependencies.
+
+For transcript-based reflection, use the active application's current-chat reader or its exact transcript path.
+Cursor transcript layouts and readonly flags do not describe Codex or Claude Code capabilities.
+Keep reflection evidence lookups read-only; file backlog tickets only when the user requests that write.
+
+For animation performance, verify browser acceleration and visual equivalence on the target interface.
+Opacity does not remove focus or hit targets, and scale does not change layout like width or padding.
+Keep those behavioral requirements when choosing a cheaper property.
 
 Use the active application's native skill loader.
 When there is no Skill tool, read the sibling skill's SKILL.md directly.

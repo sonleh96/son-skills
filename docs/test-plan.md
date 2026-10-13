@@ -32,3 +32,9 @@ Listed before adding tests for the original-skill redesign.
 | F14 | A name collision rewires a creator's dependency to a different creator | Check explicit references, prose preservation, and relative link rewriting against fixed examples |
 
 | F15 | Keeping a personal skill during installation overwrites it or hides an invalid selection | Install with an explicit keep-existing name, verify its bytes survive, and reject unknown names or missing skill entry points |
+
+## F16: skill aliases leak into tracker vocabulary
+
+A prototype ticket can be renamed to matt-prototype when the adapter treats a domain value as a skill reference.
+Reproduce this with the real tracker template and wayfinder examples.
+The regression check must preserve the literal prototype type while still mapping the explicit prototype skill call and tdd invocation.
