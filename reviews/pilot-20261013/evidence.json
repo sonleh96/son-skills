@@ -366,13 +366,23 @@
     "importer.js changed outside the read-only pilot after its reference hash was captured. Findings apply to the recorded source observations, not a frozen or current product revision."
   ],
   "independent_review": {
-    "status": "P2 reproduced and fixed; final committed review pending",
-    "reviewed_commit": "a44a971",
+    "status": "passed; no remaining actionable findings",
+    "initial_review": {
+      "status": "one P2 reproduced and fixed",
+      "reviewed_commit": "a44a971",
+      "session_id": "01a134d0-2130-7ea2-8d1b-5f7d690a7bf5",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "service_tier": "default",
+      "raw_evidence_sha256": "ab58811a2d4b9fad9332c42c209f510d6abb856b4377ec3bf3c1c2ed4eeacbab"
+    },
+    "reviewed_commit": "81be991",
     "session_id": "01a134d0-2130-7ea2-8d1b-5f7d690a7bf5",
     "model": "gpt-6-astra",
     "effort": "high",
     "service_tier": "default",
-    "raw_evidence_sha256": "ab58811a2d4b9fad9332c42c209f510d6abb856b4377ec3bf3c1c2ed4eeacbab"
+    "raw_evidence_sha256": "a887c077bfb530ce26760dbf86716d7f2b1ea2c4ad9b00fd1230ad201d5151f2",
+    "raw_evidence_path": ".local/pilot-20261013/independent-review-final.jsonl"
   },
   "native_resume_behavior": "Without explicit -m and effort overrides, resumed Codex turns used configured gpt-6.1-sol at high, not the previous command override. Final implementation verification and independent review explicitly set assigned roles.",
   "audited_file_observation_at_finish": {

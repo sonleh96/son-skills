@@ -71,4 +71,5 @@ The prior 63-test Bun watcher verification remains in the [adoption report](../a
 
 The [independent review](independent-review-before.md) found one P2 canonical-link bug.
 It was reproduced, fixed, and covered by a passing regression.
-Review of the committed correction is pending.
+The [final independent review](independent-review-final.md) of commit `81be991` found no remaining actionable issues.
+It used Astra at high effort on the Standard tier and made no changes.
