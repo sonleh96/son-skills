@@ -12,7 +12,7 @@ This setup changes Son's stack configuration, not the application's parent-chat 
 1. Detect the active application's available models and their supported reasoning controls from its current native tools or documented model listing.
    Do not use another application's catalog, a provider's public model list, or a stale local cache as proof of access.
    If the session exposes no listing, ask for the user's available choices.
-2. Read the existing `.local/models.<harness>.json`, if present, and `/Users/sonle/model-policy.md`, if present.
+2. Read the existing `.local/models.<harness>.json`, if present, and `~/model-policy.md` in the current user's home, if present.
    Preserve previous role choices when they are still available.
    Explain any conflict with a policy default before recording an explicit override.
 3. Ask for a budget, showing the current choice when one exists.

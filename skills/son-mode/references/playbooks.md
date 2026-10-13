@@ -5,6 +5,11 @@ The 23 pstack playbooks preserve the original steps with renamed skill reference
 Son compatibility governs model choices, available tools, and authority.
 Six additional playbooks route work across creators.
 
+Choose `motion-design` for web animation frame-cost diagnosis as well as motion construction and review.
+It starts performance questions with `animation-performance` and keeps diagnosis-only work read-only.
+Use `perf-issue` for broader application performance investigations.
+Invoke `ketchup` directly for a chat catch-up; it does not need a playbook or another audit.
+
 | Playbook | Source |
 | --- | --- |
 | [agent-automation](../playbooks/agent-automation.md) | Son routing |

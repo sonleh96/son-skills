@@ -5,6 +5,7 @@ These files describe checks already run; they do not rerun them when you open th
 
 | You want to know | Read |
 | --- | --- |
+| Do ketchup and animation-performance work in native sessions? | [October real-task pilot](pilot-20261013/report.md) |
 | What passed after the October update? | [Adoption verification](adopted-20261013/report.md), including the full Bun suite |
 | What passed in the original design? | [Redesign validation](redesign-validation.md) |
 | How do our skills differ from the creators' versions? | [Saved comparison](originals-verified/report.md), with links to all three patches for each skill |
@@ -34,7 +35,8 @@ Use the [update review guide](../docs/update-review.md) when deciding what to ad
 
 The records cover source integrity, file adaptation, build formats, temporary installations, and diff behavior.
 They also record a successful fetch from all four creators.
-Fresh-session discovery, actual model routing, and task quality across Codex, Claude Code, and Cursor still need a [real-task pilot](../docs/pilot.md).
+The [real-task pilot](pilot-20261013/report.md) adds native Codex and Claude Code invocation and reporting evidence for a small set of workflows.
+Broader task quality and Cursor discovery still need the [representative pilot](../docs/pilot.md).
 
 ## Earlier design
 

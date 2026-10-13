@@ -24,7 +24,7 @@ Use `.local/models.<harness>.json` and the parent's explicit role assignment for
 Recheck availability in the active session before a spawn.
 Never fall back to a creator's hardcoded model slug, inferred entitlement, or another model family.
 If a configured capability is unavailable, report it and use only an already authorized alternative.
-Consult `/Users/sonle/model-policy.md` where it exists; setup records explicit per-role choices without rewriting that file.
+Consult `~/model-policy.md` in the current user's home where it exists; setup records explicit per-role choices without rewriting that file.
 
 For pstack role labels, map feature, refactoring, bug-fix, perf-issue, hillclimb, and swarm workers to implementation.
 Map how explorer and why investigators to research.
@@ -40,6 +40,9 @@ A routed skill may retain a distinct reviewer role when independence requires it
 If custom agent types are unavailable, pass the full `son-agent` instructions through the native delegation tool and disclose the fallback.
 If delegation itself is unavailable or forbidden, run the applicable passes sequentially and label self-review honestly.
 Never invent a Task tool, model flag, or service-tier control.
+For Codex CLI pilots, verify the model and effort on every resumed turn.
+Resume may use the current global defaults instead of an earlier CLI override.
+Pass supported role overrides explicitly on each invocation; do not rewrite the global configuration to preserve one pilot's settings.
 
 ## Skills and dependencies
 
@@ -57,10 +60,26 @@ Keep reflection evidence lookups read-only; file backlog tickets only when the u
 For animation performance, verify browser acceleration and visual equivalence on the target interface.
 Opacity does not remove focus or hit targets, and scale does not change layout like width or padding.
 Keep those behavioral requirements when choosing a cheaper property.
+Trace the actual update path before assuming that a declared transition runs.
+A replacement element may start at its final value without animating.
+An expensive property is a code-grounded risk, not proof of dropped frames, a stall, or a visible snap.
+Report those effects as hypotheses until a recording demonstrates them.
+Do not call a property swap visually identical until the rendered result confirms it.
 
 Use the active application's native skill loader.
+In Codex, use `$skill-name`; in Claude Code, use `/skill-name`.
+Creator slash-command references describe the same skill in Codex and do not require a slash-command adapter.
 When there is no Skill tool, read the sibling skill's SKILL.md directly.
 Do not automatically invoke a user-only skill; follow its original invocation boundary unless the user has explicitly requested that workflow.
+
+For `ketchup`, use the user message before the current skill invocation as the catch-up boundary in either application.
+Harness-injected AGENTS.md blocks, environment context, skill expansions, and instruction reloads are not messages the human wrote.
+Use the preceding human task request even when those blocks appear later in the visible history.
+If that boundary is unclear, use the native current-chat reader or this session's exact transcript to identify the human request.
+Summarize this chat's evidence without starting another workflow, job, or application.
+If no user decision is pending, say so; work the assistant can do is not a user action item.
+When the requested diagnosis-only audit is complete, an optional recording or fix is a future task, not a pending approval.
+Do not turn the user's decision to stop at diagnosis into an action item asking them to expand the scope.
 
 The original names are retained except these collisions:
 

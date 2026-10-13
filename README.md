@@ -31,8 +31,15 @@ Review that difference before replacing an existing copy.
 
 For a project-only install, use that project's skill directory as `--dest`.
 See [setup](docs/setup.md) for the file locations and application-specific details.
+For shared instructions on another machine, preview `python3 scripts/instructions.py --home "$HOME"`, then add `--apply` to install.
+The [global instruction templates](instructions/AGENTS.md) preserve your shared rules, with [CLAUDE.md](instructions/CLAUDE.md) pointing to the same source.
+The [instructions guide](docs/instructions.md) explains conflicts and the companion files that remain local.
 The commands below become available after installation and an application refresh.
 Use `$son-mode` and the other `$skill-name` forms in Codex, or slash commands where supported.
+
+Use `$ketchup` in Codex or `/ketchup` in Claude Code to catch up on the current chat.
+For web animation frame-cost questions, call `animation-performance` directly or use Son mode's motion-design playbook.
+The [live pilot](reviews/pilot-20261013/report.md) records what the native sessions verified and what still needs a device recording.
 
 ## Get started
 

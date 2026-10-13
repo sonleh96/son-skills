@@ -9,6 +9,15 @@ The underlying local audit is at `/Users/sonle/Documents/work/skill-audit-2026-1
 Private transcripts are not copied into this repository.
 The new repository does not rerun or expand that historical session scan.
 
+## Live pilot on October 13
+
+Native Codex and Claude Code sessions audited the existing EPLAY importer picker and progress indicator.
+Each session then invoked `ketchup` against its own task history.
+The [pilot report](../reviews/pilot-20261013/report.md) records loading evidence, routing differences, catch-up failures, fixes, and verification limits.
+Codex also implemented and tested the portable global-instruction installer as a scoped repository task.
+This pilot covers two real tasks, not a representative sample of every skill or repository.
+It establishes invocation and reporting behavior, not a measured improvement in animation frame rate.
+
 ## Start with these workflows
 
 | Work Son already does | First workflow to try | Expected improvement to test |

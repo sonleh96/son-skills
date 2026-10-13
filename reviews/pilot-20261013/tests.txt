@@ -1,0 +1,30 @@
+test_apply_renders_source_and_creates_relative_aliases (test_instructions.InstructionsInstallerTests.test_apply_renders_source_and_creates_relative_aliases) ... ok
+test_canonical_symlink_cycle_is_rejected_before_writes (test_instructions.InstructionsInstallerTests.test_canonical_symlink_cycle_is_rejected_before_writes) ... ok
+test_claude_template_alias_is_relative (test_instructions.InstructionsInstallerTests.test_claude_template_alias_is_relative) ... ok
+test_conflicts_leave_all_existing_paths_unchanged (test_instructions.InstructionsInstallerTests.test_conflicts_leave_all_existing_paths_unchanged) ... ok
+test_invalid_home_fails_before_writes (test_instructions.InstructionsInstallerTests.test_invalid_home_fails_before_writes) ... ok
+test_late_conflict_causes_zero_earlier_writes (test_instructions.InstructionsInstallerTests.test_late_conflict_causes_zero_earlier_writes) ... ok
+test_matching_canonical_symlink_is_kept (test_instructions.InstructionsInstallerTests.test_matching_canonical_symlink_is_kept) ... ok
+test_preview_writes_nothing_and_reports_external_prerequisites (test_instructions.InstructionsInstallerTests.test_preview_writes_nothing_and_reports_external_prerequisites) ... ok
+test_second_apply_is_idempotent (test_instructions.InstructionsInstallerTests.test_second_apply_is_idempotent) ... ok
+test_f10_three_way_diff_preserves_local_edits (test_tooling.ToolingTests.test_f10_three_way_diff_preserves_local_edits) ... ok
+test_f11_installed_copy_has_separate_evidence (test_tooling.ToolingTests.test_f11_installed_copy_has_separate_evidence) ... ok
+test_f12_model_budget_and_availability (test_tooling.ToolingTests.test_f12_model_budget_and_availability) ... ok
+test_f13_native_agent_paths_and_collision (test_tooling.ToolingTests.test_f13_native_agent_paths_and_collision) ... ok
+test_f14_creator_reference_mapping (test_tooling.ToolingTests.test_f14_creator_reference_mapping) ... ok
+test_f15_explicit_keep_preserves_personal_skill (test_tooling.ToolingTests.test_f15_explicit_keep_preserves_personal_skill) ... ok
+test_f16_tracker_types_are_not_skill_aliases (test_tooling.ToolingTests.test_f16_tracker_types_are_not_skill_aliases) ... ok
+test_f1_modified_baseline_is_rejected (test_tooling.ToolingTests.test_f1_modified_baseline_is_rejected) ... ok
+test_f2_changes_licenses_modes_and_renames_are_reported (test_tooling.ToolingTests.test_f2_changes_licenses_modes_and_renames_are_reported) ... ok
+test_f3_out_of_scope_commit_has_no_content_change (test_tooling.ToolingTests.test_f3_out_of_scope_commit_has_no_content_change) ... ok
+test_f4_failed_remote_keeps_partial_report_and_fails_exit (test_tooling.ToolingTests.test_f4_failed_remote_keeps_partial_report_and_fails_exit) ... ok
+test_f5_collision_preflight_does_not_overwrite (test_tooling.ToolingTests.test_f5_collision_preflight_does_not_overwrite) ... ok
+test_f6_bundles_are_self_contained_and_install_is_idempotent (test_tooling.ToolingTests.test_f6_bundles_are_self_contained_and_install_is_idempotent) ... ok
+test_f7_repeat_check_deduplicates_without_moving_baseline (test_tooling.ToolingTests.test_f7_repeat_check_deduplicates_without_moving_baseline) ... ok
+test_f8_unsafe_paths_are_rejected (test_tooling.ToolingTests.test_f8_unsafe_paths_are_rejected) ... ok
+test_f9_invocation_policy_drift_is_rejected (test_tooling.ToolingTests.test_f9_invocation_policy_drift_is_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 25 tests in 2.170s
+
+OK

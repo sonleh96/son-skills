@@ -59,6 +59,9 @@ Their paths are recorded in duplicate-copies.json.
 
 ## Limits
 
+These limits describe the adoption check.
+The later [real-task pilot](../pilot-20261013/report.md) adds fresh Codex and Claude Code sessions for animation-performance, ketchup, and Son mode routing.
+
 Review was sequential self-review.
 No new skill was evaluated against a live product task.
 Claude Code installation was verified by file contents and invocation metadata, without a new Claude model session.

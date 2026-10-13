@@ -5,6 +5,13 @@ It does not choose a project tracker, branch convention, or deployment target.
 Son's installation uses the Codex and Claude Code personal directories.
 Existing personal writing rules remain in place.
 
+## Shared instructions on another machine
+
+After installing the skills, preview `python3 scripts/instructions.py --home "$HOME"`.
+Add `--apply` to install the shared global instructions and their Codex and Claude Code aliases.
+The [instructions guide](instructions.md) lists required local companions and explains how existing guidance is preserved.
+This machine's globals already match the portable template after home-path rendering.
+
 ## Build and preview
 
 ```bash
@@ -56,7 +63,7 @@ A selected model receives the highest supported effort at or below the target, u
 Unsupported choices fail validation.
 
 The setup saves `.local/models.<harness>.json` in this repository.
-It does not change the parent model picker or rewrite `/Users/sonle/model-policy.md`.
+It does not change the parent model picker or rewrite `~/model-policy.md`.
 Son mode rechecks runtime availability before delegation and uses only controls the current application exposes.
 See the [configuration schema](../skills/setup-son-skills/references/configuration.md) for scripted setup.
 

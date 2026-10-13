@@ -17,7 +17,7 @@ Do not claim that a Markdown instruction changes the application's native mode s
    Identify the outcome, scope, and evidence needed to finish.
    Resolve material ambiguity; otherwise make reversible assumptions and proceed.
 2. Read `SON-RUNTIME.json` when installed and the configured `.local/models.<harness>.json` in the source repository.
-   Check role choices against the active session's available models and `/Users/sonle/model-policy.md`.
+   Check role choices against the active session's available models and `~/model-policy.md` in the current user's home.
    If setup has not run, inherit the current model and report that no role overrides are configured.
    Offer `/setup-son-skills` when the user wants explicit model and reasoning choices.
 3. Read [principles](references/principles.md).

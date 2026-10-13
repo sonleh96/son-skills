@@ -1,0 +1,337 @@
+{
+  "date": "2026-10-13",
+  "baseline_commit": "d9bd0364f4d620b340a3d7ef1a8d3bb83c40e496",
+  "task": "Read-only performance diagnosis of existing EPLAY importer, native catch-up, and portable instruction installer",
+  "runs": [
+    {
+      "name": "codex-audit",
+      "session_id": "01a134bb-6d9b-7a72-92a6-662f609850a8",
+      "model": "gpt-6-astra",
+      "completed": true,
+      "loaded_skill_files": [
+        "animation-performance",
+        "unslop"
+      ],
+      "raw_evidence_sha256": "d8731d671e21c1852247c4008d4a816a0608d152f709e4dcf693994a4cbf0cd5",
+      "raw_evidence_path": ".local/pilot-20261013/codex-audit.jsonl",
+      "effort": "high",
+      "cwd": "/Users/sonle/Documents/work/son-skills"
+    },
+    {
+      "name": "claude-audit",
+      "session_id": "eb54a3f1-6616-40ae-a5b7-a16bad0b8975",
+      "model": "claude-fable-5-1",
+      "completed": true,
+      "loaded_skill_files": [],
+      "raw_evidence_sha256": "1acfd984d68a99a4c67e8f563b96d741bc4975c8147460ed2e67421d535d14a5",
+      "raw_evidence_path": ".local/pilot-20261013/claude-audit.jsonl",
+      "permission_denials": [
+        {
+          "tool_name": "Bash",
+          "tool_use_id": "toolu_01B9Qyq9Brk1GTrPJw8Mxj7d",
+          "tool_input": {
+            "command": "wc -l /Users/sonle/Documents/work/eplay-control-panel/importer/index.html && ls /Users/sonle/Documents/work/eplay-control-panel/importer/ && ls /Users/sonle/Documents/work/eplay-control-panel/ | head -30",
+            "description": "Check importer file size and directory contents"
+          }
+        }
+      ]
+    },
+    {
+      "name": "codex-ketchup",
+      "session_id": "01a134bb-6d9b-7a72-92a6-662f609850a8",
+      "model": "gpt-6.1-sol",
+      "completed": true,
+      "loaded_skill_files": [
+        "bro",
+        "ketchup"
+      ],
+      "raw_evidence_sha256": "82950d204204183b2ecd7f27807c1803d355551d3e2df43a4ccb194d711aaa10",
+      "raw_evidence_path": ".local/pilot-20261013/codex-ketchup.jsonl",
+      "effort": "high",
+      "cwd": "/Users/sonle/Documents/work/son-skills"
+    },
+    {
+      "name": "claude-ketchup",
+      "session_id": "eb54a3f1-6616-40ae-a5b7-a16bad0b8975",
+      "model": "claude-fable-5-1",
+      "completed": true,
+      "loaded_skill_files": [
+        "bro"
+      ],
+      "raw_evidence_sha256": "726954458e7efdd5ffd3e441714f9d7658d8a7b4d4f3cdca3c9cc35bfdd81814",
+      "raw_evidence_path": ".local/pilot-20261013/claude-ketchup.jsonl",
+      "permission_denials": []
+    },
+    {
+      "name": "codex-route-before",
+      "session_id": "01a134bb-6d9b-7a72-92a6-662f609850a8",
+      "model": "gpt-6.1-sol",
+      "completed": true,
+      "loaded_skill_files": [
+        "how",
+        "principle-build-the-lever",
+        "principle-fix-root-causes",
+        "principle-prove-it-works",
+        "son-mode"
+      ],
+      "raw_evidence_sha256": "41c61b58c8d55f36bc9c6d70f2b5408632b9bf384899a40bfe39d54a43629142",
+      "raw_evidence_path": ".local/pilot-20261013/codex-route-before.jsonl",
+      "effort": "high",
+      "cwd": "/Users/sonle/Documents/work/son-skills"
+    },
+    {
+      "name": "claude-route-before",
+      "session_id": "eb54a3f1-6616-40ae-a5b7-a16bad0b8975",
+      "model": "claude-fable-5-1",
+      "completed": true,
+      "loaded_skill_files": [
+        "principle-explain-the-number",
+        "principle-prove-it-works"
+      ],
+      "raw_evidence_sha256": "a11b9285e55d93a5beb72b82b00131d0f4f89e6ef22447db261948905f418c3f",
+      "raw_evidence_path": ".local/pilot-20261013/claude-route-before.jsonl",
+      "permission_denials": []
+    },
+    {
+      "name": "codex-route-after",
+      "session_id": "01a134c0-db35-7432-bb94-9b9f71ce1b01",
+      "model": "gpt-6-astra",
+      "completed": true,
+      "loaded_skill_files": [
+        "animation-performance",
+        "principle-build-the-lever",
+        "principle-fix-root-causes",
+        "principle-prove-it-works",
+        "unslop"
+      ],
+      "raw_evidence_sha256": "a27787f5c9723729ddff3fba8d9929e075655fcb588f63a1037c060a429e25e4",
+      "raw_evidence_path": ".local/pilot-20261013/codex-route-after.jsonl",
+      "effort": "high",
+      "cwd": "/Users/sonle/Documents/work/son-skills"
+    },
+    {
+      "name": "claude-route-after",
+      "session_id": "ed7e3146-67b3-464b-8896-f067e66b46db",
+      "model": "claude-fable-5-1",
+      "completed": true,
+      "loaded_skill_files": [
+        "animation-performance",
+        "principle-explain-the-number",
+        "principle-prove-it-works",
+        "unslop-cc"
+      ],
+      "raw_evidence_sha256": "53a53d679c53dddf1adc86ea5c89d50c8b42fbefc0512bed9e6f5236542649fb",
+      "raw_evidence_path": ".local/pilot-20261013/claude-route-after.jsonl",
+      "permission_denials": []
+    },
+    {
+      "name": "codex-ketchup-after",
+      "session_id": "01a134c0-db35-7432-bb94-9b9f71ce1b01",
+      "model": "gpt-6.1-sol",
+      "completed": true,
+      "loaded_skill_files": [
+        "bro"
+      ],
+      "raw_evidence_sha256": "2ad10110d0d15b2b8091cf745db0128653abd6179200acdac29f1b1c2b47ca6c",
+      "raw_evidence_path": ".local/pilot-20261013/codex-ketchup-after.jsonl",
+      "effort": "high",
+      "cwd": "/Users/sonle/Documents/work/son-skills"
+    },
+    {
+      "name": "claude-ketchup-after",
+      "session_id": "ed7e3146-67b3-464b-8896-f067e66b46db",
+      "model": "claude-fable-5-1",
+      "completed": true,
+      "loaded_skill_files": [],
+      "raw_evidence_sha256": "47981a0b4314614aedcbc2692ab0a297c13a103aa573328344572d2e5eaf4e09",
+      "raw_evidence_path": ".local/pilot-20261013/claude-ketchup-after.jsonl",
+      "permission_denials": []
+    },
+    {
+      "name": "codex-explicit",
+      "session_id": "01a134c5-911f-7323-b9f5-665038f99af5",
+      "model": "gpt-6-astra",
+      "completed": true,
+      "loaded_skill_files": [
+        "animation-performance",
+        "benchmark-checklist",
+        "unslop"
+      ],
+      "raw_evidence_sha256": "0444df583bab879999818c7abdf88a689c4e251381880667db4469317377bef6",
+      "raw_evidence_path": ".local/pilot-20261013/codex-explicit.jsonl",
+      "effort": "high",
+      "cwd": "/Users/sonle/Documents/work/son-skills"
+    },
+    {
+      "name": "codex-ketchup-final",
+      "session_id": "01a134c5-911f-7323-b9f5-665038f99af5",
+      "model": "gpt-6.1-sol",
+      "completed": true,
+      "loaded_skill_files": [
+        "bro",
+        "ketchup"
+      ],
+      "raw_evidence_sha256": "13fb75b31d4984c2e992cddd740bfe84f0ed0c57a28b8bc984beb9e3a39f2c84",
+      "raw_evidence_path": ".local/pilot-20261013/codex-ketchup-final.jsonl",
+      "effort": "high",
+      "cwd": "/Users/sonle/Documents/work/son-skills"
+    },
+    {
+      "name": "claude-route-final",
+      "session_id": "7c4a281b-de82-41aa-97e1-38428a651589",
+      "model": "claude-fable-5-1",
+      "completed": true,
+      "loaded_skill_files": [
+        "animation-performance",
+        "principle-fix-root-causes",
+        "principle-prove-it-works"
+      ],
+      "raw_evidence_sha256": "544d2f9ccf8bf38d7b46f6c25eb93456de2c5488e605a106ef55e742ba67bdf0",
+      "raw_evidence_path": ".local/pilot-20261013/claude-route-final.jsonl",
+      "permission_denials": []
+    },
+    {
+      "name": "claude-ketchup-final",
+      "session_id": "7c4a281b-de82-41aa-97e1-38428a651589",
+      "model": "claude-fable-5-1",
+      "completed": true,
+      "loaded_skill_files": [
+        "bro"
+      ],
+      "raw_evidence_sha256": "d513d27440ce2a7240f4522e96f1cdc84342a618d3fa4e4a3dc8c224c3ca2138",
+      "raw_evidence_path": ".local/pilot-20261013/claude-ketchup-final.jsonl",
+      "permission_denials": []
+    },
+    {
+      "name": "codex-boundary-audit",
+      "session_id": "01a134c8-f0bb-72e3-96a7-9ef734a21db3",
+      "model": "gpt-6-astra",
+      "completed": true,
+      "loaded_skill_files": [
+        "unslop"
+      ],
+      "raw_evidence_sha256": "a7157bbe503d717723a272a2c913a20417dbb353464b9765974c02df3de5e8f6",
+      "raw_evidence_path": ".local/pilot-20261013/codex-boundary-audit.jsonl",
+      "effort": "high",
+      "cwd": "/Users/sonle/Documents/work/son-skills/.local/pilot-20261013/boundary-workspace"
+    },
+    {
+      "name": "codex-ketchup-boundary",
+      "session_id": "01a134c8-f0bb-72e3-96a7-9ef734a21db3",
+      "model": "gpt-6.1-sol",
+      "completed": true,
+      "loaded_skill_files": [
+        "bro",
+        "ketchup"
+      ],
+      "raw_evidence_sha256": "166eb8ebe2c76803b6b2be14a2dd5a151079949ab090d7b44555f64103f65c17",
+      "raw_evidence_path": ".local/pilot-20261013/codex-ketchup-boundary.jsonl",
+      "effort": "high",
+      "cwd": "/Users/sonle/Documents/work/son-skills/.local/pilot-20261013/boundary-workspace"
+    },
+    {
+      "name": "instructions-events",
+      "session_id": "01a134bd-2674-7c80-9eb8-4081050036b7",
+      "model": "gpt-5.6-luna",
+      "completed": true,
+      "loaded_skill_files": [
+        "unslop"
+      ],
+      "raw_evidence_sha256": "56542c67621ad7e4d15b46c067851bc4509a672f64f2b82200317c3d528ad130",
+      "raw_evidence_path": ".local/pilot-20261013/instructions-events.jsonl",
+      "effort": "max",
+      "cwd": "/Users/sonle/Documents/work/son-skills"
+    },
+    {
+      "name": "instructions-fix",
+      "session_id": "01a134bd-2674-7c80-9eb8-4081050036b7",
+      "model": "gpt-6.1-sol",
+      "completed": true,
+      "loaded_skill_files": [],
+      "raw_evidence_sha256": "6c8a50165459d370dd2138558e055b1bb98f519cca91b12727399fe193c5e079",
+      "raw_evidence_path": ".local/pilot-20261013/instructions-fix.jsonl",
+      "effort": "high",
+      "cwd": "/Users/sonle/Documents/work/son-skills"
+    }
+  ],
+  "audited_files_sha256": {
+    "/Users/sonle/Documents/work/eplay-control-panel/importer/index.html": "201b47015324141061a8d492213ac553fad45102978b48cbeb75871277d005d3",
+    "/Users/sonle/Documents/work/eplay-control-panel/importer/importer.js": "6dd308c85ed5fcdf3a6cd923a49eb6a749fadc984df6765d3e8be8164344214d"
+  },
+  "checks": {
+    "python_tests": 25,
+    "stack_validation": {
+      "sources": 4,
+      "source_files": 427,
+      "original_skills": 114,
+      "active_creator_skills": 97,
+      "controls": 3,
+      "skills": 100,
+      "status": "passed"
+    },
+    "codex_discovery": {
+      "expected": 100,
+      "discovered_enabled": 100,
+      "errors": []
+    },
+    "codex_install": {
+      "mode": "preview",
+      "destination": "/Users/sonle/.codex/skills",
+      "new_skills": [],
+      "new_agents": [],
+      "already_identical": 99,
+      "retained_skills": [
+        "unslop"
+      ]
+    },
+    "claude_install": {
+      "mode": "preview",
+      "destination": "/Users/sonle/.claude/skills",
+      "new_skills": [],
+      "new_agents": [],
+      "already_identical": 99,
+      "retained_skills": [
+        "unslop"
+      ]
+    },
+    "global_instruction_preview": {
+      "mode": "preview",
+      "home": "/Users/sonle",
+      "changes": [],
+      "unchanged": [
+        "/Users/sonle/AGENTS.md",
+        "/Users/sonle/.codex/AGENTS.md",
+        "/Users/sonle/.claude/CLAUDE.md"
+      ],
+      "limitations": [
+        "Required companion files are not bundled: model-policy.md, agent-memory.md as the memory index, and cross-harness-handoffs.md.",
+        "The installed unslop skill is a prerequisite and is not bundled.",
+        "This installer does not rewrite model catalogs or install auth, config, memory, or hooks."
+      ]
+    }
+  },
+  "preserved": {
+    "/Users/sonle/model-policy.md": true,
+    "/Users/sonle/AGENTS.md": true,
+    "/Users/sonle/.claude/settings.json": true,
+    "/Users/sonle/.codex/skills/unslop/SKILL.md": true,
+    "/Users/sonle/.claude/skills/unslop/SKILL.md": true,
+    "/Users/sonle/.claude/skills/unslop-cc/SKILL.md": true
+  },
+  "instructions": {
+    "source_sha256": "9c51b588f62cbc3e48382c62c4b0cfb334b7a12651308bb52217cde7fcb7d850",
+    "template_sha256": "2eec37c99e16986924a20d8aa1f2800ed68456f963b6ca0fcda53754cf957562",
+    "rendered_matches_source": true,
+    "claude_alias": "AGENTS.md"
+  },
+  "limits": [
+    "No browser trace or real-device recording collected. Chrome DevTools connection to port 9222 unavailable.",
+    "No production animation code changed.",
+    "Native Codex CLI logged existing codex and gdrive MCP startup failures. Those connectors were not needed for these file-based pilots.",
+    "Cursor built only. Windows discovery and symlink permissions untested.",
+    "No fixed model catalogs or personal memory bundled.",
+    "Raw session logs remain ignored and local."
+  ],
+  "independent_review": "pending",
+  "native_resume_behavior": "Without explicit -m and effort overrides, resumed Codex turns used configured gpt-6.1-sol at high, not the previous command override. Final implementation verification and independent review explicitly set assigned roles."
+}
