@@ -1,3 +1,4 @@
+test_aliases_follow_canonical_retarget (test_instructions.InstructionsInstallerTests.test_aliases_follow_canonical_retarget) ... ok
 test_apply_renders_source_and_creates_relative_aliases (test_instructions.InstructionsInstallerTests.test_apply_renders_source_and_creates_relative_aliases) ... ok
 test_canonical_symlink_cycle_is_rejected_before_writes (test_instructions.InstructionsInstallerTests.test_canonical_symlink_cycle_is_rejected_before_writes) ... ok
 test_claude_template_alias_is_relative (test_instructions.InstructionsInstallerTests.test_claude_template_alias_is_relative) ... ok
@@ -25,6 +26,6 @@ test_f8_unsafe_paths_are_rejected (test_tooling.ToolingTests.test_f8_unsafe_path
 test_f9_invocation_policy_drift_is_rejected (test_tooling.ToolingTests.test_f9_invocation_policy_drift_is_rejected) ... ok
 
 ----------------------------------------------------------------------
-Ran 25 tests in 2.170s
+Ran 26 tests in 2.038s
 
 OK

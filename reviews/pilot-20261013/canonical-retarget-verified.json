@@ -1,0 +1,10 @@
+{
+  "aliases_follow_canonical_after_retarget": [
+    true,
+    true
+  ],
+  "alias_targets": [
+    "../AGENTS.md",
+    "../AGENTS.md"
+  ]
+}

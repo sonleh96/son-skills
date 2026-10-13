@@ -10,6 +10,7 @@ Failure modes covered:
 7. Invalid homes are rejected.
 8. Required companion limitations are reported.
 9. The Claude template alias is no longer a relative symlink to AGENTS.md.
+10. Retargeting a canonical AGENTS.md symlink updates both application aliases.
 """
 
 import json
@@ -208,6 +209,35 @@ class InstructionsInstallerTests(unittest.TestCase):
             self.assertEqual(os.readlink(canonical), str(shared))
             self.assertEqual((home / ".codex" / "AGENTS.md").resolve(), canonical.resolve())
             self.assertEqual((home / ".claude" / "CLAUDE.md").resolve(), canonical.resolve())
+
+    def test_aliases_follow_canonical_retarget(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            base = Path(temporary)
+            home = base / "home"
+            dotfiles = base / "dotfiles"
+            home.mkdir()
+            dotfiles.mkdir()
+            expected = instructions.render(home)
+            version_one = dotfiles / "v1.md"
+            version_two = dotfiles / "v2.md"
+            version_one.write_text(expected, encoding="utf-8")
+            version_two.write_text("version two guidance\n", encoding="utf-8")
+            canonical = home / "AGENTS.md"
+            canonical.symlink_to("../dotfiles/v1.md")
+
+            result = self.run_cli(home, "--apply")
+
+            self.assertEqual(result.returncode, 0, result.stderr)
+            codex = home / ".codex" / "AGENTS.md"
+            claude = home / ".claude" / "CLAUDE.md"
+            self.assertEqual(os.readlink(codex), "../AGENTS.md")
+            self.assertEqual(os.readlink(claude), "../AGENTS.md")
+            canonical.unlink()
+            canonical.symlink_to("../dotfiles/v2.md")
+            self.assertEqual(codex.resolve(), version_two.resolve())
+            self.assertEqual(claude.resolve(), version_two.resolve())
+            self.assertEqual(codex.read_text(encoding="utf-8"), "version two guidance\n")
+            self.assertEqual(claude.read_text(encoding="utf-8"), "version two guidance\n")
 
     def test_invalid_home_fails_before_writes(self):
         with tempfile.TemporaryDirectory() as temporary:

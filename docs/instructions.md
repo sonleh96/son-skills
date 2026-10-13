@@ -19,6 +19,7 @@ python3 scripts/instructions.py --home "$HOME"
 Add `--apply` to install.
 The installer writes `$HOME/AGENTS.md` and creates relative aliases at `$HOME/.codex/AGENTS.md` and `$HOME/.claude/CLAUDE.md`.
 Existing matching files and aliases stay in place.
+New application aliases follow the canonical AGENTS.md even if its symlink target changes later.
 A differing file, directory, dangling symlink, or incorrect alias stops the preflight before any write.
 There is no force option.
 On this Mac, the preview reports three unchanged paths and no writes.

@@ -155,6 +155,11 @@ def plan(home):
     except (OSError, RuntimeError) as exc:
         add_issue(issues, f"Canonical path is cyclic: {canonical}")
         canonical_physical = canonical
+    try:
+        canonical_link_path = canonical.parent.resolve(strict=False) / canonical.name
+    except (OSError, RuntimeError) as exc:
+        add_issue(issues, f"Canonical parent is cyclic: {canonical.parent}")
+        canonical_link_path = canonical
 
     operations = []
     unchanged = []
@@ -169,7 +174,7 @@ def plan(home):
         if action is not None:
             try:
                 parent_physical = alias.parent.resolve(strict=True if parent_exists else False)
-                action["target"] = os.path.relpath(canonical_physical, parent_physical)
+                action["target"] = os.path.relpath(canonical_link_path, parent_physical)
             except (OSError, RuntimeError, ValueError) as exc:
                 add_issue(issues, f"Cannot create a relative instruction alias: {alias}")
                 action = None

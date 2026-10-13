@@ -1,0 +1,10 @@
+{
+  "stale_after_retarget": [
+    true,
+    true
+  ],
+  "alias_targets": [
+    "../dotfiles/v1.md",
+    "../dotfiles/v1.md"
+  ]
+}

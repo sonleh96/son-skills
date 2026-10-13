@@ -252,6 +252,24 @@
       "raw_evidence_path": ".local/pilot-20261013/instructions-fix.jsonl",
       "effort": "high",
       "cwd": "/Users/sonle/Documents/work/son-skills"
+    },
+    {
+      "name": "instructions-reverify",
+      "session_id": "01a134bd-2674-7c80-9eb8-4081050036b7",
+      "model": "gpt-5.6-luna",
+      "effort": "max",
+      "completed": true,
+      "raw_evidence_sha256": "1b54fd0f276fc11b5c4f67dc7fef4c83fa2b9508353c2ce4219924c85674a74e",
+      "raw_evidence_path": ".local/pilot-20261013/instructions-reverify.jsonl"
+    },
+    {
+      "name": "canonical-fix",
+      "session_id": "01a134bd-2674-7c80-9eb8-4081050036b7",
+      "model": "gpt-5.6-luna",
+      "effort": "max",
+      "completed": true,
+      "raw_evidence_sha256": "3d72d53b1fbdb576954d6909125b09747f69485bce66b2814e3436aafd656ae3",
+      "raw_evidence_path": ".local/pilot-20261013/canonical-fix.jsonl"
     }
   ],
   "audited_files_sha256": {
@@ -259,7 +277,7 @@
     "/Users/sonle/Documents/work/eplay-control-panel/importer/importer.js": "6dd308c85ed5fcdf3a6cd923a49eb6a749fadc984df6765d3e8be8164344214d"
   },
   "checks": {
-    "python_tests": 25,
+    "python_tests": 26,
     "stack_validation": {
       "sources": 4,
       "source_files": 427,
@@ -308,6 +326,20 @@
         "The installed unslop skill is a prerequisite and is not bundled.",
         "This installer does not rewrite model catalogs or install auth, config, memory, or hooks."
       ]
+    },
+    "pre_review_luna_verification": {
+      "model": "gpt-5.6-luna",
+      "effort": "max",
+      "tests": 25,
+      "stack_validation": "passed",
+      "changed_source": false
+    },
+    "canonical_fix_verification": {
+      "model": "gpt-5.6-luna",
+      "effort": "max",
+      "tests": 26,
+      "stack_validation": "passed",
+      "both_aliases_follow_canonical": true
     }
   },
   "preserved": {
@@ -330,8 +362,27 @@
     "Native Codex CLI logged existing codex and gdrive MCP startup failures. Those connectors were not needed for these file-based pilots.",
     "Cursor built only. Windows discovery and symlink permissions untested.",
     "No fixed model catalogs or personal memory bundled.",
-    "Raw session logs remain ignored and local."
+    "Raw session logs remain ignored and local.",
+    "importer.js changed outside the read-only pilot after its reference hash was captured. Findings apply to the recorded source observations, not a frozen or current product revision."
   ],
-  "independent_review": "pending",
-  "native_resume_behavior": "Without explicit -m and effort overrides, resumed Codex turns used configured gpt-6.1-sol at high, not the previous command override. Final implementation verification and independent review explicitly set assigned roles."
+  "independent_review": {
+    "status": "P2 reproduced and fixed; final committed review pending",
+    "reviewed_commit": "a44a971",
+    "session_id": "01a134d0-2130-7ea2-8d1b-5f7d690a7bf5",
+    "model": "gpt-6-astra",
+    "effort": "high",
+    "service_tier": "default",
+    "raw_evidence_sha256": "ab58811a2d4b9fad9332c42c209f510d6abb856b4377ec3bf3c1c2ed4eeacbab"
+  },
+  "native_resume_behavior": "Without explicit -m and effort overrides, resumed Codex turns used configured gpt-6.1-sol at high, not the previous command override. Final implementation verification and independent review explicitly set assigned roles.",
+  "audited_file_observation_at_finish": {
+    "/Users/sonle/Documents/work/eplay-control-panel/importer/index.html": {
+      "sha256": "201b47015324141061a8d492213ac553fad45102978b48cbeb75871277d005d3",
+      "matches_recorded_hash": true
+    },
+    "/Users/sonle/Documents/work/eplay-control-panel/importer/importer.js": {
+      "sha256": "ad2da1b174a3b081f6cca1dd27b44aff8691b47114d33bc7dc526b8cea1fed33",
+      "matches_recorded_hash": false
+    }
+  }
 }
