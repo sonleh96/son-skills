@@ -1,0 +1,6 @@
+interface:
+  display_name: "ML Engineer"
+  short_description: "Codex specialist for ml engineer"
+  default_prompt: "Route this task through native son-agent and use $ml-engineer within the current repository constraints."
+policy:
+  allow_implicit_invocation: true

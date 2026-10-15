@@ -38,3 +38,11 @@ Listed before adding tests for the original-skill redesign.
 A prototype ticket can be renamed to matt-prototype when the adapter treats a domain value as a skill reference.
 Reproduce this with the real tracker template and wayfinder examples.
 The regression check must preserve the literal prototype type while still mapping the explicit prototype skill call and tdd invocation.
+
+## New specialist source checks
+
+| ID | Failure | Verification |
+| --- | --- | --- |
+| F17 | A scoped upstream source silently expands to the whole repository or misses its explicitly selected license | Run the checker against a fixture with a scope, selected files, and a license outside that scope, then inspect the exact candidate file set |
+| F18 | A creator skill whose source entry point is not named `SKILL.md` disappears from the generated catalog, loses its three-way comparison, or folds later frontmatter into its description | Map a fixture source file ending in `.md` with a folded description, generate the catalog, and require the mapped row, description, and local comparison to remain present |
+| F19 | A selected source directory misses a new helper or includes an unrelated creator folder | Run the checker after adding one helper under the selected directory and one sibling file, then require only the helper in the candidate and change report |

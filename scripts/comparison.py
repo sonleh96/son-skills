@@ -24,6 +24,18 @@ def changed(before,after):
     return sorted(k for k in before.keys() | after.keys() if before.get(k)!=after.get(k))
 
 
+def canonical_skill_entry(files, blobs, source_path):
+    """Map a creator entry point to the installed SKILL.md name when needed."""
+    source_name = Path(source_path).name
+    if source_name == 'SKILL.md' or source_name not in files:
+        return files, blobs
+    files = dict(files)
+    blobs = dict(blobs)
+    files['SKILL.md'] = files.pop(source_name)
+    blobs['SKILL.md'] = blobs.pop(source_name)
+    return files, blobs
+
+
 def diff(before,after,old_blobs,new_blobs,old_label,new_label):
     parts=[]
     for path in changed(before,after):
@@ -57,14 +69,22 @@ def compare_skills(root,provider,source,latest_files,latest_blobs,registry,outpu
         if origin['id'].split(':',1)[0]!=provider:
             continue
         prefix=str(Path(origin['path']).parent)
-        base,base_blobs=folder_view(source['files'],baseline_blobs,prefix)
-        latest,new_blobs=folder_view(latest_files,latest_blobs,prefix)
+        raw_base,raw_base_blobs=folder_view(source['files'],baseline_blobs,prefix)
+        raw_latest,raw_new_blobs=folder_view(latest_files,latest_blobs,prefix)
+        if Path(origin['path']).name != 'SKILL.md':
+            source_name=Path(origin['path']).name
+            raw_base={source_name:raw_base[source_name]} if source_name in raw_base else {}
+            raw_base_blobs={source_name:raw_base_blobs[source_name]} if source_name in raw_base_blobs else {}
+            raw_latest={source_name:raw_latest[source_name]} if source_name in raw_latest else {}
+            raw_new_blobs={source_name:raw_new_blobs[source_name]} if source_name in raw_new_blobs else {}
+        base,base_blobs=canonical_skill_entry(raw_base,raw_base_blobs,origin['path'])
+        latest,new_blobs=canonical_skill_entry(raw_latest,raw_new_blobs,origin['path'])
         ours,our_blobs=local_view(root/'skills'/skill['name'])
         imported=unmanaged(skill.get('imported_files',{}))
         custom=changed(imported,ours)
-        upstream=changed(base,latest)
+        upstream=changed(raw_base,raw_latest)
         target=output/'skills'/skill['name'];target.mkdir(parents=True)
-        comparisons=[('upstream',base,latest,base_blobs,new_blobs,'pinned','latest'),
+        comparisons=[('upstream',raw_base,raw_latest,raw_base_blobs,raw_new_blobs,'pinned','latest'),
                      ('local',base,ours,base_blobs,our_blobs,'pinned','ours'),
                      ('ours-vs-latest',ours,latest,our_blobs,new_blobs,'ours','latest')]
         for name,before,after,before_blobs,after_blobs,left,right in comparisons:
@@ -72,7 +92,9 @@ def compare_skills(root,provider,source,latest_files,latest_blobs,registry,outpu
         row={'name':skill['name'],'source':origin,'source_folder_present':bool(latest),
              'upstream_changed_files':upstream,'adapted_files':changed(base,imported),
              'user_changed_files':custom,'ours_vs_latest_files':changed(ours,latest),
-             'overlapping_files':sorted(set(custom)&set(upstream)),
+             'overlapping_files':sorted(set(custom)&set(
+                 'SKILL.md' if Path(origin['path']).name != 'SKILL.md' and path == Path(origin['path']).name else path
+                 for path in upstream)),
              'patch_directory':str(target.relative_to(output)),
              'files':{'pinned':base,'imported':imported,'ours':ours,'latest':latest}}
         if installed is not None:

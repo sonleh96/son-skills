@@ -52,8 +52,13 @@ def description(text):
         return ''
     value = match.group(1).strip()
     if value in ('>-', '>', '|', '|-'):
-        value = ' '.join(line.strip() for line in front[match.end():].splitlines()
-                         if line.startswith(' '))
+        lines = []
+        for line in front[match.end():].splitlines():
+            if line.startswith((' ', '\t')):
+                lines.append(line.strip())
+            elif line.strip():
+                break
+        value = ' '.join(lines)
     if value.startswith('"'):
         try:
             return json.loads(value)
@@ -70,14 +75,27 @@ def validate(root=ROOT, snapshots_only=False):
             raise ValueError('Invalid source name')
         if not re.fullmatch(r'[0-9a-f]{40}', source['commit']):
             errors.append(name + ': invalid commit')
+        selected_paths = source.get('selected_paths')
+        if selected_paths is not None and not isinstance(selected_paths, list):
+            errors.append(name + ': selected_paths must be a list')
         for path in source['files']:
             safe_relative(path)
-            if source['scope'] and not path.startswith(source['scope'] + '/'):
+            if source['scope'] and path != source['license_path'] and not path.startswith(source['scope'] + '/'):
                 errors.append(name + ': file outside configured scope: ' + path)
             snapshot_root=root/'upstream'/name
             candidate=snapshot_root/path
             if candidate.is_symlink() and not candidate.resolve().is_relative_to(snapshot_root.resolve()):
                 errors.append(name + ': symlink escapes source snapshot: ' + path)
+        if selected_paths is not None:
+            for selector in selected_paths:
+                safe_relative(selector)
+                if (source['scope'] and selector != source['license_path']
+                        and selector != source['scope']
+                        and not selector.startswith(source['scope'] + '/')):
+                    errors.append(name + ': selected path outside configured scope: ' + selector)
+                prefix = selector.rstrip('/') + '/'
+                if selector not in source['files'] and not any(path.startswith(prefix) for path in source['files']):
+                    errors.append(name + ': selected path has no accepted files: ' + selector)
         if source['license_path'] not in source['files']:
             errors.append(name + ': missing license')
         actual = tree_records(root/'upstream'/name)
@@ -123,12 +141,21 @@ def validate(root=ROOT, snapshots_only=False):
             provider, slug = origin['id'].split(':', 1)
             if provider not in lock['sources'] or origin['path'] not in lock['sources'][provider]['files']:
                 errors.append(name + ': unknown origin: ' + origin['id'])
-            if Path(origin['path']).parent.name != slug:
+            source_path = Path(origin['path'])
+            source_slug = source_path.parent.name if source_path.name == 'SKILL.md' else source_path.stem
+            if source_slug != slug:
                 errors.append(name + ': source slug mismatch')
     if errors:
         raise ValueError('\n'.join(errors))
+    mapped_entrypoints = {(origin['id'].split(':', 1)[0], origin['path'])
+                          for skill in stack['skills'] if skill.get('kind') == 'original'
+                          for origin in skill['sources']}
+    original_skills = sum(p.endswith('/SKILL.md') for s in lock['sources'].values() for p in s['files'])
+    original_skills += sum((provider, path) in mapped_entrypoints
+                           for provider, source in lock['sources'].items()
+                           for path in source['files'] if not path.endswith('/SKILL.md'))
     return {'sources': len(lock['sources']), 'source_files': sum(len(s['files']) for s in lock['sources'].values()),
-            'original_skills': sum(p.endswith('/SKILL.md') for s in lock['sources'].values() for p in s['files']),
+            'original_skills': original_skills,
             'active_creator_skills':sum(s.get('kind')=='original' for s in stack['skills']),
             'controls':sum(s.get('kind')=='control' for s in stack['skills']),
             'skills':len(names), 'status':'passed'}
@@ -139,17 +166,25 @@ def catalog(root=ROOT):
     lock, registry = read_json(root/'sources.lock.json'), read_json(root/'stack.json')
     exclusions = {s['id']:s for s in registry.get('excluded',[])}
     owners = {}
+    origin_owners = {}
     for skill in registry['skills']:
         if skill.get('kind')=='original':
             for origin in skill['sources']:
                 owners.setdefault(origin['id'], []).append(skill)
+                provider = origin['id'].split(':',1)[0]
+                origin_owners.setdefault((provider,origin['path']), []).append(skill)
     rows=[]
     for provider, source in lock['sources'].items():
         for path in sorted(source['files']):
-            if not path.endswith('/SKILL.md'):
+            mapped=origin_owners.get((provider,path),[])
+            if path.endswith('/SKILL.md'):
+                key=provider+':'+Path(path).parent.name
+                mapped=owners.get(key, mapped)
+            elif not mapped:
                 continue
-            key=provider+':'+Path(path).parent.name
-            mapped=owners.get(key,[])
+            else:
+                key=next(origin['id'] for skill in mapped for origin in skill['sources']
+                          if origin['id'].split(':',1)[0]==provider and origin['path']==path)
             if not mapped and key not in exclusions:
                 raise ValueError('Missing disposition: '+key)
             raw=(root/'upstream'/provider/path).read_text()

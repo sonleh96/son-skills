@@ -1,7 +1,7 @@
 # Son's skills
 
 Son's personal stack for Codex, Claude Code, and Cursor.
-It brings together pstack's engineering workflows, Matt Pocock's planning and implementation skills, Emil Kowalski's interface and motion guidance, and HumanLayer's explanation and automation skills.
+It brings together pstack's engineering workflows, Matt Pocock's planning and implementation skills, Emil Kowalski's interface and motion guidance, HumanLayer's explanation and automation skills, VoltAgent's data and ML role guidance, and Borghei's predictive modeling tools.
 
 Start with `/son-mode` when a task needs rigor.
 Give it the problem and the result you want.
@@ -181,9 +181,13 @@ The [compatibility rules](policies/compatibility.md) explain how that applies to
 
 Call a creator skill when you already know the job you want it to do.
 These are a few useful starting points; the [catalog](docs/catalog.md) lists every original and whether it is active.
+The three data and machine learning skills below always route actual work through native `son-agent`, including direct invocations.
 
 | Skill | Use it when |
 | --- | --- |
+| [data-scientist](skills/data-scientist/SKILL.md) | You need broad data research, exploratory analysis, statistical modeling, or analytical recommendations |
+| [predictive-modeling](skills/predictive-modeling/SKILL.md) | You need predictive tabular modeling, feature engineering, model evaluation, or A/B experiment design |
+| [ml-engineer](skills/ml-engineer/SKILL.md) | You need production training pipelines, model serving, monitoring, or retraining |
 | [/how](skills/how/SKILL.md) | You want to understand how a subsystem works |
 | [/grilling](skills/grilling/SKILL.md) | A decision still has unanswered questions |
 | [/domain-modeling](skills/domain-modeling/SKILL.md) | The team needs clear terms and domain boundaries |
@@ -244,7 +248,7 @@ It also leaves updates for review.
 
 ## Make it yours
 
-There are 97 active creator skills and three Son commands.
+There are 100 active creator skills and three Son commands.
 Their instructions, examples, scripts, templates, and licenses remain close to the originals.
 The changes are a compatibility reference, application metadata, and renamed commands or links where needed.
 
@@ -254,6 +258,8 @@ The changes are a compatibility reference, application metadata, and renamed com
 | [Matt Pocock](https://github.com/mattpocock/skills) | 27 | Questions, domain models, specs, tickets, implementation, and retrospectives |
 | [Emil Kowalski](https://github.com/emilkowalski/skills) | 15 | Interface design, prototypes, motion, and UI stress testing |
 | [HumanLayer](https://github.com/humanlayer/skills) | 6 | Visual explanation, React contracts, agent instructions, and automation |
+| [VoltAgent](https://github.com/VoltAgent/awesome-claude-code-subagents) | 2 | Broad data science and production ML engineering role guidance |
+| [Borghei](https://github.com/borghei/Claude-Skills) | 1 | Predictive modeling, experiment design, and local analysis helpers |
 
 Change a playbook when you want a different sequence.
 Change [compatibility rules](policies/compatibility.md) when the same personal rule should apply across skills.
@@ -263,7 +269,7 @@ The source mappings and saved originals let the update checker show those edits 
 Pstack's three control commands give way to Son's setup and mode.
 Benny's three automations and Matt's 11 in-progress or miscellaneous skills remain inactive.
 HumanLayer RPI remains deferred while its planning and iteration routes are evaluated.
-All 114 accepted originals remain in the snapshots and [catalog](docs/catalog.md).
+All 117 accepted originals remain in the snapshots and [catalog](docs/catalog.md).
 The [creator analysis](docs/creator-analysis.md) and [routing decisions](docs/decisions.md) explain the selection.
 
 Some originals need tools outside this stack.
@@ -310,5 +316,5 @@ reviews/                Validation evidence and update reports
 
 ## License
 
-Creator material retains its MIT licenses and [attribution](THIRD_PARTY_NOTICES.md).
+Creator material retains its recorded licenses and [attribution](THIRD_PARTY_NOTICES.md).
 Son's original tooling and adaptations are also available under the [MIT license](LICENSE).

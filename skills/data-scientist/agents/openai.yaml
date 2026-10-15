@@ -1,0 +1,6 @@
+interface:
+  display_name: "Data Scientist"
+  short_description: "Codex data scientist role"
+  default_prompt: "Route this task through native son-agent and use $data-scientist within the current repository constraints."
+policy:
+  allow_implicit_invocation: true

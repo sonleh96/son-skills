@@ -2180,6 +2180,77 @@
           "size": 102
         }
       }
+    },
+    "voltagent": {
+      "url": "https://github.com/VoltAgent/awesome-claude-code-subagents.git",
+      "scope": "categories/05-data-ai",
+      "ref": "HEAD",
+      "commit": "c9e51ec0b3d43f5dcdd0b558a6cd28ba6ada97c1",
+      "license": "MIT",
+      "license_path": "LICENSE",
+      "author": "VoltAgent",
+      "selected_paths": [
+        "LICENSE",
+        "categories/05-data-ai/data-scientist.md",
+        "categories/05-data-ai/ml-engineer.md"
+      ],
+      "files": {
+        "LICENSE": {
+          "sha256": "8ed27772f4430d6e3815599b849c1b6e59088671133ef67e9b1be4acef2b75da",
+          "mode": "100644",
+          "size": 1065
+        },
+        "categories/05-data-ai/data-scientist.md": {
+          "sha256": "d5d51ae2ac59e57a6537d94e6a3cb1ec38e8430d3aad0595cba7296c6b98fb97",
+          "mode": "100644",
+          "size": 6876
+        },
+        "categories/05-data-ai/ml-engineer.md": {
+          "sha256": "34ccb17b246576569298d65f438e76f62b61999248a435a6d2fcc898cee932eb",
+          "mode": "100644",
+          "size": 6463
+        }
+      }
+    },
+    "borghei": {
+      "url": "https://github.com/borghei/Claude-Skills.git",
+      "scope": "data-analytics/data-scientist",
+      "ref": "HEAD",
+      "commit": "4a698e8d07856fdca9ec3e69082a9d68c8dd45d0",
+      "license": "MIT + Commons Clause",
+      "license_path": "LICENSE",
+      "author": "Amin Borghei",
+      "selected_paths": [
+        "LICENSE",
+        "data-analytics/data-scientist"
+      ],
+      "files": {
+        "LICENSE": {
+          "sha256": "df4ce2b2008e621e5e408b0930acc8ec1750253351511778b56c2ba3836b69fd",
+          "mode": "100644",
+          "size": 2718
+        },
+        "data-analytics/data-scientist/SKILL.md": {
+          "sha256": "cab1ce97d99b73397d954100b441728e25a2b4100ff972746cf5f81cc740760b",
+          "mode": "100644",
+          "size": 13207
+        },
+        "data-analytics/data-scientist/scripts/experiment_tracker.py": {
+          "sha256": "3e4631682bbae9d112f05590dbb5c48f380cf8579fbb4e6d458313c1b495669c",
+          "mode": "100755",
+          "size": 7501
+        },
+        "data-analytics/data-scientist/scripts/feature_selector.py": {
+          "sha256": "1ac584c0b1c8b8e68de251289d4fac2d4e02cc148ac6bf1282cf9a6ba6a463b7",
+          "mode": "100755",
+          "size": 9461
+        },
+        "data-analytics/data-scientist/scripts/hypothesis_tester.py": {
+          "sha256": "b79cc154ab6c548f1c27a06cc183ba518f964112f6893d5f03a77174331602ad",
+          "mode": "100755",
+          "size": 12422
+        }
+      }
     }
   }
 }

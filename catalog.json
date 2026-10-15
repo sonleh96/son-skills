@@ -1642,6 +1642,51 @@
       ],
       "rationale": "Body and supporting files retained.",
       "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/productivity/writing-for-agents/SKILL.md"
+    },
+    {
+      "id": "voltagent:data-scientist",
+      "source": "voltagent",
+      "path": "categories/05-data-ai/data-scientist.md",
+      "description": "Use this agent when you need to analyze data patterns, build predictive models, or extract statistical insights from datasets. Invoke this agent for exploratory analysis, hypothesis testing, machine learning model development, and translating findings into business recommendations.",
+      "categories": [
+        "data science"
+      ],
+      "disposition": "original with adapter",
+      "installed_skills": [
+        "data-scientist"
+      ],
+      "rationale": "Body and supporting files retained.",
+      "url": "https://github.com/VoltAgent/awesome-claude-code-subagents/blob/c9e51ec0b3d43f5dcdd0b558a6cd28ba6ada97c1/categories/05-data-ai/data-scientist.md"
+    },
+    {
+      "id": "voltagent:ml-engineer",
+      "source": "voltagent",
+      "path": "categories/05-data-ai/ml-engineer.md",
+      "description": "Use this agent when building production ML systems requiring model training pipelines, model serving infrastructure, performance optimization, and automated retraining.",
+      "categories": [
+        "machine learning engineering"
+      ],
+      "disposition": "original with adapter",
+      "installed_skills": [
+        "ml-engineer"
+      ],
+      "rationale": "Body and supporting files retained.",
+      "url": "https://github.com/VoltAgent/awesome-claude-code-subagents/blob/c9e51ec0b3d43f5dcdd0b558a6cd28ba6ada97c1/categories/05-data-ai/ml-engineer.md"
+    },
+    {
+      "id": "borghei:data-scientist",
+      "source": "borghei",
+      "path": "data-analytics/data-scientist/SKILL.md",
+      "description": "Data science across machine learning, statistical modeling, and experimentation. Use when selecting ML algorithms, engineering features, designing A/B tests, evaluating model performance, or building predictive pipelines.",
+      "categories": [
+        "predictive modeling"
+      ],
+      "disposition": "original with adapter",
+      "installed_skills": [
+        "predictive-modeling"
+      ],
+      "rationale": "Body and supporting files retained.",
+      "url": "https://github.com/borghei/Claude-Skills/blob/4a698e8d07856fdca9ec3e69082a9d68c8dd45d0/data-analytics/data-scientist/SKILL.md"
     }
   ]
 }

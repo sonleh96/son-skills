@@ -28,9 +28,11 @@ def fetch(cache, source):
     return git(cache,'rev-parse','FETCH_HEAD').decode().strip()
 
 
-def snapshot(cache, commit, scope):
+def snapshot(cache, commit, scope, selected_paths=None):
     args = ['ls-tree','-rz',commit]
-    if scope:
+    if selected_paths is not None:
+        args += ['--', *sorted(selected_paths)]
+    elif scope:
         args += ['--',scope]
     files, blobs = {}, {}
     for row in git(cache,*args).split(b'\0'):
@@ -72,8 +74,12 @@ def affected_skills(provider, changes, stack):
     result = []
     for skill in stack['skills']:
         origins = [s for s in skill['sources'] if s['id'].split(':',1)[0]==provider]
-        if any(path==origin['path'] or path.startswith(str(Path(origin['path']).parent)+'/')
-               for origin in origins for path in paths):
+        def touches(origin, path):
+            origin_path = Path(origin['path'])
+            if origin_path.name != 'SKILL.md':
+                return path == origin['path']
+            return path == origin['path'] or path.startswith(str(origin_path.parent)+'/')
+        if any(touches(origin, path) for origin in origins for path in paths):
             result.append(skill['name'])
         elif origins and any(Path(path).name in ('LICENSE','LICENSE.md','LICENSE.txt') for path in paths):
             result.append(skill['name'])
@@ -108,7 +114,7 @@ def check(root=ROOT, cache=None, output=None, selected=None, installed=None):
         source = lock['sources'][name]
         try:
             commit = fetch(cache/name,source)
-            files, blobs = snapshot(cache/name,commit,source['scope'])
+            files, blobs = snapshot(cache/name,commit,source['scope'],source.get('selected_paths'))
             changes, renames = changes_between(source['files'],files)
             result = {'accepted_commit':source['commit'],'observed_commit':commit,
                       'scope':source['scope'],'changed_files':len(changes),'changes':changes,

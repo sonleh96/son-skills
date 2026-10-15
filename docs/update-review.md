@@ -20,7 +20,10 @@ It never substitutes installed content for the repository baseline.
 
 The checker validates accepted snapshot hashes, then fetches each selected repository's current HEAD into an ignored bare Git cache.
 It records the observed SHA and reads tracked blobs without checking out or executing upstream code.
-Pstack comparison is scoped to `pstack/`; the other sources use their entire repository.
+Pstack comparison is scoped to `pstack/`.
+VoltAgent records two exact flat entrypoints under `categories/05-data-ai`.
+Borghei records the `data-analytics/data-scientist` directory and its top-level license so future supporting files remain in scope without importing unrelated creator folders.
+Other source boundaries come from their recorded `scope` and optional `selected_paths` values.
 Exact source paths in `stack.json` identify each skill's closest original.
 A moved source appears as an addition and removal, with exact-content rename hints when available.
 The checker does not guess a replacement by name similarity.

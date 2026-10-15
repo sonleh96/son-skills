@@ -1,7 +1,8 @@
 # What each creator contributes
 
-This analysis uses the exact snapshots in `sources.lock.json`, captured on October 5, 2026.
-Counts come from tracked `SKILL.md` files, including inactive or experimental folders.
+This analysis uses the exact snapshots and source selectors in `sources.lock.json`.
+Counts come from tracked source entrypoints, including inactive or experimental folders.
+VoltAgent's two accepted files use flat Markdown entrypoints rather than `SKILL.md` folders.
 The [catalog](catalog.md) links every entry to its pinned source.
 
 ## Pstack
@@ -107,10 +108,32 @@ In-progress skills remain deferred until a task demonstrates a need.
 
 Sources: [engineering catalog](../upstream/matt/skills/engineering/README.md), [setup](../upstream/matt/skills/engineering/setup-matt-pocock-skills/SKILL.md), [implementation](../upstream/matt/skills/engineering/implement-spec/SKILL.md), [retrospective](../upstream/matt/skills/engineering/retro/SKILL.md).
 
+## VoltAgent
+
+VoltAgent contributes two data and machine learning role guides from the accepted commit in `sources.lock.json`.
+
+`data-scientist` is the broad route for exploratory analysis, statistical modeling, and evidence-backed recommendations.
+
+`ml-engineer` is the production route for training pipelines, serving, monitoring, and retraining.
+
+The local copies retain their existing execution contracts and add the native `son-agent` route.
+
+Sources: [data scientist](../upstream/voltagent/categories/05-data-ai/data-scientist.md), [ML engineer](../upstream/voltagent/categories/05-data-ai/ml-engineer.md), and the [pinned commit](https://github.com/VoltAgent/awesome-claude-code-subagents/tree/c9e51ec0b3d43f5dcdd0b558a6cd28ba6ada97c).
+
+## Borghei
+
+Borghei contributes `predictive-modeling` for focused tabular modeling, feature engineering, model evaluation, and A/B experiment design.
+
+Its supporting Python scripts remain intact under the MIT plus Commons Clause license.
+
+The local documentation fixes the root option placement in the script examples and records the scripts' statistical approximation, local JSON tracker, and metric-direction limitations.
+
+Sources: [data scientist](../upstream/borghei/data-analytics/data-scientist/SKILL.md), [supporting scripts](../upstream/borghei/data-analytics/data-scientist/scripts), and the [pinned commit](https://github.com/borghei/Claude-Skills/tree/4a698e8d07856fdca9ec3e69082a9d68c8dd45d0).
+
 ## Selection result
 
-95 original skills remain active with minimal adapters.
+100 original skills remain active with minimal adapters.
 Three Son controls replace the synthesized workflow layer.
 Six pstack originals and 11 Matt originals remain inactive, with explicit reasons in the catalog.
-All 112 originals remain pinned for comparison.
+All 117 source entries remain pinned for comparison.
 This is a curation decision, not evidence of improved outcomes on real tasks.

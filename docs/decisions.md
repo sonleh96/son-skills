@@ -1,6 +1,6 @@
 # Routing and adaptation decisions
 
-The 97 active creator skills keep their own workflows and supporting files.
+The 100 active creator skills keep their own workflows and supporting files.
 Son mode selects a playbook and loads the relevant originals.
 Shared compatibility rules resolve conflicts without rewriting each skill.
 
@@ -21,6 +21,22 @@ Shared compatibility rules resolve conflicts without rewriting each skill.
 | Emil break-ui and HumanLayer prop narrowing | Stress data versus production contracts | Use realistic valid data; inspect public consumers before narrowing exported types |
 | Matt handoff and pstack recall | Overlapping continuity | Follow Son's canonical continuation protocol |
 
+## Data and machine learning specialists
+
+VoltAgent's `data-scientist` covers broad data research, exploratory analysis, statistical modeling, and evidence-backed recommendations.
+
+VoltAgent's `ml-engineer` covers production training pipelines, serving, monitoring, and retraining.
+
+Borghei's `predictive-modeling` covers predictive tabular modeling, feature engineering, model evaluation, and A/B experiment design.
+
+Direct invocations and playbook-selected specialist work route through native `son-agent`.
+
+The root dispatches the selected skill with the full task context.
+
+An active `son-agent` loads and executes that skill without redispatching.
+
+Model selection remains with the central personal model policy and native controls.
+
 ## Minimal changes
 
 Each original receives a one-line compatibility reference, license copy, and discovery metadata.
@@ -30,6 +46,7 @@ Ordinary prose, examples, and support files remain intact.
 Build-time frontmatter translation supports the target application's schema without editing the canonical body.
 
 `stack.json` records the exact source path and the hashes of each initially adapted file.
+Flat VoltAgent entrypoints and Borghei's selected source directory are recorded explicitly so future source checks preserve their boundaries.
 The update checker compares those hashes with current local files to distinguish later edits from the adapter.
 Never refresh the imported baseline merely to make a local customization disappear from a report.
 

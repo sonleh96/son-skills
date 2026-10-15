@@ -26,6 +26,7 @@ Do not claim that a Markdown instruction changes the application's native mode s
    Read it in full and turn its applicable steps into a short task list.
    Add specialist stages only where the primary playbook needs them.
    Explain any skipped step and the reason; do not silently omit a required check.
+5. For data and machine learning specialist work, apply the [specialist routing contract](references/specialist-routing.md).
 
 ## Work
 

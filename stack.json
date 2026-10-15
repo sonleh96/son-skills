@@ -3869,6 +3869,126 @@
           "size": 1070
         }
       }
+    },
+    {
+      "name": "data-scientist",
+      "kind": "original",
+      "category": "data science",
+      "description": "Use this skill for broad data analysis, exploratory research, statistical modeling, and evidence-backed recommendations. Invoke it for data profiling, hypothesis generation, model interpretation, or general analytical work; use predictive-modeling for focused tabular modeling and A/B experiments.",
+      "explicit_only": false,
+      "sources": [
+        {
+          "id": "voltagent:data-scientist",
+          "path": "categories/05-data-ai/data-scientist.md"
+        }
+      ],
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "61b072a01a554f367e26270f0545572539fb46058d1f358d2e8507f50163c1eb",
+          "mode": "100644",
+          "size": 5252
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "224dbfc5a91e05b93a98234766a0eda066d648b74af4fa910db0bc9cc908cb10",
+          "mode": "100644",
+          "size": 263
+        },
+        "licenses/voltagent.txt": {
+          "sha256": "8ed27772f4430d6e3815599b849c1b6e59088671133ef67e9b1be4acef2b75da",
+          "mode": "100644",
+          "size": 1065
+        }
+      }
+    },
+    {
+      "name": "ml-engineer",
+      "kind": "original",
+      "category": "machine learning engineering",
+      "description": "Use this skill when building production ML systems requiring model training pipelines, model serving infrastructure, performance optimization, and automated retraining.",
+      "explicit_only": false,
+      "sources": [
+        {
+          "id": "voltagent:ml-engineer",
+          "path": "categories/05-data-ai/ml-engineer.md"
+        }
+      ],
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "76422cafd6ecf331f9350c41ba999216d371dab196a5983bc13cf918c00a2209",
+          "mode": "100644",
+          "size": 4939
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "40902e85d66bd412cefca8229d078fd242256babdeaa9518250da8fde36a7535",
+          "mode": "100644",
+          "size": 264
+        },
+        "licenses/voltagent.txt": {
+          "sha256": "8ed27772f4430d6e3815599b849c1b6e59088671133ef67e9b1be4acef2b75da",
+          "mode": "100644",
+          "size": 1065
+        }
+      }
+    },
+    {
+      "name": "predictive-modeling",
+      "kind": "original",
+      "category": "predictive modeling",
+      "description": "Use for predictive tabular modeling, feature engineering, model evaluation, and A/B experiment design. Invoke it when the task needs an algorithm choice, a model comparison, or an experiment plan; use data-scientist for broad analytical research.",
+      "explicit_only": false,
+      "sources": [
+        {
+          "id": "borghei:data-scientist",
+          "path": "data-analytics/data-scientist/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "75a4af7a151ecec35336bf0727e4b460f486c715571bb7e1c04ad3e91979d03a",
+          "mode": "100644",
+          "size": 14472
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "2cdbf9f06050c874093cf2dd7e0292581b28a26d95df105f8303ccd2d9c2d2d2",
+          "mode": "100644",
+          "size": 304
+        },
+        "licenses/borghei.txt": {
+          "sha256": "df4ce2b2008e621e5e408b0930acc8ec1750253351511778b56c2ba3836b69fd",
+          "mode": "100644",
+          "size": 2718
+        },
+        "scripts/experiment_tracker.py": {
+          "sha256": "3e4631682bbae9d112f05590dbb5c48f380cf8579fbb4e6d458313c1b495669c",
+          "mode": "100755",
+          "size": 7501
+        },
+        "scripts/feature_selector.py": {
+          "sha256": "1ac584c0b1c8b8e68de251289d4fac2d4e02cc148ac6bf1282cf9a6ba6a463b7",
+          "mode": "100755",
+          "size": 9461
+        },
+        "scripts/hypothesis_tester.py": {
+          "sha256": "b79cc154ab6c548f1c27a06cc183ba518f964112f6893d5f03a77174331602ad",
+          "mode": "100755",
+          "size": 12422
+        }
+      }
     }
   ],
   "excluded": [

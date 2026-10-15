@@ -303,6 +303,94 @@ class ToolingTests(unittest.TestCase):
             with self.subTest(path=path):
                 self.assertEqual(adapt_text(raw, 'matt', path, 'skills/test/SKILL.md', {}), expected)
 
+    def test_f17_selected_scope_keeps_external_license_and_ignores_unselected_files(self):
+        source=self.lock['sources']['fixture']
+        source['scope']='skills'
+        source['selected_paths']=['LICENSE','skills/alpha/SKILL.md']
+        del source['files']['skills/old/SKILL.md']
+        shutil.rmtree(self.root/'upstream'/'fixture'/'skills'/'old')
+        self.write_json('sources.lock.json',self.lock)
+        self.put('skills/unselected.txt','Inside the scope, but outside the accepted file set.\n')
+        self.commit()
+        result,report=self.check()
+        self.assertEqual(result.returncode,0,result.stderr)
+        self.assertEqual(report['status'],'unchanged')
+        self.assertEqual(report['changed_files'],0)
+        candidate=json.loads((Path(report['output'])/'fixture-candidate.json').read_text())
+        self.assertEqual(sorted(candidate['files']),['LICENSE','skills/alpha/SKILL.md'])
+
+    def test_f19_selected_directory_reports_new_helper_only(self):
+        source=self.lock['sources']['fixture']
+        source['scope']='skills'
+        source['selected_paths']=['LICENSE','skills/alpha']
+        del source['files']['skills/old/SKILL.md']
+        shutil.rmtree(self.root/'upstream'/'fixture'/'skills'/'old')
+        self.write_json('sources.lock.json',self.lock)
+        self.put('skills/alpha/helper.md','A selected helper.\n')
+        self.put('skills/other.md','An unrelated creator file.\n')
+        self.commit()
+        result,report=self.check()
+        self.assertEqual(result.returncode,0,result.stderr)
+        source_report=report['sources']['fixture']
+        self.assertEqual(source_report['changed_files'],1)
+        self.assertEqual([change['path'] for change in source_report['changes']],['skills/alpha/helper.md'])
+        candidate=json.loads((Path(report['output'])/'fixture-candidate.json').read_text())
+        self.assertEqual(sorted(candidate['files']),['LICENSE','skills/alpha/SKILL.md','skills/alpha/helper.md'])
+
+    def test_f18_nonstandard_source_entrypoint_is_catalogued_and_compared(self):
+        self.original_fixture()
+        entry=self.root/'skills'/'son-fixture'/'SKILL.md'
+        entry.write_text(entry.read_text()+'Local flat-entrypoint edit.\n')
+        source=self.lock['sources']['fixture']
+        alpha=self.remote/'skills'/'alpha'/'SKILL.md'
+        alpha_new=self.remote/'skills'/'alpha.md'
+        alpha.rename(alpha_new)
+        beta=self.remote/'skills'/'beta.md'
+        beta.write_text('---\nname: beta\ndescription: >\n  Beta fixture description.\nlicense: MIT\n---\nBeta behavior.\n')
+        (self.remote/'skills'/'old'/'SKILL.md').unlink()
+        (self.remote/'skills'/'old').rmdir()
+        self.commit()
+        alpha_new.write_text(alpha_new.read_text()+'Upstream flat-entrypoint edit.\n')
+        self.commit()
+        snapshot=self.root/'upstream'/'fixture'/'skills'
+        (snapshot/'alpha.md').write_bytes((snapshot/'alpha'/'SKILL.md').read_bytes())
+        shutil.rmtree(snapshot/'alpha')
+        shutil.rmtree(snapshot/'old')
+        (snapshot/'beta.md').write_bytes(beta.read_bytes())
+        source['files'].pop('skills/old/SKILL.md')
+        source['files']['skills/alpha.md']=source['files'].pop('skills/alpha/SKILL.md')
+        source['files']['skills/alpha.md']['size']=len((snapshot/'alpha.md').read_bytes())
+        source['files']['skills/alpha.md']['sha256']=hashlib.sha256((snapshot/'alpha.md').read_bytes()).hexdigest()
+        source['files']['skills/beta.md']=dict(
+            sha256=hashlib.sha256(beta.read_bytes()).hexdigest(),mode='100644',size=len(beta.read_bytes()))
+        self.skill['sources'][0]['path']='skills/alpha.md'
+        beta_folder=self.root/'skills'/'son-beta'
+        shutil.copytree(self.root/'skills'/'son-fixture',beta_folder,symlinks=True)
+        (beta_folder/'SKILL.md').write_text((beta_folder/'SKILL.md').read_text().replace('son-fixture','son-beta'))
+        beta_skill=dict(self.skill,name='son-beta',sources=[{'id':'fixture:beta','path':'skills/beta.md'}],
+                        imported_files=stack.tree_records(beta_folder))
+        self.write_json('sources.lock.json',self.lock)
+        self.write_json('stack.json',{'schema_version':2,'skills':[self.skill,beta_skill]})
+        (self.root/'docs').mkdir()
+        stack.catalog(self.root)
+        catalog=json.loads((self.root/'catalog.json').read_text())
+        row=next(row for row in catalog['skills'] if row['id']=='fixture:alpha')
+        self.assertEqual(row['path'],'skills/alpha.md')
+        self.assertEqual(row['installed_skills'],['son-fixture'])
+        beta_row=next(row for row in catalog['skills'] if row['id']=='fixture:beta')
+        self.assertEqual(beta_row['installed_skills'],['son-beta'])
+        self.assertEqual(beta_row['description'],'Beta fixture description.')
+        result,report=self.check()
+        self.assertEqual(result.returncode,0,result.stderr)
+        comparisons={row['name']:row for row in report['sources']['fixture']['skill_comparisons']}
+        comparison=comparisons['son-fixture']
+        self.assertIn('SKILL.md',comparison['ours_vs_latest_files'])
+        self.assertNotIn('alpha.md',comparison['ours_vs_latest_files'])
+        self.assertEqual(comparison['overlapping_files'],['SKILL.md'])
+        self.assertNotIn('SKILL.md',comparisons['son-beta']['overlapping_files'])
+        self.assertIn('SKILL.md',comparisons['son-beta']['ours_vs_latest_files'])
+        self.assertEqual(comparisons['son-beta']['overlapping_files'],[])
+
     def test_f15_explicit_keep_preserves_personal_skill(self):
         destination=self.base/'installed'
         folder=destination/'son-fixture';folder.mkdir(parents=True)

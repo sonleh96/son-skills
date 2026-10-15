@@ -1,6 +1,6 @@
 # Third-party sources
 
-This repository preserves sources and licenses from four MIT-licensed projects.
+This repository preserves sources and licenses from six projects.
 The active skills and Son controls are adaptations and are not endorsed by their original authors.
 Original wording, punctuation, generated files, and source metadata remain intact in the snapshots.
 
@@ -10,6 +10,8 @@ Original wording, punctuation, generated files, and source metadata remain intac
 | [Emil's skills](https://github.com/emilkowalski/skills) | Emil Kowalski, 2026 | [MIT](upstream/emil/LICENSE) |
 | [HumanLayer skills](https://github.com/humanlayer/skills) | HumanLayer, 2026 | [MIT](upstream/humanlayer/LICENSE) |
 | [Matt's skills](https://github.com/mattpocock/skills) | Matt Pocock, 2026 | [MIT](upstream/matt/LICENSE) |
+| [VoltAgent subagents](https://github.com/VoltAgent/awesome-claude-code-subagents) | VoltAgent, 2026 | [MIT](upstream/voltagent/LICENSE) |
+| [Borghei Claude Skills](https://github.com/borghei/Claude-Skills) | Amin Borghei, 2026 | [MIT + Commons Clause](upstream/borghei/LICENSE) |
 
 `sources.lock.json` pins every snapshot and its file hashes.
 `stack.json` maps each active skill to its exact source.
@@ -18,4 +20,4 @@ Exact pinned attribution remains in stack.json, sources.lock.json, and the catal
 Matt's `pr` already credits HumanLayer's `show-me`; the original PR skill keeps that credit.
 
 Son's original tooling and adaptations use the [MIT license](LICENSE).
-Upstream material retains its MIT terms.
+Upstream material retains its recorded license terms.

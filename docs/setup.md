@@ -24,6 +24,8 @@ Builds appear under `.build/<harness>/skills/` and `.build/<harness>/agents/`.
 Codex uses `agents/openai.yaml` for invocation policy and a TOML custom agent.
 Claude Code and Cursor keep manual-invocation frontmatter and a Markdown custom agent.
 The agent omits fixed model overrides so the parent's explicit role choice can apply.
+The three data and machine learning specialist skills also set Claude's native `context: fork` and `agent: son-agent` fields.
+Codex strips those fields during its build and uses its native agent route metadata.
 
 Preview the relevant installation:
 
