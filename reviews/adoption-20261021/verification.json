@@ -1,0 +1,85 @@
+{
+  "date": "2026-10-21",
+  "adopted_pstack_commit": "190d28736eff128ec94f502a22c7fe0c4b56cd37",
+  "implementation_commits": [
+    "e81c300",
+    "de696e3",
+    "e3d6213"
+  ],
+  "stack_validation": "passed",
+  "python_tests": 29,
+  "bun_tests": 70,
+  "bun_expectations": 254,
+  "strict_typescript": "passed",
+  "builds": {
+    "codex": 105,
+    "claude": 105,
+    "cursor": 105
+  },
+  "independent_review": {
+    "findings_resolved": [
+      "P2 historical PR selection",
+      "P3 historical ambiguity recovery advice"
+    ],
+    "remaining_findings": 0,
+    "scope": "Committed adoption and focused regression follow-ups"
+  },
+  "installation": {
+    "codex": {
+      "total_skills": 105,
+      "managed_matches": 104,
+      "personal_unslop_retained": true,
+      "native_agent_unchanged": true,
+      "repeat_install_requires_writes": false
+    },
+    "claude": {
+      "total_skills": 105,
+      "managed_matches": 104,
+      "personal_unslop_retained": true,
+      "native_agent_unchanged": true,
+      "repeat_install_requires_writes": false
+    }
+  },
+  "preservation": {
+    "other_provider_objects_unchanged": 5,
+    "retained_source_files_unchanged": 28,
+    "protected_files_unchanged": 42,
+    "shared_compatibility_files_refreshed": 4
+  },
+  "native_sharpen": {
+    "codex": {
+      "status": "passed",
+      "model": "gpt-6-astra",
+      "effort": "xhigh",
+      "service_tier": "default",
+      "commands": [
+        "/bin/zsh -lc 'cat /Users/sonle/.codex/skills/unslop/SKILL.md'",
+        "/bin/zsh -lc 'cat /Users/sonle/.codex/skills/sharpen/SKILL.md /Users/sonle/.codex/skills/sharpen/SON-COMPATIBILITY.md'",
+        "/bin/zsh -lc 'cat /Users/sonle/.codex/skills/sharpen/SON-RUNTIME.json'"
+      ],
+      "sample_task_executed": false
+    },
+    "claude": {
+      "status": "passed",
+      "model": "claude-fable-5-1",
+      "effort": "high",
+      "tools": [
+        "Read",
+        "Skill"
+      ],
+      "sample_task_executed": false
+    }
+  },
+  "deferred": [
+    "RPI",
+    "chief-of-staff",
+    "create-formal-verification-skill",
+    "maintain-formal-verification-skill"
+  ],
+  "limitations": [
+    "No live remote PR mutation tested",
+    "Codex pilot logged existing codex and gdrive MCP startup warnings; sharpen completed successfully"
+  ],
+  "dependency_artifacts_in_source_or_bundles": false,
+  "unrelated_borghei_curation_included": false
+}

@@ -56,7 +56,7 @@ The new active and deferred catalog dispositions could be incomplete or create a
 All three `scripts/stack.py build --harness` commands completed with 105 built skills.
 `python3 -m unittest discover -s tests -v` passed 29 tests.
 `/opt/homebrew/bin/bun run typecheck` passed with strict checking.
-`/opt/homebrew/bin/bun run test` passed 68 tests with zero failures.
+`/opt/homebrew/bin/bun run test` passed 70 tests with zero failures and 254 expectations.
 The Bun suite used temporary Git repositories and fake `gh` and `origin` executables to exercise the actual frontier CLI paths.
 The watcher fixtures covered both fast-path and rollup `ACTION_REQUIRED` cases for `Code Review Gate` and ordinary checks.
 An actual temporary Git worktree and fake Origin CLI passed the Origin worktree audit mapping and safe bucket path.
@@ -69,6 +69,40 @@ The focused orchestration test covers closed-before-open ordering, one historica
 
 The first Bun invocation reported the expected missing local `commander` dependency.
 The existing package script then populated the task-local `node_modules`, after which the full suite passed.
-That untracked directory is a local validation artifact for root to retain or clean before commit.
+The task-local `node_modules` was removed before the final builds.
+Neither source nor generated bundles contain that dependency directory.
 
-Global installation, commit, push, and final publication checks remain outside this subtask and are owned by root.
+The root agent completed the installation and native checks below.
+
+
+## Final installation and review
+
+The adoption is committed in `e81c300`, followed by historical PR selection fix `de696e3` and diagnostic correction `e3d6213`.
+The independent Astra review cleared both findings after ten external-forge fixture outcomes and a focused inspection of the final diagnostic commit.
+The final full Bun run passed 70 tests with 254 expectations.
+Strict TypeScript checking and the final 29-test Python run passed.
+All three builds contain 105 skills, and task-local dependency directories are absent from source and bundles.
+
+Codex and Claude Code each have 105 active skills.
+All 104 managed directories in each installation match their destination-specific build, and each personal `unslop` copy remains unchanged.
+The native `son-agent` definitions remain unchanged.
+A repeat installation preview reports 104 identical managed skills, one retained skill, and no pending writes in each application.
+Replaced managed directories are backed up locally under `.local/install-backups/adoption-20261021-222733/`.
+
+The canonical model policy, Codex configuration, shared instructions, Claude settings, and personal writing bodies remain unchanged.
+Of the 46 recorded global files, 42 remain byte-for-byte identical.
+Only four companion `SON-COMPATIBILITY.md` copies for the two writing skills changed to the reviewed shared policy.
+That policy explicitly preserves Son's model and writing authority.
+All 28 retained source files and the other five provider objects remain unchanged.
+RPI, chief-of-staff, and the two formal-verification additions remain absent from both installed skill sets.
+
+Fresh native sessions successfully invoked `sharpen` in both applications.
+Codex used Astra at `xhigh` with default service, read only the installed skill, compatibility, runtime metadata, and personal writing rules, and returned a rewritten prompt.
+Claude Code used Fable 5.1 at `high`, discovered the slash command, read its compatibility notes, invoked personal `unslop-cc`, and returned a rewritten prompt.
+Neither session investigated the synthetic checkout example, changed project files, or delegated work.
+The Codex pilot logged existing `codex` and `gdrive` MCP startup warnings but completed successfully.
+No global configuration was changed to suppress those warnings.
+
+Machine-readable results are in [verification.json](verification.json).
+Raw CLI logs, the detailed independent review, preservation hashes, and installation records remain local under `.local/adoption-20261021/`.
+The unrelated Borghei curation review remains outside these commits.
