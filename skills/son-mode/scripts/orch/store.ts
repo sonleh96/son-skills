@@ -1124,8 +1124,12 @@ function branchPullRequest({
   }
   const candidates = openRows.length > 0 ? openRows : rows;
   if (candidates.length > 1) {
+    const guidance =
+      openRows.length > 1
+        ? "close the stale ones first"
+        : "resolve the intended historical base chain explicitly";
     throw new UserError(
-      `branch ${branch} has multiple pull requests (${candidates.map((item) => `#${item.pr}`).join(", ")}); close the stale ones first`
+      `branch ${branch} has multiple pull requests (${candidates.map((item) => `#${item.pr}`).join(", ")}); ${guidance}`
     );
   }
   return candidates[0]!;

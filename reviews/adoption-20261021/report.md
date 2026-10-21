@@ -29,7 +29,7 @@ The compatibility policy explicitly keeps Son's model policy, parent role assign
 
 The editable Son resolver intentionally deviates from the imported helper for historical forge rows.
 For both `gh` and Origin, it selects the sole `OPEN` row when `--state all` also returns closed or merged history, regardless of row order.
-It rejects multiple open rows, accepts one historical row when no open row exists, and rejects multiple historical rows.
+It rejects multiple open rows with stale-close guidance, accepts one historical row when no open row exists, and rejects multiple historical rows with a direct historical-chain resolution instruction.
 The immutable upstream snapshot and reviewed candidate manifest remain unchanged.
 Because this helper is not a leaf original, `stack.json` does not assign it an imported baseline hash; this report is the source of record for the local deviation.
 

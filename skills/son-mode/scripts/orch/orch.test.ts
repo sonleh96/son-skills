@@ -625,7 +625,7 @@ describe("Store", () => {
           await expect(
             store.frontier.set({ repo: stack.repo, ...forgeParams })
           ).rejects.toThrow(
-            "branch stack/open has multiple pull requests (#11, #12); close the stale ones first"
+            "branch stack/open has multiple pull requests (#11, #12); resolve the intended historical base chain explicitly"
           );
 
           await setRows(
