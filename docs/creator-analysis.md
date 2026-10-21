@@ -132,8 +132,9 @@ Sources: [data scientist](../upstream/borghei/data-analytics/data-scientist/SKIL
 
 ## Selection result
 
-100 original skills remain active with minimal adapters.
+102 original skills remain active with minimal adapters.
 Three Son controls replace the synthesized workflow layer.
-Six pstack originals and 11 Matt originals remain inactive, with explicit reasons in the catalog.
-All 117 source entries remain pinned for comparison.
+Eight pstack originals and 11 Matt originals remain inactive, with explicit reasons in the catalog.
+The two formal-verification additions remain catalogued but deferred until their verifier and repository contract are concrete.
+All 121 source entries remain pinned for comparison.
 This is a curation decision, not evidence of improved outcomes on real tasks.

@@ -6,13 +6,13 @@
       "url": "https://github.com/cursor/plugins.git",
       "scope": "pstack",
       "ref": "HEAD",
-      "commit": "1dcc2bacde73ddd284803b7af28164d0436198fc",
+      "commit": "190d28736eff128ec94f502a22c7fe0c4b56cd37",
       "license": "MIT",
       "license_path": "pstack/LICENSE",
       "author": "Lauren Tan",
       "files": {
         "pstack/.cursor-plugin/plugin.json": {
-          "sha256": "048f733dba100694ae3dfb6e6f7673fb981127db6f418148ad3cbf08dcfd3d7a",
+          "sha256": "079de0bc2c331df98ecf388b84c938a3a61910f49a1cc37e680d9e2ca9bcd324",
           "mode": "100644",
           "size": 722
         },
@@ -27,9 +27,9 @@
           "size": 1067
         },
         "pstack/README.md": {
-          "sha256": "cca115e14b872ec4859355c541af41c8fbe7a66795768c3abed1621d3cf283e9",
+          "sha256": "b928886260bd551b0c8f3e58617a5dc3ad8dfc1293d096b1ef81b84007532486",
           "mode": "100644",
-          "size": 24916
+          "size": 27003
         },
         "pstack/agents/comment-sicko.md": {
           "sha256": "3e239e40b7b4b9beb2cf7f3ccc57f2388eb8b69bd1ba8ae888ef87ef6e0e2116",
@@ -37,9 +37,9 @@
           "size": 2230
         },
         "pstack/agents/poteto-agent.md": {
-          "sha256": "cb41fdb80b3eaab7604547c378b97e339689dfebb77e24d4b10c07bbf65590ab",
+          "sha256": "979f18abd000d185a0b4c41a2a4111c0910596a7f5c81cbb571885bc721b2bf7",
           "mode": "100644",
-          "size": 937
+          "size": 1316
         },
         "pstack/assets/logo.png": {
           "sha256": "672f6791589ef758b0ced2c4c477913fa2758623c438e265639a0d539ce90695",
@@ -107,59 +107,59 @@
           "size": 1569
         },
         "pstack/docs/guide/01-setup.md": {
-          "sha256": "86d0330f245d16254a2069955f993c15d96cf29cd1a73690a0164074b7ac1190",
+          "sha256": "384655bdecc713122ca69a485723c58462002a1d512415e94e48597d0dce2fa5",
           "mode": "100644",
-          "size": 4313
+          "size": 5431
         },
         "pstack/docs/guide/02-poteto-mode.md": {
-          "sha256": "979f61ca3d44cb8e68affda40327d32797e93fa9cc53ced7444c15e2600897e1",
+          "sha256": "d168829def6c410b1afd87d1a6eb297df385f89faa9b31260684074e9e4eb52a",
           "mode": "100644",
-          "size": 7045
+          "size": 7893
         },
         "pstack/docs/guide/03-understand.md": {
-          "sha256": "0090afa9b8670adf175466a2a973ff4349e95ed67d2aa8cebdfc55ff4b7382c9",
+          "sha256": "1ac97cbad51c15c18b3aade8634d81c8bbe50d2b3135c75c113ddb2a6dcb7af0",
           "mode": "100644",
-          "size": 5197
+          "size": 5141
         },
         "pstack/docs/guide/04-design.md": {
-          "sha256": "31f2abe6e9b29feafd1a9eece8f4fe21992f86b8c19ab2e9b5c11a20f36587e7",
+          "sha256": "cff616278303b533e617c5c4408af6d28895edbb8687d6ce99bb5dd1f6644a6c",
           "mode": "100644",
           "size": 8759
         },
         "pstack/docs/guide/05-build-and-clean.md": {
-          "sha256": "a93cc7771f7b35c7b54d0120b6f66e8367794ce6791237e889a30e7585c190fa",
+          "sha256": "1284e80595ae4f214dfa7c5c5f7758ff90a47b3273aa7b8142e51e574f5c5290",
           "mode": "100644",
-          "size": 5696
+          "size": 5707
         },
         "pstack/docs/guide/06-verify-and-ship.md": {
-          "sha256": "3ef0eed5ea084dfbbaf1b1ae9e08d84f2c8a2b536ffb3ef5226710bf105f70e6",
+          "sha256": "5c16c88bf377bf5ea5ffd4cd9dc1a83f19a0415090cc4645865d16a5500d1cab",
           "mode": "100644",
-          "size": 9683
+          "size": 12570
         },
         "pstack/docs/guide/07-overnight.md": {
-          "sha256": "d7bd33a3d880768688dff4c1c2b5481ca9f0f194f5d97e44b65c9f96624d3ff0",
+          "sha256": "b767a5dc5d7257efdb5cc8cfac92acfbb18fe8e023a3438339f4b45ce4a9264a",
           "mode": "100644",
-          "size": 9139
+          "size": 9641
         },
         "pstack/docs/guide/08-principles.md": {
-          "sha256": "73c3db659d356d4aa6d7674d30d0db46fab2bdd60152fca717c2d1772a042bdc",
+          "sha256": "0b26b85292f0c09768abe727c9e92987dbf81f5b439a4871034c2fd1c4cb1723",
           "mode": "100644",
-          "size": 5916
+          "size": 5868
         },
         "pstack/docs/guide/09-make-it-yours.md": {
-          "sha256": "157e0c20ad3c657857c2fbbea3afd26895b71b8f68475bc56f4c382dcdd0e118",
+          "sha256": "50642f7f894988f7c263700f46478e7aed7eb94a257683350d91a9a0d70dc141",
           "mode": "100644",
-          "size": 7632
+          "size": 7972
         },
         "pstack/docs/guide/10-recipes-and-pitfalls.md": {
-          "sha256": "c652474764b08da4a6364d85f5d03cf1fc1cf35e9d7c549348fb66e2d09f7b1f",
+          "sha256": "006d8282db567aeae57398d5de1f3a802af2e3ac1a1f564198c384183fca3f92",
           "mode": "100644",
-          "size": 7419
+          "size": 8554
         },
         "pstack/docs/guide/README.md": {
-          "sha256": "49d92cfe91e01c04bd1150e5b000ee4fd4dfda8ce789b66a9dda98f7e5456e00",
+          "sha256": "5c888d034d38f380789fad57c2c6fa7307ace803a0622cdde9e57fa2afe182de",
           "mode": "100644",
-          "size": 2608
+          "size": 2649
         },
         "pstack/docs/guide/images/design.jpg": {
           "sha256": "b8ed07427f6a0c37dd8ba97961fc0eb5071efeee6c4a230648bdb7547f6f2a8f",
@@ -191,8 +191,13 @@
           "mode": "100644",
           "size": 331450
         },
+        "pstack/docs/harness/claude-code.md": {
+          "sha256": "c79e2283d3a83c6be3dd1cac33f9c074067c95e610ae6e0a16d9fdee84058927",
+          "mode": "100644",
+          "size": 5678
+        },
         "pstack/plugin.json": {
-          "sha256": "b46b6ca17ea443c9c6bf688fd5149a2ecd38870a431e1f4efa84df6502a8d62e",
+          "sha256": "8a5811042556a0a981e9fdd08a2c726be76458833d64b484acaa611291308c2a",
           "mode": "100644",
           "size": 619
         },
@@ -217,14 +222,14 @@
           "size": 3092
         },
         "pstack/skills/arena/SKILL.md": {
-          "sha256": "f15524f216c1c63804b89edb4ff8e53bb21a7b8ed367368dedeb9468eeec6a92",
+          "sha256": "ed72f6c132b1ce3974d949581d0adc5dade424fe20793ac3b4c4fae22ecb9354",
           "mode": "100644",
-          "size": 4279
+          "size": 4511
         },
         "pstack/skills/automate-me/SKILL.md": {
-          "sha256": "1510979b0b71b54284427a19c09918f8b1fdfc168f9b7f9e30098793a5ec88ef",
+          "sha256": "30b35f3628c4fd8c11af0ada06d14cdc3b28901810caca2480f627d4d21acfbe",
           "mode": "100644",
-          "size": 7164
+          "size": 7297
         },
         "pstack/skills/benchmark-checklist/SKILL.md": {
           "sha256": "ba109e96c8f6c1c391baccf19e5d11e14370df7b3f2605e1572cd565a6c0fca0",
@@ -242,9 +247,14 @@
           "size": 267
         },
         "pstack/skills/correct/SKILL.md": {
-          "sha256": "bf482bacc972b3f124a4af8bf9364b4b3e280cb5845e44c326ea4f4565e5c904",
+          "sha256": "e347045d00c967a0b831ef883cc6ac79d21329aa10b5968637df95de7febf0ba",
           "mode": "100644",
-          "size": 2445
+          "size": 2478
+        },
+        "pstack/skills/create-formal-verification-skill/SKILL.md": {
+          "sha256": "6c934cd15a9583533ff9b7a9cad62775d7e80402d26d3ba7f74f79ea21a1d8eb",
+          "mode": "100644",
+          "size": 5141
         },
         "pstack/skills/create-verification-skill/SKILL.md": {
           "sha256": "d353973547bf8ad8977eca645f4cd4feaed0d32f4b43d1448f906b0a76c4d694",
@@ -267,14 +277,14 @@
           "size": 3478
         },
         "pstack/skills/figure-it-out/SKILL.md": {
-          "sha256": "d9574cc24929773d5c23f40626ae1e09660afddd7de48e08dd6494d9fff9bbf0",
+          "sha256": "bdb23cdbd82a1e6af094b495691c832a6f7f3ab9706ba9edbeb664ef51a726e1",
           "mode": "100644",
-          "size": 3978
+          "size": 4111
         },
         "pstack/skills/how/SKILL.md": {
-          "sha256": "47cfe3e6fe55c49c3bdf8ad1b645dcd5fece8f0c36fd22d2e7221f9faa71f648",
+          "sha256": "08a00079bb15b4258874ac3ff62d4ca7e94350ffedb521d0fd296dc9dd21904e",
           "mode": "100644",
-          "size": 2518
+          "size": 2651
         },
         "pstack/skills/how/references/explainer-prompt.md": {
           "sha256": "ddb89cebefc24e2b54517a331aedfe045b6971e101f45c71b8cef4cccff45bff",
@@ -286,10 +296,15 @@
           "mode": "100644",
           "size": 1135
         },
-        "pstack/skills/interrogate/SKILL.md": {
-          "sha256": "25341c393f515c1e1fa9bce668b7551e9f98c195113a460ff524d3c1f7f50cd9",
+        "pstack/skills/in-your-own-words/SKILL.md": {
+          "sha256": "fa8ba74e27d7be371dc270ec78bbf816411477d0dfab185356c861ac8dd413ad",
           "mode": "100644",
-          "size": 4317
+          "size": 315
+        },
+        "pstack/skills/interrogate/SKILL.md": {
+          "sha256": "a16dfe179005abc22a4651b82f25b0c8ab953284276efe4e6dc341958fb63647",
+          "mode": "100644",
+          "size": 4548
         },
         "pstack/skills/interrogate/references/code-quality-review.md": {
           "sha256": "79162fda183eafd40d51661fbb5e151c7ba250f89e506ba17f5bd135dcbd50a8",
@@ -297,9 +312,9 @@
           "size": 5217
         },
         "pstack/skills/interrogate/references/lead-judgment.md": {
-          "sha256": "6e5bdf5670eb34017692e9b6c546f36ac7552e6bb9f3f2f3429164fcc46a9361",
+          "sha256": "355f5195a76bc75a655125292369f2a8231a2b61fabe5188d8f1386060922b87",
           "mode": "100644",
-          "size": 3465
+          "size": 2283
         },
         "pstack/skills/interrogate/references/reviewer-prompt.md": {
           "sha256": "f6005cc2b535006fca97a96c5bfda49df57312eedf1ffd8d1aaaf3eb33817c25",
@@ -312,9 +327,14 @@
           "size": 4772
         },
         "pstack/skills/ketchup/SKILL.md": {
-          "sha256": "3b00c552fdb236ecfce85184000814bf62d7c518aac3acd1ba7ea8e02d8f2196",
+          "sha256": "f2923ffd14f6fc778f75a47aaed1f317fb5fd00b5701ca769d6446c74106dead",
           "mode": "100644",
-          "size": 2726
+          "size": 6426
+        },
+        "pstack/skills/maintain-formal-verification-skill/SKILL.md": {
+          "sha256": "0c96f54293542d3818b68754562b338073958781a9684454611dca37592e2d2c",
+          "mode": "100644",
+          "size": 7012
         },
         "pstack/skills/maintain-verification-skill/SKILL.md": {
           "sha256": "515c0eaa054b3f6be1b1fb06f2c2f173c80fddb58bbcac57576f89c479bc68e8",
@@ -322,19 +342,19 @@
           "size": 4922
         },
         "pstack/skills/make-bot-ui/SKILL.md": {
-          "sha256": "3624c8ef16cf2e48deb2a4049e72c6962a9431c8d6c6af90e7bd7ea0375224ec",
+          "sha256": "ad19d0bc6764287ec08c2521701974e7dac941f72e4d0fe81a24f4614494586f",
           "mode": "100644",
           "size": 4649
         },
         "pstack/skills/no-comments/SKILL.md": {
-          "sha256": "08b9c769040c104ef7fb1902ebac97047edbb89b58c7e113e53c918287b092e6",
+          "sha256": "078ecfe224eafbb017f6476870612838bf6dbe38c0b697e12f0c887d0313f17e",
           "mode": "100644",
-          "size": 2560
+          "size": 2693
         },
         "pstack/skills/poteto-help/SKILL.md": {
-          "sha256": "3fe669c7c3b8f52c18b7c68ecce01c8691e844b9d2b41a8a6ff6432341451986",
+          "sha256": "67c77ee5e91c19809b01d08cc73cc2870a52fb95fc64dc33328bf8ff9e49891c",
           "mode": "100644",
-          "size": 13646
+          "size": 15410
         },
         "pstack/skills/poteto-help/references/prompting.md": {
           "sha256": "463f450c44a60afd001a2f69fdf8a5dea174351f339369b12ec3c41515e564d3",
@@ -342,14 +362,14 @@
           "size": 3166
         },
         "pstack/skills/poteto-help/references/recipes.md": {
-          "sha256": "1872323419a3e5c7783b1933f7a180ca26c25a6e1f4ec83bd65e091ebbfb812b",
+          "sha256": "f2d573014f72f7c798b1998b45f4360a8a83e7b8026c4ed9074e56c5a9d49338",
           "mode": "100644",
-          "size": 3287
+          "size": 3674
         },
         "pstack/skills/poteto-mode/SKILL.md": {
-          "sha256": "f6d1edf26119cb9251e3db499c79c689599fdf706c268b61051d05c8b953b43a",
+          "sha256": "2755f102e7a6d0496b429d1031a22fb353e1f3d523543367caeaae5c4ed6f544",
           "mode": "100644",
-          "size": 19581
+          "size": 20362
         },
         "pstack/skills/poteto-mode/playbooks/authoring-a-skill.md": {
           "sha256": "f6a13a445c360b48d6cd72780ac01955f45b82826476efe0e67c7559329407aa",
@@ -357,19 +377,19 @@
           "size": 831
         },
         "pstack/skills/poteto-mode/playbooks/autonomous-run.md": {
-          "sha256": "15e54ad3ac92565613980772d8708de6e19cc4690bfd4bb3fb8836522407377b",
+          "sha256": "6ac974fd2b09748add56493e89f578a35a6a9289e1026515878d81ef3cf129d1",
           "mode": "100644",
-          "size": 1878
+          "size": 1982
         },
         "pstack/skills/poteto-mode/playbooks/autopilot-full.md": {
-          "sha256": "05ca30a16242c19d0c78ba1e88cca66f858d75252cb154fd740099fe292de802",
+          "sha256": "acf4f4a58c11045f9d3e8807d907a877e61ca6432b079f1087d7d30fc931566f",
           "mode": "100644",
-          "size": 9431
+          "size": 6596
         },
         "pstack/skills/poteto-mode/playbooks/autopilot-stack.md": {
-          "sha256": "007c0a3b12011954a224f54773ef4ad7b75918be0a311914c1b51ad4e794c1e5",
+          "sha256": "c6bcb18b2ce605e77a2a2225854590a4b9a687911f79331746d91a4fe9a52e60",
           "mode": "100644",
-          "size": 5031
+          "size": 2205
         },
         "pstack/skills/poteto-mode/playbooks/babysit.md": {
           "sha256": "e261c1ff5581e0f8fc6c686f34de4b535f87473e77beabea7dd8323021214610",
@@ -377,24 +397,24 @@
           "size": 7619
         },
         "pstack/skills/poteto-mode/playbooks/bug-fix.md": {
-          "sha256": "018bbc146ae19145caa6c7e70591fee081b64447dda1c1c4b681c9974d928b13",
+          "sha256": "66e26542dad131cfd7df80ac0cdf81ed4d85e7b5e3f0eb65b933888760c4831f",
           "mode": "100644",
-          "size": 2255
+          "size": 2359
         },
         "pstack/skills/poteto-mode/playbooks/eval.md": {
-          "sha256": "b862bfa2fae2399abf047a8e80d3e3dddb64003af96fb1cebb625216131e36bb",
+          "sha256": "a93d449a908236afa6645179651844094b1547dbab4e484cffcdda630e4b90bf",
           "mode": "100644",
-          "size": 2524
+          "size": 2628
         },
         "pstack/skills/poteto-mode/playbooks/feature.md": {
-          "sha256": "3a62cc4a8cbcf144bb9dd05f05420a15be0d38b784d3b141bb730a5852f50a62",
+          "sha256": "af8ce700b99953741cb547e34308fde0cf6b98ce67e1652c800d0deedf53aba1",
           "mode": "100644",
-          "size": 2766
+          "size": 2870
         },
         "pstack/skills/poteto-mode/playbooks/hillclimb.md": {
-          "sha256": "244f289898fe67a458065e90fe8217c916c5acf61cdee8975ade3f9831a12e91",
+          "sha256": "942c1565b75ad02a2cb6230dd7c1ebd87e19f59a00319ebac2b6616007bf018f",
           "mode": "100644",
-          "size": 4403
+          "size": 4507
         },
         "pstack/skills/poteto-mode/playbooks/investigation.md": {
           "sha256": "dc66bcf6af3a074fc7f67aa5e12b93ef571a4fb4d8e17f2f1af5ae5359f42e46",
@@ -402,19 +422,19 @@
           "size": 928
         },
         "pstack/skills/poteto-mode/playbooks/multi-phase-plan.md": {
-          "sha256": "27d310e3fc3937a60b8fcbe1318f9d249a7477a722907bf85b3e4eb3dc436b11",
+          "sha256": "5f239457bfdec3345c92caa06c59bf0257c662b89353f25a1c02ea942dcd00b1",
           "mode": "100644",
-          "size": 12977
+          "size": 13217
         },
         "pstack/skills/poteto-mode/playbooks/opening-a-pr.md": {
-          "sha256": "931070f5674e81a191277253d4e02b1c45d091b223f93bf506d3896a428a5967",
+          "sha256": "a5aef646de8b651306c2d10974623650e4a013a245aec1c00525bbe0e31bfa76",
           "mode": "100644",
-          "size": 5587
+          "size": 5669
         },
         "pstack/skills/poteto-mode/playbooks/orchestrate.md": {
-          "sha256": "d42b4375f1bd4ce23da0b575a198571a2117df7eea10c3c9fc6d92ae1053f7be",
+          "sha256": "08dce6c9e7be1d13bc6944ab9b51665f935c531437f5e088bc53d2a62099ef05",
           "mode": "100644",
-          "size": 16779
+          "size": 17127
         },
         "pstack/skills/poteto-mode/playbooks/pause-safely.md": {
           "sha256": "77968cfe5f4a71a8cd33e0ae8ffcdbd88dd693a212c240457773e6c40c96c21d",
@@ -422,9 +442,9 @@
           "size": 1135
         },
         "pstack/skills/poteto-mode/playbooks/perf-issue.md": {
-          "sha256": "2b88ad0f880e4d4d755ac19fe52414d6631d6baa816d060f53cf0a7429d7e14a",
+          "sha256": "c12aa2f82de7651a11676a3d5fea168f539b7f0faaa3a501d279255dd2a469c8",
           "mode": "100644",
-          "size": 1446
+          "size": 1550
         },
         "pstack/skills/poteto-mode/playbooks/prototype.md": {
           "sha256": "7aa1f52c691c3d46d5afc527b23f90977fce869ce33573c73c81a4c7f0cde962",
@@ -432,29 +452,29 @@
           "size": 2161
         },
         "pstack/skills/poteto-mode/playbooks/refactoring.md": {
-          "sha256": "50f4f7d3d301551f8b8a57c3303c99958c5ca630ae0d0051823b6987c0eb5b96",
+          "sha256": "0f5dd38113379ea8cf61e2182eca0a7478eea9a869eb40c2dddab3335aeca197",
           "mode": "100644",
-          "size": 3211
+          "size": 3315
         },
         "pstack/skills/poteto-mode/playbooks/runtime-forensics.md": {
-          "sha256": "594f02c40c243a346e1f57b688ecf2ed5e882f21b3d24ed2204d1ac6f1c24a8a",
+          "sha256": "3463372b578c28f27c236f2627f09b5c5b1e85e86db7399fb984f3892fb450f5",
           "mode": "100644",
-          "size": 1210
+          "size": 1314
         },
         "pstack/skills/poteto-mode/playbooks/session-pickup.md": {
-          "sha256": "1604fb463f7c7410d43fa024ca76c1c1824c166a01fd69d61f073d06fdca2a47",
+          "sha256": "d194f2a7ef392c1598ef3f0e3b561370ca25c2c7a78308007af4aa46ada8ee12",
           "mode": "100644",
-          "size": 1678
+          "size": 1782
         },
         "pstack/skills/poteto-mode/playbooks/shipping.md": {
-          "sha256": "19f3f6803a7bbe9ff04f624b03e3b55f07ac0a05e991aa00d5fe51239b920b2a",
+          "sha256": "bf56339bdf7e0223bcff5abf4e8599e3f5b547b3fcc3b4ce9475e6e7dda14a9f",
           "mode": "100644",
-          "size": 5439
+          "size": 4387
         },
         "pstack/skills/poteto-mode/playbooks/trace-forensics.md": {
-          "sha256": "e8a671fd5511a894f90c933bca75815e7a1d730cb53333075a80b0927e81acfc",
+          "sha256": "ef0bbf79856a4ae1a8993d54c1a1da159cb97623941b652c0069cf75a017e0f5",
           "mode": "100644",
-          "size": 1763
+          "size": 1867
         },
         "pstack/skills/poteto-mode/playbooks/visual-parity.md": {
           "sha256": "950ca51999a6454c98eee6bcbc3d1bbe501a4e3a5d5439b6f6ddc378991b256c",
@@ -462,9 +482,9 @@
           "size": 1197
         },
         "pstack/skills/poteto-mode/playbooks/worktree-cleanup.md": {
-          "sha256": "ffecceb6d2fa7e07ca5703c968f4b7c5947309ed695d51fc73a55c3da5906480",
+          "sha256": "be04ae0afe19d4a4da5bcc4e94455f68dbebd1cda6eb0f456ca0d358ecf76c00",
           "mode": "100644",
-          "size": 2843
+          "size": 2947
         },
         "pstack/skills/poteto-mode/references/bugbot-triage.md": {
           "sha256": "b2d146c770d8d3593e1ef3d77b668039b8e1f78093ea1a86f1d45d7f99614309",
@@ -492,19 +512,19 @@
           "size": 3289
         },
         "pstack/skills/poteto-mode/scripts/orch/orch.test.ts": {
-          "sha256": "773153ac74de6eb15f58d2682f487f5f30672d7efe3ef1d24a131aa9129d279b",
+          "sha256": "5e80b416bdcd68e4067690ce857345852fd2e0db3dcf3e25607999cd55b963d2",
           "mode": "100644",
-          "size": 18425
+          "size": 21801
         },
         "pstack/skills/poteto-mode/scripts/orch/orch.ts": {
-          "sha256": "f091687df627a0b75fabd54af58945a9cd6c7039ef0622012ac9ed60cd8ec434",
+          "sha256": "47c92c57e8276616d8de94665a126bd832e748036afa8d0ffdbacb7946decb5c",
           "mode": "100755",
-          "size": 15511
+          "size": 15737
         },
         "pstack/skills/poteto-mode/scripts/orch/store.ts": {
-          "sha256": "0eae7cf69282e827b1227166f2e32cee3560f2f3e65b3f1f2faf6fb83d3b4c5b",
+          "sha256": "558cfda533e1ebe7c8d7842604f07e0be7618759cf129b4c2397a8e29516ecea",
           "mode": "100644",
-          "size": 42927
+          "size": 44466
         },
         "pstack/skills/poteto-mode/scripts/package.json": {
           "sha256": "fd511a0c01f522e0c781ddd8eccea0e91697a0856c6e6a3261de78a6a0287c72",
@@ -527,14 +547,14 @@
           "size": 3357
         },
         "pstack/skills/poteto-mode/scripts/watch-pr/github.test.ts": {
-          "sha256": "035f4a0f1ab5a17ebf94ad1f7c14d1abd948852be30987c0e9d107b5ea5028ab",
+          "sha256": "70c9f03d8738228763846f2abdd8c7de7be68dba3035041482386a69cbf5639b",
           "mode": "100644",
-          "size": 12162
+          "size": 13101
         },
         "pstack/skills/poteto-mode/scripts/watch-pr/github.ts": {
-          "sha256": "9ea8de77e019de19929fbe4a86bc88492ffbecd89d6816d9857ed49db904c151",
+          "sha256": "a605b8531468dbe4c07b93663c0993a9c11dc7e9179adde970f5c740396451d9",
           "mode": "100644",
-          "size": 25117
+          "size": 25198
         },
         "pstack/skills/poteto-mode/scripts/watch-pr/policy.test.ts": {
           "sha256": "146acabcfee9b6fa3342358eb0a9504aa65fd081bbc15b10adf9c1c5485067d2",
@@ -572,14 +592,14 @@
           "size": 211
         },
         "pstack/skills/poteto-mode/scripts/worktree-audit.sh": {
-          "sha256": "9faa9a2534ad64069dec67ac5b5ce1dc23b8fe635ecfd7f6557b1e3ada61fd2f",
+          "sha256": "e0a94e5e5b1ff60638916e440600e15851f7b79bc1a1d1f602fde05d465e2ec0",
           "mode": "100755",
-          "size": 5494
+          "size": 6003
         },
         "pstack/skills/principle-attack-the-premise/SKILL.md": {
-          "sha256": "c87bd7536f772f8a403ad8155535ee17a1bbec9a353156693eb3bb1520c87ae3",
+          "sha256": "6a932884daad4aa189e9b5d1665226bbc75621d4d2a398fd4003bebd382f4599",
           "mode": "100644",
-          "size": 1941
+          "size": 1916
         },
         "pstack/skills/principle-boundary-discipline/SKILL.md": {
           "sha256": "62ac2862c2caa22dd14531f51c9c6bb445ceb198ca98a687e25b4d47c1f10a28",
@@ -612,9 +632,9 @@
           "size": 1663
         },
         "pstack/skills/principle-fix-root-causes/SKILL.md": {
-          "sha256": "ba4cd38da1dcc8fe5432feb64457cba95594736a9b21b2ebf8f8c52aee068707",
+          "sha256": "8df3c8c3fe57eb0055a5c8efab8ab144557fdf301da70b1cdc77a3a3ef3f3052",
           "mode": "100644",
-          "size": 1246
+          "size": 1821
         },
         "pstack/skills/principle-foundational-thinking/SKILL.md": {
           "sha256": "864b827e8199d946ce58beca0f89c4ed4099ed6e426fb698a3aaa45de2a9eea2",
@@ -632,14 +652,14 @@
           "size": 552
         },
         "pstack/skills/principle-make-operations-idempotent/SKILL.md": {
-          "sha256": "540738217c3da7bf513b9886924ad6a2bc77e58be867f5bd2e1831c74bf2ce70",
+          "sha256": "7aa9327cf1f1aa057e95d47a0a78bd88a8f9d556b608866fee939d455a53a019",
           "mode": "100644",
-          "size": 1390
+          "size": 1809
         },
         "pstack/skills/principle-migrate-callers-then-delete-legacy-apis/SKILL.md": {
-          "sha256": "09978915a4a11990cf0a9a02d9c08cc59e0b7a04c5c24b83aa560fbe4146f75b",
+          "sha256": "580ad9bb1a0994ecb924321ba49efc38a2f85c64e22c76fb133f57a78272a2e6",
           "mode": "100644",
-          "size": 1146
+          "size": 637
         },
         "pstack/skills/principle-minimize-reader-load/SKILL.md": {
           "sha256": "1ea2b7fef2391cae5844c4efdbd59031f775e8a52d06b7495d707229a200dcca",
@@ -687,24 +707,24 @@
           "size": 909
         },
         "pstack/skills/principle-test-behavior-not-implementation/SKILL.md": {
-          "sha256": "b2b73ba42920f9c3174ecdf808ec6e4591b3a9266ada9a05814f386004266d3a",
+          "sha256": "f7223698623b6a26fea49c751e466b38e6691b1f32ce841d3983e7ffbe2b74a6",
           "mode": "100644",
-          "size": 1386
+          "size": 2614
         },
         "pstack/skills/principle-type-system-discipline/SKILL.md": {
-          "sha256": "2e492cef34bb25a20b9115df61f9ef3a9837e3fda144ffda8079e5f45a1b72e8",
+          "sha256": "5cdaf79785e3c12b2592b9469ee8c272143eb86ab7a18d8382197cea5fd30106",
           "mode": "100644",
-          "size": 3661
+          "size": 1557
         },
         "pstack/skills/recall/SKILL.md": {
-          "sha256": "d265b0e5b6dc5b89c0407f3387d24462c988e1990a37d5359735137908128c5a",
+          "sha256": "b0ceb996259c3404532f61e4b010df4e3d80d7ddbed85b3c302895723eb62a89",
           "mode": "100644",
-          "size": 5212
+          "size": 5345
         },
         "pstack/skills/reflect/SKILL.md": {
-          "sha256": "f5e9200f37e2a4567c0eeb0ba244fde66c1b3f35e3b7a883de2f85b3bda7365a",
+          "sha256": "1f5a8c246cdee8251f8667d85bd5d97f6c2801f505843c26ddbd6c621632519b",
           "mode": "100644",
-          "size": 4633
+          "size": 4766
         },
         "pstack/skills/reflect/references/divergent-reviewer.md": {
           "sha256": "f6030d88e20e906ef5e2d9ba44cb013ce610c49c2fe2ef74c377d32e0dc9e939",
@@ -727,14 +747,19 @@
           "size": 4448
         },
         "pstack/skills/setup-pstack/SKILL.md": {
-          "sha256": "d61b47256a18155a81c8e5ef95e3cc6569ce8c18317c35c4dd9c8015cf68cb59",
+          "sha256": "b45512f6ca5e96e81681984683b7472bfe892581da3a89a73cca4159438f29ed",
           "mode": "100644",
-          "size": 5716
+          "size": 6305
+        },
+        "pstack/skills/sharpen/SKILL.md": {
+          "sha256": "563dfc460c605d311e650726288e2f1cbd61eab817db178d6e7e29643e07e7a2",
+          "mode": "100644",
+          "size": 661
         },
         "pstack/skills/show-me-your-work/SKILL.md": {
-          "sha256": "bcff5f7f9fd23f92c12b251f9cd6b947e9485e1055cfacb6fdd9cae0789d7550",
+          "sha256": "920a8217cbb62f92a2222fb81fc9eab17ecd554a0277e444a95a927195139bd1",
           "mode": "100644",
-          "size": 6418
+          "size": 6551
         },
         "pstack/skills/show-me-your-work/references/decision-log-template.tsv": {
           "sha256": "6779378006a2f5225e8c06deb84f1d913fb532041ebbb6e50d94600bfe3f4b76",
@@ -747,9 +772,9 @@
           "size": 1377
         },
         "pstack/skills/swarm/SKILL.md": {
-          "sha256": "bdcee4168e22428036e93d7cdeec3f391dbc4132f927f6db2540328c22db0273",
+          "sha256": "031657cb81e490f9aed5c75d6ff2a4fda35ccafbaf72be604e59481cc4080cdc",
           "mode": "100644",
-          "size": 2949
+          "size": 2734
         },
         "pstack/skills/tdd/SKILL.md": {
           "sha256": "eeb868e2dfebee528d730a67d7b17498fac4bb85dec2e38bc5c5176aca4d5d2f",
@@ -767,14 +792,14 @@
           "size": 9093
         },
         "pstack/skills/typescript-best-practices/SKILL.md": {
-          "sha256": "28f9e61710e205f6f3c5476f333483cff0e988f6a5b639e2faad536344b40c5e",
+          "sha256": "ec1dac086d3708e5940d45d250c30a37dd953b4e3cb2ca0692f5851d7a039e27",
           "mode": "100644",
-          "size": 2684
+          "size": 2765
         },
         "pstack/skills/typescript-best-practices/references/patterns.md": {
-          "sha256": "faa1362055374452efccac1b629677c61acfb0bcc6c4e3311836b5715638ee18",
+          "sha256": "12e70c9419a8b3f5d6a1ab80e272c1f00a43ac0b3bbf72d68199033570e5de77",
           "mode": "100644",
-          "size": 9214
+          "size": 9287
         },
         "pstack/skills/unslop/SKILL.md": {
           "sha256": "ccab208e315ce05e2fab8eeee2f7879f1289b5c6844840b2d307adf31c79144f",
@@ -782,9 +807,9 @@
           "size": 5827
         },
         "pstack/skills/why/SKILL.md": {
-          "sha256": "fa1d1e9dec14b15381c1ccccad74044d6b6ea3b4af56821f59ba2d8e59b07545",
+          "sha256": "144d42e7712723d763e607bc0a969e5f1cdf83ec7228519d87677cc534571bed",
           "mode": "100644",
-          "size": 8770
+          "size": 8903
         },
         "pstack/skills/why/references/epistemics.md": {
           "sha256": "d54a2361b2d5973bc3fe2edf62f446d87935974d4b40d47f23b9529f956ca758",

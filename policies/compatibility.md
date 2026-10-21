@@ -35,6 +35,8 @@ The saved configuration may override these role aliases explicitly.
 
 Read references to `pstack-models.mdc` as references to this model configuration.
 This also covers the combined reflect judgment, divergent, and synthesizer role line.
+Imported references to provider families, dynamic effort, fast or standard speed, or separate model-rule ownership are source context only.
+Use Son's configured roles, the parent's explicit assignment, and the active native capabilities instead of inferring a provider, fallback family, service tier, or speed from an imported body.
 Use `son-agent` for scoped playbook work when native custom agents and delegation are available and allowed.
 A routed skill may retain a distinct reviewer role when independence requires it.
 If custom agent types are unavailable, pass the full `son-agent` instructions through the native delegation tool and disclose the fallback.
