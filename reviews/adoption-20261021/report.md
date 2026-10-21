@@ -27,6 +27,12 @@ It adapts the reviewed autopilot, orchestration, shipping, and related playbook 
 The Son-owned principle index imports only the reviewed premise, root-cause, and behavior-testing routing description updates.
 The compatibility policy explicitly keeps Son's model policy, parent role assignment, native capability checks, and writing rules authoritative over imported source wording.
 
+The editable Son resolver intentionally deviates from the imported helper for historical forge rows.
+For both `gh` and Origin, it selects the sole `OPEN` row when `--state all` also returns closed or merged history, regardless of row order.
+It rejects multiple open rows, accepts one historical row when no open row exists, and rejects multiple historical rows.
+The immutable upstream snapshot and reviewed candidate manifest remain unchanged.
+Because this helper is not a leaf original, `stack.json` does not assign it an imported baseline hash; this report is the source of record for the local deviation.
+
 RPI and HumanLayer remain pinned at `ca7c8088db69e315a8b2deea43820270457f8f3c`.
 Matt remains pinned at `49dd158d1076134a641b33efb035946536778336` and its chief-of-staff change remains deferred.
 No Borghei review files were changed.
@@ -56,6 +62,10 @@ The watcher fixtures covered both fast-path and rollup `ACTION_REQUIRED` cases f
 An actual temporary Git worktree and fake Origin CLI passed the Origin worktree audit mapping and safe bucket path.
 `bash -n skills/son-mode/scripts/worktree-audit.sh` passed.
 `git diff --check` passed.
+
+The pre-fix real store boundary reproduced the regression with a temporary Git repository and a fake external `gh` executable: a closed row before an open row raised `branch topic has multiple pull requests (#1, #2); close the stale ones first`.
+The same fixture succeeded after the fix and selected the open row.
+The focused orchestration test covers closed-before-open ordering, one historical fallback, multiple historical rejection, and multiple open rejection for both `gh` and Origin.
 
 The first Bun invocation reported the expected missing local `commander` dependency.
 The existing package script then populated the task-local `node_modules`, after which the full suite passed.

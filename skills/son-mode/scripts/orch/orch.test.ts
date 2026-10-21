@@ -159,6 +159,13 @@ function forgeRows(
   return JSON.stringify(prs.map((pr) => FORGE_FIXTURES[forge].row(pr)));
 }
 
+function branchRow(
+  number: number,
+  state: FixtureState
+): { number: number; state: FixtureState; head: string; base: string } {
+  return { number, state, head: "stack/open", base: "stack/closed" };
+}
+
 async function withFakeForge<T>({
   directory,
   forge,
@@ -167,7 +174,7 @@ async function withFakeForge<T>({
 }: {
   directory: string;
   forge: Forge;
-  operation: () => Promise<T>;
+  operation: (setRows: (rows: string) => Promise<void>) => Promise<T>;
   currentRows?: string;
 }): Promise<T> {
   const bin = join(directory, "bin");
@@ -235,7 +242,9 @@ esac
   const originalPath = process.env.PATH;
   process.env.PATH = `${bin}:${originalPath ?? ""}`;
   try {
-    return await operation();
+    return await operation(async (rows) => {
+      await writeFile(outputPath, `${rows}\n`);
+    });
   } finally {
     if (originalPath === undefined) {
       delete process.env.PATH;
@@ -569,6 +578,68 @@ describe("Store", () => {
               prs: [10, 10],
             })
           ).rejects.toThrow("--prs must not contain duplicates");
+        },
+      });
+    });
+
+    it(`selects the sole open PR over history and rejects ambiguous rows for ${forge}`, async () => {
+      const { directory, store } = await initializedStore();
+      const stack = await makeGitStack(directory);
+      const forgeParams = forge === "gh" ? {} : { forge };
+
+      await withFakeForge({
+        directory,
+        forge,
+        currentRows: forgeRows(forge, [
+          branchRow(12, "closed"),
+          branchRow(11, "open"),
+        ]),
+        operation: async (setRows) => {
+          const selected = await store.frontier.set({
+            repo: stack.repo,
+            ...forgeParams,
+          });
+          expect(selected.prs[2]).toMatchObject({
+            pr: 11,
+            state: "OPEN",
+          });
+
+          await setRows(
+            forgeRows(forge, [branchRow(11, "closed")])
+          );
+          const historical = await store.frontier.set({
+            repo: stack.repo,
+            ...forgeParams,
+          });
+          expect(historical.prs[2]).toMatchObject({
+            pr: 11,
+            state: "CLOSED",
+          });
+
+          await setRows(
+            forgeRows(forge, [
+              branchRow(11, "closed"),
+              branchRow(12, "merged"),
+            ])
+          );
+          await expect(
+            store.frontier.set({ repo: stack.repo, ...forgeParams })
+          ).rejects.toThrow(
+            "branch stack/open has multiple pull requests (#11, #12); close the stale ones first"
+          );
+
+          await setRows(
+            forgeRows(forge, [
+              branchRow(11, "closed"),
+              branchRow(12, "open"),
+              branchRow(13, "open"),
+            ])
+          );
+          await expect(
+            store.frontier.set({ repo: stack.repo, ...forgeParams })
+          ).rejects.toThrow(
+            "branch stack/open has multiple pull requests (#12, #13); close the stale ones first"
+          );
         },
       });
     });
