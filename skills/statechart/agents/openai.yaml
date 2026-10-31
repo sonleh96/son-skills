@@ -1,0 +1,6 @@
+interface:
+  display_name: "Statechart"
+  short_description: "Check bounded TLA+ state models and draw Mermaid charts"
+  default_prompt: "Use $statechart for an explicit bounded state model and chart check."
+policy:
+  allow_implicit_invocation: false

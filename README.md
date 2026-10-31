@@ -203,6 +203,7 @@ The three data and machine learning skills below always route actual work throug
 | [/break-ui](skills/break-ui/SKILL.md) | You want to see what realistic extreme data does to the UI |
 | [/show-me](skills/show-me/SKILL.md) | A diagram or focused visual would explain the change better |
 | [/create-verification-skill](skills/create-verification-skill/SKILL.md) | Your project needs a repeatable way to prove its behavior |
+| [/statechart](skills/statechart/SKILL.md) | You need an explicit bounded TLA+ check and Mermaid chart for a stateful flow |
 | [/retro](skills/retro/SKILL.md) | You want to find what should improve after a task |
 
 Most skills keep their original command names.
@@ -243,6 +244,7 @@ Add `--installed-skills /absolute/path/to/skills` to compare an installed copy s
 Reports go under `reviews/runs/`.
 See the [October adoption decisions](docs/updates/2026-10-13.md) for accepted changes and retained policies.
 See the [October 21 reviewed adoption](docs/updates/2026-10-21.md) for the latest accepted changes and validation evidence.
+See the [October 31 statechart adoption](docs/updates/2026-10-31.md) for the bounded model-checking skill, routing contract, and pilot evidence.
 See the [saved comparison](reviews/originals-verified/report.md) for an example and [update review](docs/update-review.md) for the adoption steps.
 
 The Codex automation runs this check every two weeks on Monday at 09:00 in the configured local timezone.
@@ -251,13 +253,13 @@ It also leaves updates for review.
 
 ## Make it yours
 
-There are 102 active creator skills and three Son commands.
+There are 103 active creator skills and three Son commands.
 Their instructions, examples, scripts, templates, and licenses remain close to the originals.
 The changes are a compatibility reference, application metadata, and renamed commands or links where needed.
 
 | Creator | Active originals | What they contribute |
 | --- | --- | --- |
-| [Pstack](https://github.com/cursor/plugins/tree/main/pstack) | 51 | Engineering workflows, principles, verification, and delegation |
+| [Pstack](https://github.com/cursor/plugins/tree/main/pstack) | 52 | Engineering workflows, principles, verification, and delegation |
 | [Matt Pocock](https://github.com/mattpocock/skills) | 27 | Questions, domain models, specs, tickets, implementation, and retrospectives |
 | [Emil Kowalski](https://github.com/emilkowalski/skills) | 15 | Interface design, prototypes, motion, and UI stress testing |
 | [HumanLayer](https://github.com/humanlayer/skills) | 6 | Visual explanation, React contracts, agent instructions, and automation |
@@ -272,11 +274,12 @@ The source mappings and saved originals let the update checker show those edits 
 Pstack's three control commands give way to Son's setup and mode.
 Benny's three automations and Matt's 11 in-progress or miscellaneous skills remain inactive.
 HumanLayer RPI remains deferred while its planning and iteration routes are evaluated.
-All 121 accepted originals remain in the snapshots and [catalog](docs/catalog.md).
+All 123 accepted originals remain in the snapshots and [catalog](docs/catalog.md).
 The [creator analysis](docs/creator-analysis.md) and [routing decisions](docs/decisions.md) explain the selection.
 
 Some originals need tools outside this stack.
 Pstack's `deslop`, `control-cli`, and `control-ui` are not bundled, and `no-comments` needs Comment Sicko.
+Statechart uses Java, TLC, and Pele during a task; the stack does not install those dependencies.
 Matt's tracker workflows need a real project configuration through [`setup-matt-pocock-skills`](skills/setup-matt-pocock-skills/SKILL.md).
 Building this stack does not install those dependencies.
 

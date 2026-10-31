@@ -1,0 +1,146 @@
+{
+  "date": "2026-10-31",
+  "upstream_commit": "4dd1d05818d19792e7cd6e818f1667f95f7e1dbe",
+  "publication_base": "10008d46a78cfd0c6365412d16bae1aa8bc3c9c2",
+  "stack": {
+    "sources": 6,
+    "source_files": 841,
+    "originals": 123,
+    "creator_skills": 103,
+    "controls": 3,
+    "active_total": 106
+  },
+  "validation": {
+    "python_tests": 29,
+    "statechart_original_tests": 367,
+    "statechart_original_suite_exit": 0,
+    "statechart_original_failures": 0,
+    "builds": {
+      "codex": 106,
+      "claude": 106,
+      "cursor": 106
+    },
+    "statechart_support_files_byte_identical": 406,
+    "existing_skill_files_byte_identical": 563,
+    "other_provider_objects_unchanged": 5
+  },
+  "toolchain": {
+    "mise": "2026.10.24",
+    "java": "Temurin 25.0.5+8",
+    "java_executable": "/Users/sonle/.local/share/mise/installs/java/temurin-25/bin/java",
+    "tla2tools_release": "1.7.4",
+    "tlc_banner_version": "2.19",
+    "tlc_jar": "/Users/sonle/.local/share/mise/installs/http-tla2tools/1.7.4/tla2tools.jar",
+    "tlc_sha256": "936a262061c914694dfd669a543be24573c45d5aa0ff20a8b96b23d01e050e88",
+    "help_printed": true,
+    "help_exit_code": 1,
+    "pele": "1.9.0",
+    "pele_prefix": "/Users/sonle/.local/share/son-skills/statechart-render",
+    "global_shell_activation_changed": false
+  },
+  "installation": {
+    "codex": {
+      "installed_files": 411,
+      "original_helpers_match_bundle": true,
+      "routing_entrypoint_matches_bundle": true,
+      "retained_existing_companions": [
+        "SON-COMPATIBILITY.md",
+        "SON-RUNTIME.json",
+        "agents/openai.yaml"
+      ],
+      "routing_reference": "/Users/sonle/.codex/skills/son-mode/references/statechart-routing.md",
+      "existing_files_replaced": [
+        "statechart/SKILL.md"
+      ],
+      "backup": "/Users/sonle/Documents/work/son-skills-statechart-20261031/.local/statechart-20261031/installed-backups/codex"
+    },
+    "claude": {
+      "installed_files": 411,
+      "original_helpers_match_bundle": true,
+      "routing_entrypoint_matches_bundle": true,
+      "retained_existing_companions": [
+        "SON-COMPATIBILITY.md",
+        "SON-RUNTIME.json",
+        "agents/openai.yaml"
+      ],
+      "routing_reference": "/Users/sonle/.claude/skills/son-mode/references/statechart-routing.md",
+      "existing_files_replaced": [
+        "statechart/SKILL.md"
+      ],
+      "backup": "/Users/sonle/Documents/work/son-skills-statechart-20261031/.local/statechart-20261031/installed-backups/claude"
+    },
+    "preserved_installed_files": 2161,
+    "protected_files_unchanged": 18
+  },
+  "native_pilots": {
+    "codex": {
+      "status": "passed",
+      "parent_model": "gpt-6-astra",
+      "parent_effort": "xhigh",
+      "native_agent": "son-agent",
+      "agent_model": "gpt-5.6-luna",
+      "agent_effort": "max",
+      "agent_service_tier_control": false,
+      "scope": "Existing bounded model plus fresh actual installer replay",
+      "local_listener_approval_needed": true
+    },
+    "claude": {
+      "status": "passed",
+      "model": "claude-fable-5-1",
+      "effort": "high",
+      "native_agent": "son-agent",
+      "spawn_depth": 1,
+      "status_after_narrow_command_retry": "success",
+      "initial_scratch_setup_denied_by_task_allowlist": true
+    }
+  },
+  "model_checks": {
+    "correct_conflict": {
+      "states": 3,
+      "steps": 3,
+      "exit": 0,
+      "rules_hold": 4
+    },
+    "correct_no_conflict": {
+      "states": 4,
+      "steps": 4,
+      "exit": 0,
+      "rules_hold": 4
+    },
+    "counterfactual": {
+      "states": 3,
+      "steps": 3,
+      "exit": 1,
+      "violations": [
+        "NoWriteBeforePreflight",
+        "NoPartialWritesOnConflict"
+      ],
+      "actual_installer_bug": false
+    }
+  },
+  "preservation": {
+    "protected_files_unchanged": 18,
+    "other_installed_files_unchanged": 2161,
+    "canonical_main_changed_existing_files": [
+      "skills/statechart/SKILL.md",
+      "stack.json"
+    ],
+    "canonical_main_added_file": "skills/son-mode/references/statechart-routing.md",
+    "canonical_registry_change": "Only statechart imported_files.SKILL.md record",
+    "all_other_existing_canonical_files_unchanged": 2194
+  },
+  "rendering": {
+    "renderer": "pele@1.9.0",
+    "charts": 3,
+    "visually_inspected": "counterfactual-chart.svg",
+    "generated_svg_background_added": true,
+    "original_renderer_changed": false
+  },
+  "limits": [
+    "No proof for mid-copy failures or concurrency races",
+    "Destination-only invariant excludes generated build staging",
+    "RPI, chief-of-staff and formal-verification generators remain deferred",
+    "Only statechart adoption is published; pending canonical checkout work is preserved"
+  ],
+  "preview_server_stopped": true
+}

@@ -1,0 +1,29 @@
+---
+title: "Installer destination lifecycle"
+---
+stateDiagram-v2
+  state "Legend" as legend {
+    lg0: Blocked
+    lg1: In progress
+    lg2: Breaks NoPartialWritesOnConflict or NoWriteBeforePreflight
+    lg3: Path to the NoPartialWritesOnConflict or NoWriteBeforePreflight bug
+  }
+  class lg0 orange
+  class lg1 blue
+  class lg2 breaks
+  class lg3 bugPath
+  s0: Waiting to check - destination unchanged
+  s1: Checking destinations - destination changed
+  s2: Blocked by conflict - destination changed
+  [*] --> s0
+  s0 --> s1: copy before checking
+  s1 --> s2: reject conflicting install
+  classDef breaks fill:#ffecee,stroke:#e72e3b,stroke-width:2.5px,color:#cd2834
+  class s0 blue
+  class s0 bugPath
+  class s1 blue
+  class s1 breaks
+  class s1 bugPath
+  class s2 orange
+  class s2 breaks
+  class s2 bugPath

@@ -1,0 +1,19 @@
+---
+title: "Installer destination lifecycle"
+---
+stateDiagram-v2
+  state "Legend" as legend {
+    lg0: Blocked
+    lg1: In progress
+  }
+  class lg0 orange
+  class lg1 blue
+  s0: Waiting to check - destination unchanged
+  s1: Checking destinations - destination unchanged
+  s2: Blocked by conflict - destination unchanged
+  [*] --> s0
+  s0 --> s1: check all destinations
+  s1 --> s2: reject conflicting install
+  class s0 blue
+  class s1 blue
+  class s2 orange

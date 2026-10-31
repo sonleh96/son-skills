@@ -1,0 +1,25 @@
+TLC2 Version 2.19 of 08 August 2024 (rev: 5a47802)
+Warning: Please run the Java VM which executes TLC with a throughput optimized garbage collector by passing the "-XX:+UseParallelGC" property.
+(Use the -nowarning option to disable this warning.)
+Running breadth-first search Model-Checking with fp 0 and seed -955901158932621238 with 1 worker on 10 cores with 8192MB heap and 64MB offheap memory [pid: 2477] (Mac OS X 26.5 aarch64, Eclipse Adoptium 25.0.5 x86_64, MSBDiskFPSet, DiskStateQueue).
+Parsing file /private/var/folders/vk/n4g1np9n561d_s49w3w464nh0000gn/T/son-statechart-20261031-claude-qx6e3yxu/model/Installer.tla
+Parsing file /private/var/folders/vk/n4g1np9n561d_s49w3w464nh0000gn/T/statechart-K9hFyw/statechart-Y9P1PX/tmp-verdict-1/Naturals.tla
+Semantic processing of module Naturals
+Semantic processing of module Installer
+Starting... (2026-10-31 13:57:32)
+Computing initial states...
+Finished computing initial states: 1 distinct state generated at 2026-10-31 13:57:32.
+Error: Invariant NoWriteBeforePreflight is violated.
+Error: The behavior up to this point is:
+State 1: <Initial predicate>
+/\ destinationWrites = 0
+/\ phase = "start"
+
+State 2: <EarlyWrite line 19, col 5 to line 22, col 29 of module Installer>
+/\ destinationWrites = 1
+/\ phase = "preflight"
+
+2 states generated, 2 distinct states found, 0 states left on queue.
+The depth of the complete state graph search is 2.
+Finished in 00s at (2026-10-31 13:57:32)
+
