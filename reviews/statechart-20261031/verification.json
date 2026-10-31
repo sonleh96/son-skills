@@ -22,7 +22,11 @@
     },
     "statechart_support_files_byte_identical": 406,
     "existing_skill_files_byte_identical": 563,
-    "other_provider_objects_unchanged": 5
+    "other_provider_objects_unchanged": 5,
+    "whitespace": {
+      "code_and_authored_prose": "passed",
+      "raw_generated_tlc_eof_warnings_retained": 9
+    }
   },
   "toolchain": {
     "mise": "2026.10.24",
@@ -78,11 +82,12 @@
       "parent_model": "gpt-6-astra",
       "parent_effort": "xhigh",
       "native_agent": "son-agent",
-      "agent_model": "gpt-5.6-luna",
-      "agent_effort": "max",
       "agent_service_tier_control": false,
       "scope": "Existing bounded model plus fresh actual installer replay",
-      "local_listener_approval_needed": true
+      "local_listener_approval_needed": true,
+      "agent_model_requested": "gpt-5.6-luna",
+      "agent_effort_requested": "max",
+      "spawn_arguments_independently_exported": false
     },
     "claude": {
       "status": "passed",
@@ -142,5 +147,17 @@
     "RPI, chief-of-staff and formal-verification generators remain deferred",
     "Only statechart adoption is published; pending canonical checkout work is preserved"
   ],
-  "preview_server_stopped": true
+  "preview_server_stopped": true,
+  "independent_review": {
+    "model": "gpt-6-astra",
+    "effort": "high",
+    "reviewed_commit": "790a080",
+    "base": "10008d4",
+    "actionable_findings": 0,
+    "test_verification": "Recorded evidence inspected, suites and native pilots not repeated",
+    "limits": [
+      "Codex child spawn arguments not present in exported CLI schema",
+      "Broad preservation checks independently recorded by root"
+    ]
+  }
 }
