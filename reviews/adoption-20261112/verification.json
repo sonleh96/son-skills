@@ -157,5 +157,14 @@
     "evidence": "browser-observations.json",
     "real_device_verified": false,
     "system_media_emulated": false
+  },
+  "whitespace": {
+    "scoped_check": "passed",
+    "default_check": "three EOF blank-line warnings",
+    "preserved_files": [
+      "upstream/emil/ui-cheatsheet.md",
+      "reviews/adoption-20261112/native/codex-choreograph.md",
+      "reviews/adoption-20261112/native/codex-gestures.md"
+    ]
   }
 }
