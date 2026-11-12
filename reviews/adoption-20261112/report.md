@@ -66,7 +66,7 @@ All three bundles contain the same 108 skill names, the motion routing reference
 ## Limits
 
 The selected files are installed in Codex and Claude Code.
-Native Codex design pilots are running at this source checkpoint.
+Both native Codex design pilots completed through fresh Son agents.
 The Claude native pilot is blocked by an expired existing login.
 The motion fixture is a desktop pointer check and does not prove touch latency, device hit-target feel, refresh-rate behavior, or platform scrolling.
 
@@ -105,3 +105,23 @@ The wrapper returned exit 0 and a success-shaped result despite the failed task.
 This is a blocked execution check, not a successful pilot.
 Son was asked to refresh the login through claude auth login.
 No credential or model settings changed.
+
+## Native Codex results
+
+Both explicit invocations completed a read-only task through one fresh native son-agent, with no nested agents reported.
+The requested planning model was gpt-6-astra at xhigh.
+The exported CLI events do not expose the full spawn arguments or actual child-model identity, and the delegation tool has no service-tier selector.
+Choreograph returned a timeline, stationary elements, and concrete interruption checks.
+It correctly rejected a mandatory transform-string rewrite for the supplied Motion 14.2 HTML shorthand example.
+Gestures distinguished direct tracking and positional catch behavior from a production velocity-seeded spring.
+See the [choreograph result](native/codex-choreograph.md), [gestures result](native/codex-gestures.md), and [structured summary](native/codex-summary.json).
+
+These pilots verify invocation, routing, and useful task analysis.
+They do not certify the fixture as a production gesture component.
+The audits identified direction and stale-view risks, fixed-duration settling, velocity and cancellation gaps, and accessibility limitations in the fixture.
+Those findings are preserved as audit output rather than expanded into an unrelated component framework.
+The earlier browser pass establishes only the bounded cases recorded in its evidence.
+Codex also reported skill-context-budget warnings while loading the large installed catalog.
+Explicit invocations still loaded the selected skills and completed their native routes.
+No global plugin or model setting was changed to suppress those warnings.
+The [Claude summary](native/claude-summary.json) preserves its failed execution separately from successful loader discovery.
