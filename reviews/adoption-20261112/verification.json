@@ -166,5 +166,22 @@
       "reviews/adoption-20261112/native/codex-choreograph.md",
       "reviews/adoption-20261112/native/codex-gestures.md"
     ]
+  },
+  "independent_review": {
+    "requested_model": "gpt-6-astra",
+    "requested_effort": "high",
+    "reviewed_range": "2eb7464..18595dd",
+    "actionable_source_findings": 0,
+    "evidence_correction_committed": true,
+    "source_changes_after_review": false
+  },
+  "post_adoption_check": {
+    "status": "completed",
+    "source_changed_files": 65,
+    "meaningful_skill_body_changes_since_review": 0,
+    "remaining_humanlayer_files": 64,
+    "new_emil_readme_only": 1,
+    "pins_changed_by_check": false,
+    "report": "reviews/runs/20261112T050447Z-ff1243/report.md"
   }
 }
