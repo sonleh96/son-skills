@@ -1,0 +1,55 @@
+{
+  "checked_at": "2026-11-12T08:12:27.119217+00:00",
+  "status": "passed",
+  "previous_authentication_failure": "claude-summary.json",
+  "skills": {
+    "choreograph": {
+      "status": "passed",
+      "native_task_completed": true,
+      "subagent_type": "son-agent",
+      "observed_spawn_depth": 1,
+      "observed_task_starts": 1,
+      "nested_agents_reported": false,
+      "model_observed": [
+        "claude-fable-5-1"
+      ],
+      "model_requested": "fable",
+      "effort_requested": "high",
+      "effort_independently_exposed": false,
+      "service_tier_observed": "standard",
+      "permission_denials": [],
+      "process_exit": 0,
+      "wrapper_is_error": false,
+      "output_tokens": 10354,
+      "scope": "read-only fixture audit",
+      "result_file": "claude-choreograph.md"
+    },
+    "gestures": {
+      "status": "passed",
+      "native_task_completed": true,
+      "subagent_type": "son-agent",
+      "observed_spawn_depth": 1,
+      "observed_task_starts": 1,
+      "nested_agents_reported": false,
+      "model_observed": [
+        "claude-fable-5-1"
+      ],
+      "model_requested": "fable",
+      "effort_requested": "high",
+      "effort_independently_exposed": false,
+      "service_tier_observed": "standard",
+      "permission_denials": [],
+      "process_exit": 0,
+      "wrapper_is_error": false,
+      "output_tokens": 13835,
+      "scope": "read-only fixture audit",
+      "result_file": "claude-gestures.md"
+    }
+  },
+  "raw_transcripts_published": false,
+  "limits": [
+    "No new browser run or real-device recording occurred.",
+    "The audits identify code risks and production gaps rather than certify the fixture.",
+    "High effort was requested through the CLI but not independently exposed by child events."
+  ]
+}

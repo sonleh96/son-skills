@@ -122,18 +122,53 @@
       }
     },
     "claude": {
-      "skill": "choreograph",
-      "model_requested": "fable",
-      "effort_requested": "high",
-      "loader_fork_observed": true,
-      "subagent_type": "son-agent",
-      "spawn_depth": 1,
-      "execution_completed": false,
-      "reason": "expired existing login",
-      "process_exit": 0,
-      "wrapper_is_error": false,
-      "wrapper_subtype": "success",
-      "result": "Failed to authenticate: this login reached its time limit and cannot be renewed. Run `claude auth login` to sign in again, or use `claude setup-token` and set CLAUDE_CODE_OAUTH_TOKEN for unattended jobs"
+      "status": "passed",
+      "evidence": "native/claude-reauth-summary.json",
+      "previous_authentication_failure": "native/claude-summary.json",
+      "skills": {
+        "choreograph": {
+          "status": "passed",
+          "native_task_completed": true,
+          "subagent_type": "son-agent",
+          "observed_spawn_depth": 1,
+          "observed_task_starts": 1,
+          "nested_agents_reported": false,
+          "model_observed": [
+            "claude-fable-5-1"
+          ],
+          "model_requested": "fable",
+          "effort_requested": "high",
+          "effort_independently_exposed": false,
+          "service_tier_observed": "standard",
+          "permission_denials": [],
+          "process_exit": 0,
+          "wrapper_is_error": false,
+          "output_tokens": 10354,
+          "scope": "read-only fixture audit",
+          "result_file": "claude-choreograph.md"
+        },
+        "gestures": {
+          "status": "passed",
+          "native_task_completed": true,
+          "subagent_type": "son-agent",
+          "observed_spawn_depth": 1,
+          "observed_task_starts": 1,
+          "nested_agents_reported": false,
+          "model_observed": [
+            "claude-fable-5-1"
+          ],
+          "model_requested": "fable",
+          "effort_requested": "high",
+          "effort_independently_exposed": false,
+          "service_tier_observed": "standard",
+          "permission_denials": [],
+          "process_exit": 0,
+          "wrapper_is_error": false,
+          "output_tokens": 13835,
+          "scope": "read-only fixture audit",
+          "result_file": "claude-gestures.md"
+        }
+      }
     }
   },
   "device_limit": "Desktop pointer checks do not prove touch latency, hit-target feel, refresh-rate behavior, or platform scrolling.",
@@ -173,7 +208,8 @@
     "reviewed_range": "2eb7464..18595dd",
     "actionable_source_findings": 0,
     "evidence_correction_committed": true,
-    "source_changes_after_review": false
+    "source_changes_after_review": false,
+    "evidence_only_authentication_followup": true
   },
   "post_adoption_check": {
     "status": "completed",

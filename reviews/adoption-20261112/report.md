@@ -67,7 +67,7 @@ All three bundles contain the same 108 skill names, the motion routing reference
 
 The selected files are installed in Codex and Claude Code.
 Both native Codex design pilots completed through fresh Son agents.
-The Claude native pilot is blocked by an expired existing login.
+Both Claude Code motion-skill pilots completed after Son refreshed the login.
 The motion fixture is a desktop pointer check and does not prove touch latency, device hit-target feel, refresh-rate behavior, or platform scrolling.
 
 ## Installation and preservation
@@ -97,13 +97,13 @@ The temporary tab was closed, the viewport override was reset, and the local ser
 See [browser observations](browser-observations.json) for actions, times, and before/after geometry.
 These checks do not prove touch latency, frame rate, a physical device result, or system reduced-motion handling.
 
-## Claude execution limit
+## Earlier Claude authentication failure
 
 Claude recognized choreograph and started its native son-agent fork at depth 1.
 The task then failed because the existing login had expired and could not renew.
 The wrapper returned exit 0 and a success-shaped result despite the failed task.
-This is a blocked execution check, not a successful pilot.
-Son was asked to refresh the login through claude auth login.
+That earlier attempt was a blocked execution check, not a successful pilot.
+Son refreshed the login through claude auth login before the successful reruns below.
 No credential or model settings changed.
 
 ## Native Codex results
@@ -143,3 +143,21 @@ The remaining source differences were the previously deferred 64 HumanLayer file
 That README-only change updates links and usage descriptions; it does not change any skill body.
 It remains outside the exact reviewed adoption pin.
 The post-adoption report is reviews/runs/20261112T050447Z-ff1243/report.md in the canonical checkout.
+
+## Claude verification after sign-in
+
+Both explicit Claude Code invocations completed through the native son-agent fork after authentication was refreshed.
+Each stream recorded one task start at depth 1 and a completed task notification.
+Both results contained actual claude-fable-5-1 model usage, useful fixture audits, and no permission denials.
+No nested agents were reported.
+The CLI requested high effort; the child events did not independently expose effort.
+The audit processes made no source edits, installed nothing, and used no external tools.
+
+Choreograph returned the requested timeline, stationary elements, interruption checks, and a code-grounded entry-direction risk.
+Gestures analyzed direct tracking, bounded travel, and positional catch behavior, then identified release and production gaps.
+These findings remain audit output for the bounded fixture, not claims about observed dropped frames or a production component.
+No new browser or physical-device verification ran during this authentication follow-up.
+
+See the [choreograph audit](native/claude-choreograph.md), [gestures audit](native/claude-gestures.md), and [structured completion evidence](native/claude-reauth-summary.json).
+The original failed attempt remains preserved separately.
+The prior independent source review remains applicable because this follow-up changes only reports and evidence.
