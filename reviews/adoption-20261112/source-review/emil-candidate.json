@@ -1,0 +1,181 @@
+{
+  "url": "https://github.com/emilkowalski/skills.git",
+  "scope": "",
+  "ref": "HEAD",
+  "commit": "715c1807e08c497cfd1dc4feb450a2a3300ef2a9",
+  "license": "MIT",
+  "license_path": "LICENSE",
+  "author": "Emil Kowalski",
+  "files": {
+    ".gitattributes": {
+      "sha256": "c7b91a8020b8144953c7e7096631324706c9b85a6bb04ba7aede9431f8105916",
+      "mode": "100644",
+      "size": 68
+    },
+    ".gitignore": {
+      "sha256": "cf237c7aff44efbe6e502e645c3e06da03a69d7bdeb43392108ef3348143417e",
+      "mode": "100644",
+      "size": 10
+    },
+    ".pl": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mode": "100644",
+      "size": 0
+    },
+    "LICENSE": {
+      "sha256": "4ff5bdb7887ec1435c9cab0e8d1a7caee704d894d65c2a008ccc68b1cc2f260b",
+      "mode": "100644",
+      "size": 1070
+    },
+    "README.md": {
+      "sha256": "bc5f6275e48c2c9445adef94929e421a51dd9fc82da06fa3e85e51b16d2ef292",
+      "mode": "100644",
+      "size": 5223
+    },
+    "performance-cheatsheet.md": {
+      "sha256": "814de0807d55bb2f21944eb5be33fafbc776817e4c1bed5503ab5243f0bc6cc0",
+      "mode": "100644",
+      "size": 932
+    },
+    "skills/animate-expo/RECIPES.md": {
+      "sha256": "1193cb71334da2e2341778dd92bec9ac79d989cb07fd55d661f324ed5871e718",
+      "mode": "100644",
+      "size": 16808
+    },
+    "skills/animate-expo/SKILL.md": {
+      "sha256": "9a01a91701e6563c67677dde6b66ab30f066a5341d42c21a90ba51d99679274a",
+      "mode": "100644",
+      "size": 17891
+    },
+    "skills/animate/RECIPES.md": {
+      "sha256": "21ff63d84391db8d96ecdf9170095f55a42c836ccc36fd3269c4772bab031ba2",
+      "mode": "100644",
+      "size": 7957
+    },
+    "skills/animate/SKILL.md": {
+      "sha256": "39138996033e0dbe53e73217514116eaeca774bae84a0687c80d445a4e0cc3a6",
+      "mode": "100644",
+      "size": 11910
+    },
+    "skills/animation-performance/SKILL.md": {
+      "sha256": "6c60f45ab416ff3f7d7765a5427beead77fab0d82487fe610d2a298397558d0a",
+      "mode": "100644",
+      "size": 14269
+    },
+    "skills/animation-vocabulary/SKILL.md": {
+      "sha256": "40d2b27adfdfeb0570a9f20e7d0255109d9233c50603878bcd0dcd04c923fd94",
+      "mode": "100644",
+      "size": 13425
+    },
+    "skills/apple-design/SKILL.md": {
+      "sha256": "77bb63b7043bb93aca2ff4ab040c249484eef35682bb6ff7163433c31d30adc7",
+      "mode": "100644",
+      "size": 23036
+    },
+    "skills/ask-sonner/API.md": {
+      "sha256": "4bb06f482c5757529e3d7a672a30fbeed42d24919a63e2571384a9ce1549aa7f",
+      "mode": "100644",
+      "size": 4545
+    },
+    "skills/ask-sonner/SKILL.md": {
+      "sha256": "39f3ee185b3aa2cf70a689052ff078953ce7ba5915ed7a9391d232e9d4dcf57f",
+      "mode": "100644",
+      "size": 7233
+    },
+    "skills/break-ui/CATALOG.md": {
+      "sha256": "7358efcc6bb48e35187be1c064cf60022dcb18c72c18fab58b606dfc5f421f15",
+      "mode": "100644",
+      "size": 8268
+    },
+    "skills/break-ui/SKILL.md": {
+      "sha256": "e7eec1d70ac56a04255e9c0dbe98084ea3d544cc04aaad34f32c95d6fa9dff5e",
+      "mode": "100644",
+      "size": 14380
+    },
+    "skills/choreograph/RECIPES.md": {
+      "sha256": "b61f03b5c47398cf71ce9db4157cc919617228981b1d74a72d6a5fa27e4aaad2",
+      "mode": "100644",
+      "size": 10147
+    },
+    "skills/choreograph/SKILL.md": {
+      "sha256": "815c7d889230bafc72c03bb0769087aeede310130e8795c7949b3e3a1684e464",
+      "mode": "100644",
+      "size": 15958
+    },
+    "skills/emil-design-eng/SKILL.md": {
+      "sha256": "965cc3108047a1f68e504977ae7816c66115b202a32e7509c0b8305314839c54",
+      "mode": "100644",
+      "size": 27509
+    },
+    "skills/find-animation-opportunities/SKILL.md": {
+      "sha256": "d52a377819b84a71930f0c822cfe2849f40301605a2d5c7eccbfa3b257700df2",
+      "mode": "100644",
+      "size": 9808
+    },
+    "skills/gestures/SKILL.md": {
+      "sha256": "0835dddc0ce4f4257fdc707ec137d75810f0bdbd8d4eaf69d1de55bfbbf260c2",
+      "mode": "100644",
+      "size": 8632
+    },
+    "skills/improve-animations/AUDIT.md": {
+      "sha256": "63fa8fcf7e7b3a3e252938e55c60e1f399f607e73553163e8dacf9df40f3ebed",
+      "mode": "100644",
+      "size": 7632
+    },
+    "skills/improve-animations/PLAN-TEMPLATE.md": {
+      "sha256": "0a08ac8e23fd2082d7ffb86aeed7b789de77328c3cf874b16f1a755f2ef0a6ad",
+      "mode": "100644",
+      "size": 3100
+    },
+    "skills/improve-animations/SKILL.md": {
+      "sha256": "73962447464433476343e2c12cd08ab39cc99a9e5f3c118c5fb54ed897574ef6",
+      "mode": "100644",
+      "size": 8208
+    },
+    "skills/mobile-native/SKILL.md": {
+      "sha256": "888b7651d66d66dbac4e72b7c554638eb19bd971d686d6cbdf030a5ef3788f55",
+      "mode": "100644",
+      "size": 16838
+    },
+    "skills/pick-ui-library/SKILL.md": {
+      "sha256": "675fdce308683256ed617351a9b74d23457a5fbd0a562d9831b9c764b8c5e682",
+      "mode": "100644",
+      "size": 4790
+    },
+    "skills/prototype/PICKER.md": {
+      "sha256": "31a55eec94715cc79942e91e172e539e3031dcd5e2e5ee7c1446cf2caee960a6",
+      "mode": "100644",
+      "size": 7548
+    },
+    "skills/prototype/SKILL.md": {
+      "sha256": "bba39c955eb1871c5a02733976ceec5d0324198e0812e667604756489c89f7b9",
+      "mode": "100644",
+      "size": 7830
+    },
+    "skills/remove-animations/SKILL.md": {
+      "sha256": "dea95b7a7ef81cba312c7f70a3c5c67d7e06a287cb16b16d2f90f2b1fb0afff9",
+      "mode": "100644",
+      "size": 11345
+    },
+    "skills/review-animations/SKILL.md": {
+      "sha256": "5f9fb98b69cace7107af8b393a4196fd42fa42d98bce0e5afc1f866ff3b8a41c",
+      "mode": "100644",
+      "size": 8491
+    },
+    "skills/review-animations/STANDARDS.md": {
+      "sha256": "8f5fe3f5a04537556dd4e6a37f7a8d6f616d840eb80f2f68b5b594febb170657",
+      "mode": "100644",
+      "size": 9964
+    },
+    "skills/write-swift/SKILL.md": {
+      "sha256": "16a4b6adb74e338e55e704ce5753ad54d825438b8a63930eeaede9f3c04c9447",
+      "mode": "100644",
+      "size": 42445
+    },
+    "ui-cheatsheet.md": {
+      "sha256": "d5a23c3fa6e5f8b0ab5a44df406780112b8bd494b45c47e82ad72855a4d6b004",
+      "mode": "100644",
+      "size": 1344
+    }
+  }
+}

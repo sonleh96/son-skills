@@ -1,0 +1,274 @@
+:root {
+  color-scheme: light;
+  --ink: #17202a;
+  --muted: #52616f;
+  --line: #d8e0e7;
+  --panel: #ffffff;
+  --accent: #1d6a63;
+  --accent-soft: #dcefeb;
+  --shadow: 0 18px 50px rgba(21, 42, 55, 0.12);
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  color: var(--ink);
+  background: #f4f7f9;
+}
+
+main {
+  width: min(100% - 32px, 760px);
+  margin: 0 auto;
+  padding: 48px 0 72px;
+}
+
+.intro {
+  margin-bottom: 24px;
+}
+
+.intro h1,
+.section-heading h2,
+.notes h2 {
+  margin: 0;
+  letter-spacing: -0.03em;
+}
+
+.intro h1 {
+  max-width: 560px;
+  font-size: clamp(2.1rem, 6vw, 4.4rem);
+  line-height: 0.98;
+}
+
+.intro p:not(.eyebrow),
+.card > p,
+.notes li {
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.eyebrow {
+  margin: 0 0 10px;
+  color: var(--accent);
+  font-size: 0.72rem;
+  font-weight: 750;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+button {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 10px 16px;
+  color: var(--ink);
+  background: var(--panel);
+  font: inherit;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+button:hover {
+  border-color: var(--accent);
+}
+
+button:focus-visible,
+.drag-card:focus-visible {
+  outline: 3px solid #8ad6ca;
+  outline-offset: 3px;
+}
+
+.card,
+.notes {
+  margin-top: 20px;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  padding: 24px;
+  background: var(--panel);
+  box-shadow: var(--shadow);
+}
+
+.section-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.section-heading h2,
+.notes h2 {
+  font-size: 1.35rem;
+}
+
+.status {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+
+.view-controls {
+  display: flex;
+  gap: 8px;
+  margin: 20px 0 12px;
+}
+
+.view-stage {
+  position: relative;
+  min-height: 194px;
+  overflow: hidden;
+  border-radius: 16px;
+  background: var(--accent-soft);
+}
+
+.view {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 28px;
+  opacity: 0;
+  transform: translate3d(28px, 0, 0);
+  transition: transform 240ms cubic-bezier(0.22, 1, 0.36, 1), opacity 180ms ease-out;
+  pointer-events: none;
+}
+
+.view.is-active {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  pointer-events: auto;
+}
+
+.view.is-leaving-left {
+  transform: translate3d(-28px, 0, 0);
+}
+
+.view.is-leaving-right {
+  transform: translate3d(28px, 0, 0);
+}
+
+.view-number {
+  color: var(--accent);
+  font-size: 0.75rem;
+  font-weight: 750;
+  letter-spacing: 0.12em;
+}
+
+.view h3 {
+  margin: 8px 0 6px;
+  font-size: 1.6rem;
+  letter-spacing: -0.03em;
+}
+
+.view p {
+  max-width: 510px;
+  margin: 0;
+  color: #35505a;
+  line-height: 1.55;
+}
+
+.drag-stage {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-height: 176px;
+  margin-top: 20px;
+  overflow: hidden;
+  border-radius: 16px;
+  background: #eef2f5;
+  touch-action: pan-y;
+}
+
+.drag-stage::before,
+.drag-stage::after {
+  position: absolute;
+  top: 50%;
+  width: 1px;
+  height: 76px;
+  background: #c5d1d9;
+  content: "";
+  transform: translateY(-50%);
+}
+
+.drag-stage::before {
+  left: 16%;
+}
+
+.drag-stage::after {
+  right: 16%;
+}
+
+.drag-card {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: 4px;
+  width: 152px;
+  min-height: 92px;
+  place-content: center;
+  border: 1px solid #aed5cf;
+  border-radius: 18px;
+  color: #144740;
+  background: #dff4f0;
+  box-shadow: 0 12px 24px rgba(19, 82, 75, 0.15);
+  cursor: grab;
+  touch-action: none;
+  user-select: none;
+  transform: translate3d(var(--drag-x, 0px), 0, 0);
+  transition: transform 220ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.drag-card.is-dragging {
+  cursor: grabbing;
+  transition: none;
+}
+
+.drag-card span,
+.drag-card small {
+  text-align: center;
+}
+
+.drag-card span {
+  font-weight: 750;
+}
+
+.drag-card small {
+  color: #38635d;
+  font-size: 0.74rem;
+}
+
+.notes {
+  box-shadow: none;
+}
+
+.notes ul {
+  margin: 14px 0 0;
+  padding-left: 20px;
+}
+
+html[data-reduced-motion="true"] .view,
+html[data-reduced-motion="true"] .view.is-leaving-left,
+html[data-reduced-motion="true"] .view.is-leaving-right {
+  transform: none;
+}
+
+html[data-reduced-motion="true"] .view,
+html[data-reduced-motion="true"] .drag-card {
+  transition-duration: 1ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .view,
+  .view.is-leaving-left,
+  .view.is-leaving-right {
+    transform: none;
+  }
+
+  .drag-card {
+    transition-duration: 1ms;
+  }
+}

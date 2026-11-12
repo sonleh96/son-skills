@@ -1,0 +1,20 @@
+{
+  "codex": {
+    "model": "gpt-5.6-luna",
+    "effort": "max",
+    "service_tier_requested": "priority",
+    "model_probe_exit": 0,
+    "reply": "READY",
+    "native_delegation_exact_model_accepted": true,
+    "delegation_service_tier_control": false
+  },
+  "claude": {
+    "version": "2.1.318",
+    "model_requested": "fable",
+    "effort_requested": "high",
+    "model_probe_exit": 1,
+    "model_api_tokens": 0,
+    "result": "Failed to authenticate: existing login expired and cannot be renewed. User sign-in requested.",
+    "status": "awaiting-sign-in"
+  }
+}

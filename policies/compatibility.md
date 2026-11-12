@@ -68,6 +68,14 @@ An expensive property is a code-grounded risk, not proof of dropped frames, a st
 Report those effects as hypotheses until a recording demonstrates them.
 Do not call a property swap visually identical until the rendered result confirms it.
 
+For creator skills that dispatch subagents, a fresh context means a new native task context with the full brief carried into it.
+Keep Son's repository rules, policies, owned paths, selected model, and evidence requirements in that brief.
+In Codex, use the native fresh-context control `fork_turns="none"` when the capability is available.
+If the capability is unavailable, report that limitation instead of silently reusing the parent's context or changing the delegation route.
+When the same selected skill is already running inside `son-agent`, execute that same skill directly instead of redispatching it.
+This same-skill rule does not suppress a creator workflow's authorized stage-specific implementer, explorer, or independent reviewer agents.
+Load `son-mode/references/fresh-context-routing.md` from the active skills root for the routing contract.
+
 Use the active application's native skill loader.
 In Codex, use `$skill-name`; in Claude Code, use `/skill-name`.
 Creator slash-command references describe the same skill in Codex and do not require a slash-command adapter.

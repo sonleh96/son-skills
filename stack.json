@@ -20,9 +20,9 @@
           "size": 7957
         },
         "SKILL.md": {
-          "sha256": "b6ca593057c10d70052402cbae5988415e3f723e64bdb63f9979e00e8c6e423f",
+          "sha256": "8725285411fca229d45f2de1a32a8ccd2b71507593146b3f2d5071b33102566e",
           "mode": "100644",
-          "size": 11937
+          "size": 11987
         },
         "SON-COMPATIBILITY.md": {
           "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
@@ -585,9 +585,9 @@
       ],
       "imported_files": {
         "SKILL.md": {
-          "sha256": "a8fcac292e007b8fe94710b0dc870699579b5fb8cbaff390694fec912e29257a",
+          "sha256": "0d30d3619aef0c4ae269d78eb85a84ba56a648425b544bb330a6b9076f1a2ef2",
           "mode": "100644",
-          "size": 6747
+          "size": 6798
         },
         "SON-COMPATIBILITY.md": {
           "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
@@ -625,9 +625,9 @@
           "size": 2553
         },
         "DESIGN-IT-TWICE.md": {
-          "sha256": "52b52e75655a27aea59c6966b410bac82448968ad46ef1ebb9f07c274e3ae010",
+          "sha256": "c222ab5a82e0405672eb9062d62496139a08828e45d07fc5f18e4952c10fac1a",
           "mode": "100644",
-          "size": 2665
+          "size": 2699
         },
         "SKILL.md": {
           "sha256": "c346b35a9f12b2cec248a42b0edbda7bf9afae94490d5086d2a27659ecf74c68",
@@ -920,9 +920,9 @@
       ],
       "imported_files": {
         "SKILL.md": {
-          "sha256": "9e8f4dd5974217a64d63bc341d3a997b59015d8e6ef5b2d9702de988d413bb73",
+          "sha256": "2f6e5607b7161d71491fbead0d171985b1ba5195ebc6467c1d8e5159c0b0b455",
           "mode": "100644",
-          "size": 27200
+          "size": 27586
         },
         "SON-COMPATIBILITY.md": {
           "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
@@ -1135,9 +1135,9 @@
       ],
       "imported_files": {
         "SKILL.md": {
-          "sha256": "1d0ec7b125319d72d948531d9fe68eb256f68ab06cf6c415da07e7fa30ee6582",
+          "sha256": "382c368a55a9d7a0bd5e7e0c85dcec33c7b25ec9b8877438e7e8c991b515cea7",
           "mode": "100644",
-          "size": 2126
+          "size": 2154
         },
         "SON-COMPATIBILITY.md": {
           "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
@@ -1285,9 +1285,9 @@
       ],
       "imported_files": {
         "SKILL.md": {
-          "sha256": "7b3a6e6a54ddb2e3a1e8fb09d1098904500c8b02c503cbba3aac1a1633c11ed5",
+          "sha256": "f5c8f6d95ef6cbfaf5b88414a2eb9495c2cef36533a2ad1bd6dc2e9c2070d116",
           "mode": "100644",
-          "size": 2862
+          "size": 2917
         },
         "SON-COMPATIBILITY.md": {
           "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
@@ -1320,9 +1320,9 @@
       ],
       "imported_files": {
         "AUDIT.md": {
-          "sha256": "551c8473e20e5f4774680bc24d45e1c68e50992582720905c6b077756b7b5a55",
+          "sha256": "63fa8fcf7e7b3a3e252938e55c60e1f399f607e73553163e8dacf9df40f3ebed",
           "mode": "100644",
-          "size": 7387
+          "size": 7632
         },
         "PLAN-TEMPLATE.md": {
           "sha256": "0a08ac8e23fd2082d7ffb86aeed7b789de77328c3cf874b16f1a755f2ef0a6ad",
@@ -1405,9 +1405,9 @@
           "size": 6641
         },
         "SKILL.md": {
-          "sha256": "8a8d81e9f905af6ff33856424bb4a8129ccc7503b6d7601f121f718b53ab0a11",
+          "sha256": "0fbc05fd34bcdc3ea0b70b296fab9c061c5ea6deedcf045da2b19eec9feb005c",
           "mode": "100644",
-          "size": 6077
+          "size": 6105
         },
         "SON-COMPATIBILITY.md": {
           "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
@@ -2905,9 +2905,9 @@
       ],
       "imported_files": {
         "SKILL.md": {
-          "sha256": "c45d4964c77265c09f1853682e0a3f5b24edac85e8438cc0ce27028ccf73078b",
+          "sha256": "2902e477f82afc14edddb7dec1f673335aa994f03cddbda97c29e5f03f1fc89b",
           "mode": "100644",
-          "size": 871
+          "size": 909
         },
         "SON-COMPATIBILITY.md": {
           "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
@@ -2975,9 +2975,9 @@
       ],
       "imported_files": {
         "SKILL.md": {
-          "sha256": "6ea35bd750328944096640262b407c7d3a529a1a4db037423d4a41ce17802803",
+          "sha256": "ca2ee627851fca0d46dd32b1ed8bfec4ea4df8bf6f6f3522e89574cc2820f1d3",
           "mode": "100644",
-          "size": 8484
+          "size": 8568
         },
         "SON-COMPATIBILITY.md": {
           "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
@@ -2985,9 +2985,9 @@
           "size": 31
         },
         "STANDARDS.md": {
-          "sha256": "e7d3605034acda54ca13e43aec9e64d65b53de20f75b11b8d694e373012fbe07",
+          "sha256": "8f5fe3f5a04537556dd4e6a37f7a8d6f616d840eb80f2f68b5b594febb170657",
           "mode": "100644",
-          "size": 9801
+          "size": 9964
         },
         "agents/openai.yaml": {
           "sha256": "a1499d95abd8447558c535fe5554adcc3c9b988a0a39264a6283d430effe1e94",
@@ -5634,9 +5634,9 @@
       ],
       "imported_files": {
         "SKILL.md": {
-          "sha256": "efaf6f07c00201de34cb4de598f0c005fe1b70d0c1e1b49291721d075783ce6e",
+          "sha256": "56168f152fe1321b676d32ee2a2a459e5402344ab8867c0f18576f7015ea5527",
           "mode": "100644",
-          "size": 12462
+          "size": 12490
         },
         "SON-COMPATIBILITY.md": {
           "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
@@ -5904,7 +5904,7 @@
       "name": "animation-performance",
       "kind": "original",
       "category": "interface",
-      "description": "Keep web animations inside the frame budget — animate composite-only properties, keep motion off the main thread when the page is busy, and find the cause when an animation drops frames. Covers the layout/paint/composite pipeline, cheaper property swaps, CSS vs WAAPI vs requestAnimationFrame, Framer Motion's hardware-accelerated path, React re-rendering per frame, inherited CSS variable recalculation, blur cost, and when `will-change` actually helps. Use when an animation is janky, choppy, stutters, or drops frames; when choosing which property to animate; when deciding between CSS and JS animation on performance grounds; or when reaching for `will-change` or GPU layers. For choosing easing, duration, or whether to animate at all use animate; for reviewing motion as a whole use review-animations.",
+      "description": "Keep web animations inside the frame budget — animate composite-only properties, keep motion off the main thread when the page is busy, and find the cause when an animation drops frames. Covers the layout/paint/composite pipeline, cheaper property swaps, CSS vs WAAPI vs requestAnimationFrame, Motion's hardware-accelerated path, React re-rendering per frame, inherited CSS variable recalculation, blur cost, and when `will-change` actually helps. Use when an animation is janky, choppy, stutters, or drops frames; when choosing which property to animate; when deciding between CSS and JS animation on performance grounds; or when reaching for `will-change` or GPU layers. For choosing easing, duration, or whether to animate at all use animate; for reviewing motion as a whole use review-animations.",
       "explicit_only": false,
       "sources": [
         {
@@ -5914,9 +5914,9 @@
       ],
       "imported_files": {
         "SKILL.md": {
-          "sha256": "663fd4f8bbaa1d5d4ae8915e6c21d8251492741016e6a55d2546896983bd60cd",
+          "sha256": "110c9ee0998c55b9c4fa61233ef7633b618c93c75cec9612cee5c33e6dc868b0",
           "mode": "100644",
-          "size": 14043
+          "size": 14346
         },
         "SON-COMPATIBILITY.md": {
           "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
@@ -6124,6 +6124,81 @@
           "size": 1067
         }
       }
+    },
+    {
+      "name": "choreograph",
+      "kind": "original",
+      "category": "interface",
+      "description": "Coordinate several elements that animate together — decide what moves, in what order, how much they overlap, and what stays still — so a group reads as one intentional motion instead of a pile of separate animations. Use when building or fixing a staggered list, a hero entrance, a view swap inside a container, a multi-step flow, an element leaving while its siblings close the gap, a morph between rich states, or any interaction with several moving parts (icon + background + lines, panel + content, items flying into a target). Triggers on — stagger, staggerChildren, delayChildren, animation-delay, sequence, sequencing, orchestration, choreography, cascade, wave, timeline, \"one after another\", \"at the same time\", crossfade, popLayout, mode=\"wait\", AnimatePresence mode, hero entrance, list entrance, multi-step, step transition, morph, useAnimate, Promise.all animations, \"feels mechanical\", \"feels robotic\", \"too much going on\", \"feels slow to open\".",
+      "explicit_only": false,
+      "sources": [
+        {
+          "id": "emil:choreograph",
+          "path": "skills/choreograph/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "RECIPES.md": {
+          "sha256": "b61f03b5c47398cf71ce9db4157cc919617228981b1d74a72d6a5fa27e4aaad2",
+          "mode": "100644",
+          "size": 10147
+        },
+        "SKILL.md": {
+          "sha256": "0e70961586b8d42ae92645f8fab791a3d771d8e36daf183625d04fdac99714a6",
+          "mode": "100644",
+          "size": 16389
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "8619a54e8c098122a7f3881394f84ca89b684366e848233a29ad18b6ec363935",
+          "mode": "100644",
+          "size": 42
+        },
+        "licenses/emil.txt": {
+          "sha256": "4ff5bdb7887ec1435c9cab0e8d1a7caee704d894d65c2a008ccc68b1cc2f260b",
+          "mode": "100644",
+          "size": 1070
+        }
+      }
+    },
+    {
+      "name": "gestures",
+      "kind": "original",
+      "category": "interface",
+      "description": "Build drag, swipe, and sheet interactions that track the finger 1:1 and stay interruptible. Use when building or fixing anything the user drags, swipes, flings, holds, or dismisses with a gesture — drawers, sheets, swipe-to-dismiss toasts and cards, drag-to-reorder, pull-to-refresh, hold-to-confirm — or when a gesture feels laggy, disconnected from the finger, jumps on release, or can't be caught mid-animation. Triggers on — gesture, drag, draggable, swipe, swipe to dismiss, fling, momentum, velocity, drawer, sheet, bottom sheet, snap points, Vaul, dragConstraints, dragElastic, dragMomentum, onDragEnd, whileDrag, useMotionValue, rubber-band, overscroll, pull to refresh, hold to delete, press and hold, touch-action, dismiss threshold, \"doesn't follow my finger\", \"jumps when I let go\", \"can't grab it mid-animation\".",
+      "explicit_only": false,
+      "sources": [
+        {
+          "id": "emil:gestures",
+          "path": "skills/gestures/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "2cac8b9020f326607a9f909198aba1c1dcbce4b332b50b1eeb69fcbe536e3dc3",
+          "mode": "100644",
+          "size": 9063
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "8619a54e8c098122a7f3881394f84ca89b684366e848233a29ad18b6ec363935",
+          "mode": "100644",
+          "size": 42
+        },
+        "licenses/emil.txt": {
+          "sha256": "4ff5bdb7887ec1435c9cab0e8d1a7caee704d894d65c2a008ccc68b1cc2f260b",
+          "mode": "100644",
+          "size": 1070
+        }
+      }
     }
   ],
   "excluded": [
@@ -6226,6 +6301,16 @@
       "id": "pstack:maintain-formal-verification-skill",
       "path": "pstack/skills/maintain-formal-verification-skill/SKILL.md",
       "reason": "Deferred pending a concrete verifier, repository contract, and reproducible validation path."
+    },
+    {
+      "id": "emil:remove-animations",
+      "path": "skills/remove-animations/SKILL.md",
+      "reason": "Deferred pending a separate motion-reduction adoption."
+    },
+    {
+      "id": "matt:software-factory",
+      "path": "skills/in-progress/software-factory/SKILL.md",
+      "reason": "Deferred pending a concrete ticket-to-PR service and a separate operating-model decision."
     }
   ]
 }

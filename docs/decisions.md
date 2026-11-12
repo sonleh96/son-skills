@@ -1,6 +1,6 @@
 # Routing and adaptation decisions
 
-The 102 active creator skills keep their own workflows and supporting files.
+The 105 active creator skills keep their own workflows and supporting files.
 Son mode selects a playbook and loads the relevant originals.
 Shared compatibility rules resolve conflicts without rewriting each skill.
 
@@ -65,7 +65,7 @@ Its comparison tool fetches upstream files as data and never runs their scripts.
 
 Benny's three automations need separate service and notification configuration.
 Pstack's poteto-mode, setup-pstack, and poteto-help are replaced by the Son controls.
-Matt's seven in-progress and four miscellaneous skills remain catalogued but inactive.
+Matt's eight in-progress and four miscellaneous skills remain catalogued but inactive.
 
 Other promoted originals remain available, including tracker setup and specialist skills.
 Their external dependencies are not installed automatically.

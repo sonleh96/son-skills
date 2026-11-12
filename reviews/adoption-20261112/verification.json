@@ -1,0 +1,128 @@
+{
+  "date": "2026-11-12",
+  "publication_base": "2eb7464cdb4deed7fdcbc802b1879d915329ae69",
+  "adopted_commits": {
+    "emil": "715c1807e08c497cfd1dc4feb450a2a3300ef2a9",
+    "matt": "4ae2317ddb22b046e26455e4f9c9b3aaaf62212d"
+  },
+  "source_snapshots": {
+    "emil": {
+      "files": 34,
+      "manifest_match": true
+    },
+    "matt": {
+      "files": 184,
+      "manifest_match": true
+    },
+    "other_provider_pins_changed": false
+  },
+  "stack": {
+    "sources": 6,
+    "source_files": 840,
+    "originals": 127,
+    "active_creator_skills": 105,
+    "controls": 3,
+    "active_total": 108,
+    "catalog_rows": 127
+  },
+  "validation": {
+    "python_tests": 29,
+    "python_tests_status": "passed",
+    "builds": {
+      "codex": 108,
+      "claude": 108,
+      "cursor": 108
+    },
+    "selected_port_outputs_match": true,
+    "selected_imported_records_match": true,
+    "bundle_name_sets_match": true,
+    "deferred_remove_animations_active": false,
+    "deferred_software_factory_active": false,
+    "fixture_node_check": "passed",
+    "fixture_static_assertions": "passed",
+    "fixture_geometry_clamping": true,
+    "fixture_dom_telemetry": true,
+    "browser_observations": {
+      "artifact": "reviews/adoption-20261112/browser-observations.json",
+      "viewport": [
+        375,
+        812
+      ],
+      "narrow_boundary_inside": true,
+      "rapid_input_span_ms": 66,
+      "rapid_input_result": "View 2 of 3",
+      "active_views": 1,
+      "aria_visible_views": 1,
+      "catch_count": 1,
+      "catch_gap_ms": 17,
+      "declared_settle_ms": 220,
+      "reduced_motion_effective": true,
+      "reduced_motion_drag_x": 0,
+      "reduced_motion_phase": "idle",
+      "console_warn_error_count": 0,
+      "system_media_emulated": false
+    }
+  },
+  "accepted_existing_skills": [
+    "animate",
+    "animation-performance",
+    "emil-design-eng",
+    "improve-animations",
+    "review-animations",
+    "code-review",
+    "codebase-design",
+    "grilling",
+    "implement-spec",
+    "improve-codebase-architecture",
+    "research",
+    "wayfinder"
+  ],
+  "added_active_skills": [
+    "choreograph",
+    "gestures"
+  ],
+  "deferred": [
+    "remove-animations",
+    "software-factory",
+    "chief-of-staff",
+    "RPI"
+  ],
+  "deferred_provider_changes": [
+    "Emil remove-animations and other non-selected provider additions",
+    "Matt setup-matt-pocock-skills and tracker-template changes",
+    "Matt software-factory and chief-of-staff workflow changes",
+    "HumanLayer RPI changes",
+    "Pending canonical Pstack or statechart work, personal edits, and provider-pin changes"
+  ],
+  "native_pilots": {
+    "codex": "running",
+    "claude": {
+      "discovery": "choreograph fork to son-agent at depth1 observed",
+      "execution": "blocked by expired login",
+      "process_exit": 0,
+      "exit_code_alone_is_not_success": true
+    }
+  },
+  "device_limit": "Desktop pointer checks do not prove touch latency, hit-target feel, refresh-rate behavior, or platform scrolling.",
+  "installation": {
+    "status": "updated",
+    "changed_files": 266,
+    "unrelated_installed_files_unchanged": 2972,
+    "protected_files_unchanged": 16,
+    "agent_definitions_unchanged": true,
+    "writing_skills_unchanged": true,
+    "canonical_total": 109,
+    "canonical_python_tests": 29,
+    "canonical_builds": {
+      "codex": 109,
+      "claude": 109,
+      "cursor": 109
+    }
+  },
+  "browser": {
+    "status": "passed bounded event and layout checks",
+    "evidence": "browser-observations.json",
+    "real_device_verified": false,
+    "system_media_emulated": false
+  }
+}
