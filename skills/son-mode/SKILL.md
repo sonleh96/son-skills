@@ -16,6 +16,9 @@ Do not claim that a Markdown instruction changes the application's native mode s
 1. Read the current request and applicable personal and repository instructions.
    Identify the outcome, scope, and evidence needed to finish.
    Resolve material ambiguity; otherwise make reversible assumptions and proceed.
+   In your first message, tell the user in your own words their goal, the problem it solves, and, if the task ships a change, the smallest change you expect to meet it.
+   Do not wait for confirmation.
+   If the evidence rules out the change the user asked for, show that evidence and stop.
 2. Read `SON-RUNTIME.json` when installed and the configured `.local/models.<harness>.json` in the source repository.
    Check role choices against the active session's available models and `~/model-policy.md` in the current user's home.
    If setup has not run, inherit the current model and report that no role overrides are configured.
@@ -37,6 +40,7 @@ Do not run multiple equivalent planning or implementation loops for the same wor
 
 When delegation is allowed, assign scoped work to `son-agent` through the application's native mechanism.
 Give it the full outcome, selected playbook, role, owned files, current evidence, and completion checks.
+Restate the user's goal in each brief, and open each PR's `## Why` with it.
 Use the configured role's available model and supported effort.
 The agent must read this mode, its relevant principles, and the selected original skill.
 Use independent review for consequential changes when an authorized reviewer is available.

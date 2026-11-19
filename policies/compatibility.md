@@ -58,6 +58,7 @@ They are optional tools, and building this stack does not install their dependen
 For transcript-based reflection, use the active application's current-chat reader or its exact transcript path.
 Cursor transcript layouts and readonly flags do not describe Codex or Claude Code capabilities.
 Keep reflection evidence lookups read-only; file backlog tickets only when the user requests that write.
+Where reflect names `plugins/cache/` or a `.cursor/skills/` destination, edit the skill in the Son skills repository instead of an installed copy, then rebuild and reinstall within the task's authority.
 
 For animation performance, verify browser acceleration and visual equivalence on the target interface.
 Opacity does not remove focus or hit targets, and scale does not change layout like width or padding.

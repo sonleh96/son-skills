@@ -4210,7 +4210,7 @@
       "url": "https://github.com/VoltAgent/awesome-claude-code-subagents.git",
       "scope": "categories/05-data-ai",
       "ref": "HEAD",
-      "commit": "c9e51ec0b3d43f5dcdd0b558a6cd28ba6ada97c1",
+      "commit": "408d3c9eee2d0c75c12a3abb5de29e53c2ca6b9e",
       "license": "MIT",
       "license_path": "LICENSE",
       "author": "VoltAgent",
@@ -4241,7 +4241,7 @@
       "url": "https://github.com/borghei/Claude-Skills.git",
       "scope": "data-analytics/data-scientist",
       "ref": "HEAD",
-      "commit": "4a698e8d07856fdca9ec3e69082a9d68c8dd45d0",
+      "commit": "2c12c7efaad13a70bdea6e205698a6c4f93a0682",
       "license": "MIT + Commons Clause",
       "license_path": "LICENSE",
       "author": "Amin Borghei",
@@ -4256,9 +4256,9 @@
           "size": 2718
         },
         "data-analytics/data-scientist/SKILL.md": {
-          "sha256": "cab1ce97d99b73397d954100b441728e25a2b4100ff972746cf5f81cc740760b",
+          "sha256": "f093cd5242b72490815b7bc8558bef05940d428650329e5de14cb92132416c03",
           "mode": "100644",
-          "size": 13207
+          "size": 13327
         },
         "data-analytics/data-scientist/scripts/experiment_tracker.py": {
           "sha256": "3e4631682bbae9d112f05590dbb5c48f380cf8579fbb4e6d458313c1b495669c",

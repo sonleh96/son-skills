@@ -1,6 +1,6 @@
 # Routing and adaptation decisions
 
-The 105 active creator skills keep their own workflows and supporting files.
+The 106 active creator skills keep their own workflows and supporting files.
 Son mode selects a playbook and loads the relevant originals.
 Shared compatibility rules resolve conflicts without rewriting each skill.
 
