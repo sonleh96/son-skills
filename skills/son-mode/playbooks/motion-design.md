@@ -10,4 +10,9 @@ A read-only code audit ends with findings and the recording still needed.
 For new motion, use `animation-vocabulary` to establish terminology only when needed.
 Use `find-animation-opportunities` when the user asks where motion could help, then `animate` or `animate-expo` for the target platform.
 Use `review-animations` when the task includes assessment and `improve-animations` for a requested revision.
+Use `remove-animations` when the user says the interface feels slow or over-animated, or asks which motion to cut.
+It only deletes or reduces motion and leaves badly built animations that should stay to `improve-animations`.
+Use `choreograph` when several elements move in response to one event and their order, overlap, or stillness needs a decision.
+Use `gestures` for direct manipulation such as drag, swipe, sheet, release, or catch-mid-animation behavior.
+Both skills route through the native `son-agent`; use the [motion routing contract](../references/motion-routing.md) and report an unavailable route.
 Inspect reduced-motion behavior and keyboard interaction in the rendered application.

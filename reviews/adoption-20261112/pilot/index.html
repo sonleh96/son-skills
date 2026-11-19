@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Son motion adoption pilot</title>
+    <link rel="stylesheet" href="pilot.css">
+  </head>
+  <body>
+    <main>
+      <header class="intro">
+        <p class="eyebrow">Motion adoption pilot</p>
+        <h1>Interruptible motion in a small fixture.</h1>
+        <p>Use the controls below to exercise rapid view changes, release and catch behavior, and reduced motion.</p>
+        <button id="reduced-motion" type="button" aria-pressed="false">Use reduced motion</button>
+        <p id="motion-mode" class="status" role="status">Motion mode: full</p>
+      </header>
+
+      <section class="card" aria-labelledby="views-heading">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">View swap</p>
+            <h2 id="views-heading">Rapid next and back</h2>
+          </div>
+          <p id="view-status" class="status" role="status" aria-live="polite">View 1 of 3</p>
+        </div>
+        <div class="view-controls">
+          <button id="back" type="button">Back</button>
+          <button id="next" type="button">Next</button>
+        </div>
+        <div id="view-stage" class="view-stage" aria-live="polite">
+          <article class="view is-active" data-view="0" aria-hidden="false">
+            <span class="view-number">01</span>
+            <h3>Start with the lead.</h3>
+            <p>The next view enters from the right, while the current view leaves toward the left.</p>
+          </article>
+          <article class="view" data-view="1" aria-hidden="true">
+            <span class="view-number">02</span>
+            <h3>Interrupt the handoff.</h3>
+            <p>Press Next and Back quickly. The newest choice should retarget the transition without stale views.</p>
+          </article>
+          <article class="view" data-view="2" aria-hidden="true">
+            <span class="view-number">03</span>
+            <h3>Keep the container still.</h3>
+            <p>The stage stays in place while its content changes, so the swap reads as one object.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="card" aria-labelledby="gesture-heading">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Direct manipulation</p>
+            <h2 id="gesture-heading">Release and catch</h2>
+          </div>
+          <button id="reset-drag" type="button">Reset</button>
+        </div>
+        <p>Drag the tile, release it, then grab it again before it settles.</p>
+        <div id="drag-stage" class="drag-stage" data-pilot-phase="idle" data-pilot-x="0" data-pilot-catches="0" data-pilot-reduced-motion="false" data-pilot-event-timestamps="" data-pilot-events="">
+          <div id="drag-card" class="drag-card" tabindex="0" role="button" aria-label="Draggable tile">
+            <span>Drag me</span>
+            <small>Pointer tracking is direct.</small>
+          </div>
+        </div>
+        <p id="gesture-status" class="status" role="status" aria-live="polite">Idle.</p>
+      </section>
+
+      <section class="notes" aria-labelledby="notes-heading">
+        <h2 id="notes-heading">What to check</h2>
+        <ul>
+          <li>Rapid view changes follow the latest input.</li>
+          <li>The tile tracks the pointer without easing while held.</li>
+          <li>Release starts a short settle that can be caught and redirected.</li>
+          <li>Reduced motion removes travel and decorative movement while keeping the state change visible.</li>
+        </ul>
+      </section>
+    </main>
+    <script src="pilot.js"></script>
+  </body>
+</html>

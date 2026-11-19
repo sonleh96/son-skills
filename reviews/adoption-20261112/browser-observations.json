@@ -1,0 +1,90 @@
+{
+  "browser": "Codex in-app browser",
+  "chrome_connector": "unavailable, no listener at127.0.0.1:9222",
+  "fixture_url": "http://127.0.0.1:8768/",
+  "rapid_switch_before_fix": {
+    "actions": [
+      "Next",
+      "Back",
+      "Next",
+      "Next",
+      "Back"
+    ],
+    "result": "View2 of3",
+    "active_views": 1,
+    "aria_visible_views": 1
+  },
+  "narrow_boundary_reproduction": {
+    "viewport": [
+      375,
+      812
+    ],
+    "actions": "ArrowRight six times from center",
+    "card_left": 254.92153930664065,
+    "card_right": 406.9215393066406,
+    "stage_left": 41,
+    "stage_right": 334,
+    "inside": false
+  },
+  "native_pointer_before_fix": {
+    "drag": "640,275 to740,275",
+    "immediate_regrab": "780,275",
+    "observed_style": "--drag-x:150px",
+    "observed_status": "Released with 0px/ms velocity."
+  },
+  "browser_console_warn_error": [],
+  "limits": [
+    "Desktop event-flow and responsive checks only.",
+    "No real phone, touch latency, frame-time trace or120Hz recording.",
+    "System media preference was not emulated; fixture toggle was exercised."
+  ],
+  "after_fix": {
+    "narrow_boundary": {
+      "viewport": [
+        375,
+        812
+      ],
+      "actions": "ArrowRight six times",
+      "card_left": 181.93177795410156,
+      "card_right": 333.9317626953125,
+      "stage_left": 41,
+      "stage_right": 334,
+      "inside": true
+    },
+    "rapid_switch": {
+      "event_times_ms": [
+        165,
+        183,
+        197,
+        213,
+        231
+      ],
+      "input_span_ms": 66,
+      "declared_transition_ms": 240,
+      "result": "View 2 of 3",
+      "active_views": 1,
+      "aria_visible_views": 1
+    },
+    "catch_during_release": {
+      "catches": 1,
+      "release_at_ms": 20731,
+      "catch_at_ms": 20748,
+      "gap_ms": 17,
+      "declared_settle_ms": 220
+    },
+    "reduced_motion": {
+      "control": "fixture toggle, not system media emulation",
+      "effective": true,
+      "after_drag_phase": "idle",
+      "after_drag_x": 0,
+      "status": "Settled at center.",
+      "active_views_after_next_back": 1
+    },
+    "console_warn_error": []
+  },
+  "cleanup": {
+    "temporary_tab_closed": true,
+    "viewport_override_reset": true,
+    "local_server_stopped": true
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "choreograph": {
+    "turn_completed": true,
+    "native_route_reported": "son-agent",
+    "fresh_context_requested": "none",
+    "model_requested": "gpt-6-astra",
+    "effort_requested": "xhigh",
+    "spawn_arguments_exported": false,
+    "actual_child_model_identity_exposed": false,
+    "service_tier_control": false,
+    "scope": "read-only fixture design audit",
+    "nested_agents_reported": false
+  },
+  "gestures": {
+    "turn_completed": true,
+    "native_route_reported": "son-agent",
+    "fresh_context_requested": "none",
+    "model_requested": "gpt-6-astra",
+    "effort_requested": "xhigh",
+    "spawn_arguments_exported": false,
+    "actual_child_model_identity_exposed": false,
+    "service_tier_control": false,
+    "scope": "read-only fixture design audit",
+    "nested_agents_reported": false
+  }
+}

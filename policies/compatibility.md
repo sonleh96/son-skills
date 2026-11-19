@@ -58,6 +58,7 @@ They are optional tools, and building this stack does not install their dependen
 For transcript-based reflection, use the active application's current-chat reader or its exact transcript path.
 Cursor transcript layouts and readonly flags do not describe Codex or Claude Code capabilities.
 Keep reflection evidence lookups read-only; file backlog tickets only when the user requests that write.
+Where reflect names `plugins/cache/` or a `.cursor/skills/` destination, edit the skill in the Son skills repository instead of an installed copy, then rebuild and reinstall within the task's authority.
 
 For animation performance, verify browser acceleration and visual equivalence on the target interface.
 Opacity does not remove focus or hit targets, and scale does not change layout like width or padding.
@@ -67,6 +68,14 @@ A replacement element may start at its final value without animating.
 An expensive property is a code-grounded risk, not proof of dropped frames, a stall, or a visible snap.
 Report those effects as hypotheses until a recording demonstrates them.
 Do not call a property swap visually identical until the rendered result confirms it.
+
+For creator skills that dispatch subagents, a fresh context means a new native task context with the full brief carried into it.
+Keep Son's repository rules, policies, owned paths, selected model, and evidence requirements in that brief.
+In Codex, use the native fresh-context control `fork_turns="none"` when the capability is available.
+If the capability is unavailable, report that limitation instead of silently reusing the parent's context or changing the delegation route.
+When the same selected skill is already running inside `son-agent`, execute that same skill directly instead of redispatching it.
+This same-skill rule does not suppress a creator workflow's authorized stage-specific implementer, explorer, or independent reviewer agents.
+Load `son-mode/references/fresh-context-routing.md` from the active skills root for the routing contract.
 
 Use the active application's native skill loader.
 In Codex, use `$skill-name`; in Claude Code, use `/skill-name`.

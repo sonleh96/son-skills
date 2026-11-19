@@ -39,6 +39,7 @@ Use `$son-mode` and the other `$skill-name` forms in Codex, or slash commands wh
 
 Use `$ketchup` in Codex or `/ketchup` in Claude Code to catch up on the current chat.
 For web animation frame-cost questions, call `animation-performance` directly or use Son mode's motion-design playbook.
+Use `choreograph` for relationships between several moving elements and `gestures` for direct manipulation.
 The [live pilot](reviews/pilot-20261013/report.md) records what the native sessions verified and what still needs a device recording.
 
 ## Get started
@@ -200,8 +201,11 @@ The three data and machine learning skills below always route actual work throug
 | [/sharpen](skills/sharpen/SKILL.md) | You want the prompt rewritten deeper, without executing the task |
 | [/animation-performance](skills/animation-performance/SKILL.md) | Web animation stutters and needs a measured diagnosis |
 | [/animate](skills/animate/SKILL.md) | You need to implement motion in a web interface |
+| [/choreograph](skills/choreograph/SKILL.md) | Coordinate the order, overlap, and stillness of several moving elements |
+| [/gestures](skills/gestures/SKILL.md) | Build or diagnose dragging, swiping, and release behavior |
 | [/break-ui](skills/break-ui/SKILL.md) | You want to see what realistic extreme data does to the UI |
 | [/show-me](skills/show-me/SKILL.md) | A diagram or focused visual would explain the change better |
+| [/statechart](skills/statechart/SKILL.md) | You want a TLA+ model of a state machine checked and drawn, with the shortest path to each broken rule |
 | [/create-verification-skill](skills/create-verification-skill/SKILL.md) | Your project needs a repeatable way to prove its behavior |
 | [/retro](skills/retro/SKILL.md) | You want to find what should improve after a task |
 
@@ -242,7 +246,8 @@ By default, your copy means this repository's editable `skills/` directory.
 Add `--installed-skills /absolute/path/to/skills` to compare an installed copy separately.
 Reports go under `reviews/runs/`.
 See the [October adoption decisions](docs/updates/2026-10-13.md) for accepted changes and retained policies.
-See the [October 21 reviewed adoption](docs/updates/2026-10-21.md) for the latest accepted changes and validation evidence.
+See the [October 29 reviewed adoption](docs/updates/2026-10-29.md) and the [statechart activation](docs/updates/2026-10-31.md) for the latest accepted changes and validation evidence.
+See the [November adoption](docs/updates/2026-11-12.md) for the new motion skills and fresh-context routing.
 See the [saved comparison](reviews/originals-verified/report.md) for an example and [update review](docs/update-review.md) for the adoption steps.
 
 The Codex automation runs this check every two weeks on Monday at 09:00 in the configured local timezone.
@@ -251,15 +256,15 @@ It also leaves updates for review.
 
 ## Make it yours
 
-There are 102 active creator skills and three Son commands.
+There are 106 active creator skills and three Son commands.
 Their instructions, examples, scripts, templates, and licenses remain close to the originals.
 The changes are a compatibility reference, application metadata, and renamed commands or links where needed.
 
 | Creator | Active originals | What they contribute |
 | --- | --- | --- |
-| [Pstack](https://github.com/cursor/plugins/tree/main/pstack) | 51 | Engineering workflows, principles, verification, and delegation |
+| [Pstack](https://github.com/cursor/plugins/tree/main/pstack) | 52 | Engineering workflows, principles, verification, and delegation |
 | [Matt Pocock](https://github.com/mattpocock/skills) | 27 | Questions, domain models, specs, tickets, implementation, and retrospectives |
-| [Emil Kowalski](https://github.com/emilkowalski/skills) | 15 | Interface design, prototypes, motion, and UI stress testing |
+| [Emil Kowalski](https://github.com/emilkowalski/skills) | 18 | Interface design, prototypes, motion, and UI stress testing |
 | [HumanLayer](https://github.com/humanlayer/skills) | 6 | Visual explanation, React contracts, agent instructions, and automation |
 | [VoltAgent](https://github.com/VoltAgent/awesome-claude-code-subagents) | 2 | Broad data science and production ML engineering role guidance |
 | [Borghei](https://github.com/borghei/Claude-Skills) | 1 | Predictive modeling, experiment design, and local analysis helpers |
@@ -272,7 +277,9 @@ The source mappings and saved originals let the update checker show those edits 
 Pstack's three control commands give way to Son's setup and mode.
 Benny's three automations and Matt's 11 in-progress or miscellaneous skills remain inactive.
 HumanLayer RPI remains deferred while its planning and iteration routes are evaluated.
-All 121 accepted originals remain in the snapshots and [catalog](docs/catalog.md).
+Pstack's `ketchup-video` remains deferred because it needs a video toolchain.
+`statechart` is active and explicit-only; its first run installs Java and TLC through mise.
+All 127 accepted originals remain in the snapshots and [catalog](docs/catalog.md).
 The [creator analysis](docs/creator-analysis.md) and [routing decisions](docs/decisions.md) explain the selection.
 
 Some originals need tools outside this stack.

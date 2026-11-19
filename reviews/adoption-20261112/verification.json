@@ -1,0 +1,223 @@
+{
+  "date": "2026-11-12",
+  "publication_base": "2eb7464cdb4deed7fdcbc802b1879d915329ae69",
+  "adopted_commits": {
+    "emil": "715c1807e08c497cfd1dc4feb450a2a3300ef2a9",
+    "matt": "4ae2317ddb22b046e26455e4f9c9b3aaaf62212d"
+  },
+  "source_snapshots": {
+    "emil": {
+      "files": 34,
+      "manifest_match": true
+    },
+    "matt": {
+      "files": 184,
+      "manifest_match": true
+    },
+    "other_provider_pins_changed": false
+  },
+  "stack": {
+    "sources": 6,
+    "source_files": 840,
+    "originals": 127,
+    "active_creator_skills": 105,
+    "controls": 3,
+    "active_total": 108,
+    "catalog_rows": 127
+  },
+  "validation": {
+    "python_tests": 29,
+    "python_tests_status": "passed",
+    "builds": {
+      "codex": 108,
+      "claude": 108,
+      "cursor": 108
+    },
+    "selected_port_outputs_match": true,
+    "selected_imported_records_match": true,
+    "bundle_name_sets_match": true,
+    "deferred_remove_animations_active": false,
+    "deferred_software_factory_active": false,
+    "fixture_node_check": "passed",
+    "fixture_static_assertions": "passed",
+    "fixture_geometry_clamping": true,
+    "fixture_dom_telemetry": true,
+    "browser_observations": {
+      "artifact": "reviews/adoption-20261112/browser-observations.json",
+      "viewport": [
+        375,
+        812
+      ],
+      "narrow_boundary_inside": true,
+      "rapid_input_span_ms": 66,
+      "rapid_input_result": "View 2 of 3",
+      "active_views": 1,
+      "aria_visible_views": 1,
+      "catch_count": 1,
+      "catch_gap_ms": 17,
+      "declared_settle_ms": 220,
+      "reduced_motion_effective": true,
+      "reduced_motion_drag_x": 0,
+      "reduced_motion_phase": "idle",
+      "console_warn_error_count": 0,
+      "system_media_emulated": false
+    }
+  },
+  "accepted_existing_skills": [
+    "animate",
+    "animation-performance",
+    "emil-design-eng",
+    "improve-animations",
+    "review-animations",
+    "code-review",
+    "codebase-design",
+    "grilling",
+    "implement-spec",
+    "improve-codebase-architecture",
+    "research",
+    "wayfinder"
+  ],
+  "added_active_skills": [
+    "choreograph",
+    "gestures"
+  ],
+  "deferred": [
+    "remove-animations",
+    "software-factory",
+    "chief-of-staff",
+    "RPI"
+  ],
+  "deferred_provider_changes": [
+    "Emil remove-animations and other non-selected provider additions",
+    "Matt setup-matt-pocock-skills and tracker-template changes",
+    "Matt software-factory and chief-of-staff workflow changes",
+    "HumanLayer RPI changes",
+    "Pending canonical Pstack or statechart work, personal edits, and provider-pin changes"
+  ],
+  "native_pilots": {
+    "codex": {
+      "choreograph": {
+        "turn_completed": true,
+        "native_route_reported": "son-agent",
+        "fresh_context_requested": "none",
+        "model_requested": "gpt-6-astra",
+        "effort_requested": "xhigh",
+        "spawn_arguments_exported": false,
+        "actual_child_model_identity_exposed": false,
+        "service_tier_control": false,
+        "scope": "read-only fixture design audit",
+        "nested_agents_reported": false
+      },
+      "gestures": {
+        "turn_completed": true,
+        "native_route_reported": "son-agent",
+        "fresh_context_requested": "none",
+        "model_requested": "gpt-6-astra",
+        "effort_requested": "xhigh",
+        "spawn_arguments_exported": false,
+        "actual_child_model_identity_exposed": false,
+        "service_tier_control": false,
+        "scope": "read-only fixture design audit",
+        "nested_agents_reported": false
+      }
+    },
+    "claude": {
+      "status": "passed",
+      "evidence": "native/claude-reauth-summary.json",
+      "previous_authentication_failure": "native/claude-summary.json",
+      "skills": {
+        "choreograph": {
+          "status": "passed",
+          "native_task_completed": true,
+          "subagent_type": "son-agent",
+          "observed_spawn_depth": 1,
+          "observed_task_starts": 1,
+          "nested_agents_reported": false,
+          "model_observed": [
+            "claude-fable-5-1"
+          ],
+          "model_requested": "fable",
+          "effort_requested": "high",
+          "effort_independently_exposed": false,
+          "service_tier_observed": "standard",
+          "permission_denials": [],
+          "process_exit": 0,
+          "wrapper_is_error": false,
+          "output_tokens": 10354,
+          "scope": "read-only fixture audit",
+          "result_file": "claude-choreograph.md"
+        },
+        "gestures": {
+          "status": "passed",
+          "native_task_completed": true,
+          "subagent_type": "son-agent",
+          "observed_spawn_depth": 1,
+          "observed_task_starts": 1,
+          "nested_agents_reported": false,
+          "model_observed": [
+            "claude-fable-5-1"
+          ],
+          "model_requested": "fable",
+          "effort_requested": "high",
+          "effort_independently_exposed": false,
+          "service_tier_observed": "standard",
+          "permission_denials": [],
+          "process_exit": 0,
+          "wrapper_is_error": false,
+          "output_tokens": 13835,
+          "scope": "read-only fixture audit",
+          "result_file": "claude-gestures.md"
+        }
+      }
+    }
+  },
+  "device_limit": "Desktop pointer checks do not prove touch latency, hit-target feel, refresh-rate behavior, or platform scrolling.",
+  "installation": {
+    "status": "updated",
+    "changed_files": 266,
+    "unrelated_installed_files_unchanged": 2972,
+    "protected_files_unchanged": 16,
+    "agent_definitions_unchanged": true,
+    "writing_skills_unchanged": true,
+    "canonical_total": 109,
+    "canonical_python_tests": 29,
+    "canonical_builds": {
+      "codex": 109,
+      "claude": 109,
+      "cursor": 109
+    }
+  },
+  "browser": {
+    "status": "passed bounded event and layout checks",
+    "evidence": "browser-observations.json",
+    "real_device_verified": false,
+    "system_media_emulated": false
+  },
+  "whitespace": {
+    "scoped_check": "passed",
+    "default_check": "three EOF blank-line warnings",
+    "preserved_files": [
+      "upstream/emil/ui-cheatsheet.md",
+      "reviews/adoption-20261112/native/codex-choreograph.md",
+      "reviews/adoption-20261112/native/codex-gestures.md"
+    ]
+  },
+  "independent_review": {
+    "requested_model": "gpt-6-astra",
+    "requested_effort": "high",
+    "reviewed_range": "2eb7464..18595dd",
+    "actionable_source_findings": 0,
+    "evidence_correction_committed": true,
+    "source_changes_after_review": false,
+    "evidence_only_authentication_followup": true
+  },
+  "post_adoption_check": {
+    "status": "completed",
+    "source_changed_files": 65,
+    "meaningful_skill_body_changes_since_review": 0,
+    "remaining_humanlayer_files": 64,
+    "new_emil_readme_only": 1,
+    "pins_changed_by_check": false,
+    "report": "reviews/runs/20261112T050447Z-ff1243/report.md"
+  }
+}

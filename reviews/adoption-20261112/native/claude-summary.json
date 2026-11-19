@@ -1,0 +1,14 @@
+{
+  "skill": "choreograph",
+  "model_requested": "fable",
+  "effort_requested": "high",
+  "loader_fork_observed": true,
+  "subagent_type": "son-agent",
+  "spawn_depth": 1,
+  "execution_completed": false,
+  "reason": "expired existing login",
+  "process_exit": 0,
+  "wrapper_is_error": false,
+  "wrapper_subtype": "success",
+  "result": "Failed to authenticate: this login reached its time limit and cannot be renewed. Run `claude auth login` to sign in again, or use `claude setup-token` and set CLAUDE_CODE_OAUTH_TOKEN for unattended jobs"
+}

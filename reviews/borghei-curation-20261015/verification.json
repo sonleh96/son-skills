@@ -1,0 +1,12 @@
+{
+  "exact_coverage": true,
+  "duplicates": 0,
+  "cited_ranges_checked": 168,
+  "cited_files_checked": 105,
+  "creator_code_executed": false,
+  "installed_or_accepted_sources_changed": false,
+  "report_cited_ranges_checked": 13,
+  "report_local_links_checked": true,
+  "csv_json_rows_agree": true,
+  "throughput_checkpoint": "n/a, read-only investigation"
+}

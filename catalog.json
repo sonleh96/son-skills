@@ -10,7 +10,7 @@
       "disposition": "inactive",
       "installed_skills": [],
       "rationale": "Benny requires separately configured external services.",
-      "url": "https://github.com/cursor/plugins/blob/190d28736eff128ec94f502a22c7fe0c4b56cd37/pstack/automations/benny/skills/reproduce-and-fix-issues/SKILL.md"
+      "url": "https://github.com/cursor/plugins/blob/1ba91fc25c0977741dd0e267849e6234b037ed0a/pstack/automations/benny/skills/reproduce-and-fix-issues/SKILL.md"
     },
     {
       "id": "pstack:setup-benny",
@@ -21,7 +21,7 @@
       "disposition": "inactive",
       "installed_skills": [],
       "rationale": "Benny requires separately configured external services.",
-      "url": "https://github.com/cursor/plugins/blob/190d28736eff128ec94f502a22c7fe0c4b56cd37/pstack/automations/benny/skills/setup-benny/SKILL.md"
+      "url": "https://github.com/cursor/plugins/blob/1ba91fc25c0977741dd0e267849e6234b037ed0a/pstack/automations/benny/skills/setup-benny/SKILL.md"
     },
     {
       "id": "pstack:triage-issue-reports",
@@ -32,7 +32,7 @@
       "disposition": "inactive",
       "installed_skills": [],
       "rationale": "Benny requires separately configured external services.",
-      "url": "https://github.com/cursor/plugins/blob/190d28736eff128ec94f502a22c7fe0c4b56cd37/pstack/automations/benny/skills/triage-issue-reports/SKILL.md"
+      "url": "https://github.com/cursor/plugins/blob/1ba91fc25c0977741dd0e267849e6234b037ed0a/pstack/automations/benny/skills/triage-issue-reports/SKILL.md"
     },
     {
       "id": "pstack:architect",
@@ -47,7 +47,7 @@
         "architect"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/cursor/plugins/blob/190d28736eff128ec94f502a22c7fe0c4b56cd37/pstack/skills/architect/SKILL.md"
+      "url": "https://github.com/cursor/plugins/blob/1ba91fc25c0977741dd0e267849e6234b037ed0a/pstack/skills/architect/SKILL.md"
     },
     {
       "id": "pstack:arena",
@@ -62,7 +62,7 @@
         "arena"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/cursor/plugins/blob/190d28736eff128ec94f502a22c7fe0c4b56cd37/pstack/skills/arena/SKILL.md"
+      "url": "https://github.com/cursor/plugins/blob/1ba91fc25c0977741dd0e267849e6234b037ed0a/pstack/skills/arena/SKILL.md"
     },
     {
       "id": "pstack:automate-me",
@@ -77,7 +77,7 @@
         "automate-me"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/cursor/plugins/blob/190d28736eff128ec94f502a22c7fe0c4b56cd37/pstack/skills/automate-me/SKILL.md"
+      "url": "https://github.com/cursor/plugins/blob/1ba91fc25c0977741dd0e267849e6234b037ed0a/pstack/skills/automate-me/SKILL.md"
     },
     {
       "id": "pstack:benchmark-checklist",
@@ -92,7 +92,7 @@
         "benchmark-checklist"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/cursor/plugins/blob/190d28736eff128ec94f502a22c7fe0c4b56cd37/pstack/skills/benchmark-checklist/SKILL.md"
+      "url": "https://github.com/cursor/plugins/blob/1ba91fc25c0977741dd0e267849e6234b037ed0a/pstack/skills/benchmark-checklist/SKILL.md"
     },
     {
       "id": "pstack:blast-radius",
@@ -107,7 +107,7 @@
         "blast-radius"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/cursor/plugins/blob/190d28736eff128ec94f502a22c7fe0c4b56cd37/pstack/skills/blast-radius/SKILL.md"
+      "url": "https://github.com/cursor/plugins/blob/1ba91fc25c0977741dd0e267849e6234b037ed0a/pstack/skills/blast-radius/SKILL.md"
     },
     {
       "id": "pstack:bro",
@@ -122,7 +122,7 @@
         "bro"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/cursor/plugins/blob/190d28736eff128ec94f502a22c7fe0c4b56cd37/pstack/skills/bro/SKILL.md"
+      "url": "https://github.com/cursor/plugins/blob/1ba91fc25c0977741dd0e267849e6234b037ed0a/pstack/skills/bro/SKILL.md"
     },
     {
       "id": "pstack:correct",
@@ -137,7 +137,7 @@
         "correct"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/cursor/plugins/blob/190d28736eff128ec94f502a22c7fe0c4b56cd37/pstack/skills/correct/SKILL.md"
+      "url": "https://github.com/cursor/plugins/blob/1ba91fc25c0977741dd0e267849e6234b037ed0a/pstack/skills/correct/SKILL.md"
     },
     {
       "id": "pstack:create-formal-verification-skill",
@@ -148,7 +148,7 @@
       "disposition": "inactive",
       "installed_skills": [],
       "rationale": "Deferred pending a concrete verifier, repository contract, and reproducible validation path.",
-      "url": "https://github.com/cursor/plugins/blob/190d28736eff128ec94f502a22c7fe0c4b56cd37/pstack/skills/create-formal-verification-skill/SKILL.md"
+      "url": "https://github.com/cursor/plugins/blob/1ba91fc25c0977741dd0e267849e6234b037ed0a/pstack/skills/create-formal-verification-skill/SKILL.md"
     },
     {
       "id": "pstack:create-verification-skill",
@@ -163,7 +163,7 @@
         "create-verification-skill"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/cursor/plugins/blob/190d28736eff128ec94f502a22c7fe0c4b56cd37/pstack/skills/create-verification-skill/SKILL.md"
+      "url": "https://github.com/cursor/plugins/blob/1ba91fc25c0977741dd0e267849e6234b037ed0a/pstack/skills/create-verification-skill/SKILL.md"
     },
     {
       "id": "pstack:figure-it-out",
@@ -178,7 +178,7 @@
         "figure-it-out"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/cursor/plugins/blob/190d28736eff128ec94f502a22c7fe0c4b56cd37/pstack/skills/figure-it-out/SKILL.md"
+      "url": "https://github.com/cursor/plugins/blob/1ba91fc25c0977741dd0e267849e6234b037ed0a/pstack/skills/figure-it-out/SKILL.md"
     },
     {
       "id": "pstack:how",
@@ -193,7 +193,7 @@
         "how"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/cursor/plugins/blob/190d28736eff128ec94f502a22c7fe0c4b56cd37/pstack/skills/how/SKILL.md"
+      "url": "https://github.com/cursor/plugins/blob/1ba91fc25c0977741dd0e267849e6234b037ed0a/pstack/skills/how/SKILL.md"
     },
     {
       "id": "pstack:in-your-own-words",
@@ -208,13 +208,13 @@
         "in-your-own-words"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/cursor/plugins/blob/190d28736eff128ec94f502a22c7fe0c4b56cd37/pstack/skills/in-your-own-words/SKILL.md"
+      "url": "https://github.com/cursor/plugins/blob/1ba91fc25c0977741dd0e267849e6234b037ed0a/pstack/skills/in-your-own-words/SKILL.md"
     },
     {
       "id": "pstack:interrogate",
       "source": "pstack",
       "path": "pstack/skills/interrogate/SKILL.md",
-      "description": "Use for \"interrogate\", \"adversarial review\", \"multi-model review\", \"challenge this\", \"stress test this code\", \"find blind spots\", or \"tear this apart\". Multiple LLM reviewers challenge changes from independent angles.",
+      "description": "Use for \"interrogate\", \"adversarial review\", \"multi-model review\", \"challenge this\", \"stress test this code\", \"find blind spots\", or \"tear this apart\". Adversaries try to break a change or design, and only findings proven by a run survive.",
       "categories": [
         "verification"
       ],
@@ -223,7 +223,18 @@
         "interrogate"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/cursor/plugins/blob/190d28736eff128ec94f502a22c7fe0c4b56cd37/pstack/skills/interrogate/SKILL.md"
+      "url": "https://github.com/cursor/plugins/blob/1ba91fc25c0977741dd0e267849e6234b037ed0a/pstack/skills/interrogate/SKILL.md"
+    },
+    {
+      "id": "pstack:ketchup-video",
+      "source": "pstack",
+      "path": "pstack/skills/ketchup-video/SKILL.md",
+      "description": "Catch the user up like /ketchup, with a short subtitled video of slides for what happened and the waiting calls as text under it. Use for /ketchup-video.",
+      "categories": [],
+      "disposition": "inactive",
+      "installed_skills": [],
+      "rationale": "Deferred: rendering needs a local video toolchain and a chat surface that plays embedded video.",
+      "url": "https://github.com/cursor/plugins/blob/1ba91fc25c0977741dd0e267849e6234b037ed0a/pstack/skills/ketchup-video/SKILL.md"
     },
     {
       "id": "pstack:ketchup",
@@ -238,7 +249,7 @@
         "ketchup"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/cursor/plugins/blob/190d28736eff128ec94f502a22c7fe0c4b56cd37/pstack/skills/ketchup/SKILL.md"
+      "url": "https://github.com/cursor/plugins/blob/1ba91fc25c0977741dd0e267849e6234b037ed0a/pstack/skills/ketchup/SKILL.md"
     },
     {
       "id": "pstack:maintain-formal-verification-skill",
@@ -249,7 +260,7 @@
       "disposition": "inactive",
       "installed_skills": [],
       "rationale": "Deferred pending a concrete verifier, repository contract, and reproducible validation path.",
-      "url": "https://github.com/cursor/plugins/blob/190d28736eff128ec94f502a22c7fe0c4b56cd37/pstack/skills/maintain-formal-verification-skill/SKILL.md"
+      "url": "https://github.com/cursor/plugins/blob/1ba91fc25c0977741dd0e267849e6234b037ed0a/pstack/skills/maintain-formal-verification-skill/SKILL.md"
     },
     {
       "id": "pstack:maintain-verification-skill",
@@ -264,7 +275,7 @@
         "maintain-verification-skill"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/cursor/plugins/blob/190d28736eff128ec94f502a22c7fe0c4b56cd37/pstack/skills/maintain-verification-skill/SKILL.md"
+      "url": "https://github.com/cursor/plugins/blob/1ba91fc25c0977741dd0e267849e6234b037ed0a/pstack/skills/maintain-verification-skill/SKILL.md"
     },
     {
       "id": "pstack:make-bot-ui",
@@ -279,7 +290,7 @@
         "make-bot-ui"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/cursor/plugins/blob/190d28736eff128ec94f502a22c7fe0c4b56cd37/pstack/skills/make-bot-ui/SKILL.md"
+      "url": "https://github.com/cursor/plugins/blob/1ba91fc25c0977741dd0e267849e6234b037ed0a/pstack/skills/make-bot-ui/SKILL.md"
     },
     {
       "id": "pstack:no-comments",
@@ -294,7 +305,7 @@
         "no-comments"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/cursor/plugins/blob/190d28736eff128ec94f502a22c7fe0c4b56cd37/pstack/skills/no-comments/SKILL.md"
+      "url": "https://github.com/cursor/plugins/blob/1ba91fc25c0977741dd0e267849e6234b037ed0a/pstack/skills/no-comments/SKILL.md"
     },
     {
       "id": "pstack:poteto-help",
@@ -305,7 +316,7 @@
       "disposition": "inactive",
       "installed_skills": [],
       "rationale": "Replaced by the Son setup and mode controls.",
-      "url": "https://github.com/cursor/plugins/blob/190d28736eff128ec94f502a22c7fe0c4b56cd37/pstack/skills/poteto-help/SKILL.md"
+      "url": "https://github.com/cursor/plugins/blob/1ba91fc25c0977741dd0e267849e6234b037ed0a/pstack/skills/poteto-help/SKILL.md"
     },
     {
       "id": "pstack:poteto-mode",
@@ -316,7 +327,7 @@
       "disposition": "inactive",
       "installed_skills": [],
       "rationale": "Replaced by the Son setup and mode controls.",
-      "url": "https://github.com/cursor/plugins/blob/190d28736eff128ec94f502a22c7fe0c4b56cd37/pstack/skills/poteto-mode/SKILL.md"
+      "url": "https://github.com/cursor/plugins/blob/1ba91fc25c0977741dd0e267849e6234b037ed0a/pstack/skills/poteto-mode/SKILL.md"
     },
     {
       "id": "pstack:principle-attack-the-premise",
@@ -331,7 +342,7 @@
         "principle-attack-the-premise"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/cursor/plugins/blob/190d28736eff128ec94f502a22c7fe0c4b56cd37/pstack/skills/principle-attack-the-premise/SKILL.md"
+      "url": "https://github.com/cursor/plugins/blob/1ba91fc25c0977741dd0e267849e6234b037ed0a/pstack/skills/principle-attack-the-premise/SKILL.md"
     },
     {
       "id": "pstack:principle-boundary-discipline",
@@ -346,7 +357,7 @@
         "principle-boundary-discipline"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/cursor/plugins/blob/190d28736eff128ec94f502a22c7fe0c4b56cd37/pstack/skills/principle-boundary-discipline/SKILL.md"
+      "url": "https://github.com/cursor/plugins/blob/1ba91fc25c0977741dd0e267849e6234b037ed0a/pstack/skills/principle-boundary-discipline/SKILL.md"
     },
     {
       "id": "pstack:principle-build-the-lever",
@@ -361,7 +372,7 @@
         "principle-build-the-lever"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/cursor/plugins/blob/190d28736eff128ec94f502a22c7fe0c4b56cd37/pstack/skills/principle-build-the-lever/SKILL.md"
+      "url": "https://github.com/cursor/plugins/blob/1ba91fc25c0977741dd0e267849e6234b037ed0a/pstack/skills/principle-build-the-lever/SKILL.md"
     },
     {
       "id": "pstack:principle-encode-lessons-in-structure",
@@ -376,7 +387,7 @@
         "principle-encode-lessons-in-structure"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/cursor/plugins/blob/190d28736eff128ec94f502a22c7fe0c4b56cd37/pstack/skills/principle-encode-lessons-in-structure/SKILL.md"
+      "url": "https://github.com/cursor/plugins/blob/1ba91fc25c0977741dd0e267849e6234b037ed0a/pstack/skills/principle-encode-lessons-in-structure/SKILL.md"
     },
     {
       "id": "pstack:principle-exhaust-the-design-space",
@@ -391,7 +402,7 @@
         "principle-exhaust-the-design-space"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/cursor/plugins/blob/190d28736eff128ec94f502a22c7fe0c4b56cd37/pstack/skills/principle-exhaust-the-design-space/SKILL.md"
+      "url": "https://github.com/cursor/plugins/blob/1ba91fc25c0977741dd0e267849e6234b037ed0a/pstack/skills/principle-exhaust-the-design-space/SKILL.md"
     },
     {
       "id": "pstack:principle-experience-first",
@@ -406,13 +417,13 @@
         "principle-experience-first"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/cursor/plugins/blob/190d28736eff128ec94f502a22c7fe0c4b56cd37/pstack/skills/principle-experience-first/SKILL.md"
+      "url": "https://github.com/cursor/plugins/blob/1ba91fc25c0977741dd0e267849e6234b037ed0a/pstack/skills/principle-experience-first/SKILL.md"
     },
     {
       "id": "pstack:principle-explain-the-number",
       "source": "pstack",
       "path": "pstack/skills/principle-explain-the-number/SKILL.md",
-      "description": "Apply before you trust, report, or act on a number you measured: a speedup, a regression, a throughput, a latency, or an eval result. Find what limits it, and rule out that it measured something other than the work you think.",
+      "description": "Apply before you measure, and before you trust, report, or act on a number you measured: a speedup, a regression, a throughput, a latency, or an eval result. Find what limits it, and rule out that it measured something other than the work you think.",
       "categories": [
         "verification"
       ],
@@ -421,7 +432,7 @@
         "principle-explain-the-number"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/cursor/plugins/blob/190d28736eff128ec94f502a22c7fe0c4b56cd37/pstack/skills/principle-explain-the-number/SKILL.md"
+      "url": "https://github.com/cursor/plugins/blob/1ba91fc25c0977741dd0e267849e6234b037ed0a/pstack/skills/principle-explain-the-number/SKILL.md"
     },
     {
       "id": "pstack:principle-fix-root-causes",
@@ -436,7 +447,7 @@
         "principle-fix-root-causes"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/cursor/plugins/blob/190d28736eff128ec94f502a22c7fe0c4b56cd37/pstack/skills/principle-fix-root-causes/SKILL.md"
+      "url": "https://github.com/cursor/plugins/blob/1ba91fc25c0977741dd0e267849e6234b037ed0a/pstack/skills/principle-fix-root-causes/SKILL.md"
     },
     {
       "id": "pstack:principle-foundational-thinking",
@@ -451,7 +462,7 @@
         "principle-foundational-thinking"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/cursor/plugins/blob/190d28736eff128ec94f502a22c7fe0c4b56cd37/pstack/skills/principle-foundational-thinking/SKILL.md"
+      "url": "https://github.com/cursor/plugins/blob/1ba91fc25c0977741dd0e267849e6234b037ed0a/pstack/skills/principle-foundational-thinking/SKILL.md"
     },
     {
       "id": "pstack:principle-guard-the-context-window",
@@ -466,7 +477,7 @@
         "principle-guard-the-context-window"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/cursor/plugins/blob/190d28736eff128ec94f502a22c7fe0c4b56cd37/pstack/skills/principle-guard-the-context-window/SKILL.md"
+      "url": "https://github.com/cursor/plugins/blob/1ba91fc25c0977741dd0e267849e6234b037ed0a/pstack/skills/principle-guard-the-context-window/SKILL.md"
     },
     {
       "id": "pstack:principle-laziness-protocol",
@@ -481,7 +492,7 @@
         "principle-laziness-protocol"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/cursor/plugins/blob/190d28736eff128ec94f502a22c7fe0c4b56cd37/pstack/skills/principle-laziness-protocol/SKILL.md"
+      "url": "https://github.com/cursor/plugins/blob/1ba91fc25c0977741dd0e267849e6234b037ed0a/pstack/skills/principle-laziness-protocol/SKILL.md"
     },
     {
       "id": "pstack:principle-make-operations-idempotent",
@@ -496,7 +507,7 @@
         "principle-make-operations-idempotent"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/cursor/plugins/blob/190d28736eff128ec94f502a22c7fe0c4b56cd37/pstack/skills/principle-make-operations-idempotent/SKILL.md"
+      "url": "https://github.com/cursor/plugins/blob/1ba91fc25c0977741dd0e267849e6234b037ed0a/pstack/skills/principle-make-operations-idempotent/SKILL.md"
     },
     {
       "id": "pstack:principle-migrate-callers-then-delete-legacy-apis",
@@ -511,7 +522,7 @@
         "principle-migrate-callers-then-delete-legacy-apis"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/cursor/plugins/blob/190d28736eff128ec94f502a22c7fe0c4b56cd37/pstack/skills/principle-migrate-callers-then-delete-legacy-apis/SKILL.md"
+      "url": "https://github.com/cursor/plugins/blob/1ba91fc25c0977741dd0e267849e6234b037ed0a/pstack/skills/principle-migrate-callers-then-delete-legacy-apis/SKILL.md"
     },
     {
       "id": "pstack:principle-minimize-reader-load",
@@ -526,7 +537,7 @@
         "principle-minimize-reader-load"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/cursor/plugins/blob/190d28736eff128ec94f502a22c7fe0c4b56cd37/pstack/skills/principle-minimize-reader-load/SKILL.md"
+      "url": "https://github.com/cursor/plugins/blob/1ba91fc25c0977741dd0e267849e6234b037ed0a/pstack/skills/principle-minimize-reader-load/SKILL.md"
     },
     {
       "id": "pstack:principle-model-the-domain",
@@ -541,7 +552,7 @@
         "principle-model-the-domain"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/cursor/plugins/blob/190d28736eff128ec94f502a22c7fe0c4b56cd37/pstack/skills/principle-model-the-domain/SKILL.md"
+      "url": "https://github.com/cursor/plugins/blob/1ba91fc25c0977741dd0e267849e6234b037ed0a/pstack/skills/principle-model-the-domain/SKILL.md"
     },
     {
       "id": "pstack:principle-never-block-on-the-human",
@@ -556,7 +567,7 @@
         "principle-never-block-on-the-human"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/cursor/plugins/blob/190d28736eff128ec94f502a22c7fe0c4b56cd37/pstack/skills/principle-never-block-on-the-human/SKILL.md"
+      "url": "https://github.com/cursor/plugins/blob/1ba91fc25c0977741dd0e267849e6234b037ed0a/pstack/skills/principle-never-block-on-the-human/SKILL.md"
     },
     {
       "id": "pstack:principle-outcome-oriented-execution",
@@ -571,7 +582,7 @@
         "principle-outcome-oriented-execution"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/cursor/plugins/blob/190d28736eff128ec94f502a22c7fe0c4b56cd37/pstack/skills/principle-outcome-oriented-execution/SKILL.md"
+      "url": "https://github.com/cursor/plugins/blob/1ba91fc25c0977741dd0e267849e6234b037ed0a/pstack/skills/principle-outcome-oriented-execution/SKILL.md"
     },
     {
       "id": "pstack:principle-prove-it-works",
@@ -586,7 +597,7 @@
         "principle-prove-it-works"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/cursor/plugins/blob/190d28736eff128ec94f502a22c7fe0c4b56cd37/pstack/skills/principle-prove-it-works/SKILL.md"
+      "url": "https://github.com/cursor/plugins/blob/1ba91fc25c0977741dd0e267849e6234b037ed0a/pstack/skills/principle-prove-it-works/SKILL.md"
     },
     {
       "id": "pstack:principle-redesign-from-first-principles",
@@ -601,7 +612,7 @@
         "principle-redesign-from-first-principles"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/cursor/plugins/blob/190d28736eff128ec94f502a22c7fe0c4b56cd37/pstack/skills/principle-redesign-from-first-principles/SKILL.md"
+      "url": "https://github.com/cursor/plugins/blob/1ba91fc25c0977741dd0e267849e6234b037ed0a/pstack/skills/principle-redesign-from-first-principles/SKILL.md"
     },
     {
       "id": "pstack:principle-separate-before-serializing-shared-state",
@@ -616,7 +627,7 @@
         "principle-separate-before-serializing-shared-state"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/cursor/plugins/blob/190d28736eff128ec94f502a22c7fe0c4b56cd37/pstack/skills/principle-separate-before-serializing-shared-state/SKILL.md"
+      "url": "https://github.com/cursor/plugins/blob/1ba91fc25c0977741dd0e267849e6234b037ed0a/pstack/skills/principle-separate-before-serializing-shared-state/SKILL.md"
     },
     {
       "id": "pstack:principle-sequence-verifiable-units",
@@ -631,7 +642,7 @@
         "principle-sequence-verifiable-units"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/cursor/plugins/blob/190d28736eff128ec94f502a22c7fe0c4b56cd37/pstack/skills/principle-sequence-verifiable-units/SKILL.md"
+      "url": "https://github.com/cursor/plugins/blob/1ba91fc25c0977741dd0e267849e6234b037ed0a/pstack/skills/principle-sequence-verifiable-units/SKILL.md"
     },
     {
       "id": "pstack:principle-subtract-before-you-add",
@@ -646,7 +657,7 @@
         "principle-subtract-before-you-add"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/cursor/plugins/blob/190d28736eff128ec94f502a22c7fe0c4b56cd37/pstack/skills/principle-subtract-before-you-add/SKILL.md"
+      "url": "https://github.com/cursor/plugins/blob/1ba91fc25c0977741dd0e267849e6234b037ed0a/pstack/skills/principle-subtract-before-you-add/SKILL.md"
     },
     {
       "id": "pstack:principle-test-behavior-not-implementation",
@@ -661,7 +672,7 @@
         "principle-test-behavior-not-implementation"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/cursor/plugins/blob/190d28736eff128ec94f502a22c7fe0c4b56cd37/pstack/skills/principle-test-behavior-not-implementation/SKILL.md"
+      "url": "https://github.com/cursor/plugins/blob/1ba91fc25c0977741dd0e267849e6234b037ed0a/pstack/skills/principle-test-behavior-not-implementation/SKILL.md"
     },
     {
       "id": "pstack:principle-type-system-discipline",
@@ -676,7 +687,7 @@
         "principle-type-system-discipline"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/cursor/plugins/blob/190d28736eff128ec94f502a22c7fe0c4b56cd37/pstack/skills/principle-type-system-discipline/SKILL.md"
+      "url": "https://github.com/cursor/plugins/blob/1ba91fc25c0977741dd0e267849e6234b037ed0a/pstack/skills/principle-type-system-discipline/SKILL.md"
     },
     {
       "id": "pstack:recall",
@@ -691,7 +702,7 @@
         "recall"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/cursor/plugins/blob/190d28736eff128ec94f502a22c7fe0c4b56cd37/pstack/skills/recall/SKILL.md"
+      "url": "https://github.com/cursor/plugins/blob/1ba91fc25c0977741dd0e267849e6234b037ed0a/pstack/skills/recall/SKILL.md"
     },
     {
       "id": "pstack:reflect",
@@ -706,7 +717,7 @@
         "reflect"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/cursor/plugins/blob/190d28736eff128ec94f502a22c7fe0c4b56cd37/pstack/skills/reflect/SKILL.md"
+      "url": "https://github.com/cursor/plugins/blob/1ba91fc25c0977741dd0e267849e6234b037ed0a/pstack/skills/reflect/SKILL.md"
     },
     {
       "id": "pstack:setup-pstack",
@@ -717,7 +728,7 @@
       "disposition": "inactive",
       "installed_skills": [],
       "rationale": "Replaced by the Son setup and mode controls.",
-      "url": "https://github.com/cursor/plugins/blob/190d28736eff128ec94f502a22c7fe0c4b56cd37/pstack/skills/setup-pstack/SKILL.md"
+      "url": "https://github.com/cursor/plugins/blob/1ba91fc25c0977741dd0e267849e6234b037ed0a/pstack/skills/setup-pstack/SKILL.md"
     },
     {
       "id": "pstack:sharpen",
@@ -732,7 +743,7 @@
         "sharpen"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/cursor/plugins/blob/190d28736eff128ec94f502a22c7fe0c4b56cd37/pstack/skills/sharpen/SKILL.md"
+      "url": "https://github.com/cursor/plugins/blob/1ba91fc25c0977741dd0e267849e6234b037ed0a/pstack/skills/sharpen/SKILL.md"
     },
     {
       "id": "pstack:show-me-your-work",
@@ -747,7 +758,22 @@
         "show-me-your-work"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/cursor/plugins/blob/190d28736eff128ec94f502a22c7fe0c4b56cd37/pstack/skills/show-me-your-work/SKILL.md"
+      "url": "https://github.com/cursor/plugins/blob/1ba91fc25c0977741dd0e267849e6234b037ed0a/pstack/skills/show-me-your-work/SKILL.md"
+    },
+    {
+      "id": "pstack:statechart",
+      "source": "pstack",
+      "path": "pstack/skills/statechart/SKILL.md",
+      "description": "Check a TLA+ model of a system that moves between states, such as a product flow, a protocol, or a service, and draw it as a Mermaid statechart. The report gives the shortest path to each state that breaks a rule. Use for /statechart, or to show a bug as a path through states.",
+      "categories": [
+        "verification"
+      ],
+      "disposition": "original with adapter",
+      "installed_skills": [
+        "statechart"
+      ],
+      "rationale": "Body and supporting files retained.",
+      "url": "https://github.com/cursor/plugins/blob/1ba91fc25c0977741dd0e267849e6234b037ed0a/pstack/skills/statechart/SKILL.md"
     },
     {
       "id": "pstack:swarm",
@@ -762,7 +788,7 @@
         "swarm"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/cursor/plugins/blob/190d28736eff128ec94f502a22c7fe0c4b56cd37/pstack/skills/swarm/SKILL.md"
+      "url": "https://github.com/cursor/plugins/blob/1ba91fc25c0977741dd0e267849e6234b037ed0a/pstack/skills/swarm/SKILL.md"
     },
     {
       "id": "pstack:tdd",
@@ -777,7 +803,7 @@
         "pstack-tdd"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/cursor/plugins/blob/190d28736eff128ec94f502a22c7fe0c4b56cd37/pstack/skills/tdd/SKILL.md"
+      "url": "https://github.com/cursor/plugins/blob/1ba91fc25c0977741dd0e267849e6234b037ed0a/pstack/skills/tdd/SKILL.md"
     },
     {
       "id": "pstack:teach",
@@ -792,7 +818,7 @@
         "pstack-teach"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/cursor/plugins/blob/190d28736eff128ec94f502a22c7fe0c4b56cd37/pstack/skills/teach/SKILL.md"
+      "url": "https://github.com/cursor/plugins/blob/1ba91fc25c0977741dd0e267849e6234b037ed0a/pstack/skills/teach/SKILL.md"
     },
     {
       "id": "pstack:technical-writing",
@@ -807,7 +833,7 @@
         "technical-writing"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/cursor/plugins/blob/190d28736eff128ec94f502a22c7fe0c4b56cd37/pstack/skills/technical-writing/SKILL.md"
+      "url": "https://github.com/cursor/plugins/blob/1ba91fc25c0977741dd0e267849e6234b037ed0a/pstack/skills/technical-writing/SKILL.md"
     },
     {
       "id": "pstack:typescript-best-practices",
@@ -822,7 +848,7 @@
         "typescript-best-practices"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/cursor/plugins/blob/190d28736eff128ec94f502a22c7fe0c4b56cd37/pstack/skills/typescript-best-practices/SKILL.md"
+      "url": "https://github.com/cursor/plugins/blob/1ba91fc25c0977741dd0e267849e6234b037ed0a/pstack/skills/typescript-best-practices/SKILL.md"
     },
     {
       "id": "pstack:unslop",
@@ -837,7 +863,7 @@
         "unslop"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/cursor/plugins/blob/190d28736eff128ec94f502a22c7fe0c4b56cd37/pstack/skills/unslop/SKILL.md"
+      "url": "https://github.com/cursor/plugins/blob/1ba91fc25c0977741dd0e267849e6234b037ed0a/pstack/skills/unslop/SKILL.md"
     },
     {
       "id": "pstack:why",
@@ -852,7 +878,7 @@
         "why"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/cursor/plugins/blob/190d28736eff128ec94f502a22c7fe0c4b56cd37/pstack/skills/why/SKILL.md"
+      "url": "https://github.com/cursor/plugins/blob/1ba91fc25c0977741dd0e267849e6234b037ed0a/pstack/skills/why/SKILL.md"
     },
     {
       "id": "emil:animate-expo",
@@ -867,7 +893,7 @@
         "animate-expo"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/emilkowalski/skills/blob/2d228630ba1446365f614a108cb8252f1feda202/skills/animate-expo/SKILL.md"
+      "url": "https://github.com/emilkowalski/skills/blob/715c1807e08c497cfd1dc4feb450a2a3300ef2a9/skills/animate-expo/SKILL.md"
     },
     {
       "id": "emil:animate",
@@ -882,13 +908,13 @@
         "animate"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/emilkowalski/skills/blob/2d228630ba1446365f614a108cb8252f1feda202/skills/animate/SKILL.md"
+      "url": "https://github.com/emilkowalski/skills/blob/715c1807e08c497cfd1dc4feb450a2a3300ef2a9/skills/animate/SKILL.md"
     },
     {
       "id": "emil:animation-performance",
       "source": "emil",
       "path": "skills/animation-performance/SKILL.md",
-      "description": "Keep web animations inside the frame budget — animate composite-only properties, keep motion off the main thread when the page is busy, and find the cause when an animation drops frames. Covers the layout/paint/composite pipeline, cheaper property swaps, CSS vs WAAPI vs requestAnimationFrame, Framer Motion's hardware-accelerated path, React re-rendering per frame, inherited CSS variable recalculation, blur cost, and when `will-change` actually helps. Use when an animation is janky, choppy, stutters, or drops frames; when choosing which property to animate; when deciding between CSS and JS animation on performance grounds; or when reaching for `will-change` or GPU layers. For choosing easing, duration, or whether to animate at all use animate; for reviewing motion as a whole use review-animations.",
+      "description": "Keep web animations inside the frame budget — animate composite-only properties, keep motion off the main thread when the page is busy, and find the cause when an animation drops frames. Covers the layout/paint/composite pipeline, cheaper property swaps, CSS vs WAAPI vs requestAnimationFrame, Motion's hardware-accelerated path, React re-rendering per frame, inherited CSS variable recalculation, blur cost, and when `will-change` actually helps. Use when an animation is janky, choppy, stutters, or drops frames; when choosing which property to animate; when deciding between CSS and JS animation on performance grounds; or when reaching for `will-change` or GPU layers. For choosing easing, duration, or whether to animate at all use animate; for reviewing motion as a whole use review-animations.",
       "categories": [
         "interface"
       ],
@@ -897,7 +923,7 @@
         "animation-performance"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/emilkowalski/skills/blob/2d228630ba1446365f614a108cb8252f1feda202/skills/animation-performance/SKILL.md"
+      "url": "https://github.com/emilkowalski/skills/blob/715c1807e08c497cfd1dc4feb450a2a3300ef2a9/skills/animation-performance/SKILL.md"
     },
     {
       "id": "emil:animation-vocabulary",
@@ -912,7 +938,7 @@
         "animation-vocabulary"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/emilkowalski/skills/blob/2d228630ba1446365f614a108cb8252f1feda202/skills/animation-vocabulary/SKILL.md"
+      "url": "https://github.com/emilkowalski/skills/blob/715c1807e08c497cfd1dc4feb450a2a3300ef2a9/skills/animation-vocabulary/SKILL.md"
     },
     {
       "id": "emil:apple-design",
@@ -927,7 +953,7 @@
         "apple-design"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/emilkowalski/skills/blob/2d228630ba1446365f614a108cb8252f1feda202/skills/apple-design/SKILL.md"
+      "url": "https://github.com/emilkowalski/skills/blob/715c1807e08c497cfd1dc4feb450a2a3300ef2a9/skills/apple-design/SKILL.md"
     },
     {
       "id": "emil:ask-sonner",
@@ -942,7 +968,7 @@
         "ask-sonner"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/emilkowalski/skills/blob/2d228630ba1446365f614a108cb8252f1feda202/skills/ask-sonner/SKILL.md"
+      "url": "https://github.com/emilkowalski/skills/blob/715c1807e08c497cfd1dc4feb450a2a3300ef2a9/skills/ask-sonner/SKILL.md"
     },
     {
       "id": "emil:break-ui",
@@ -957,7 +983,22 @@
         "break-ui"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/emilkowalski/skills/blob/2d228630ba1446365f614a108cb8252f1feda202/skills/break-ui/SKILL.md"
+      "url": "https://github.com/emilkowalski/skills/blob/715c1807e08c497cfd1dc4feb450a2a3300ef2a9/skills/break-ui/SKILL.md"
+    },
+    {
+      "id": "emil:choreograph",
+      "source": "emil",
+      "path": "skills/choreograph/SKILL.md",
+      "description": "Coordinate several elements that animate together — decide what moves, in what order, how much they overlap, and what stays still — so a group reads as one intentional motion instead of a pile of separate animations. Use when building or fixing a staggered list, a hero entrance, a view swap inside a container, a multi-step flow, an element leaving while its siblings close the gap, a morph between rich states, or any interaction with several moving parts (icon + background + lines, panel + content, items flying into a target). Triggers on — stagger, staggerChildren, delayChildren, animation-delay, sequence, sequencing, orchestration, choreography, cascade, wave, timeline, \"one after another\", \"at the same time\", crossfade, popLayout, mode=\"wait\", AnimatePresence mode, hero entrance, list entrance, multi-step, step transition, morph, useAnimate, Promise.all animations, \"feels mechanical\", \"feels robotic\", \"too much going on\", \"feels slow to open\".",
+      "categories": [
+        "interface"
+      ],
+      "disposition": "original with adapter",
+      "installed_skills": [
+        "choreograph"
+      ],
+      "rationale": "Body and supporting files retained.",
+      "url": "https://github.com/emilkowalski/skills/blob/715c1807e08c497cfd1dc4feb450a2a3300ef2a9/skills/choreograph/SKILL.md"
     },
     {
       "id": "emil:emil-design-eng",
@@ -972,7 +1013,7 @@
         "emil-design-eng"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/emilkowalski/skills/blob/2d228630ba1446365f614a108cb8252f1feda202/skills/emil-design-eng/SKILL.md"
+      "url": "https://github.com/emilkowalski/skills/blob/715c1807e08c497cfd1dc4feb450a2a3300ef2a9/skills/emil-design-eng/SKILL.md"
     },
     {
       "id": "emil:find-animation-opportunities",
@@ -987,7 +1028,22 @@
         "find-animation-opportunities"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/emilkowalski/skills/blob/2d228630ba1446365f614a108cb8252f1feda202/skills/find-animation-opportunities/SKILL.md"
+      "url": "https://github.com/emilkowalski/skills/blob/715c1807e08c497cfd1dc4feb450a2a3300ef2a9/skills/find-animation-opportunities/SKILL.md"
+    },
+    {
+      "id": "emil:gestures",
+      "source": "emil",
+      "path": "skills/gestures/SKILL.md",
+      "description": "Build drag, swipe, and sheet interactions that track the finger 1:1 and stay interruptible. Use when building or fixing anything the user drags, swipes, flings, holds, or dismisses with a gesture — drawers, sheets, swipe-to-dismiss toasts and cards, drag-to-reorder, pull-to-refresh, hold-to-confirm — or when a gesture feels laggy, disconnected from the finger, jumps on release, or can't be caught mid-animation. Triggers on — gesture, drag, draggable, swipe, swipe to dismiss, fling, momentum, velocity, drawer, sheet, bottom sheet, snap points, Vaul, dragConstraints, dragElastic, dragMomentum, onDragEnd, whileDrag, useMotionValue, rubber-band, overscroll, pull to refresh, hold to delete, press and hold, touch-action, dismiss threshold, \"doesn't follow my finger\", \"jumps when I let go\", \"can't grab it mid-animation\".",
+      "categories": [
+        "interface"
+      ],
+      "disposition": "original with adapter",
+      "installed_skills": [
+        "gestures"
+      ],
+      "rationale": "Body and supporting files retained.",
+      "url": "https://github.com/emilkowalski/skills/blob/715c1807e08c497cfd1dc4feb450a2a3300ef2a9/skills/gestures/SKILL.md"
     },
     {
       "id": "emil:improve-animations",
@@ -1002,7 +1058,7 @@
         "improve-animations"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/emilkowalski/skills/blob/2d228630ba1446365f614a108cb8252f1feda202/skills/improve-animations/SKILL.md"
+      "url": "https://github.com/emilkowalski/skills/blob/715c1807e08c497cfd1dc4feb450a2a3300ef2a9/skills/improve-animations/SKILL.md"
     },
     {
       "id": "emil:mobile-native",
@@ -1017,7 +1073,7 @@
         "mobile-native"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/emilkowalski/skills/blob/2d228630ba1446365f614a108cb8252f1feda202/skills/mobile-native/SKILL.md"
+      "url": "https://github.com/emilkowalski/skills/blob/715c1807e08c497cfd1dc4feb450a2a3300ef2a9/skills/mobile-native/SKILL.md"
     },
     {
       "id": "emil:pick-ui-library",
@@ -1032,7 +1088,7 @@
         "pick-ui-library"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/emilkowalski/skills/blob/2d228630ba1446365f614a108cb8252f1feda202/skills/pick-ui-library/SKILL.md"
+      "url": "https://github.com/emilkowalski/skills/blob/715c1807e08c497cfd1dc4feb450a2a3300ef2a9/skills/pick-ui-library/SKILL.md"
     },
     {
       "id": "emil:prototype",
@@ -1047,7 +1103,22 @@
         "emil-prototype"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/emilkowalski/skills/blob/2d228630ba1446365f614a108cb8252f1feda202/skills/prototype/SKILL.md"
+      "url": "https://github.com/emilkowalski/skills/blob/715c1807e08c497cfd1dc4feb450a2a3300ef2a9/skills/prototype/SKILL.md"
+    },
+    {
+      "id": "emil:remove-animations",
+      "source": "emil",
+      "path": "skills/remove-animations/SKILL.md",
+      "description": "Find the animations an interface doesn't need and remove them — motion on keyboard actions, high-frequency surfaces, functional data, and decoration with no purpose — then clean up what they leave behind. Edits code, but only to subtract; it never adds or retunes motion. Use when the user says the app \"feels slow\", \"has too much animation\", \"feels over-animated\", wants to \"tone down the motion\", or asks what animations to remove. For finding places that should animate, use find-animation-opportunities; for fixing animations that should stay, use improve-animations or review-animations.",
+      "categories": [
+        "interface"
+      ],
+      "disposition": "original with adapter",
+      "installed_skills": [
+        "remove-animations"
+      ],
+      "rationale": "Body and supporting files retained.",
+      "url": "https://github.com/emilkowalski/skills/blob/715c1807e08c497cfd1dc4feb450a2a3300ef2a9/skills/remove-animations/SKILL.md"
     },
     {
       "id": "emil:review-animations",
@@ -1062,7 +1133,7 @@
         "review-animations"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/emilkowalski/skills/blob/2d228630ba1446365f614a108cb8252f1feda202/skills/review-animations/SKILL.md"
+      "url": "https://github.com/emilkowalski/skills/blob/715c1807e08c497cfd1dc4feb450a2a3300ef2a9/skills/review-animations/SKILL.md"
     },
     {
       "id": "emil:write-swift",
@@ -1077,7 +1148,7 @@
         "write-swift"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/emilkowalski/skills/blob/2d228630ba1446365f614a108cb8252f1feda202/skills/write-swift/SKILL.md"
+      "url": "https://github.com/emilkowalski/skills/blob/715c1807e08c497cfd1dc4feb450a2a3300ef2a9/skills/write-swift/SKILL.md"
     },
     {
       "id": "humanlayer:build-iterated-agentic-loop",
@@ -1182,7 +1253,7 @@
         "ask-matt"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/ask-matt/SKILL.md"
+      "url": "https://github.com/mattpocock/skills/blob/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/skills/engineering/ask-matt/SKILL.md"
     },
     {
       "id": "matt:code-review",
@@ -1197,7 +1268,7 @@
         "code-review"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/code-review/SKILL.md"
+      "url": "https://github.com/mattpocock/skills/blob/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/skills/engineering/code-review/SKILL.md"
     },
     {
       "id": "matt:codebase-design",
@@ -1212,7 +1283,7 @@
         "codebase-design"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/codebase-design/SKILL.md"
+      "url": "https://github.com/mattpocock/skills/blob/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/skills/engineering/codebase-design/SKILL.md"
     },
     {
       "id": "matt:diagnosing-bugs",
@@ -1227,7 +1298,7 @@
         "diagnosing-bugs"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/diagnosing-bugs/SKILL.md"
+      "url": "https://github.com/mattpocock/skills/blob/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/skills/engineering/diagnosing-bugs/SKILL.md"
     },
     {
       "id": "matt:domain-modeling",
@@ -1242,7 +1313,7 @@
         "domain-modeling"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/domain-modeling/SKILL.md"
+      "url": "https://github.com/mattpocock/skills/blob/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/skills/engineering/domain-modeling/SKILL.md"
     },
     {
       "id": "matt:grill-with-docs",
@@ -1257,7 +1328,7 @@
         "grill-with-docs"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/grill-with-docs/SKILL.md"
+      "url": "https://github.com/mattpocock/skills/blob/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/skills/engineering/grill-with-docs/SKILL.md"
     },
     {
       "id": "matt:implement-spec",
@@ -1272,7 +1343,7 @@
         "implement-spec"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/implement-spec/SKILL.md"
+      "url": "https://github.com/mattpocock/skills/blob/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/skills/engineering/implement-spec/SKILL.md"
     },
     {
       "id": "matt:implement",
@@ -1287,7 +1358,7 @@
         "implement"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/implement/SKILL.md"
+      "url": "https://github.com/mattpocock/skills/blob/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/skills/engineering/implement/SKILL.md"
     },
     {
       "id": "matt:improve-codebase-architecture",
@@ -1302,7 +1373,7 @@
         "improve-codebase-architecture"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/improve-codebase-architecture/SKILL.md"
+      "url": "https://github.com/mattpocock/skills/blob/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/skills/engineering/improve-codebase-architecture/SKILL.md"
     },
     {
       "id": "matt:pr",
@@ -1317,7 +1388,7 @@
         "pr"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/pr/SKILL.md"
+      "url": "https://github.com/mattpocock/skills/blob/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/skills/engineering/pr/SKILL.md"
     },
     {
       "id": "matt:prototype",
@@ -1332,7 +1403,7 @@
         "matt-prototype"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/prototype/SKILL.md"
+      "url": "https://github.com/mattpocock/skills/blob/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/skills/engineering/prototype/SKILL.md"
     },
     {
       "id": "matt:research",
@@ -1347,7 +1418,7 @@
         "research"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/research/SKILL.md"
+      "url": "https://github.com/mattpocock/skills/blob/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/skills/engineering/research/SKILL.md"
     },
     {
       "id": "matt:retro",
@@ -1362,7 +1433,7 @@
         "retro"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/retro/SKILL.md"
+      "url": "https://github.com/mattpocock/skills/blob/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/skills/engineering/retro/SKILL.md"
     },
     {
       "id": "matt:setup-matt-pocock-skills",
@@ -1377,7 +1448,7 @@
         "setup-matt-pocock-skills"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/setup-matt-pocock-skills/SKILL.md"
+      "url": "https://github.com/mattpocock/skills/blob/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/skills/engineering/setup-matt-pocock-skills/SKILL.md"
     },
     {
       "id": "matt:tdd",
@@ -1392,7 +1463,7 @@
         "matt-tdd"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/tdd/SKILL.md"
+      "url": "https://github.com/mattpocock/skills/blob/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/skills/engineering/tdd/SKILL.md"
     },
     {
       "id": "matt:to-spec",
@@ -1407,7 +1478,7 @@
         "to-spec"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/to-spec/SKILL.md"
+      "url": "https://github.com/mattpocock/skills/blob/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/skills/engineering/to-spec/SKILL.md"
     },
     {
       "id": "matt:to-tickets",
@@ -1422,7 +1493,7 @@
         "to-tickets"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/to-tickets/SKILL.md"
+      "url": "https://github.com/mattpocock/skills/blob/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/skills/engineering/to-tickets/SKILL.md"
     },
     {
       "id": "matt:triage",
@@ -1437,7 +1508,7 @@
         "triage"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/triage/SKILL.md"
+      "url": "https://github.com/mattpocock/skills/blob/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/skills/engineering/triage/SKILL.md"
     },
     {
       "id": "matt:wayfinder",
@@ -1452,7 +1523,7 @@
         "wayfinder"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/wayfinder/SKILL.md"
+      "url": "https://github.com/mattpocock/skills/blob/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/skills/engineering/wayfinder/SKILL.md"
     },
     {
       "id": "matt:wizard",
@@ -1467,7 +1538,7 @@
         "wizard"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/engineering/wizard/SKILL.md"
+      "url": "https://github.com/mattpocock/skills/blob/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/skills/engineering/wizard/SKILL.md"
     },
     {
       "id": "matt:chief-of-staff",
@@ -1478,7 +1549,7 @@
       "disposition": "inactive",
       "installed_skills": [],
       "rationale": "Retained in the snapshot as an optional or experimental skill.",
-      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/in-progress/chief-of-staff/SKILL.md"
+      "url": "https://github.com/mattpocock/skills/blob/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/skills/in-progress/chief-of-staff/SKILL.md"
     },
     {
       "id": "matt:claude-handoff",
@@ -1489,7 +1560,7 @@
       "disposition": "inactive",
       "installed_skills": [],
       "rationale": "Retained in the snapshot as an optional or experimental skill.",
-      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/in-progress/claude-handoff/SKILL.md"
+      "url": "https://github.com/mattpocock/skills/blob/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/skills/in-progress/claude-handoff/SKILL.md"
     },
     {
       "id": "matt:loop-me",
@@ -1500,7 +1571,7 @@
       "disposition": "inactive",
       "installed_skills": [],
       "rationale": "Retained in the snapshot as an optional or experimental skill.",
-      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/in-progress/loop-me/SKILL.md"
+      "url": "https://github.com/mattpocock/skills/blob/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/skills/in-progress/loop-me/SKILL.md"
     },
     {
       "id": "matt:setup-ts-deep-modules",
@@ -1511,7 +1582,18 @@
       "disposition": "inactive",
       "installed_skills": [],
       "rationale": "Retained in the snapshot as an optional or experimental skill.",
-      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/in-progress/setup-ts-deep-modules/SKILL.md"
+      "url": "https://github.com/mattpocock/skills/blob/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/skills/in-progress/setup-ts-deep-modules/SKILL.md"
+    },
+    {
+      "id": "matt:software-factory",
+      "source": "matt",
+      "path": "skills/in-progress/software-factory/SKILL.md",
+      "description": "Shared language for designing a software factory: the tasks it runs and the services it plugs into.",
+      "categories": [],
+      "disposition": "inactive",
+      "installed_skills": [],
+      "rationale": "Deferred pending a concrete ticket-to-PR service and a separate operating-model decision.",
+      "url": "https://github.com/mattpocock/skills/blob/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/skills/in-progress/software-factory/SKILL.md"
     },
     {
       "id": "matt:writing-beats",
@@ -1522,7 +1604,7 @@
       "disposition": "inactive",
       "installed_skills": [],
       "rationale": "Retained in the snapshot as an optional or experimental skill.",
-      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/in-progress/writing-beats/SKILL.md"
+      "url": "https://github.com/mattpocock/skills/blob/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/skills/in-progress/writing-beats/SKILL.md"
     },
     {
       "id": "matt:writing-fragments",
@@ -1533,7 +1615,7 @@
       "disposition": "inactive",
       "installed_skills": [],
       "rationale": "Retained in the snapshot as an optional or experimental skill.",
-      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/in-progress/writing-fragments/SKILL.md"
+      "url": "https://github.com/mattpocock/skills/blob/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/skills/in-progress/writing-fragments/SKILL.md"
     },
     {
       "id": "matt:writing-shape",
@@ -1544,7 +1626,7 @@
       "disposition": "inactive",
       "installed_skills": [],
       "rationale": "Retained in the snapshot as an optional or experimental skill.",
-      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/in-progress/writing-shape/SKILL.md"
+      "url": "https://github.com/mattpocock/skills/blob/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/skills/in-progress/writing-shape/SKILL.md"
     },
     {
       "id": "matt:git-guardrails-claude-code",
@@ -1555,7 +1637,7 @@
       "disposition": "inactive",
       "installed_skills": [],
       "rationale": "Retained in the snapshot as an optional or experimental skill.",
-      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/misc/git-guardrails-claude-code/SKILL.md"
+      "url": "https://github.com/mattpocock/skills/blob/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/skills/misc/git-guardrails-claude-code/SKILL.md"
     },
     {
       "id": "matt:migrate-to-shoehorn",
@@ -1566,7 +1648,7 @@
       "disposition": "inactive",
       "installed_skills": [],
       "rationale": "Retained in the snapshot as an optional or experimental skill.",
-      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/misc/migrate-to-shoehorn/SKILL.md"
+      "url": "https://github.com/mattpocock/skills/blob/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/skills/misc/migrate-to-shoehorn/SKILL.md"
     },
     {
       "id": "matt:scaffold-exercises",
@@ -1577,7 +1659,7 @@
       "disposition": "inactive",
       "installed_skills": [],
       "rationale": "Retained in the snapshot as an optional or experimental skill.",
-      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/misc/scaffold-exercises/SKILL.md"
+      "url": "https://github.com/mattpocock/skills/blob/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/skills/misc/scaffold-exercises/SKILL.md"
     },
     {
       "id": "matt:setup-pre-commit",
@@ -1588,7 +1670,7 @@
       "disposition": "inactive",
       "installed_skills": [],
       "rationale": "Retained in the snapshot as an optional or experimental skill.",
-      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/misc/setup-pre-commit/SKILL.md"
+      "url": "https://github.com/mattpocock/skills/blob/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/skills/misc/setup-pre-commit/SKILL.md"
     },
     {
       "id": "matt:grill-me",
@@ -1603,7 +1685,7 @@
         "grill-me"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/productivity/grill-me/SKILL.md"
+      "url": "https://github.com/mattpocock/skills/blob/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/skills/productivity/grill-me/SKILL.md"
     },
     {
       "id": "matt:grilling",
@@ -1618,7 +1700,7 @@
         "grilling"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/productivity/grilling/SKILL.md"
+      "url": "https://github.com/mattpocock/skills/blob/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/skills/productivity/grilling/SKILL.md"
     },
     {
       "id": "matt:handoff",
@@ -1633,7 +1715,7 @@
         "handoff"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/productivity/handoff/SKILL.md"
+      "url": "https://github.com/mattpocock/skills/blob/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/skills/productivity/handoff/SKILL.md"
     },
     {
       "id": "matt:teach",
@@ -1648,7 +1730,7 @@
         "matt-teach"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/productivity/teach/SKILL.md"
+      "url": "https://github.com/mattpocock/skills/blob/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/skills/productivity/teach/SKILL.md"
     },
     {
       "id": "matt:to-questionnaire",
@@ -1663,7 +1745,7 @@
         "to-questionnaire"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/productivity/to-questionnaire/SKILL.md"
+      "url": "https://github.com/mattpocock/skills/blob/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/skills/productivity/to-questionnaire/SKILL.md"
     },
     {
       "id": "matt:wait-what",
@@ -1678,7 +1760,7 @@
         "wait-what"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/productivity/wait-what/SKILL.md"
+      "url": "https://github.com/mattpocock/skills/blob/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/skills/productivity/wait-what/SKILL.md"
     },
     {
       "id": "matt:writing-for-agents",
@@ -1693,7 +1775,7 @@
         "writing-for-agents"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/mattpocock/skills/blob/49dd158d1076134a641b33efb035946536778336/skills/productivity/writing-for-agents/SKILL.md"
+      "url": "https://github.com/mattpocock/skills/blob/4ae2317ddb22b046e26455e4f9c9b3aaaf62212d/skills/productivity/writing-for-agents/SKILL.md"
     },
     {
       "id": "voltagent:data-scientist",
@@ -1708,7 +1790,7 @@
         "data-scientist"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/VoltAgent/awesome-claude-code-subagents/blob/c9e51ec0b3d43f5dcdd0b558a6cd28ba6ada97c1/categories/05-data-ai/data-scientist.md"
+      "url": "https://github.com/VoltAgent/awesome-claude-code-subagents/blob/408d3c9eee2d0c75c12a3abb5de29e53c2ca6b9e/categories/05-data-ai/data-scientist.md"
     },
     {
       "id": "voltagent:ml-engineer",
@@ -1723,7 +1805,7 @@
         "ml-engineer"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/VoltAgent/awesome-claude-code-subagents/blob/c9e51ec0b3d43f5dcdd0b558a6cd28ba6ada97c1/categories/05-data-ai/ml-engineer.md"
+      "url": "https://github.com/VoltAgent/awesome-claude-code-subagents/blob/408d3c9eee2d0c75c12a3abb5de29e53c2ca6b9e/categories/05-data-ai/ml-engineer.md"
     },
     {
       "id": "borghei:data-scientist",
@@ -1738,7 +1820,7 @@
         "predictive-modeling"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/borghei/Claude-Skills/blob/4a698e8d07856fdca9ec3e69082a9d68c8dd45d0/data-analytics/data-scientist/SKILL.md"
+      "url": "https://github.com/borghei/Claude-Skills/blob/2c12c7efaad13a70bdea6e205698a6c4f93a0682/data-analytics/data-scientist/SKILL.md"
     }
   ]
 }
