@@ -35,7 +35,7 @@ Sources: [pstack README](../upstream/pstack/pstack/README.md), [mode](../upstrea
 
 ## Emil Kowalski
 
-Emil's 14 skills provide the deepest specialist guidance in this selection.
+Emil's 18 skills provide the deepest specialist guidance in this selection.
 They cover web design, animation construction and review, native-feeling mobile web, React Native motion, Swift, Sonner, UI library selection, visual prototypes, and realistic extreme-data testing.
 
 The useful distinction is between tasks.
@@ -43,6 +43,7 @@ The useful distinction is between tasks.
 `review-animations` critiques an existing change.
 `improve-animations` surveys a codebase and writes implementation plans.
 `find-animation-opportunities` identifies where motion is justified.
+`remove-animations` deletes or reduces motion that fails its keep-or-cut test and never adds motion.
 `animation-vocabulary` names an effect without implementing it.
 The motion-design playbook selects the original appropriate to the task and keeps audits read-only.
 
@@ -118,7 +119,7 @@ VoltAgent contributes two data and machine learning role guides from the accepte
 
 The local copies retain their existing execution contracts and add the native `son-agent` route.
 
-Sources: [data scientist](../upstream/voltagent/categories/05-data-ai/data-scientist.md), [ML engineer](../upstream/voltagent/categories/05-data-ai/ml-engineer.md), and the [pinned commit](https://github.com/VoltAgent/awesome-claude-code-subagents/tree/c9e51ec0b3d43f5dcdd0b558a6cd28ba6ada97c).
+Sources: [data scientist](../upstream/voltagent/categories/05-data-ai/data-scientist.md), [ML engineer](../upstream/voltagent/categories/05-data-ai/ml-engineer.md), and the [pinned commit](https://github.com/VoltAgent/awesome-claude-code-subagents/tree/408d3c9eee2d0c75c12a3abb5de29e53c2ca6b9e).
 
 ## Borghei
 
@@ -128,13 +129,14 @@ Its supporting Python scripts remain intact under the MIT plus Commons Clause li
 
 The local documentation fixes the root option placement in the script examples and records the scripts' statistical approximation, local JSON tracker, and metric-direction limitations.
 
-Sources: [data scientist](../upstream/borghei/data-analytics/data-scientist/SKILL.md), [supporting scripts](../upstream/borghei/data-analytics/data-scientist/scripts), and the [pinned commit](https://github.com/borghei/Claude-Skills/tree/4a698e8d07856fdca9ec3e69082a9d68c8dd45d0).
+Sources: [data scientist](../upstream/borghei/data-analytics/data-scientist/SKILL.md), [supporting scripts](../upstream/borghei/data-analytics/data-scientist/scripts), and the [pinned commit](https://github.com/borghei/Claude-Skills/tree/2c12c7efaad13a70bdea6e205698a6c4f93a0682).
 
 ## Selection result
 
-102 original skills remain active with minimal adapters.
+106 original skills remain active with minimal adapters.
 Three Son controls replace the synthesized workflow layer.
-Eight pstack originals and 11 Matt originals remain inactive, with explicit reasons in the catalog.
+Nine pstack originals and 12 Matt originals remain inactive, with explicit reasons in the catalog.
 The two formal-verification additions remain catalogued but deferred until their verifier and repository contract are concrete.
-All 121 source entries remain pinned for comparison.
+`statechart` is active and explicit-only; `ketchup-video` stays deferred for its video toolchain.
+All 127 source entries remain pinned for comparison.
 This is a curation decision, not evidence of improved outcomes on real tasks.

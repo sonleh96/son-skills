@@ -1110,10 +1110,14 @@
       "source": "emil",
       "path": "skills/remove-animations/SKILL.md",
       "description": "Find the animations an interface doesn't need and remove them — motion on keyboard actions, high-frequency surfaces, functional data, and decoration with no purpose — then clean up what they leave behind. Edits code, but only to subtract; it never adds or retunes motion. Use when the user says the app \"feels slow\", \"has too much animation\", \"feels over-animated\", wants to \"tone down the motion\", or asks what animations to remove. For finding places that should animate, use find-animation-opportunities; for fixing animations that should stay, use improve-animations or review-animations.",
-      "categories": [],
-      "disposition": "inactive",
-      "installed_skills": [],
-      "rationale": "Deferred pending a separate motion-reduction adoption.",
+      "categories": [
+        "interface"
+      ],
+      "disposition": "original with adapter",
+      "installed_skills": [
+        "remove-animations"
+      ],
+      "rationale": "Body and supporting files retained.",
       "url": "https://github.com/emilkowalski/skills/blob/715c1807e08c497cfd1dc4feb450a2a3300ef2a9/skills/remove-animations/SKILL.md"
     },
     {
@@ -1786,7 +1790,7 @@
         "data-scientist"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/VoltAgent/awesome-claude-code-subagents/blob/c9e51ec0b3d43f5dcdd0b558a6cd28ba6ada97c1/categories/05-data-ai/data-scientist.md"
+      "url": "https://github.com/VoltAgent/awesome-claude-code-subagents/blob/408d3c9eee2d0c75c12a3abb5de29e53c2ca6b9e/categories/05-data-ai/data-scientist.md"
     },
     {
       "id": "voltagent:ml-engineer",
@@ -1801,7 +1805,7 @@
         "ml-engineer"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/VoltAgent/awesome-claude-code-subagents/blob/c9e51ec0b3d43f5dcdd0b558a6cd28ba6ada97c1/categories/05-data-ai/ml-engineer.md"
+      "url": "https://github.com/VoltAgent/awesome-claude-code-subagents/blob/408d3c9eee2d0c75c12a3abb5de29e53c2ca6b9e/categories/05-data-ai/ml-engineer.md"
     },
     {
       "id": "borghei:data-scientist",
@@ -1816,7 +1820,7 @@
         "predictive-modeling"
       ],
       "rationale": "Body and supporting files retained.",
-      "url": "https://github.com/borghei/Claude-Skills/blob/4a698e8d07856fdca9ec3e69082a9d68c8dd45d0/data-analytics/data-scientist/SKILL.md"
+      "url": "https://github.com/borghei/Claude-Skills/blob/2c12c7efaad13a70bdea6e205698a6c4f93a0682/data-analytics/data-scientist/SKILL.md"
     }
   ]
 }

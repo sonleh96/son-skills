@@ -247,8 +247,10 @@ Add `--installed-skills /absolute/path/to/skills` to compare an installed copy s
 Reports go under `reviews/runs/`.
 See the [October adoption decisions](docs/updates/2026-10-13.md) for accepted changes and retained policies.
 See the [October 21 reviewed adoption](docs/updates/2026-10-21.md) for the latest accepted changes and validation evidence.
+See the [October 29 reviewed adoption](docs/updates/2026-10-29.md) for the Pstack workflow updates, `remove-animations`, and the retired orch helper.
 See the [October 31 statechart adoption](docs/updates/2026-10-31.md) for the bounded model-checking skill, routing contract, and pilot evidence.
 See the [November adoption](docs/updates/2026-11-12.md) for the new motion skills and fresh-context routing.
+See the [November 19 merge](docs/updates/2026-11-19.md) for how the canonical checkout's work joined `main`.
 See the [saved comparison](reviews/originals-verified/report.md) for an example and [update review](docs/update-review.md) for the adoption steps.
 
 The Codex automation runs this check every two weeks on Monday at 09:00 in the configured local timezone.
@@ -257,7 +259,7 @@ It also leaves updates for review.
 
 ## Make it yours
 
-There are 105 active creator skills and three Son commands.
+There are 106 active creator skills and three Son commands.
 Their instructions, examples, scripts, templates, and licenses remain close to the originals.
 The changes are a compatibility reference, application metadata, and renamed commands or links where needed.
 
@@ -265,7 +267,7 @@ The changes are a compatibility reference, application metadata, and renamed com
 | --- | --- | --- |
 | [Pstack](https://github.com/cursor/plugins/tree/main/pstack) | 52 | Engineering workflows, principles, verification, and delegation |
 | [Matt Pocock](https://github.com/mattpocock/skills) | 27 | Questions, domain models, specs, tickets, implementation, and retrospectives |
-| [Emil Kowalski](https://github.com/emilkowalski/skills) | 17 | Interface design, prototypes, motion, and UI stress testing |
+| [Emil Kowalski](https://github.com/emilkowalski/skills) | 18 | Interface design, prototypes, motion, and UI stress testing |
 | [HumanLayer](https://github.com/humanlayer/skills) | 6 | Visual explanation, React contracts, agent instructions, and automation |
 | [VoltAgent](https://github.com/VoltAgent/awesome-claude-code-subagents) | 2 | Broad data science and production ML engineering role guidance |
 | [Borghei](https://github.com/borghei/Claude-Skills) | 1 | Predictive modeling, experiment design, and local analysis helpers |

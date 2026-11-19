@@ -215,9 +215,9 @@
       ],
       "imported_files": {
         "SKILL.md": {
-          "sha256": "2440c3ae449af192b992aaa8e3b959015c55e87b8162bcc62076c06f869cc608",
+          "sha256": "056287c92d4383f0953c4dbceb9cf17424291a2907ca59f6124c51890cac88b3",
           "mode": "100644",
-          "size": 4585
+          "size": 5672
         },
         "SON-COMPATIBILITY.md": {
           "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
@@ -1440,9 +1440,9 @@
       ],
       "imported_files": {
         "SKILL.md": {
-          "sha256": "c107945806e71bef7693529f3285f6f32bed6d4d4b22661ecb53eddb6f8e3d4a",
+          "sha256": "2fd895c594ed3b12b55ea98d0d36efcda3259629841d283af8d3f0fef8c4a77a",
           "mode": "100644",
-          "size": 4622
+          "size": 2391
         },
         "SON-COMPATIBILITY.md": {
           "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
@@ -1458,26 +1458,6 @@
           "sha256": "bc957ca6bee02792566a1a028d105e02e247c6e77cf057061674273da77b200e",
           "mode": "100644",
           "size": 1067
-        },
-        "references/code-quality-review.md": {
-          "sha256": "79162fda183eafd40d51661fbb5e151c7ba250f89e506ba17f5bd135dcbd50a8",
-          "mode": "100644",
-          "size": 5217
-        },
-        "references/lead-judgment.md": {
-          "sha256": "355f5195a76bc75a655125292369f2a8231a2b61fabe5188d8f1386060922b87",
-          "mode": "100644",
-          "size": 2283
-        },
-        "references/reviewer-prompt.md": {
-          "sha256": "f6005cc2b535006fca97a96c5bfda49df57312eedf1ffd8d1aaaf3eb33817c25",
-          "mode": "100644",
-          "size": 2275
-        },
-        "references/rubric.md": {
-          "sha256": "0f9c6bdb0b96e26dbde5f6407f417e0c02f54080e7a1268d8994f3c3ec6c5ac0",
-          "mode": "100644",
-          "size": 4772
         }
       }
     },
@@ -2105,7 +2085,7 @@
       "name": "principle-explain-the-number",
       "kind": "original",
       "category": "verification",
-      "description": "Apply before you trust, report, or act on a number you measured: a speedup, a regression, a throughput, a latency, or an eval result. Find what limits it, and rule out that it measured something other than the work you think.",
+      "description": "Apply before you measure, and before you trust, report, or act on a number you measured: a speedup, a regression, a throughput, a latency, or an eval result. Find what limits it, and rule out that it measured something other than the work you think.",
       "explicit_only": true,
       "sources": [
         {
@@ -2115,9 +2095,9 @@
       ],
       "imported_files": {
         "SKILL.md": {
-          "sha256": "ddb59c953695f28945c0cde7e84994c4d17c1e88f4f3bab49a0230e2e8c95a8e",
+          "sha256": "c710c84f0890f6ff1cda4abd82903083d7bc6db2096c95edc9cc38943529dbe9",
           "mode": "100644",
-          "size": 1740
+          "size": 1999
         },
         "SON-COMPATIBILITY.md": {
           "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
@@ -2850,9 +2830,9 @@
       ],
       "imported_files": {
         "SKILL.md": {
-          "sha256": "c009807e996a92493bd8fc7b272dbffd077c026fb79123f36237ae257fcd0e64",
+          "sha256": "6cf26546439aac2aa7830163c4ce1347b8352596d0a4f6dd635de24177621b20",
           "mode": "100644",
-          "size": 4840
+          "size": 5069
         },
         "SON-COMPATIBILITY.md": {
           "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
@@ -3015,9 +2995,9 @@
       ],
       "imported_files": {
         "SKILL.md": {
-          "sha256": "000db6c123f801fbe7e9e7ef3a6aa23721d2a8dab4fcd224ccbd2076f3285fc7",
+          "sha256": "ed608088961362b15e4d5a62323534e2fdc59672ab86a978532e5b14af359d96",
           "mode": "100644",
-          "size": 7045
+          "size": 7593
         },
         "SON-COMPATIBILITY.md": {
           "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
@@ -3035,14 +3015,14 @@
           "size": 2042
         },
         "issue-tracker-github.md": {
-          "sha256": "f0653fe106dd8ee7b33be27bd7fe3104b40555896cb45f61997aed20467020c3",
+          "sha256": "6fdb3e9b00b7b0b115ecac3b1c00e3790f637f190abf598815368722c0a94692",
           "mode": "100644",
-          "size": 4117
+          "size": 5082
         },
         "issue-tracker-gitlab.md": {
-          "sha256": "591a9e7057382aaccdfbed3f7ea3f2ad07e0cd29f012d18b82ee4e485fd81e24",
+          "sha256": "947602d33a80f98f939fb990995b8f95a3459b114b919c4221d08bd75d7cffe0",
           "mode": "100644",
-          "size": 3816
+          "size": 3979
         },
         "issue-tracker-local.md": {
           "sha256": "7dcda20a2eb4bdc89b95d1143423c0691309921cadae3132e6424f371030506e",
@@ -5246,9 +5226,9 @@
       ],
       "imported_files": {
         "SKILL.md": {
-          "sha256": "525d0361c57bde44fea7806dc11fb1b66407d9d84c3f416e72c7cc24e8d23405",
+          "sha256": "d8bda57070d45c27b9f78cf2323a75b02c839dadb326d7da5f24ab6638fd8b93",
           "mode": "100644",
-          "size": 2808
+          "size": 2813
         },
         "SON-COMPATIBILITY.md": {
           "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
@@ -6019,9 +5999,9 @@
       ],
       "imported_files": {
         "SKILL.md": {
-          "sha256": "75a4af7a151ecec35336bf0727e4b460f486c715571bb7e1c04ad3e91979d03a",
+          "sha256": "9fe5d5959f1c9e4881cb691ca2cc8d84865ce736a8c2e950d2e1676a3e115b55",
           "mode": "100644",
-          "size": 14472
+          "size": 14592
         },
         "SON-COMPATIBILITY.md": {
           "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
@@ -6122,6 +6102,41 @@
           "sha256": "bc957ca6bee02792566a1a028d105e02e247c6e77cf057061674273da77b200e",
           "mode": "100644",
           "size": 1067
+        }
+      }
+    },
+    {
+      "name": "remove-animations",
+      "kind": "original",
+      "category": "interface",
+      "description": "Find the animations an interface doesn't need and remove them — motion on keyboard actions, high-frequency surfaces, functional data, and decoration with no purpose — then clean up what they leave behind. Edits code, but only to subtract; it never adds or retunes motion. Use when the user says the app \"feels slow\", \"has too much animation\", \"feels over-animated\", wants to \"tone down the motion\", or asks what animations to remove. For finding places that should animate, use find-animation-opportunities; for fixing animations that should stay, use improve-animations or review-animations.",
+      "explicit_only": false,
+      "sources": [
+        {
+          "id": "emil:remove-animations",
+          "path": "skills/remove-animations/SKILL.md"
+        }
+      ],
+      "imported_files": {
+        "SKILL.md": {
+          "sha256": "d69321ba757ff8bb665cf11f90a705f114f38a493c4d58d8d12716b7b335a3f4",
+          "mode": "100644",
+          "size": 11422
+        },
+        "SON-COMPATIBILITY.md": {
+          "sha256": "71f051ac3b18317be46ea34b69541b3950cfd4077563390b90c1575d53710656",
+          "mode": "120000",
+          "size": 31
+        },
+        "agents/openai.yaml": {
+          "sha256": "8619a54e8c098122a7f3881394f84ca89b684366e848233a29ad18b6ec363935",
+          "mode": "100644",
+          "size": 42
+        },
+        "licenses/emil.txt": {
+          "sha256": "4ff5bdb7887ec1435c9cab0e8d1a7caee704d894d65c2a008ccc68b1cc2f260b",
+          "mode": "100644",
+          "size": 1070
         }
       }
     },
@@ -6301,11 +6316,6 @@
       "id": "pstack:maintain-formal-verification-skill",
       "path": "pstack/skills/maintain-formal-verification-skill/SKILL.md",
       "reason": "Deferred pending a concrete verifier, repository contract, and reproducible validation path."
-    },
-    {
-      "id": "emil:remove-animations",
-      "path": "skills/remove-animations/SKILL.md",
-      "reason": "Deferred pending a separate motion-reduction adoption."
     },
     {
       "id": "matt:software-factory",
